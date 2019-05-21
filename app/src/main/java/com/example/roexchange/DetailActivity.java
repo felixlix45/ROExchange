@@ -33,7 +33,6 @@ public class DetailActivity extends AppCompatActivity {
         if(getIntent().hasExtra("URL") && getIntent().hasExtra("Types")){
             
             String URL = "https://www.romexchange.com/api?item=" + getIntent().getStringExtra("URL");
-            Toast.makeText(this, URL, Toast.LENGTH_LONG).show();
             final ProgressDialog dialog = ProgressDialog.show(this, null, "Fetching data, please wait");
             JsonArrayRequest request = new JsonArrayRequest(
                     Request.Method.GET,
@@ -45,10 +44,10 @@ public class DetailActivity extends AppCompatActivity {
                             dialog.dismiss();
                             try{
                                 for(int i = 0; i < response.length(); i++){
-                                    tvName.setText(response.getJSONObject(i).get("name").toString());
-                                    tvTypes.setText(getIntent().getStringExtra("Types"));
-                                    tvPrice.setText("Price : " + String.valueOf(response.getJSONObject(i).getJSONObject("sea").get("latest")));
-                                    tvUpdated.setText(response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString());
+                                    tvName.setText("Name : " + response.getJSONObject(i).get("name").toString());
+                                    tvTypes.setText("Types : " + getIntent().getStringExtra("Types"));
+                                    tvPrice.setText("Price : " + String.valueOf(response.getJSONObject(i).getJSONObject("sea").get("latest")) + " zeny");
+                                    tvUpdated.setText("Last Updated : " + response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString());
                                 }
                             }
                             catch (Exception e)
