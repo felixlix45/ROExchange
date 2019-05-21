@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/layoutParent">
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textSize="16dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type"
+        android:textSize="14dp"
+        android:textColor="@color/colorBlack"/>
+    <!--<TextView-->
+        <!--android:id="@+id/tvPriceNow"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Price now"-->
+        <!--android:textSize="14dp"-->
+        <!--android:textColor="@color/colorBlack"/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/tvLastUpdated"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Last Updated"-->
+        <!--android:textSize="14dp"-->
+        <!--android:textColor="@color/colorBlack"/>-->
+
+</LinearLayout>
