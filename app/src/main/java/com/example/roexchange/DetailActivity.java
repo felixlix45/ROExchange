@@ -15,15 +15,18 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
+import org.json.JSONObject;
 import org.w3c.dom.Text;
 
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 public class DetailActivity extends AppCompatActivity {
 
-    TextView tvName, tvTypes, tvPrice, tvUpdated;
+    TextView tvName, tvTypes, tvPrice, tvUpdated, tvLastPrice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,7 @@ public class DetailActivity extends AppCompatActivity {
         tvTypes = findViewById(R.id.tvDetailTypes);
         tvPrice = findViewById(R.id.tvDetailPrice);
         tvUpdated = findViewById(R.id.tvDetailUpdated);
+        tvLastPrice = findViewById(R.id.tvDetailBeforeUpdatePrice);
 
         if(getIntent().hasExtra("URL") && getIntent().hasExtra("Types")){
             
@@ -49,15 +53,21 @@ public class DetailActivity extends AppCompatActivity {
                             dialog.dismiss();
                             try{
                                 DecimalFormat formatter = new DecimalFormat("#,###,###");
-                                DateTimeFormatter parser = DateTimeFormatter.ISO_DATE_TIME;
+//                                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-ddThh:mm:ssZ");
 
                                 for(int i = 0; i < response.length(); i++){
                                     tvName.setText("Name : " + response.getJSONObject(i).get("name").toString());
                                     tvTypes.setText("Types : " + getIntent().getStringExtra("Types"));
-                                    tvPrice.setText("Price : " + formatter.format(response.getJSONObject(i).getJSONObject("sea").get("latest"))  + " zeny");
-//
-                                    tvUpdated.setText("Last Updated : " + response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString());
-                                    //(response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString());
+                                    tvLastPrice.setText("Previous Price : " + formatter.format(response.getJSONObject(i).getJSONObject("sea").getJSONObject("week").getJSONArray("data").getJSONObject(5).getInt("price")) + " zeny");
+
+                                    tvPrice.setText("Current Price : " + formatter.format(response.getJSONObject(i).getJSONObject("sea").get("latest"))  + " zeny");
+
+                                    String date =response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString().replaceAll("T"," ").replaceAll("Z"," GMT/UTC Time");
+                                    if(!date.equals("")){
+                                        tvUpdated.setText("Last Updated : " + date);
+                                    }else{
+                                        tvUpdated.setText("Last Updated : " + response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString());
+                                    }
                                 }
                             }
                             catch (Exception e)

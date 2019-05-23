@@ -2,6 +2,7 @@ package com.example.roexchange;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -29,27 +30,28 @@ import com.example.roexchange.model.Item;
 import org.json.JSONArray;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnSearch;
+    Button btnSearch, btnReset;
     EditText etSearch;
     RecyclerView rvItem;
-    ArrayList<Item> listItem;
+    ArrayList<Item> listItem = new ArrayList<>();
+    ArrayList<Item> copyList = new ArrayList<>();
     CheckBox cbFilter;
     Spinner spinnerFilter;
     private Context context;
     String URL ="https://www.romexchange.com/api/items.json";
-
+    final ItemAdapter itemAdapter = new ItemAdapter(this,listItem);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         context = this;
-        listItem = new ArrayList<>();
-        final ItemAdapter itemAdapter =new ItemAdapter(this,listItem);
+
         btnSearch = findViewById(R.id.btnSearch);
+        btnReset = findViewById(R.id.reset);
         rvItem = findViewById(R.id.rvItem);
         etSearch = findViewById(R.id.etSearchItem);
         rvItem.setLayoutManager(new LinearLayoutManager(this));
@@ -62,46 +64,47 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                final ProgressDialog dialog = ProgressDialog.show(context, null, "Fetching data, please wait");
-                String name = etSearch.getText().toString().replaceAll("\\s+","%20");
-                if(!etSearch.equals("")){
-                    itemAdapter.clear();
-                    JsonArrayRequest request = new JsonArrayRequest(
-                            Request.Method.GET,
-                            "https://www.romexchange.com/api?exact=false&item=" +name ,
-                            null,
-                            new Response.Listener<JSONArray>() {
-                                @Override
-                                public void onResponse(JSONArray response) {
-                                    dialog.dismiss();
-                                    try{
-                                        for(int i = 0; i <response.length(); i++){
-                                            Item item = new Item();
-                                            item.setName(response.getJSONObject(i).get("name").toString());
-                                            item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-                                            listItem.add(item);
-                                        }
-                                        itemAdapter.notifyDataSetChanged();
-                                    }
-                                    catch (Exception e){
-
-                                    }
-
-                                }
-                            },
-                            new Response.ErrorListener() {
-                                @Override
-                                public void onErrorResponse(VolleyError error) {
-                                    dialog.dismiss();
-                                    Toast.makeText(MainActivity.this, "Error occured", Toast.LENGTH_SHORT).show();
-                                }
+//            final ProgressDialog dialog = ProgressDialog.show(context, null, "Fetching data, please wait");
+            String name = etSearch.getText().toString().replaceAll("\\s+","%20");
+            if(!etSearch.equals("")){
+                itemAdapter.clear();
+                JsonArrayRequest request = new JsonArrayRequest(
+                    Request.Method.GET,
+                    "https://www.romexchange.com/api?exact=false&item=" +name ,
+                    null,
+                    new Response.Listener<JSONArray>() {
+                        @Override
+                        public void onResponse(JSONArray response) {
+//                                    dialog.dismiss();
+                        try{
+                            for(int i = 0; i <response.length(); i++){
+                                Item item = new Item();
+                                item.setName(response.getJSONObject(i).get("name").toString());
+                                item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
+                                listItem.add(item);
                             }
-                    );
-                    final RequestQueue requestQueue = Volley.newRequestQueue(context);
-                    requestQueue.add(request);
-                }else{
-                    Toast.makeText(MainActivity.this, "Null", Toast.LENGTH_SHORT).show();
-                }
+                            itemAdapter.notifyDataSetChanged();
+                        }
+                        catch (Exception e){
+
+                        }
+
+                        }
+                    },
+                    new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+//                                    dialog.dismiss();
+                            Toast.makeText(MainActivity.this, "Error occured", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                );
+                final RequestQueue requestQueue = Volley.newRequestQueue(context);
+                requestQueue.add(request);
+            }else{
+
+                Toast.makeText(MainActivity.this, "Null", Toast.LENGTH_SHORT).show();
+            }
 
             }
 
@@ -114,60 +117,13 @@ public class MainActivity extends AppCompatActivity {
             itemAdapter.clear();
             if(cbFilter.isChecked()) {
                 spinnerFilter.setVisibility(View.VISIBLE);
+                getFilteredData();
             }else {
                 spinnerFilter.setVisibility(View.INVISIBLE);
+                getAllData();
             }
-
-            final ProgressDialog dialog = ProgressDialog.show(context, null, "Fetching data, please wait");
-
-            JsonArrayRequest request = new JsonArrayRequest(
-                    Request.Method.GET,
-                    URL,
-                    null,
-                    new Response.Listener<JSONArray>() {
-                        @Override
-                        public void onResponse(JSONArray response) {
-                            dialog.dismiss();
-                            try{
-
-                                for(int i = 0; i <response.length(); i++){
-                                    Item item = new Item();
-                                    if(cbFilter.isChecked()){
-                                        if(response.getJSONObject(i).getInt("type") != spinnerFilter.getSelectedItemPosition()+1){
-                                            continue;
-                                        }else{
-                                            item.setName(response.getJSONObject(i).get("name").toString());
-                                            item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-                                            listItem.add(item);
-                                        }
-                                    }else{
-                                        item.setName(response.getJSONObject(i).get("name").toString());
-                                        item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-                                        listItem.add(item);
-                                    }
-                                }
-                                itemAdapter.notifyDataSetChanged();
-                            }
-                            catch (Exception e){
-
-                            }
-                        }
-                    },
-                    new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-                            dialog.dismiss();
-                            Toast.makeText(MainActivity.this, "Error occured", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-            );
-
-            final RequestQueue requestQueue = Volley.newRequestQueue(context);
-            requestQueue.add(request);
-
             }
         });
-
 
         spinnerFilter.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -238,50 +194,64 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 //                Toast.makeText(context,  s, Toast.LENGTH_SHORT).show();
-                itemAdapter.clear();
-                JsonArrayRequest request = new JsonArrayRequest(
-                        Request.Method.GET,
-                        "https://www.romexchange.com/api?exact=false&item=" + s.toString() ,
-                        null,
-                        new Response.Listener<JSONArray>() {
-                            @Override
-                            public void onResponse(JSONArray response) {
-
-                                try{
-                                    for(int i = 0; i <response.length(); i++){
-                                        Item item = new Item();
-                                        item.setName(response.getJSONObject(i).get("name").toString());
-                                        item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-                                        listItem.add(item);
-                                    }
-                                    itemAdapter.notifyDataSetChanged();
-                                }
-                                catch (Exception e){
-
-                                }
-
-                            }
-                        },
-                        new Response.ErrorListener() {
-                            @Override
-                            public void onErrorResponse(VolleyError error) {
-
-                                Toast.makeText(MainActivity.this, "Error occured", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                );
-                final RequestQueue requestQueue = Volley.newRequestQueue(context);
-                requestQueue.add(request);
+//                itemAdapter.filter(etSearch.getText().toString().toLowerCase(Locale.getDefault()));
             }
+
 
             @Override
             public void afterTextChanged(Editable s) {
 
+//                JsonArrayRequest request = new JsonArrayRequest(
+//                        Request.Method.GET,
+//                        "https://www.romexchange.com/api?exact=false&item=" + s.toString() ,
+//                        null,
+//                        new Response.Listener<JSONArray>() {
+//                            @Override
+//                            public void onResponse(JSONArray response) {
+//
+//                                try{
+//                                    for(int i = 0; i <response.length(); i++){
+//                                        Item item = new Item();
+//                                        item.setName(response.getJSONObject(i).get("name").toString());
+//                                        item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
+//                                        listItem.add(item);
+//                                    }
+//                                    itemAdapter.notifyDataSetChanged();
+//                                }
+//                                catch (Exception e){
+//
+//                                }
+//
+//                            }
+//                        },
+//                        new Response.ErrorListener() {
+//                            @Override
+//                            public void onErrorResponse(VolleyError error) {
+//
+//                                Toast.makeText(MainActivity.this, "Error occured", Toast.LENGTH_SHORT).show();
+//                            }
+//                        }
+//                );
+//                final RequestQueue requestQueue = Volley.newRequestQueue(context);
+//                requestQueue.add(request);
             }
         });
 
-        final ProgressDialog dialog = ProgressDialog.show(this, null, "Fetching data, please wait");
+        btnReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                itemAdapter.clear();
+                getAllData();
+            }
+        });
+
+        getAllData();
+    }
+
+    public void getFilteredData(){
+        final ProgressDialog dialog = ProgressDialog.show(context, null, "Fetching data, please wait");
+        itemAdapter.clear();
         JsonArrayRequest request = new JsonArrayRequest(
                 Request.Method.GET,
                 URL,
@@ -289,24 +259,30 @@ public class MainActivity extends AppCompatActivity {
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-                        dialog.dismiss();
-                        try{
-
-                            for(int i = 0; i <response.length(); i++){
-                                Item item = new Item();
+                    dialog.dismiss();
+                    try{
+//                        Toast.makeText(context, String.valueOf(response.length()), Toast.LENGTH_SHORT).show();
+                        for(int i = 0; i <response.length(); i++){
+                            Item item = new Item();
+                            if(cbFilter.isChecked()){
+                                if(response.getJSONObject(i).getInt("type") != spinnerFilter.getSelectedItemPosition()+1){
+                                    continue;
+                                }else{
+                                    item.setName(response.getJSONObject(i).get("name").toString());
+                                    item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
+                                    listItem.add(item);
+                                }
+                            }else{
                                 item.setName(response.getJSONObject(i).get("name").toString());
                                 item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-//                                detailJson();
-                                //                                item.setType(response.getJSONObject(i).getInt("type"));
-//                                item.setLastPrice(response.getJSONObject(i).getJSONObject("sea").getInt("latest"));
-//                                item.setLastDate(response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString());
                                 listItem.add(item);
                             }
-                            itemAdapter.notifyDataSetChanged();
                         }
-                        catch (Exception e){
+                        itemAdapter.notifyDataSetChanged();
+                    }
+                    catch (Exception e){
 
-                        }
+                    }
                     }
                 },
                 new Response.ErrorListener() {
@@ -321,47 +297,44 @@ public class MainActivity extends AppCompatActivity {
         final RequestQueue requestQueue = Volley.newRequestQueue(context);
         requestQueue.add(request);
     }
+    public void getAllData(){
+        final ProgressDialog dialog = ProgressDialog.show(this, null, "Fetching data, please wait");
+        itemAdapter.clear();
+        JsonArrayRequest request = new JsonArrayRequest(
+            Request.Method.GET,
+            URL,
+            null,
+            new Response.Listener<JSONArray>() {
+                @Override
+                public void onResponse(JSONArray response) {
+                dialog.dismiss();
+                try{
+//                    Toast.makeText(context, String.valueOf(response.length()), Toast.LENGTH_SHORT).show();
+                    for(int i = 0; i <response.length(); i++){
+                        Item item = new Item();
+                        item.setName(response.getJSONObject(i).get("name").toString());
+                        item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
+                        listItem.add(item);
+                    }
+                    itemAdapter.notifyDataSetChanged();
+                }
+                catch (Exception e){
 
+                }
+                }
+            },
+            new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    dialog.dismiss();
+                    Toast.makeText(MainActivity.this, "Error occured", Toast.LENGTH_SHORT).show();
+                }
+            }
+        );
 
-//    public void detailJson(){
-//        final ProgressDialog dialog = ProgressDialog.show(context, null, "Fetching data, please wait");
-//        JsonArrayRequest request = new JsonArrayRequest(
-//                Request.Method.GET,
-//                "https://www.romexchange.com/api?exact=false&item=" +name ,
-//                null,
-//                new Response.Listener<JSONArray>() {
-//                    @Override
-//                    public void onResponse(JSONArray response) {
-//                        dialog.dismiss();
-//                        try{
-//                            for(int i = 0; i <response.length(); i++){
-//                                Item item = new Item();
-//                                item.setName(response.getJSONObject(i).get("name").toString());
-//                                int type = response.getJSONObject(i).getInt("type");
-//
-//                                item.setType(response.getJSONObject(i).getInt("type"));
-//                                item.setLastPrice(response.getJSONObject(i).getJSONObject("sea").getInt("latest"));
-//                                item.setLastDate(response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString());
-//                                listItem.add(item);
-//
-//                            }
-//                            itemAdapter.notifyDataSetChanged();
-//                        }
-//                        catch (Exception e){
-//
-//                        }
-//
-//                    }
-//                },
-//                new Response.ErrorListener() {
-//                    @Override
-//                    public void onErrorResponse(VolleyError error) {
-//                        dialog.dismiss();
-//                        Toast.makeText(MainActivity.this, "Error occured", Toast.LENGTH_SHORT).show();
-//                    }
-//                }
-//        );
-//    }
+        final RequestQueue requestQueue = Volley.newRequestQueue(context);
+        requestQueue.add(request);
+    }
     public String typeConvert(int type){
         switch (type){
             case 1:

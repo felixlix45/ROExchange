@@ -41,6 +41,13 @@
                 android:textColor="@color/colorBlack"/>
 
             <TextView
+                android:id="@+id/tvDetailBeforeUpdatePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
                 android:id="@+id/tvDetailPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -48,12 +55,15 @@
                 android:textSize="14dp"
                 android:textColor="@color/colorBlack"/>
 
+
             <TextView
                 android:id="@+id/tvDetailUpdated"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="14dp"
                 android:textColor="@color/colorBlack"/>
+
+
         </LinearLayout>
 
     </LinearLayout>

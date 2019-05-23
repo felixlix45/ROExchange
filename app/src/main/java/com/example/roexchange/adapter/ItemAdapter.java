@@ -18,22 +18,46 @@ import com.example.roexchange.model.Item;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
+import java.util.List;
+import java.util.Locale;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
     Context context;
     ArrayList<Item> itemList;
+    ArrayList<Item> copyList;
 
     public void clear(){
         itemList.clear();
         notifyDataSetChanged();
     }
 
+    public void addAll(ArrayList<Item> copyList){
+        itemList = (ArrayList<Item>)copyList.clone();
+        notifyDataSetChanged();
+    }
 
     public ItemAdapter(Context context, ArrayList<Item> itemList){
         this.context = context;
         this.itemList = itemList;
+        this.copyList = new ArrayList<>();
+    }
+
+    public void filter(String text){
+        text = text.toLowerCase(Locale.getDefault());
+        itemList.clear();
+        if(text.length() == 0){
+            itemList = (ArrayList<Item>)copyList.clone();
+        }else{
+            for (Item item : copyList) {
+                if (item.getName().toLowerCase(Locale.getDefault()).contains(text)) {
+                    itemList.add(item);
+                }
+            }
+        }
+        notifyDataSetChanged();
     }
 
 
@@ -48,7 +72,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int i) {
         viewHolder.bind(itemList.get(i));
-
+//        copyList = (ArrayList<Item>)itemList.clone();
         viewHolder.layoutParent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,37 +93,19 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView tvTitle, tvprice, tvDate, tvTypes;
+        TextView tvTitle, tvTypes;
         LinearLayout layoutParent;
 
         public ViewHolder(View itemView){
             super(itemView);
             tvTitle = itemView.findViewById(R.id.tvItemName);
-//            tvprice = itemView.findViewById(R.id.tvPriceNow);
-//            tvDate = itemView.findViewById(R.id.tvLastUpdated);
             tvTypes = itemView.findViewById(R.id.tvTypes);
             layoutParent = itemView.findViewById(R.id.layoutParent);
         }
 
         public void bind(Item item){
-//            SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
-//            SimpleDateFormat outputFormat = new SimpleDateFormat("E, dd-MM-yyyy HH:mm:ss Z" );
-//            Date date = new Date();
-//            try {
-//                date = inputFormat.parse(item.getLastDate());
-//                String formattedDate = outputFormat.format(date);
-//                Toast.makeText(context, formattedDate, Toast.LENGTH_SHORT).show();
-//
-//            } catch (ParseException e) {
-//                e.printStackTrace();
-//            }
-
             tvTypes.setText(item.getTypes());
             tvTitle.setText(item.getName());
-//            tvprice.setText("Price : " + String.valueOf(item.getLastPrice()));
-//            tvDate.setText(item.getLastDate());
-
-
         }
 
     }
