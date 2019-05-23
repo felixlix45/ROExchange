@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">ROExchange</string>
+    <string name="filter_prompt">Choose Filter</string>
+
+    <string-array name="filter_type">
+        <item>Weapons</item>
+        <item>Off-Hand</item>
+        <item>Armors</item>
+        <item>Garments</item>
+        <item>Footgears</item>
+        <item>Accessory</item>
+        <item>Blueprint</item>
+        <item>Potion/Effect</item>
+        <item>Refine</item>
+        <item>Scroll/Album</item>
+        <item>Material</item>
+        <item>Holiday Material</item>
+        <item>Pet Material</item>
+        <item>Premium</item>
+        <item>Costume</item>
+        <item>Head</item>
+        <item>Face</item>
+        <item>Back</item>
+        <item>Mouth</item>
+        <item>Tail</item>
+        <item>Weapon Card</item>
+        <item>Off-Hand Cardd</item>
+        <item>Armor Card</item>
+        <item>Garments Card</item>
+        <item>Shoe Card</item>
+        <item>Accessory Card</item>
+        <item>Headwear Card</item>
+    </string-array>
 </resources>

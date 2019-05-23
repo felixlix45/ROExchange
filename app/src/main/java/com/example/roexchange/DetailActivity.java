@@ -1,6 +1,7 @@
 package com.example.roexchange;
 
 import android.app.ProgressDialog;
+import android.icu.text.DateTimePatternGenerator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -15,6 +16,10 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.w3c.dom.Text;
+
+import java.text.DecimalFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -43,11 +48,16 @@ public class DetailActivity extends AppCompatActivity {
                         public void onResponse(JSONArray response) {
                             dialog.dismiss();
                             try{
+                                DecimalFormat formatter = new DecimalFormat("#,###,###");
+                                DateTimeFormatter parser = DateTimeFormatter.ISO_DATE_TIME;
+
                                 for(int i = 0; i < response.length(); i++){
                                     tvName.setText("Name : " + response.getJSONObject(i).get("name").toString());
                                     tvTypes.setText("Types : " + getIntent().getStringExtra("Types"));
-                                    tvPrice.setText("Price : " + String.valueOf(response.getJSONObject(i).getJSONObject("sea").get("latest")) + " zeny");
+                                    tvPrice.setText("Price : " + formatter.format(response.getJSONObject(i).getJSONObject("sea").get("latest"))  + " zeny");
+//
                                     tvUpdated.setText("Last Updated : " + response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString());
+                                    //(response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString());
                                 }
                             }
                             catch (Exception e)
