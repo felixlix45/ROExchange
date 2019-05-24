@@ -7,8 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -37,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnSearch, btnReset;
     EditText etSearch;
     RecyclerView rvItem;
+    Toolbar toolbar;
     ArrayList<Item> listItem = new ArrayList<>();
     ArrayList<Item> copyList = new ArrayList<>();
     CheckBox cbFilter;
@@ -44,6 +49,26 @@ public class MainActivity extends AppCompatActivity {
     private Context context;
     String URL ="https://www.romexchange.com/api/items.json";
     final ItemAdapter itemAdapter = new ItemAdapter(this,listItem);
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_item,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.itemFav:
+                Toast.makeText(context, "Favorite Coming Soon", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +83,9 @@ public class MainActivity extends AppCompatActivity {
         rvItem.setAdapter(itemAdapter);
         cbFilter = findViewById(R.id.cbFilter);
         spinnerFilter = findViewById(R.id.spinnerFilter);
+        toolbar = findViewById(R.id.toolbar);
 
+        setSupportActionBar(toolbar);
 
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,6 +1,7 @@
 package com.example.roexchange;
 
 import android.app.ProgressDialog;
+import android.graphics.Color;
 import android.icu.text.DateTimePatternGenerator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
@@ -56,10 +58,14 @@ public class DetailActivity extends AppCompatActivity{
 
 //        mChart.setOnChartGestureListener(this);
 //        mChart.setOnChartValueSelectedListener(this);
-
+        Description desc = new Description();
+        desc.setText("");
         mChart.setDragEnabled(true);
         mChart.setScaleEnabled(false);
         mChart.setPinchZoom(true);
+        mChart.setNoDataText("CLICK ME MASTER!");
+        mChart.setDescription(desc);
+        mChart.setDrawBorders(true);
 
 
         if(getIntent().hasExtra("URL") && getIntent().hasExtra("Types")){
@@ -105,6 +111,13 @@ public class DetailActivity extends AppCompatActivity{
                                 LineDataSet set1 = new LineDataSet(yValue, "SEA Server");
 
                                 set1.setFillAlpha(200);
+                                set1.setColor(Color.BLUE);
+                                set1.setLineWidth(2.5f);
+                                set1.setCircleColor(Color.BLUE);
+                                set1.setCircleHoleColor(Color.BLUE);
+                                set1.setCircleRadius(5f);
+                                set1.notifyDataSetChanged();
+
 
                                 ArrayList<ILineDataSet> dataSets = new ArrayList<>();
                                 dataSets.add(set1);
