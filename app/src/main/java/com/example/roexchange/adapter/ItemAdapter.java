@@ -7,6 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -60,7 +62,6 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         notifyDataSetChanged();
     }
 
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -83,6 +84,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
                 context.startActivity(intent);
             }
         });
+        viewHolder.btnFavorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "Item " + itemList.get(i).getName() + " added to favorite" , Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 
@@ -94,13 +101,17 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         TextView tvTitle, tvTypes;
+        ImageButton btnFavorite;
         LinearLayout layoutParent;
+
 
         public ViewHolder(View itemView){
             super(itemView);
+
             tvTitle = itemView.findViewById(R.id.tvItemName);
             tvTypes = itemView.findViewById(R.id.tvTypes);
             layoutParent = itemView.findViewById(R.id.layoutParent);
+            btnFavorite = itemView.findViewById(R.id.btnFavorite);
         }
 
         public void bind(Item item){
