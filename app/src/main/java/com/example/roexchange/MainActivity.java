@@ -68,44 +68,49 @@ public class MainActivity extends AppCompatActivity {
             String name = etSearch.getText().toString().replaceAll("\\s+","%20");
             if(!etSearch.equals("")){
                 itemAdapter.clear();
-                JsonArrayRequest request = new JsonArrayRequest(
-                    Request.Method.GET,
-                    "https://www.romexchange.com/api?exact=false&item=" +name ,
-                    null,
-                    new Response.Listener<JSONArray>() {
-                        @Override
-                        public void onResponse(JSONArray response) {
+                if(!cbFilter.isChecked()){
+                    JsonArrayRequest request = new JsonArrayRequest(
+                            Request.Method.GET,
+                            "https://www.romexchange.com/api?exact=false&item=" +name ,
+                            null,
+                            new Response.Listener<JSONArray>() {
+                                @Override
+                                public void onResponse(JSONArray response) {
 //                                    dialog.dismiss();
-                        try{
-                            for(int i = 0; i <response.length(); i++){
-                                Item item = new Item();
-                                item.setName(response.getJSONObject(i).get("name").toString());
-                                item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-                                listItem.add(item);
+                                    try{
+                                        for(int i = 0; i <response.length(); i++){
+                                            Item item = new Item();
+                                            item.setName(response.getJSONObject(i).get("name").toString());
+                                            item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
+                                            listItem.add(item);
+                                        }
+                                        itemAdapter.notifyDataSetChanged();
+                                    }
+                                    catch (Exception e){
+
+                                    }
+
+                                }
+                            },
+                            new Response.ErrorListener() {
+                                @Override
+                                public void onErrorResponse(VolleyError error) {
+//                                    dialog.dismiss();
+                                    Toast.makeText(MainActivity.this, "Error occured", Toast.LENGTH_SHORT).show();
+                                }
                             }
-                            itemAdapter.notifyDataSetChanged();
-                        }
-                        catch (Exception e){
+                    );
+                    final RequestQueue requestQueue = Volley.newRequestQueue(context);
+                    requestQueue.add(request);
+                }else{
+                    getFilteredData();
+                }
 
-                        }
 
-                        }
-                    },
-                    new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-//                                    dialog.dismiss();
-                            Toast.makeText(MainActivity.this, "Error occured", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                );
-                final RequestQueue requestQueue = Volley.newRequestQueue(context);
-                requestQueue.add(request);
             }else{
 
                 Toast.makeText(MainActivity.this, "Null", Toast.LENGTH_SHORT).show();
             }
-
             }
 
 
@@ -114,69 +119,20 @@ public class MainActivity extends AppCompatActivity {
         cbFilter.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-            itemAdapter.clear();
-            if(cbFilter.isChecked()) {
-                spinnerFilter.setVisibility(View.VISIBLE);
-                getFilteredData();
-            }else {
-                spinnerFilter.setVisibility(View.INVISIBLE);
-                getAllData();
-            }
+                if(cbFilter.isChecked()) {
+                    spinnerFilter.setVisibility(View.VISIBLE);
+                    getFilteredData();
+                }else {
+                    spinnerFilter.setVisibility(View.INVISIBLE);
+                    getAllData();
+                }
             }
         });
 
         spinnerFilter.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                Toast.makeText(context, String.valueOf(position), Toast.LENGTH_SHORT).show();
-                itemAdapter.clear();
-                final ProgressDialog dialog = ProgressDialog.show(context, null, "Fetching data, please wait");
-
-                JsonArrayRequest request = new JsonArrayRequest(
-                        Request.Method.GET,
-                        URL,
-                        null,
-                        new Response.Listener<JSONArray>() {
-                            @Override
-                            public void onResponse(JSONArray response) {
-                                dialog.dismiss();
-                                try{
-
-                                    for(int i = 0; i <response.length(); i++){
-                                        Item item = new Item();
-                                        if(cbFilter.isChecked()){
-                                            if(response.getJSONObject(i).getInt("type") != spinnerFilter.getSelectedItemPosition()+1){
-                                                continue;
-                                            }else{
-                                                item.setName(response.getJSONObject(i).get("name").toString());
-                                                item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-                                                listItem.add(item);
-                                            }
-                                        }else{
-                                            item.setName(response.getJSONObject(i).get("name").toString());
-                                            item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-                                            listItem.add(item);
-                                        }
-                                    }
-                                    itemAdapter.notifyDataSetChanged();
-                                }
-                                catch (Exception e){
-
-                                }
-                            }
-                        },
-                        new Response.ErrorListener() {
-                            @Override
-                            public void onErrorResponse(VolleyError error) {
-                                dialog.dismiss();
-                                Toast.makeText(MainActivity.this, "Error occured", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                );
-
-                final RequestQueue requestQueue = Volley.newRequestQueue(context);
-                requestQueue.add(request);
-
+                getFilteredData();
             }
 
             @Override
@@ -250,39 +206,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void getFilteredData(){
-        final ProgressDialog dialog = ProgressDialog.show(context, null, "Fetching data, please wait");
         itemAdapter.clear();
+        int pos = spinnerFilter.getSelectedItemPosition()+1;
+        String URLFiltered = "https://www.romexchange.com/api?exact=false&item=" + etSearch.getText().toString().replaceAll("\\s+","%20") + "&type=" + pos;
+        final ProgressDialog dialog = ProgressDialog.show(context, null, "Fetching data, please wait");
         JsonArrayRequest request = new JsonArrayRequest(
                 Request.Method.GET,
-                URL,
+                URLFiltered,
                 null,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-                    dialog.dismiss();
-                    try{
-//                        Toast.makeText(context, String.valueOf(response.length()), Toast.LENGTH_SHORT).show();
-                        for(int i = 0; i <response.length(); i++){
-                            Item item = new Item();
-                            if(cbFilter.isChecked()){
-                                if(response.getJSONObject(i).getInt("type") != spinnerFilter.getSelectedItemPosition()+1){
-                                    continue;
-                                }else{
-                                    item.setName(response.getJSONObject(i).get("name").toString());
-                                    item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-                                    listItem.add(item);
-                                }
-                            }else{
+                        dialog.dismiss();
+                        try{
+
+                            for(int i = 0; i <response.length(); i++){
+                                Item item = new Item();
                                 item.setName(response.getJSONObject(i).get("name").toString());
                                 item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
                                 listItem.add(item);
                             }
+                            itemAdapter.notifyDataSetChanged();
                         }
-                        itemAdapter.notifyDataSetChanged();
-                    }
-                    catch (Exception e){
+                        catch (Exception e){
 
-                    }
+                        }
                     }
                 },
                 new Response.ErrorListener() {
