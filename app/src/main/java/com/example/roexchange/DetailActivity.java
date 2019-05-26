@@ -5,10 +5,11 @@ import android.graphics.Color;
 import android.icu.text.DateTimePatternGenerator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
+
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -41,7 +42,7 @@ import java.util.Map;
 public class DetailActivity extends AppCompatActivity{
 
     TextView tvName, tvTypes, tvPrice, tvUpdated, tvLastPrice;
-
+    Toolbar toolbar;
     private LineChart mChart;
 
     @Override
@@ -54,6 +55,9 @@ public class DetailActivity extends AppCompatActivity{
         tvPrice = findViewById(R.id.tvDetailPrice);
         tvUpdated = findViewById(R.id.tvDetailUpdated);
         tvLastPrice = findViewById(R.id.tvDetailBeforeUpdatePrice);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         mChart =findViewById(R.id.LineChart);
 
 //        mChart.setOnChartGestureListener(this);
@@ -107,23 +111,25 @@ public class DetailActivity extends AppCompatActivity{
                                     }else{
                                         tvUpdated.setText("Last Updated : " + response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString());
                                     }
+                                    LineDataSet set1 = new LineDataSet(yValue, "SEA Server");
+
+                                    set1.setFillAlpha(200);
+                                    set1.setColor(Color.BLUE);
+                                    set1.setLineWidth(2.5f);
+                                    set1.setCircleColor(Color.BLUE);
+                                    set1.setCircleHoleColor(Color.BLUE);
+                                    set1.setCircleRadius(5f);
+                                    set1.notifyDataSetChanged();
+
+
+                                    ArrayList<ILineDataSet> dataSets = new ArrayList<>();
+                                    dataSets.add(set1);
+
+                                    LineData data = new LineData(dataSets);
+                                    mChart.setData(data);
+                                    getSupportActionBar().setTitle(tvName.getText());
                                 }
-                                LineDataSet set1 = new LineDataSet(yValue, "SEA Server");
 
-                                set1.setFillAlpha(200);
-                                set1.setColor(Color.BLUE);
-                                set1.setLineWidth(2.5f);
-                                set1.setCircleColor(Color.BLUE);
-                                set1.setCircleHoleColor(Color.BLUE);
-                                set1.setCircleRadius(5f);
-                                set1.notifyDataSetChanged();
-
-
-                                ArrayList<ILineDataSet> dataSets = new ArrayList<>();
-                                dataSets.add(set1);
-
-                                LineData data = new LineData(dataSets);
-                                mChart.setData(data);
                             }
                             catch (Exception e)
                             {

@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailActivity"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:orientation="vertical">
 
     <include
         android:id="@+id/toolbar"
