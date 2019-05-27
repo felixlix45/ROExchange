@@ -36,6 +36,10 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         notifyDataSetChanged();
     }
 
+    public int size(){
+        return itemList.size();
+    }
+
     public void addAll(ArrayList<Item> copyList){
         itemList = (ArrayList<Item>)copyList.clone();
         notifyDataSetChanged();
@@ -65,7 +69,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(context).inflate(R.layout.list_view_item, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.list_view_item, viewGroup, false);
 
         return new ViewHolder(view);
     }
@@ -77,17 +81,17 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         viewHolder.layoutParent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, DetailActivity.class);
+                Intent intent = new Intent(v.getContext(), DetailActivity.class);
                 String name = itemList.get(i).getName().toString().replaceAll("\\s+","%20");
                 intent.putExtra("URL", name);
                 intent.putExtra("Types", itemList.get(i).getTypes());
-                context.startActivity(intent);
+                v.getContext().startActivity(intent);
             }
         });
         viewHolder.btnFavorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Item " + itemList.get(i).getName() + " added to favorite" , Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(), "Item " + itemList.get(i).getName() + " has been added to favorite" , Toast.LENGTH_SHORT).show();
             }
         });
     }

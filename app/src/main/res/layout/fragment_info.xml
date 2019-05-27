@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:text="Element"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tableElement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/element_table"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:text="Weapon Size Penalty"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tableWeaponPenalty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/weapon_penalty"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:text="Level Gap Penalty"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tableLevelGap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/level_gap"
+            android:adjustViewBounds="true"
+            android:paddingBottom="10dp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

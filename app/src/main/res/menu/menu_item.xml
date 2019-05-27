@@ -2,9 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/itemFav"
+    <item
+        android:id="@+id/itemFav"
         android:icon="@drawable/ic_star_black_24dp"
         android:title="Favorite"
         app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/itemInfo"
+        android:icon="@drawable/ic_info_white_24dp"
+        android:title="Info"
+        app:showAsAction="never"/>
 
 </menu>
