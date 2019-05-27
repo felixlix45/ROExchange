@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
     Button btnSearch, btnReset;
     EditText etSearch;
     RecyclerView rvItem;
-    Toolbar toolbar;
     ArrayList<Item> listItem = new ArrayList<>();
     ArrayList<Item> copyList = new ArrayList<>();
     CheckBox cbFilter;
@@ -49,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
     private Context context;
     String URL ="https://www.romexchange.com/api/items.json";
     final ItemAdapter itemAdapter = new ItemAdapter(this,listItem);
+
+    Toolbar toolbar;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.itemFav:
-                Toast.makeText(context, "Favorite Coming Soon", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Favorite Coming Soon", Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -73,8 +74,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        context = this;
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
+        context = this;
         btnSearch = findViewById(R.id.btnSearch);
         btnReset = findViewById(R.id.reset);
         rvItem = findViewById(R.id.rvItem);
@@ -83,14 +86,11 @@ public class MainActivity extends AppCompatActivity {
         rvItem.setAdapter(itemAdapter);
         cbFilter = findViewById(R.id.cbFilter);
         spinnerFilter = findViewById(R.id.spinnerFilter);
-        toolbar = findViewById(R.id.toolbar);
 
-        setSupportActionBar(toolbar);
 
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
 //            final ProgressDialog dialog = ProgressDialog.show(context, null, "Fetching data, please wait");
             String name = etSearch.getText().toString().replaceAll("\\s+","%20");
             if(!etSearch.equals("")){
@@ -223,12 +223,10 @@ public class MainActivity extends AppCompatActivity {
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 itemAdapter.clear();
                 getAllData();
             }
         });
-
         getAllData();
     }
 
