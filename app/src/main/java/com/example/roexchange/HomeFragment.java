@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
+import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
@@ -48,6 +49,8 @@ public class HomeFragment extends Fragment {
     private Context context;
     String URL ="https://www.romexchange.com/api/items.json";
     final ItemAdapter itemAdapter = new ItemAdapter(getActivity(), listItem);
+
+
 
     @Nullable
     @Override
@@ -153,8 +156,7 @@ public class HomeFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-//                Toast.makeText(context,  s, Toast.LENGTH_SHORT).show();
-//                itemAdapter.filter(etSearch.getText().toString().toLowerCase(Locale.getDefault()));
+
             }
 
 
@@ -209,7 +211,6 @@ public class HomeFragment extends Fragment {
         if(itemAdapter.size() == 0){
             getAllData();
         }
-
         return v;
     }
 
