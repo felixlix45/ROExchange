@@ -28,14 +28,16 @@ import java.util.Locale;
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
     Context context;
-
-
     ArrayList<Item> itemList;
     ArrayList<Item> copyList;
 
     public void clear(){
         itemList.clear();
         notifyDataSetChanged();
+    }
+
+    public int size(){
+        return itemList.size();
     }
 
     public void addAll(ArrayList<Item> copyList){
@@ -79,17 +81,17 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         viewHolder.layoutParent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, DetailActivity.class);
+                Intent intent = new Intent(v.getContext(), DetailActivity.class);
                 String name = itemList.get(i).getName().toString().replaceAll("\\s+","%20");
                 intent.putExtra("URL", name);
                 intent.putExtra("Types", itemList.get(i).getTypes());
-                context.startActivity(intent);
+                v.getContext().startActivity(intent);
             }
         });
         viewHolder.btnFavorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Item " + itemList.get(i).getName() + " added to favorite" , Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(), "Item " + itemList.get(i).getName() + " has been added to favorite" , Toast.LENGTH_SHORT).show();
             }
         });
     }

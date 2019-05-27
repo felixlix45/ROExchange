@@ -201,18 +201,22 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 itemAdapter.clear();
+                cbFilter.setChecked(false);
+                etSearch.setText("");
                 getAllData();
             }
         });
+        if(itemAdapter.size() == 0){
+            getAllData();
+        }
 
-        getAllData();
         return v;
     }
 
     public void getFilteredData(){
         itemAdapter.clear();
-        int pos = spinnerFilter.getSelectedItemPosition()+1;
-        String URLFiltered = "https://www.romexchange.com/api?exact=false&item=" + etSearch.getText().toString().replaceAll("\\s+","%20") + "&type=" + pos;
+        final int pos = spinnerFilter.getSelectedItemPosition()+1;
+        String URLFiltered = "https://www.romexchange.com/api/items.json";//exact=false&item=" + etSearch.getText().toString().replaceAll("\\s+","%20") + "&type=" + pos;
         final ProgressDialog dialog = ProgressDialog.show(getActivity(), null, "Fetching data, please wait");
         JsonArrayRequest request = new JsonArrayRequest(
                 Request.Method.GET,
@@ -225,10 +229,13 @@ public class HomeFragment extends Fragment {
                         try{
 
                             for(int i = 0; i <response.length(); i++){
-                                Item item = new Item();
-                                item.setName(response.getJSONObject(i).get("name").toString());
-                                item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-                                listItem.add(item);
+                                if(response.getJSONObject(i).getInt("type") == pos){
+                                    Item item = new Item();
+                                    item.setName(response.getJSONObject(i).get("name").toString());
+                                    item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
+                                    listItem.add(item);
+                                }
+
                             }
                             itemAdapter.notifyDataSetChanged();
                         }

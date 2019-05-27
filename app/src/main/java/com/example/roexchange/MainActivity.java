@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.itemFav:
                 Toast.makeText(this, "Favorite Coming Soon", Toast.LENGTH_SHORT).show();
                 return true;
+            case R.id.itemInfo:
+                Toast.makeText(this, "Thanks ROMExchange.com for the API :)", Toast.LENGTH_SHORT).show();
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -74,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.nav_info:
                     selectedFragment = new InfoFragment();
-                    Toast.makeText(MainActivity.this, "Coming Soon!!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.nav_more:
                     selectedFragment = new MoreFragment();
