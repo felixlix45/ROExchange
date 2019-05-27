@@ -20,6 +20,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -46,6 +47,7 @@ public class HomeFragment extends Fragment {
     ArrayList<Item> copyList = new ArrayList<>();
     CheckBox cbFilter;
     Spinner spinnerFilter;
+    ProgressBar progressBar;
     private Context context;
     String URL ="https://www.romexchange.com/api/items.json";
     final ItemAdapter itemAdapter = new ItemAdapter(getActivity(), listItem);
@@ -63,6 +65,8 @@ public class HomeFragment extends Fragment {
         etSearch = v.findViewById(R.id.etSearchItem);
         rvItem.setLayoutManager(new LinearLayoutManager(getActivity()));
         rvItem.setAdapter(itemAdapter);
+        progressBar = v.findViewById(R.id.progressBar);
+        progressBar.setMax(100);
 
         cbFilter = v.findViewById(R.id.cbFilter);
         spinnerFilter = v.findViewById(R.id.spinnerFilter);
@@ -71,6 +75,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 //            final ProgressDialog dialog = ProgressDialog.show(context, null, "Fetching data, please wait");
+                progressBar.setVisibility(View.VISIBLE);
                 String name = etSearch.getText().toString().replaceAll("\\s+","%20");
                 if(!etSearch.equals("")){
                     itemAdapter.clear();
@@ -82,6 +87,7 @@ public class HomeFragment extends Fragment {
                                 new Response.Listener<JSONArray>() {
                                     @Override
                                     public void onResponse(JSONArray response) {
+                                        progressBar.setVisibility(View.GONE);
 //                                    dialog.dismiss();
                                         try{
                                             for(int i = 0; i <response.length(); i++){
@@ -102,6 +108,7 @@ public class HomeFragment extends Fragment {
                                     @Override
                                     public void onErrorResponse(VolleyError error) {
 //                                    dialog.dismiss();
+                                        progressBar.setVisibility(View.GONE);
                                         Toast.makeText(getActivity(), "Error occured", Toast.LENGTH_SHORT).show();
                                     }
                                 }
@@ -218,7 +225,8 @@ public class HomeFragment extends Fragment {
         itemAdapter.clear();
         final int pos = spinnerFilter.getSelectedItemPosition()+1;
         String URLFiltered = "https://www.romexchange.com/api/items.json";//exact=false&item=" + etSearch.getText().toString().replaceAll("\\s+","%20") + "&type=" + pos;
-        final ProgressDialog dialog = ProgressDialog.show(getActivity(), null, "Fetching data, please wait");
+//        final ProgressDialog dialog = ProgressDialog.show(getActivity(), null, "Fetching data, please wait");
+        progressBar.setVisibility(View.VISIBLE);
         JsonArrayRequest request = new JsonArrayRequest(
                 Request.Method.GET,
                 URLFiltered,
@@ -226,7 +234,8 @@ public class HomeFragment extends Fragment {
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-                        dialog.dismiss();
+                        progressBar.setVisibility(View.GONE);
+//                        dialog.dismiss();
                         try{
 
                             for(int i = 0; i <response.length(); i++){
@@ -242,13 +251,15 @@ public class HomeFragment extends Fragment {
                         }
                         catch (Exception e){
 
+
                         }
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        dialog.dismiss();
+//                        dialog.dismiss();
+                        progressBar.setVisibility(View.GONE);
                         Toast.makeText(getActivity(), "Error occured", Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -258,7 +269,9 @@ public class HomeFragment extends Fragment {
         requestQueue.add(request);
     }
     public void getAllData(){
-        final ProgressDialog dialog = ProgressDialog.show(getActivity(), null, "Fetching data, please wait");
+
+//        final ProgressDialog dialog = ProgressDialog.show(getActivity(), null, "Fetching data, please wait");
+        progressBar.setVisibility(View.VISIBLE);
         itemAdapter.clear();
         JsonArrayRequest request = new JsonArrayRequest(
                 Request.Method.GET,
@@ -267,7 +280,8 @@ public class HomeFragment extends Fragment {
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-                        dialog.dismiss();
+                        progressBar.setVisibility(View.GONE);
+//                        dialog.dismiss();
                         try{
 //                    Toast.makeText(context, String.valueOf(response.length()), Toast.LENGTH_SHORT).show();
                             for(int i = 0; i <response.length(); i++){
@@ -286,7 +300,8 @@ public class HomeFragment extends Fragment {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        dialog.dismiss();
+                        progressBar.setVisibility(View.GONE);
+//                        dialog.dismiss();
                         Toast.makeText(getActivity(), "Error occured", Toast.LENGTH_SHORT).show();
                     }
                 }
