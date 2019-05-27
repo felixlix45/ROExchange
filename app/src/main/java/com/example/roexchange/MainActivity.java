@@ -41,16 +41,6 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnSearch, btnReset;
-    EditText etSearch;
-    RecyclerView rvItem;
-    ArrayList<Item> listItem = new ArrayList<>();
-    ArrayList<Item> copyList = new ArrayList<>();
-    CheckBox cbFilter;
-    Spinner spinnerFilter;
-    private Context context;
-    String URL ="https://www.romexchange.com/api/items.json";
-    final ItemAdapter itemAdapter = new ItemAdapter(this,listItem);
 
     Toolbar toolbar;
     BottomNavigationView bottomNav;
@@ -84,9 +74,11 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.nav_info:
                     selectedFragment = new InfoFragment();
+                    Toast.makeText(MainActivity.this, "Coming Soon!!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.nav_more:
                     selectedFragment = new MoreFragment();
+                    Toast.makeText(MainActivity.this, "Coming Soon!!", Toast.LENGTH_SHORT).show();
                     break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
