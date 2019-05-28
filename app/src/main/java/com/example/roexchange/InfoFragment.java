@@ -23,8 +23,6 @@ public class InfoFragment extends Fragment {
         ivWeapon = v.findViewById(R.id.tableWeaponPenalty);
         ivLevel = v.findViewById(R.id.tableLevelGap);
 
-
-
 //        ivElement.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {

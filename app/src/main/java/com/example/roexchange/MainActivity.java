@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.nav_more:
                     selectedFragment = new MoreFragment();
-                    Toast.makeText(MainActivity.this, "Coming Soon!!", Toast.LENGTH_SHORT).show();
                     break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
