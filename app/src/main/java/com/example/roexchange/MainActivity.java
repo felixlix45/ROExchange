@@ -2,6 +2,7 @@ package com.example.roexchange;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.PersistableBundle;
@@ -58,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.itemFav:
+                Intent intent = new Intent(getApplicationContext(), FavoriteActivity.class);
+                startActivity(intent);
                 Toast.makeText(this, "Favorite Coming Soon", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.itemInfo:

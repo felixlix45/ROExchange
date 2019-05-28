@@ -45,6 +45,7 @@ public class HomeFragment extends Fragment {
     RecyclerView rvItem;
     ArrayList<Item> listItem = new ArrayList<>();
     ArrayList<Item> copyList = new ArrayList<>();
+    ArrayList<Item> savedList = new ArrayList<>();
     CheckBox cbFilter;
     Spinner spinnerFilter;
     ProgressBar progressBar;
