@@ -73,6 +73,33 @@
             android:adjustViewBounds="true"
             android:paddingBottom="10dp"/>
 
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:text="Pet 100% Tips"
+            android:textStyle="bold"/>
+
+        <com.jsibbold.zoomage.ZoomageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tablePetTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pet_tips"
+            android:adjustViewBounds="true"
+            android:paddingBottom="10dp"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoResetMode="UNDER"
+            app:zoomage_autoCenter="true"
+            app:zoomage_zoomable="true"
+            app:zoomage_translatable="true"
+            app:zoomage_minScale="0.2"
+            app:zoomage_maxScale="4"/>
+
     </LinearLayout>
 
 </ScrollView>
