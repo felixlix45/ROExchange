@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -17,30 +18,73 @@
             android:textAlignment="center"
             android:textColor="@color/colorBlack"
             android:text="Valhala Guides"
-            android:textSize="15dp"
+            android:textSize="25dp"
             android:textStyle="bold"/>
 
-        <ImageView
+        <com.jsibbold.zoomage.ZoomageView
+            android:layout_marginTop="15dp"
             android:id="@+id/valhala40"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tvVal40" />
+            android:layout_below="@id/tvVal40"
+            android:adjustViewBounds="true"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoResetMode="UNDER"
+            app:zoomage_autoCenter="true"
+            app:zoomage_zoomable="true"
+            app:zoomage_translatable="true"
+            app:zoomage_minScale="0.2"
+            app:zoomage_maxScale="4"/>
 
-        <ImageView
+
+        <com.jsibbold.zoomage.ZoomageView
             android:id="@+id/valhala60"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/valhala40"/>
-        <ImageView
+            android:layout_below="@id/valhala40"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="15dp"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoResetMode="UNDER"
+            app:zoomage_autoCenter="true"
+            app:zoomage_zoomable="true"
+            app:zoomage_translatable="true"
+            app:zoomage_minScale="0.2"
+            app:zoomage_maxScale="4"/>
+
+        <com.jsibbold.zoomage.ZoomageView
             android:id="@+id/valhala80"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/valhala60"/>
-        <ImageView
+            android:layout_below="@id/valhala60"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="15dp"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoResetMode="UNDER"
+            app:zoomage_autoCenter="true"
+            app:zoomage_zoomable="true"
+            app:zoomage_translatable="true"
+            app:zoomage_minScale="0.2"
+            app:zoomage_maxScale="4"/>
+
+        <com.jsibbold.zoomage.ZoomageView
             android:id="@+id/valhala100"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/valhala80"/>
+            android:layout_below="@id/valhala80"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="15dp"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoResetMode="UNDER"
+            app:zoomage_autoCenter="true"
+            app:zoomage_zoomable="true"
+            app:zoomage_translatable="true"
+            app:zoomage_minScale="0.2"
+            app:zoomage_maxScale="4"/>
 
 
     </RelativeLayout>

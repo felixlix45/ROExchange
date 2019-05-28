@@ -260,7 +260,7 @@ public class HomeFragment extends Fragment {
                     public void onErrorResponse(VolleyError error) {
 //                        dialog.dismiss();
                         progressBar.setVisibility(View.GONE);
-                        Toast.makeText(getActivity(), "Error occured", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Check your internet connection and try again", Toast.LENGTH_SHORT).show();
                     }
                 }
         );
@@ -302,7 +302,7 @@ public class HomeFragment extends Fragment {
                     public void onErrorResponse(VolleyError error) {
                         progressBar.setVisibility(View.GONE);
 //                        dialog.dismiss();
-                        Toast.makeText(getActivity(), "Error occured", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Check your internet connection and try again", Toast.LENGTH_SHORT).show();
                     }
                 }
         );

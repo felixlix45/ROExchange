@@ -13,7 +13,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class InfoFragment extends Fragment {
-    ImageView ivElement, ivWeapon, ivLevel;
+    ImageView ivWeapon, ivLevel;
+    com.jsibbold.zoomage.ZoomageView ivElement;
 
     @Nullable
     @Override
