@@ -30,7 +30,7 @@ public class FavoriteActivity extends AppCompatActivity {
         savedList = gson.fromJson(json, type);
 
         if(savedList == null){
-            Toast.makeText(this, "Data is null", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Data is null", Toast.LENGTH_SHORT).show();
             savedList = new ArrayList<>();
         }
 

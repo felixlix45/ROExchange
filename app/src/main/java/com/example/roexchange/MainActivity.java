@@ -83,20 +83,26 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Something is wrong with your internet connection", Toast.LENGTH_SHORT).show();
                     }
                     break;
-                case R.id.nav_info:
-                    selectedFragment = new InfoFragment();
-                    toolbar.setTitle("Guides");
-                    if(!isNetworkAvailable()){
-                        Toast.makeText(getApplicationContext(), "Something is wrong with your internet connection", Toast.LENGTH_SHORT).show();
-                    }
+
+                case R.id.nav_et:
+                    selectedFragment = new EtFragment();
+                    toolbar.setTitle("ET Guides");
                     break;
-                case R.id.nav_more:
+                case R.id.nav_val:
                     selectedFragment = new MoreFragment();
                     toolbar.setTitle("Valhalla Guides");
                     if(!isNetworkAvailable()){
                         Toast.makeText(getApplicationContext(), "Something is wrong with your internet connection", Toast.LENGTH_SHORT).show();
                     }
                     break;
+                case R.id.nav_info:
+                    selectedFragment = new InfoFragment();
+                    toolbar.setTitle("General Guides");
+                    if(!isNetworkAvailable()){
+                        Toast.makeText(getApplicationContext(), "Something is wrong with your internet connection", Toast.LENGTH_SHORT).show();
+                    }
+                    break;
+
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
             return true;
