@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.itemFav:
                 Intent intent = new Intent(getApplicationContext(), FavoriteActivity.class);
                 startActivity(intent);
-                Toast.makeText(this, "Favorite Coming Soon", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "Favorite Coming Soon", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.itemInfo:
                 Toast.makeText(this, "Thanks ROMExchange.com for the API :)", Toast.LENGTH_SHORT).show();

@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.icu.text.DateTimePatternGenerator;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -58,7 +59,7 @@ public class DetailActivity extends AppCompatActivity{
         SharedPreferences.Editor editor = sharedPreferences.edit();
         Gson gson = new Gson();
         String json = gson.toJson(savedList);
-        editor.putString("ItemList", json);
+        editor.putString("task list", json);
         editor.apply();
     }
 
@@ -73,6 +74,9 @@ public class DetailActivity extends AppCompatActivity{
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.itemAddToFav:
+                Item obj = new Item();
+                obj.setName(tvName.getText().toString());
+                obj.setTypes(tvTypes.getText().toString());
                 saveData();
                 Toast.makeText(this, "Added to favorite", Toast.LENGTH_SHORT).show();
                 return true;
@@ -97,8 +101,6 @@ public class DetailActivity extends AppCompatActivity{
 
         mChart =findViewById(R.id.LineChart);
 
-//        mChart.setOnChartGestureListener(this);
-//        mChart.setOnChartValueSelectedListener(this);
         Description desc = new Description();
         desc.setText("");
         mChart.setDragEnabled(true);
@@ -117,76 +119,70 @@ public class DetailActivity extends AppCompatActivity{
             String URL = "https://www.romexchange.com/api?item=" + getIntent().getStringExtra("URL");
             final ProgressDialog dialog = ProgressDialog.show(this, null, "Fetching data, please wait");
             JsonArrayRequest request = new JsonArrayRequest(
-                    Request.Method.GET,
-                    URL,
-                    null,
-                    new Response.Listener<JSONArray>() {
-                        @Override
-                        public void onResponse(JSONArray response) {
-                            dialog.dismiss();
-                            try{
-                                DecimalFormat formatter = new DecimalFormat("#,###,###");
-//                                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-ddThh:mm:ssZ");
-
-                                for(int i = 0; i < response.length(); i++){
-                                    tvName.setText("Name : " + response.getJSONObject(i).get("name").toString());
-                                    tvTypes.setText("Types : " + getIntent().getStringExtra("Types"));
-
-                                    tvPrice.setText("Current Price : " + formatter.format(response.getJSONObject(i).getJSONObject("sea").get("latest"))  + " zeny");
-                                    JSONArray jsonArray = response.getJSONObject(i).getJSONObject("sea").getJSONObject("week").getJSONArray("data");
-                                    for(int j = 0; j < jsonArray.length(); j++){
-                                        priceArray[j] = jsonArray.getJSONObject(j).getInt("price");
-                                        Log.i("PRICE", String.valueOf(jsonArray.getJSONObject(j).getInt("price")));
-                                        yValue.add(new Entry((float)j+1, (float)priceArray[j]));
-                                        Log.i("HARGA", String.valueOf(priceArray[j]));
-                                    }
-
-                                    tvLastPrice.setText("Previous Price : " + formatter.format(jsonArray.getJSONObject(5).getInt("price")) + " zeny");
-                                    String date =response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString().replaceAll("T"," ").replaceAll("Z"," GMT/UTC Time");
-                                    if(!date.equals("")){
-                                        tvUpdated.setText("Last Updated : " + date);
-                                    }else{
-                                        tvUpdated.setText("Last Updated : " + response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString());
-                                    }
-                                    LineDataSet set1 = new LineDataSet(yValue, "SEA Server");
-
-                                    set1.setFillAlpha(200);
-                                    set1.setColor(Color.BLUE);
-                                    set1.setLineWidth(2.5f);
-                                    set1.setCircleColor(Color.BLUE);
-                                    set1.setCircleHoleColor(Color.BLUE);
-                                    set1.setCircleRadius(5f);
-                                    set1.notifyDataSetChanged();
-
-
-                                    ArrayList<ILineDataSet> dataSets = new ArrayList<>();
-                                    dataSets.add(set1);
-
-                                    LineData data = new LineData(dataSets);
-                                    mChart.setData(data);
-                                    getSupportActionBar().setTitle(tvName.getText());
-                                }
-
-                            }
-                            catch (Exception e)
-                            {
-
-                            }
-
+                Request.Method.GET,
+                URL,
+                null,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                dialog.dismiss();
+                try{
+                    DecimalFormat formatter = new DecimalFormat("#,###,###");
+                    for(int i = 0; i < response.length(); i++){
+                        tvName.setText("Name : " + response.getJSONObject(i).get("name").toString());
+                        tvTypes.setText("Types : " + getIntent().getStringExtra("Types"));
+                        tvPrice.setText("Current Price : " + formatter.format(response.getJSONObject(i).getJSONObject("sea").get("latest"))  + " zeny");
+                        JSONArray jsonArray = response.getJSONObject(i).getJSONObject("sea").getJSONObject("week").getJSONArray("data");
+                        for(int j = 0; j < jsonArray.length(); j++){
+                            priceArray[j] = jsonArray.getJSONObject(j).getInt("price");
+                            yValue.add(new Entry((float)j+1, (float)priceArray[j]));
                         }
-                    },
-                    new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-                            dialog.dismiss();
-                            Toast.makeText(DetailActivity.this, "Error while fetching data", Toast.LENGTH_SHORT).show();
+
+                        tvLastPrice.setText("Previous Price : " + formatter.format(jsonArray.getJSONObject(5).getInt("price")) + " zeny");
+                        String date =response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString().replaceAll("T"," ").replaceAll("Z"," GMT/UTC Time");
+                        if(!date.equals("")){
+                            tvUpdated.setText("Last Updated : " + date);
+                        }else{
+                            tvUpdated.setText("Last Updated : " + response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString());
                         }
+                        LineDataSet set1 = new LineDataSet(yValue, "SEA Server");
+
+                        set1.setFillAlpha(200);
+                        set1.setColor(Color.BLUE);
+                        set1.setLineWidth(2.5f);
+                        set1.setCircleColor(Color.BLUE);
+                        set1.setCircleHoleColor(Color.BLUE);
+                        set1.setCircleRadius(5f);
+                        set1.notifyDataSetChanged();
+
+                        ArrayList<ILineDataSet> dataSets = new ArrayList<>();
+                        dataSets.add(set1);
+
+                        LineData data = new LineData(dataSets);
+                        mChart.setData(data);
+                        getSupportActionBar().setTitle(tvName.getText());
                     }
 
+                }
+                catch (Exception e)
+                {
 
+                }
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        dialog.dismiss();
+                        Toast.makeText(DetailActivity.this, "Error while fetching data", Toast.LENGTH_SHORT).show();
+                    }
+                }
             );
             RequestQueue requestQueue = Volley.newRequestQueue(this);
             requestQueue.add(request);
+
+
         }
 
     }

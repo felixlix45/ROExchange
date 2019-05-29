@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -21,13 +22,12 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Search : "
+            android:text="@string/search"
             android:textColor="@color/colorBlack"
-            android:textSize="18dp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/etSearchItem"
@@ -42,16 +42,16 @@
             android:id="@+id/btnSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:text="Search"
-            android:textSize="13dp" />
+             />
 
         <Button
             android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reset"
-            android:textSize="13dp" />
+             />
     </LinearLayout>
 
     <LinearLayout
@@ -63,14 +63,14 @@
             android:id="@+id/cbFilter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             android:text="Filter" />
 
         <Spinner
             android:id="@+id/spinnerFilter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
             android:entries="@array/filter_type"
             android:prompt="@string/filter_prompt"
             android:visibility="invisible">

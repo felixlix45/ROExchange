@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ROExchange</string>
     <string name="filter_prompt">Choose Filter</string>
+    <string name="search">Search :</string>
 
     <string-array name="filter_type">
         <item>Weapons</item>
