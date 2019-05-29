@@ -98,6 +98,7 @@ public class DetailActivity extends AppCompatActivity{
                         if(savedList.get(i).getName().equals(tvName.getText().toString().replaceAll("Name : ", "")) ){
                             Toast.makeText(this, "Already added to favorite", Toast.LENGTH_SHORT).show();
                             return true;
+
                         }
                     }
                 }
