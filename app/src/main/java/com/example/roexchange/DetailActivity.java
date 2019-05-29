@@ -32,12 +32,14 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.listener.OnChartGestureListener;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
 
+import java.lang.reflect.Type;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
@@ -58,6 +60,7 @@ public class DetailActivity extends AppCompatActivity{
         SharedPreferences sharedPreferences = getSharedPreferences("FavoriteItem", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         Gson gson = new Gson();
+
         String json = gson.toJson(savedList);
         editor.putString("task list", json);
         editor.apply();
@@ -74,9 +77,20 @@ public class DetailActivity extends AppCompatActivity{
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.itemAddToFav:
+                SharedPreferences sharedPreferences = getSharedPreferences("FavoriteItem", MODE_PRIVATE);
+                Gson gson = new Gson();
+
+                String json = sharedPreferences.getString("task list", null);
+                Type type = new TypeToken<ArrayList<Item>>() {}.getType();
+                savedList = gson.fromJson(json, type);
+
                 Item obj = new Item();
-                obj.setName(tvName.getText().toString());
-                obj.setTypes(tvTypes.getText().toString());
+                obj.setName(tvName.getText().toString().replaceAll("Name : ", ""));
+                obj.setTypes(tvTypes.getText().toString(). replaceAll("Types : ", ""));
+                savedList.add(obj);
+
+
+
                 saveData();
                 Toast.makeText(this, "Added to favorite", Toast.LENGTH_SHORT).show();
                 return true;
@@ -160,7 +174,7 @@ public class DetailActivity extends AppCompatActivity{
 
                         LineData data = new LineData(dataSets);
                         mChart.setData(data);
-                        getSupportActionBar().setTitle(tvName.getText());
+                        getSupportActionBar().setTitle(tvName.getText().toString().replaceAll("Name : ", ""));
                     }
 
                 }

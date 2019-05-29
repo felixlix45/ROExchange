@@ -21,7 +21,7 @@ public class FavoriteActivity extends AppCompatActivity {
 
     ArrayList<Item> savedList;
     RecyclerView rvItem;
-    TextView    tvCoba;
+
 
     public void loadData(){
         SharedPreferences sharedPreferences = getSharedPreferences("FavoriteItem", MODE_PRIVATE);
@@ -33,8 +33,6 @@ public class FavoriteActivity extends AppCompatActivity {
         if(savedList.size() == 0){
             Toast.makeText(this, "Data is null", Toast.LENGTH_SHORT).show();
             savedList = new ArrayList<>();
-        }else{
-            tvCoba.setText(savedList.get(0).getName().toString());
         }
 
     }
@@ -53,7 +51,6 @@ public class FavoriteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorite);
 
-        tvCoba = findViewById(R.id.coba);
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("Favorites");
         loadData();
