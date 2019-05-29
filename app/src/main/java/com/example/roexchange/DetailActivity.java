@@ -69,35 +69,47 @@ public class DetailActivity extends AppCompatActivity{
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.detail_menu_item,menu);
+        if(getIntent().getStringExtra("act").contains("MainActivity")){
+            inflater.inflate(R.menu.detail_menu_item,menu);
+        }else if(getIntent().getStringExtra("act").contains("FavoriteActivity")){
+            inflater.inflate(R.menu.detail_menu_item_delete, menu);
+        }
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        SharedPreferences sharedPreferences = getSharedPreferences("FavoriteItem", MODE_PRIVATE);
+        Gson gson = new Gson();
+
+        String json = sharedPreferences.getString("task list", null);
+        Type type = new TypeToken<ArrayList<Item>>() {}.getType();
+        savedList = gson.fromJson(json, type);
+        if(savedList == null){
+            savedList = new ArrayList<>();
+        }
+        Item obj = new Item();
+
         switch (item.getItemId()){
+
             case R.id.itemAddToFav:
-                SharedPreferences sharedPreferences = getSharedPreferences("FavoriteItem", MODE_PRIVATE);
-                Gson gson = new Gson();
-
-                String json = sharedPreferences.getString("task list", null);
-                Type type = new TypeToken<ArrayList<Item>>() {}.getType();
-                savedList = gson.fromJson(json, type);
-                if(savedList == null){
-                    savedList = new ArrayList<>();
-                }
-
-                Item obj = new Item();
                 obj.setName(tvName.getText().toString().replaceAll("Name : ", ""));
                 obj.setTypes(tvTypes.getText().toString(). replaceAll("Types : ", ""));
                 savedList.add(obj);
-
-
-
                 saveData();
                 Toast.makeText(this, "Added to favorite", Toast.LENGTH_SHORT).show();
                 return true;
-
+            case R.id.item_delete:
+                int i = getIntent().getIntExtra("pos",-1);
+                if(i != -1) {
+                    savedList.remove(i);
+                    saveData();
+                    Toast.makeText(this, "Deleted from favorite", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(this, savedList.size(), Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(this, "-1", Toast.LENGTH_SHORT).show();
+                }
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -108,6 +120,7 @@ public class DetailActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
+//        Toast.makeText(this, savedList.size(), Toast.LENGTH_SHORT).show();
         tvName = findViewById(R.id.tvDetailName);
         tvTypes = findViewById(R.id.tvDetailTypes);
         tvPrice = findViewById(R.id.tvDetailPrice);
@@ -129,10 +142,10 @@ public class DetailActivity extends AppCompatActivity{
 
 
         if(getIntent().hasExtra("URL") && getIntent().hasExtra("Types")){
-
+            String act = getIntent().getStringExtra("act").replaceAll("@.+","");
             final ArrayList<Entry> yValue = new ArrayList<>();
             final int[] priceArray = new int[7];
-
+//            Toast.makeText(this, act, Toast.LENGTH_SHORT).show();
             String URL = "https://www.romexchange.com/api?item=" + getIntent().getStringExtra("URL");
             final ProgressDialog dialog = ProgressDialog.show(this, null, "Fetching data, please wait");
             JsonArrayRequest request = new JsonArrayRequest(

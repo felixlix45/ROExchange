@@ -87,6 +87,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
                 String name = itemList.get(i).getName().toString().replaceAll("\\s+","%20");
                 intent.putExtra("URL", name);
                 intent.putExtra("Types", itemList.get(i).getTypes());
+                intent.putExtra("act", v.getContext().toString());
+                intent.putExtra("pos", i);
                 v.getContext().startActivity(intent);
             }
         });

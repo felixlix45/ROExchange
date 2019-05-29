@@ -1,11 +1,15 @@
 package com.example.roexchange;
 
 import android.content.SharedPreferences;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,7 +25,7 @@ public class FavoriteActivity extends AppCompatActivity {
 
     ArrayList<Item> savedList;
     RecyclerView rvItem;
-
+    SwipeRefreshLayout swipeRefreshLayout;
 
     public void loadData(){
         SharedPreferences sharedPreferences = getSharedPreferences("FavoriteItem", MODE_PRIVATE);
@@ -30,8 +34,8 @@ public class FavoriteActivity extends AppCompatActivity {
         Type type = new TypeToken<ArrayList<Item>>() {}.getType();
         savedList = gson.fromJson(json, type);
 
-        if(savedList == null){
-            Toast.makeText(this, "Data is null", Toast.LENGTH_SHORT).show();
+        if(savedList == null || savedList.size() == 0){
+//            Toast.makeText(this, "Data is null", Toast.LENGTH_SHORT).show();
             savedList = new ArrayList<>();
         }
 
@@ -51,10 +55,28 @@ public class FavoriteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorite);
 
+        swipeRefreshLayout = findViewById(R.id.swipeContainer);
+
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("Favorites");
         loadData();
         buildRecycleView();
 
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                loadData();
+                buildRecycleView();
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        });
+
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        loadData();
+        buildRecycleView();
     }
 }
