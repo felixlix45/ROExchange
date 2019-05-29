@@ -83,6 +83,9 @@ public class DetailActivity extends AppCompatActivity{
                 String json = sharedPreferences.getString("task list", null);
                 Type type = new TypeToken<ArrayList<Item>>() {}.getType();
                 savedList = gson.fromJson(json, type);
+                if(savedList == null){
+                    savedList = new ArrayList<>();
+                }
 
                 Item obj = new Item();
                 obj.setName(tvName.getText().toString().replaceAll("Name : ", ""));

@@ -30,7 +30,7 @@ public class FavoriteActivity extends AppCompatActivity {
         Type type = new TypeToken<ArrayList<Item>>() {}.getType();
         savedList = gson.fromJson(json, type);
 
-        if(savedList.size() == 0){
+        if(savedList == null){
             Toast.makeText(this, "Data is null", Toast.LENGTH_SHORT).show();
             savedList = new ArrayList<>();
         }

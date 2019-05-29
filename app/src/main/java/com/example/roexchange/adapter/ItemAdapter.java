@@ -77,7 +77,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int i) {
+    public void onBindViewHolder(@NonNull final ViewHolder viewHolder, final int i) {
         viewHolder.bind(itemList.get(i));
 //        copyList = (ArrayList<Item>)itemList.clone();
         viewHolder.layoutParent.setOnClickListener(new View.OnClickListener() {
