@@ -2,6 +2,7 @@ package com.example.roexchange.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -30,6 +31,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     Context context;
     ArrayList<Item> itemList;
     ArrayList<Item> copyList;
+
 
     public void clear(){
         itemList.clear();
@@ -75,7 +77,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int i) {
+    public void onBindViewHolder(@NonNull final ViewHolder viewHolder, final int i) {
         viewHolder.bind(itemList.get(i));
 //        copyList = (ArrayList<Item>)itemList.clone();
         viewHolder.layoutParent.setOnClickListener(new View.OnClickListener() {
@@ -85,15 +87,17 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
                 String name = itemList.get(i).getName().toString().replaceAll("\\s+","%20");
                 intent.putExtra("URL", name);
                 intent.putExtra("Types", itemList.get(i).getTypes());
+                intent.putExtra("act", v.getContext().toString());
+                intent.putExtra("pos", i);
                 v.getContext().startActivity(intent);
             }
         });
-        viewHolder.btnFavorite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(v.getContext(), "Item " + itemList.get(i).getName() + " has been added to favorite" , Toast.LENGTH_SHORT).show();
-            }
-        });
+//        viewHolder.btnFavorite.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(v.getContext(), "Item " + itemList.get(i).getName() + " has been added to favorite" , Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
 
 
@@ -115,7 +119,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
             tvTitle = itemView.findViewById(R.id.tvItemName);
             tvTypes = itemView.findViewById(R.id.tvTypes);
             layoutParent = itemView.findViewById(R.id.layoutParent);
-            btnFavorite = itemView.findViewById(R.id.btnFavorite);
+//            btnFavorite = itemView.findViewById(R.id.btnFavorite);
         }
 
         public void bind(Item item){
