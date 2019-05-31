@@ -98,7 +98,6 @@ public class DetailActivity extends AppCompatActivity{
                         if(savedList.get(i).getName().equals(tvName.getText().toString().replaceAll("Name : ", "")) ){
                             Toast.makeText(this, "Already added to favorite", Toast.LENGTH_SHORT).show();
                             return true;
-
                         }
                     }
                 }
@@ -114,6 +113,7 @@ public class DetailActivity extends AppCompatActivity{
                     savedList.remove(i);
                     saveData();
                     Toast.makeText(this, "Deleted from favorite", Toast.LENGTH_SHORT).show();
+                    finish();
 //                    Toast.makeText(this, savedList.size(), Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(this, "-1", Toast.LENGTH_SHORT).show();
