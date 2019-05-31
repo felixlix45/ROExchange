@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:focusableInTouchMode="true">
 
@@ -91,12 +92,49 @@
         android:visibility="invisible"
         android:background="@color/colorWhite"/>
 
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_auto_start="false"
+        app:shimmer_duration="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                layout="@layout/list_view_item_shimmer"/>
+            <include
+                layout="@layout/list_view_item_shimmer"/>
+            <include
+                layout="@layout/list_view_item_shimmer"/>
+            <include
+                layout="@layout/list_view_item_shimmer"/>
+            <include
+                layout="@layout/list_view_item_shimmer"/>
+            <include
+                layout="@layout/list_view_item_shimmer"/>
+            <include
+                layout="@layout/list_view_item_shimmer"/>
+            <include
+                layout="@layout/list_view_item_shimmer"/>
+            <include
+                layout="@layout/list_view_item_shimmer"/>
+            <include
+                layout="@layout/list_view_item_shimmer"/>
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvItem"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottom_nav"
         android:clickable="true">
+
 
     </android.support.v7.widget.RecyclerView>
 

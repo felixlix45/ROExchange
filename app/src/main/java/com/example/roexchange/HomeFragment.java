@@ -33,6 +33,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.roexchange.R;
 import com.example.roexchange.adapter.ItemAdapter;
 import com.example.roexchange.model.Item;
+import com.facebook.shimmer.ShimmerFrameLayout;
 
 import org.json.JSONArray;
 
@@ -53,13 +54,15 @@ public class HomeFragment extends Fragment {
     String URL ="https://www.romexchange.com/api/items.json";
     final ItemAdapter itemAdapter = new ItemAdapter(getActivity(), listItem);
 
-
+    ShimmerFrameLayout shimmerFrameLayout;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
+        shimmerFrameLayout = v.findViewById(R.id.shimmer_container);
+        shimmerFrameLayout.startShimmer();
         btnSearch = v.findViewById(R.id.btnSearch);
         btnReset = v.findViewById(R.id.reset);
         etSearch = v.findViewById(R.id.etSearchItem);
@@ -220,6 +223,7 @@ public class HomeFragment extends Fragment {
                 getAllData();
             }
         });
+
         if(itemAdapter.size() == 0){
             getAllData();
         }
@@ -276,6 +280,7 @@ public class HomeFragment extends Fragment {
     public void getAllData(){
 
 //        final ProgressDialog dialog = ProgressDialog.show(getActivity(), null, "Fetching data, please wait");
+        shimmerFrameLayout.startShimmer();
         progressBar.setVisibility(View.VISIBLE);
         itemAdapter.clear();
         JsonArrayRequest request = new JsonArrayRequest(
@@ -286,6 +291,8 @@ public class HomeFragment extends Fragment {
                     @Override
                     public void onResponse(JSONArray response) {
                         progressBar.setVisibility(View.GONE);
+                        shimmerFrameLayout.stopShimmer();
+                        shimmerFrameLayout.setVisibility(View.GONE);
 //                        dialog.dismiss();
                         try{
 //                    Toast.makeText(context, String.valueOf(response.length()), Toast.LENGTH_SHORT).show();
