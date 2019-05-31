@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="placeholderTextHeight">18dp</dimen>
+    <dimen name="placeholderTextDetail">16dp</dimen>
+    <dimen name="placeholderImage">120dp</dimen>
 
 </resources>

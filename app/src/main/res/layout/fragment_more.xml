@@ -10,7 +10,7 @@
         android:layout_marginTop="10dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -33,6 +33,41 @@
             android:text="Valhala Guides"
             android:textSize="25dp"
             android:textStyle="bold"/>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_container_valhalla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/background"
+                    android:layout_marginBottom="15dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/background"
+                    android:layout_marginBottom="15dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/background"
+                    android:layout_marginBottom="15dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/background"
+                    android:layout_marginBottom="15dp"/>
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
 
         <com.jsibbold.zoomage.ZoomageView
             android:layout_marginTop="15dp"

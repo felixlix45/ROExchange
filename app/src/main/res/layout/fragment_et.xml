@@ -34,6 +34,14 @@
             android:textSize="25dp"
             android:textStyle="bold"/>
 
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_container_et_floor"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/background">
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
         <com.jsibbold.zoomage.ZoomageView
             android:layout_marginTop="15dp"
             android:id="@+id/ivBossTower"
@@ -63,6 +71,13 @@
             android:layout_marginTop="10dp"/>
 
 
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_container_et_mini"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@color/background">
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
         <com.jsibbold.zoomage.ZoomageView
             android:id="@+id/ivMini"
             android:layout_width="match_parent"

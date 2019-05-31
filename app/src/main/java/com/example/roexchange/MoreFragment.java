@@ -14,12 +14,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import com.facebook.shimmer.ShimmerFrameLayout;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 public class MoreFragment extends Fragment {
     ImageView ivValhala40,ivValhala60,ivValhala80,ivValhala100;
-    ProgressBar progressBar;
+//    ProgressBar progressBar;
+    ShimmerFrameLayout shimmerFrameLayout;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -28,8 +30,11 @@ public class MoreFragment extends Fragment {
         ivValhala60 = v.findViewById(R.id.valhala60);
         ivValhala80 = v.findViewById(R.id.valhala80);
         ivValhala100 = v.findViewById(R.id.valhala100);
-        progressBar = v.findViewById(R.id.progressBar);
-        progressBar.setVisibility(View.VISIBLE);
+        shimmerFrameLayout = v.findViewById(R.id.shimmer_container_valhalla);
+//        progressBar = v.findViewById(R.id.progressBar);
+//        progressBar.setVisibility(View.VISIBLE);
+        shimmerFrameLayout.startShimmer();
+        shimmerFrameLayout.setVisibility(View.VISIBLE);
         String val40 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-40-1.jpg";
         String val60 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-60-1.jpg";
         String val80 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-80-1.jpg";
@@ -41,7 +46,9 @@ public class MoreFragment extends Fragment {
         Picasso.with(getActivity()).load(val100).into(ivValhala100, new Callback() {
             @Override
             public void onSuccess() {
-                progressBar.setVisibility(View.GONE);
+//                progressBar.setVisibility(View.GONE);
+                shimmerFrameLayout.stopShimmer();
+                shimmerFrameLayout.setVisibility(View.GONE);
             }
 
             @Override
