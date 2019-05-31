@@ -62,10 +62,14 @@ public class HomeFragment extends Fragment {
 
         btnSearch = v.findViewById(R.id.btnSearch);
         btnReset = v.findViewById(R.id.reset);
-        rvItem = v.findViewById(R.id.rvItem);
         etSearch = v.findViewById(R.id.etSearchItem);
+
+        rvItem = v.findViewById(R.id.rvItem);
         rvItem.setLayoutManager(new LinearLayoutManager(getActivity()));
         rvItem.setAdapter(itemAdapter);
+
+
+
         progressBar = v.findViewById(R.id.progressBar);
         progressBar.setMax(100);
 
