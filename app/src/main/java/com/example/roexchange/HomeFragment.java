@@ -33,6 +33,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.roexchange.R;
 import com.example.roexchange.adapter.ItemAdapter;
 import com.example.roexchange.model.Item;
+import com.facebook.shimmer.ShimmerFrameLayout;
 
 import org.json.JSONArray;
 
@@ -48,26 +49,32 @@ public class HomeFragment extends Fragment {
     ArrayList<Item> savedList = new ArrayList<>();
     CheckBox cbFilter;
     Spinner spinnerFilter;
-    ProgressBar progressBar;
+//    ProgressBar progressBar;
     private Context context;
     String URL ="https://www.romexchange.com/api/items.json";
     final ItemAdapter itemAdapter = new ItemAdapter(getActivity(), listItem);
 
-
+    ShimmerFrameLayout shimmerFrameLayout;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
+        shimmerFrameLayout = v.findViewById(R.id.shimmer_container);
+        shimmerFrameLayout.startShimmer();
         btnSearch = v.findViewById(R.id.btnSearch);
         btnReset = v.findViewById(R.id.reset);
-        rvItem = v.findViewById(R.id.rvItem);
         etSearch = v.findViewById(R.id.etSearchItem);
+
+        rvItem = v.findViewById(R.id.rvItem);
         rvItem.setLayoutManager(new LinearLayoutManager(getActivity()));
         rvItem.setAdapter(itemAdapter);
-        progressBar = v.findViewById(R.id.progressBar);
-        progressBar.setMax(100);
+
+
+
+//        progressBar = v.findViewById(R.id.progressBar);
+//        progressBar.setMax(100);
 
         cbFilter = v.findViewById(R.id.cbFilter);
         spinnerFilter = v.findViewById(R.id.spinnerFilter);
@@ -75,44 +82,45 @@ public class HomeFragment extends Fragment {
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//            final ProgressDialog dialog = ProgressDialog.show(context, null, "Fetching data, please wait");
-                progressBar.setVisibility(View.VISIBLE);
+//                progressBar.setVisibility(View.VISIBLE);
+                shimmerFrameLayout.setVisibility(View.VISIBLE);
+                shimmerFrameLayout.startShimmer();
                 String name = etSearch.getText().toString().replaceAll("\\s+","%20");
                 if(!etSearch.equals("")){
                     itemAdapter.clear();
                     if(!cbFilter.isChecked()){
                         JsonArrayRequest request = new JsonArrayRequest(
-                                Request.Method.GET,
-                                "https://www.romexchange.com/api?exact=false&item=" +name ,
-                                null,
-                                new Response.Listener<JSONArray>() {
-                                    @Override
-                                    public void onResponse(JSONArray response) {
-                                        progressBar.setVisibility(View.GONE);
-//                                    dialog.dismiss();
-                                        try{
-                                            for(int i = 0; i <response.length(); i++){
-                                                Item item = new Item();
-                                                item.setName(response.getJSONObject(i).get("name").toString());
-                                                item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-                                                listItem.add(item);
-                                            }
-                                            itemAdapter.notifyDataSetChanged();
+                            Request.Method.GET,
+                            "https://www.romexchange.com/api?exact=false&item=" +name ,
+                            null,
+                            new Response.Listener<JSONArray>() {
+                                @Override
+                                public void onResponse(JSONArray response) {
+//                                        progressBar.setVisibility(View.GONE);
+                                    shimmerFrameLayout.setVisibility(View.GONE);
+                                    try{
+                                        for(int i = 0; i <response.length(); i++){
+                                            Item item = new Item();
+                                            item.setName(response.getJSONObject(i).get("name").toString());
+                                            item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
+                                            listItem.add(item);
                                         }
-                                        catch (Exception e){
-
-                                        }
+                                        itemAdapter.notifyDataSetChanged();
+                                    }
+                                    catch (Exception e){
 
                                     }
-                                },
-                                new Response.ErrorListener() {
-                                    @Override
-                                    public void onErrorResponse(VolleyError error) {
-//                                    dialog.dismiss();
-                                        progressBar.setVisibility(View.GONE);
-                                        Toast.makeText(getActivity(), "Error occured", Toast.LENGTH_SHORT).show();
-                                    }
+
                                 }
+                            },
+                            new Response.ErrorListener() {
+                                @Override
+                                public void onErrorResponse(VolleyError error) {
+//                                        progressBar.setVisibility(View.GONE);
+                                    shimmerFrameLayout.setVisibility(View.GONE);
+                                    Toast.makeText(getActivity(), "Error occured", Toast.LENGTH_SHORT).show();
+                                }
+                            }
                         );
                         final RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
                         requestQueue.add(request);
@@ -216,6 +224,7 @@ public class HomeFragment extends Fragment {
                 getAllData();
             }
         });
+
         if(itemAdapter.size() == 0){
             getAllData();
         }
@@ -226,8 +235,9 @@ public class HomeFragment extends Fragment {
         itemAdapter.clear();
         final int pos = spinnerFilter.getSelectedItemPosition()+1;
         String URLFiltered = "https://www.romexchange.com/api/items.json";//exact=false&item=" + etSearch.getText().toString().replaceAll("\\s+","%20") + "&type=" + pos;
-//        final ProgressDialog dialog = ProgressDialog.show(getActivity(), null, "Fetching data, please wait");
-        progressBar.setVisibility(View.VISIBLE);
+//        progressBar.setVisibility(View.VISIBLE);
+        shimmerFrameLayout.setVisibility(View.VISIBLE);
+        shimmerFrameLayout.startShimmer();
         JsonArrayRequest request = new JsonArrayRequest(
                 Request.Method.GET,
                 URLFiltered,
@@ -235,8 +245,8 @@ public class HomeFragment extends Fragment {
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-                        progressBar.setVisibility(View.GONE);
-//                        dialog.dismiss();
+//                        progressBar.setVisibility(View.GONE);
+                        shimmerFrameLayout.setVisibility(View.GONE);
                         try{
 
                             for(int i = 0; i <response.length(); i++){
@@ -259,8 +269,8 @@ public class HomeFragment extends Fragment {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-//                        dialog.dismiss();
-                        progressBar.setVisibility(View.GONE);
+//                        progressBar.setVisibility(View.GONE);
+                        shimmerFrameLayout.setVisibility(View.GONE);
                         Toast.makeText(getActivity(), "Check your internet connection and try again", Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -270,9 +280,9 @@ public class HomeFragment extends Fragment {
         requestQueue.add(request);
     }
     public void getAllData(){
-
-//        final ProgressDialog dialog = ProgressDialog.show(getActivity(), null, "Fetching data, please wait");
-        progressBar.setVisibility(View.VISIBLE);
+        shimmerFrameLayout.setVisibility(View.VISIBLE);
+        shimmerFrameLayout.startShimmer();
+//        progressBar.setVisibility(View.VISIBLE);
         itemAdapter.clear();
         JsonArrayRequest request = new JsonArrayRequest(
                 Request.Method.GET,
@@ -281,8 +291,8 @@ public class HomeFragment extends Fragment {
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-                        progressBar.setVisibility(View.GONE);
-//                        dialog.dismiss();
+//                        progressBar.setVisibility(View.GONE);
+                        shimmerFrameLayout.setVisibility(View.GONE);
                         try{
 //                    Toast.makeText(context, String.valueOf(response.length()), Toast.LENGTH_SHORT).show();
                             for(int i = 0; i <response.length(); i++){
@@ -301,8 +311,8 @@ public class HomeFragment extends Fragment {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        progressBar.setVisibility(View.GONE);
-//                        dialog.dismiss();
+//                        progressBar.setVisibility(View.GONE);
+
                         Toast.makeText(getActivity(), "Check your internet connection and try again", Toast.LENGTH_SHORT).show();
                     }
                 }

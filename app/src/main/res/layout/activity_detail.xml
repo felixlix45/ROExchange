@@ -11,6 +11,65 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_container_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:layout_width= "100dp"
+                android:layout_height="100dp"
+                android:background="@color/background"/>
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="@dimen/placeholderTextHeight"
+                    android:background="@color/background"/>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="120dp"
+                    android:layout_height="@dimen/placeholderTextDetail"
+                    android:background="@color/background"/>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/placeholderTextDetail"
+                    android:background="@color/background"/>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/placeholderTextDetail"
+                    android:background="@color/background"/>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/placeholderTextDetail"
+                    android:background="@color/background"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

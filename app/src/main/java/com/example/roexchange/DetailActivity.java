@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +24,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.roexchange.model.Item;
+import com.facebook.shimmer.ShimmerFrameLayout;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.data.Entry;
@@ -55,6 +57,8 @@ public class DetailActivity extends AppCompatActivity{
     Toolbar toolbar;
     ArrayList<Item> savedList = new ArrayList<>();
     private LineChart mChart;
+
+    ShimmerFrameLayout shimmerFrameLayout;
 
     public void saveData(){
         SharedPreferences sharedPreferences = getSharedPreferences("FavoriteItem", MODE_PRIVATE);
@@ -93,6 +97,14 @@ public class DetailActivity extends AppCompatActivity{
         switch (item.getItemId()){
 
             case R.id.itemAddToFav:
+                if(savedList != null){
+                    for(int i = 0; i < savedList.size(); i++){
+                        if(savedList.get(i).getName().equals(tvName.getText().toString().replaceAll("Name : ", "")) ){
+                            Toast.makeText(this, "Already added to favorite", Toast.LENGTH_SHORT).show();
+                            return true;
+                        }
+                    }
+                }
                 obj.setName(tvName.getText().toString().replaceAll("Name : ", ""));
                 obj.setTypes(tvTypes.getText().toString(). replaceAll("Types : ", ""));
                 savedList.add(obj);
@@ -105,6 +117,7 @@ public class DetailActivity extends AppCompatActivity{
                     savedList.remove(i);
                     saveData();
                     Toast.makeText(this, "Deleted from favorite", Toast.LENGTH_SHORT).show();
+                    finish();
 //                    Toast.makeText(this, savedList.size(), Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(this, "-1", Toast.LENGTH_SHORT).show();
@@ -119,6 +132,8 @@ public class DetailActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        shimmerFrameLayout = findViewById(R.id.shimmer_container_detail);
 
 //        Toast.makeText(this, savedList.size(), Toast.LENGTH_SHORT).show();
         tvName = findViewById(R.id.tvDetailName);
@@ -145,9 +160,10 @@ public class DetailActivity extends AppCompatActivity{
             String act = getIntent().getStringExtra("act").replaceAll("@.+","");
             final ArrayList<Entry> yValue = new ArrayList<>();
             final int[] priceArray = new int[7];
-//            Toast.makeText(this, act, Toast.LENGTH_SHORT).show();
             String URL = "https://www.romexchange.com/api?item=" + getIntent().getStringExtra("URL");
-            final ProgressDialog dialog = ProgressDialog.show(this, null, "Fetching data, please wait");
+            shimmerFrameLayout.setVisibility(View.VISIBLE);
+            shimmerFrameLayout.startShimmer();
+
             JsonArrayRequest request = new JsonArrayRequest(
                 Request.Method.GET,
                 URL,
@@ -155,7 +171,8 @@ public class DetailActivity extends AppCompatActivity{
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-                dialog.dismiss();
+                        shimmerFrameLayout.setVisibility(View.GONE);
+                        shimmerFrameLayout.stopShimmer();
                 try{
                     DecimalFormat formatter = new DecimalFormat("#,###,###");
                     for(int i = 0; i < response.length(); i++){
@@ -204,7 +221,8 @@ public class DetailActivity extends AppCompatActivity{
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        dialog.dismiss();
+                        shimmerFrameLayout.setVisibility(View.GONE);
+                        shimmerFrameLayout.stopShimmer();
                         Toast.makeText(DetailActivity.this, "Error while fetching data", Toast.LENGTH_SHORT).show();
                     }
                 }

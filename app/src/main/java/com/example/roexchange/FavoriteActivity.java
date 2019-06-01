@@ -20,10 +20,13 @@ import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.stream.Collectors;
 
 public class FavoriteActivity extends AppCompatActivity {
 
     ArrayList<Item> savedList;
+    LinkedHashSet<Item> hashSet;
     RecyclerView rvItem;
     SwipeRefreshLayout swipeRefreshLayout;
 
@@ -44,7 +47,7 @@ public class FavoriteActivity extends AppCompatActivity {
     public void buildRecycleView(){
         rvItem = findViewById(R.id.rvItem);
         rvItem.setLayoutManager(new LinearLayoutManager(this));
-        ItemAdapter itemAdapter = new ItemAdapter(this, savedList);
+        ItemAdapter itemAdapter = new ItemAdapter(this, savedList );
         rvItem.setAdapter(itemAdapter);
         itemAdapter.notifyDataSetChanged();
     }
