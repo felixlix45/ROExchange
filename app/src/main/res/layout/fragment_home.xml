@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:ems="9"
                 android:hint="Search Item"
-                android:imeOptions="actionDone"
+                android:imeOptions="actionSearch"
                 android:inputType="text"
                 android:singleLine="true" />
 
