@@ -11,79 +11,112 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 public class ValFragment extends Fragment {
     ImageView ivValhala40,ivValhala60,ivValhala80,ivValhala100;
+
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private DocumentReference noteRef = db.collection("URL").document("VAL");
+    String ValURL = "";
 //    ProgressBar progressBar;
     ShimmerFrameLayout shimmerFrameLayout;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_val, container, false);
-        ivValhala40 = v.findViewById(R.id.valhala40);
-        ivValhala60 = v.findViewById(R.id.valhala60);
-        ivValhala80 = v.findViewById(R.id.valhala80);
-        ivValhala100 = v.findViewById(R.id.valhala100);
 
         shimmerFrameLayout = v.findViewById(R.id.shimmer_container_valhalla);
 //        progressBar = v.findViewById(R.id.progressBar);
 //        progressBar.setVisibility(View.VISIBLE);
         shimmerFrameLayout.startShimmer();
         shimmerFrameLayout.setVisibility(View.VISIBLE);
-        String val40 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-40-1.jpg";
-        String val60 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-60-1.jpg";
-        String val80 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-80-1.jpg";
-        String val100 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-100-1.jpg";
 
-        Picasso.with(getActivity()).load(val40).into(ivValhala40, new Callback() {
-            @Override
-            public void onSuccess() {
+        ivValhala40 = v.findViewById(R.id.valhala40);
+        ivValhala60 = v.findViewById(R.id.valhala60);
+        ivValhala80 = v.findViewById(R.id.valhala80);
+        ivValhala100 = v.findViewById(R.id.valhala100);
 
-            }
+        final String val40 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-40-1.jpg";
+        final String val60 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-601.jpg";
+        final String val80 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-801.jpg";
+        final String val100 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-1001.jpg";
 
-            @Override
-            public void onError() {
-                Toast.makeText(getActivity(), "Sorry, something wrong :(", Toast.LENGTH_SHORT).show();
-            }
-        });
-        Picasso.with(getActivity()).load(val60).into(ivValhala60, new Callback() {
-            @Override
-            public void onSuccess() {
+        noteRef.get()
+                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        ValURL = documentSnapshot.getString("VALList");
 
-            }
+                        Picasso.with(getActivity()).load(ValURL).into(ivValhala40, new Callback() {
+                            @Override
+                            public void onSuccess() {
+                                shimmerFrameLayout.stopShimmer();
+                                shimmerFrameLayout.setVisibility(View.GONE);
+                            }
 
-            @Override
-            public void onError() {
+                            @Override
+                            public void onError() {
+                                Toast.makeText(getActivity(), "Sorry, something wrong :(", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                        Picasso.with(getActivity()).load(val60).into(ivValhala60, new Callback() {
+                            @Override
+                            public void onSuccess() {
 
-            }
-        });
-        Picasso.with(getActivity()).load(val80).into(ivValhala80, new Callback() {
-            @Override
-            public void onSuccess() {
+                            }
 
-            }
+                            @Override
+                            public void onError() {
 
-            @Override
-            public void onError() {
+                                ivValhala60.setVisibility(View.GONE);
+                            }
+                        });
+                        Picasso.with(getActivity()).load(val80).into(ivValhala80, new Callback() {
+                            @Override
+                            public void onSuccess() {
 
-            }
-        });
-        Picasso.with(getActivity()).load(val100).into(ivValhala100, new Callback() {
-            @Override
-            public void onSuccess() {
+                            }
+
+                            @Override
+                            public void onError() {
+                                ivValhala80.setVisibility(View.GONE);
+                            }
+                        });
+                        Picasso.with(getActivity()).load(val100).into(ivValhala100, new Callback() {
+                            @Override
+                            public void onSuccess() {
 //                progressBar.setVisibility(View.GONE);
-                shimmerFrameLayout.stopShimmer();
-                shimmerFrameLayout.setVisibility(View.GONE);
+                                shimmerFrameLayout.stopShimmer();
+                                shimmerFrameLayout.setVisibility(View.GONE);
 
-            }
+                            }
 
-            @Override
-            public void onError() {
+                            @Override
+                            public void onError() {
+                                ivValhala100.setVisibility(View.GONE);
+                            }
+                        });
 
-            }
-        });
+
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(getActivity(), "Fail to get data!", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+
+
+
 
         return v;
     }

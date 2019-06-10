@@ -10,16 +10,24 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
+public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
 
     Toolbar toolbar;
     BottomNavigationView bottomNav;
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -88,6 +96,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+
         toolbar = findViewById(R.id.toolbar);
         bottomNav = findViewById(R.id.bottom_nav);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
@@ -96,7 +108,6 @@ public class MainActivity extends AppCompatActivity {
         if(!isNetworkAvailable()){
             Toast.makeText(getApplicationContext(), "Something is wrong with your internet connection", Toast.LENGTH_SHORT).show();
         }
-        
     }
 
     private boolean isNetworkAvailable(){
