@@ -133,6 +133,11 @@
             app:zoomage_minScale="0.2"
             app:zoomage_maxScale="4"/>
 
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/ValItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"/>
 
     </LinearLayout>
 

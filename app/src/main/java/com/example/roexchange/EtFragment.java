@@ -16,6 +16,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
+import com.github.chrisbanes.photoview.PhotoView;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -40,7 +41,7 @@ public class EtFragment extends Fragment {
 
     private static final String TAG = "ETFragment";
 
-    ImageView ivMini, ivBoss;
+    PhotoView ivMini, ivBoss;
 //    ProgressBar progressBar;
     ShimmerFrameLayout container_et_floor, container_et_mini;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();

@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
+import com.github.chrisbanes.photoview.PhotoView;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
@@ -21,7 +22,7 @@ import com.squareup.picasso.Picasso;
 
 public class ValFragment extends Fragment {
     ImageView ivValhala40,ivValhala60,ivValhala80,ivValhala100;
-
+    PhotoView valItem;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private DocumentReference noteRef = db.collection("URL").document("VAL");
     String ValURL = "";
@@ -38,12 +39,16 @@ public class ValFragment extends Fragment {
         shimmerFrameLayout.startShimmer();
         shimmerFrameLayout.setVisibility(View.VISIBLE);
 
+        valItem = v.findViewById(R.id.ValItem);
         ivValhala40 = v.findViewById(R.id.valhala40);
         ivValhala60 = v.findViewById(R.id.valhala60);
         ivValhala80 = v.findViewById(R.id.valhala80);
         ivValhala100 = v.findViewById(R.id.valhala100);
-
-        final String val40 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-40-1.jpg";
+        ivValhala40.setVisibility(View.GONE);
+        ivValhala60.setVisibility(View.GONE);
+        ivValhala80.setVisibility(View.GONE);
+        ivValhala100.setVisibility(View.GONE);
+//        final String val40 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-40-1.jpg";
         final String val60 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-601.jpg";
         final String val80 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-801.jpg";
         final String val100 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-1001.jpg";
@@ -55,6 +60,18 @@ public class ValFragment extends Fragment {
                         ValURL = documentSnapshot.getString("VALList");
 
                         Picasso.with(getActivity()).load(ValURL).into(ivValhala40, new Callback() {
+                            @Override
+                            public void onSuccess() {
+                                shimmerFrameLayout.stopShimmer();
+                                shimmerFrameLayout.setVisibility(View.GONE);
+                            }
+
+                            @Override
+                            public void onError() {
+                                Toast.makeText(getActivity(), "Sorry, something wrong :(", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                        Picasso.with(getActivity()).load(ValURL).into(valItem, new Callback() {
                             @Override
                             public void onSuccess() {
                                 shimmerFrameLayout.stopShimmer();
