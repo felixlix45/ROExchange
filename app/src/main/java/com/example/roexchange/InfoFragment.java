@@ -12,9 +12,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.github.chrisbanes.photoview.PhotoView;
+
 public class InfoFragment extends Fragment {
     ImageView ivWeapon, ivLevel;
-    com.jsibbold.zoomage.ZoomageView ivElement;
+    PhotoView ivElement;
 
     @Nullable
     @Override

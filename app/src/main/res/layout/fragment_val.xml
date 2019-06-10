@@ -29,8 +29,8 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textColor="@color/colorBlack"
-            android:text="Valhala Guides"
-            android:textSize="25dp"
+            android:text="@string/valhala_guides"
+            android:textSize="25sp"
             android:textStyle="bold"/>
 
         <com.facebook.shimmer.ShimmerFrameLayout

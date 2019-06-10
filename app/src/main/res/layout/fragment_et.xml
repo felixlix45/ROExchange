@@ -27,8 +27,8 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textColor="@color/colorBlack"
-            android:text="Endless Tower Floor"
-            android:textSize="25dp"
+            android:text="@string/endless_tower_floor"
+            android:textSize="25sp"
             android:textStyle="bold"/>
 
         <com.facebook.shimmer.ShimmerFrameLayout
@@ -54,8 +54,8 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textColor="@color/colorBlack"
-            android:text="Endless Tower Mini MVP"
-            android:textSize="25dp"
+            android:text="@string/endless_tower_mini_mvp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_below="@id/ivBossTower"
             android:layout_marginTop="10dp"/>

@@ -10,6 +10,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.ScaleGestureDetector;
@@ -43,6 +44,8 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
+    private final static String TAG = "HomeFragment";
+
     Button btnSearch, btnReset;
     EditText etSearch;
     RecyclerView rvItem;
@@ -51,7 +54,6 @@ public class HomeFragment extends Fragment {
     ArrayList<Item> savedList = new ArrayList<>();
     CheckBox cbFilter;
     Spinner spinnerFilter;
-//    ProgressBar progressBar;
     private Context context;
     String URL ="https://www.romexchange.com/api/items.json";
     final ItemAdapter itemAdapter = new ItemAdapter(getActivity(), listItem);
@@ -73,69 +75,59 @@ public class HomeFragment extends Fragment {
         rvItem.setLayoutManager(new LinearLayoutManager(getActivity()));
         rvItem.setAdapter(itemAdapter);
 
-
-
-//        progressBar = v.findViewById(R.id.progressBar);
-//        progressBar.setMax(100);
-
         cbFilter = v.findViewById(R.id.cbFilter);
         spinnerFilter = v.findViewById(R.id.spinnerFilter);
 
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                progressBar.setVisibility(View.VISIBLE);
-                shimmerFrameLayout.setVisibility(View.VISIBLE);
-                shimmerFrameLayout.startShimmer();
-                String name = etSearch.getText().toString().replaceAll("\\s+","%20");
-                if(!etSearch.equals("")){
-                    itemAdapter.clear();
-                    if(!cbFilter.isChecked()){
-                        JsonArrayRequest request = new JsonArrayRequest(
-                            Request.Method.GET,
-                            "https://www.romexchange.com/api?exact=false&item=" +name ,
-                            null,
-                            new Response.Listener<JSONArray>() {
-                                @Override
-                                public void onResponse(JSONArray response) {
-//                                        progressBar.setVisibility(View.GONE);
-                                    shimmerFrameLayout.setVisibility(View.GONE);
-                                    try{
-                                        for(int i = 0; i <response.length(); i++){
-                                            Item item = new Item();
-                                            item.setName(response.getJSONObject(i).get("name").toString());
-                                            item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-                                            listItem.add(item);
-                                        }
-                                        itemAdapter.notifyDataSetChanged();
+            shimmerFrameLayout.setVisibility(View.VISIBLE);
+            shimmerFrameLayout.startShimmer();
+            String name = etSearch.getText().toString().replaceAll("\\s+","%20");
+            if(!etSearch.equals("")){
+                itemAdapter.clear();
+                if(!cbFilter.isChecked()){
+                    JsonArrayRequest request = new JsonArrayRequest(
+                        Request.Method.GET,
+                        "https://www.romexchange.com/api?exact=false&item=" +name ,
+                        null,
+                        new Response.Listener<JSONArray>() {
+                            @Override
+                            public void onResponse(JSONArray response) {
+                                shimmerFrameLayout.setVisibility(View.GONE);
+                                try{
+                                    for(int i = 0; i <response.length(); i++){
+                                        Item item = new Item();
+                                        item.setName(response.getJSONObject(i).get("name").toString());
+                                        item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
+                                        listItem.add(item);
                                     }
-                                    catch (Exception e){
-
-                                    }
-
+                                    itemAdapter.notifyDataSetChanged();
                                 }
-                            },
-                            new Response.ErrorListener() {
-                                @Override
-                                public void onErrorResponse(VolleyError error) {
-//                                        progressBar.setVisibility(View.GONE);
-                                    shimmerFrameLayout.setVisibility(View.GONE);
-                                    Toast.makeText(getActivity(), "Error occured", Toast.LENGTH_SHORT).show();
+                                catch (Exception e){
+                                    Log.d(TAG, e.toString());
                                 }
                             }
-                        );
-                        final RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
-                        requestQueue.add(request);
-                    }else{
-                        getFilteredData();
-                    }
-
-
+                        },
+                        new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
+                                shimmerFrameLayout.setVisibility(View.GONE);
+                                Toast.makeText(getActivity(), "Error occured", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    );
+                    final RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
+                    requestQueue.add(request);
                 }else{
-
-                    Toast.makeText(getActivity(), "Null", Toast.LENGTH_SHORT).show();
+                    getFilteredData();
                 }
-                etSearch.onEditorAction(EditorInfo.IME_ACTION_DONE);
+
+            }else{
+
+                Toast.makeText(getActivity(), "Null", Toast.LENGTH_SHORT).show();
+            }
+            etSearch.onEditorAction(EditorInfo.IME_ACTION_DONE);
             }
 
 
@@ -166,57 +158,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        etSearch.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-//                JsonArrayRequest request = new JsonArrayRequest(
-//                        Request.Method.GET,
-//                        "https://www.romexchange.com/api?exact=false&item=" + s.toString() ,
-//                        null,
-//                        new Response.Listener<JSONArray>() {
-//                            @Override
-//                            public void onResponse(JSONArray response) {
-//
-//                                try{
-//                                    for(int i = 0; i <response.length(); i++){
-//                                        Item item = new Item();
-//                                        item.setName(response.getJSONObject(i).get("name").toString());
-//                                        item.setTypes(typeConvert(response.getJSONObject(i).getInt("type")));
-//                                        listItem.add(item);
-//                                    }
-//                                    itemAdapter.notifyDataSetChanged();
-//                                }
-//                                catch (Exception e){
-//
-//                                }
-//
-//                            }
-//                        },
-//                        new Response.ErrorListener() {
-//                            @Override
-//                            public void onErrorResponse(VolleyError error) {
-//
-//                                Toast.makeText(MainActivity.this, "Error occured", Toast.LENGTH_SHORT).show();
-//                            }
-//                        }
-//                );
-//                final RequestQueue requestQueue = Volley.newRequestQueue(context);
-//                requestQueue.add(request);
-            }
-        });
-
+        // Keyboard Search Click
         etSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -296,7 +238,6 @@ public class HomeFragment extends Fragment {
     public void getAllData(){
         shimmerFrameLayout.setVisibility(View.VISIBLE);
         shimmerFrameLayout.startShimmer();
-//        progressBar.setVisibility(View.VISIBLE);
         itemAdapter.clear();
         JsonArrayRequest request = new JsonArrayRequest(
                 Request.Method.GET,
@@ -305,10 +246,8 @@ public class HomeFragment extends Fragment {
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-//                        progressBar.setVisibility(View.GONE);
                         shimmerFrameLayout.setVisibility(View.GONE);
                         try{
-//                    Toast.makeText(context, String.valueOf(response.length()), Toast.LENGTH_SHORT).show();
                             for(int i = 0; i <response.length(); i++){
                                 Item item = new Item();
                                 item.setName(response.getJSONObject(i).get("name").toString());
@@ -325,8 +264,6 @@ public class HomeFragment extends Fragment {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-//                        progressBar.setVisibility(View.GONE);
-
                         Toast.makeText(getActivity(), "Check your internet connection and try again", Toast.LENGTH_SHORT).show();
                     }
                 }

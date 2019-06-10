@@ -2,6 +2,12 @@
     <string name="app_name">ROExchange</string>
     <string name="filter_prompt">Choose Filter</string>
     <string name="search">Search :</string>
+    <string name="valhala_guides">Valhala Guides</string>
+    <string name="endless_tower_floor">Endless Tower Floor</string>
+    <string name="endless_tower_mini_mvp">Endless Tower Mini MVP</string>
+    <string name="weapon_size_penalty">Weapon Size Penalty</string>
+    <string name="level_gap_penalty">Level Gap Penalty</string>
+    <string name="pet_100_tips">Pet 100% Tips</string>
 
     <string-array name="filter_type">
         <item>Weapons</item>
