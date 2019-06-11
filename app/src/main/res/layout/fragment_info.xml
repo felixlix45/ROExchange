@@ -82,9 +82,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/pet_tips"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:text="@string/daily_gingerbread_tips"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:paddingBottom="10dp"
-            />
+            android:src="@drawable/daily_gingerbread"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/daily_ginger_toy1"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/daily_ginger_toy2"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"/>
 
     </LinearLayout>
 

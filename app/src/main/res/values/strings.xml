@@ -8,6 +8,7 @@
     <string name="weapon_size_penalty">Weapon Size Penalty</string>
     <string name="level_gap_penalty">Level Gap Penalty</string>
     <string name="pet_100_tips">Pet 100% Tips</string>
+    <string name="daily_gingerbread_tips">Daily Gingerbread Tips</string>
 
     <string-array name="filter_type">
         <item>Weapons</item>
