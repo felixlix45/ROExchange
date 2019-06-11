@@ -59,6 +59,7 @@ class DetailActivity : AppCompatActivity() {
     lateinit var toolbar: Toolbar
     internal var savedList: ArrayList<Item>? = ArrayList()
     private var mChart: LineChart? = null
+    private var disableMenuOption = false
 
     lateinit var shimmerFrameLayout: ShimmerFrameLayout
 
@@ -76,8 +77,18 @@ class DetailActivity : AppCompatActivity() {
         val inflater = menuInflater
         if (intent.getStringExtra("act").contains("MainActivity")) {
             inflater.inflate(R.menu.detail_menu_item, menu)
+            if(disableMenuOption){
+                menu.findItem(R.id.itemAddToFav).setEnabled(false)
+            }else{
+                menu.findItem(R.id.itemAddToFav).setEnabled(true)
+            }
         } else if (intent.getStringExtra("act").contains("FavoriteActivity")) {
             inflater.inflate(R.menu.detail_menu_item_delete, menu)
+            if(disableMenuOption){
+                menu.findItem(R.id.item_delete).setEnabled(false)
+            }else{
+                menu.findItem(R.id.item_delete).setEnabled(true)
+            }
         }
         return true
     }
@@ -167,13 +178,15 @@ class DetailActivity : AppCompatActivity() {
             val URL = "https://www.romexchange.com/api?item=" + intent.getStringExtra("URL")
             shimmerFrameLayout.visibility = View.VISIBLE
             shimmerFrameLayout.startShimmer()
-
+            disableMenuOption = true;
             val request = JsonArrayRequest(
                     Request.Method.GET,
                     URL, null,
                     Response.Listener { response ->
                         shimmerFrameLayout.visibility = View.GONE
                         shimmerFrameLayout.stopShimmer()
+                        disableMenuOption = false
+                        invalidateOptionsMenu()
                         try {
                             val formatter = DecimalFormat("#,###,###")
                             for (i in 0 until response.length()) {
