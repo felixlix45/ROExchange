@@ -9,6 +9,8 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
+import android.support.v7.widget.helper.ItemTouchHelper
+import android.support.v7.widget.helper.ItemTouchHelper.*
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -29,7 +31,7 @@ class FavoriteActivity : AppCompatActivity() {
     internal var hashSet: LinkedHashSet<Item>? = null
     lateinit var rvItem: RecyclerView
     lateinit var swipeRefreshLayout: SwipeRefreshLayout
-
+    lateinit var itemAdapter: ItemAdapter
     lateinit var toolbar: Toolbar
 
     fun loadData() {
@@ -51,9 +53,19 @@ class FavoriteActivity : AppCompatActivity() {
     fun buildRecycleView() {
         rvItem = findViewById(R.id.rvItem)
         rvItem.layoutManager = LinearLayoutManager(this)
-        val itemAdapter = ItemAdapter(this, savedList)
+        itemAdapter = ItemAdapter(this, savedList)
         rvItem.adapter = itemAdapter
         itemAdapter.notifyDataSetChanged()
+    }
+
+    fun saveData() {
+        val sharedPreferences = getSharedPreferences("FavoriteItem", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        val gson = Gson()
+
+        val json = gson.toJson(savedList)
+        editor.putString("task list", json)
+        editor.apply()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,11 +79,27 @@ class FavoriteActivity : AppCompatActivity() {
         loadData()
         buildRecycleView()
 
+        val simpleCallback = object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT){
+            override fun onMove(p0: RecyclerView, p1: RecyclerView.ViewHolder, p2: RecyclerView.ViewHolder): Boolean {
+                return false
+            }
+
+            override fun onSwiped(p0: RecyclerView.ViewHolder, p1: Int) {
+                savedList!!.removeAt(p0.adapterPosition)
+                saveData();
+            }
+        }
+        val itemTouchHelper = ItemTouchHelper(simpleCallback)
+        itemTouchHelper.attachToRecyclerView(rvItem)
+
+
         swipeRefreshLayout.setOnRefreshListener {
             loadData()
             buildRecycleView()
             swipeRefreshLayout.isRefreshing = false
         }
+
+
 
     }
 
@@ -80,4 +108,6 @@ class FavoriteActivity : AppCompatActivity() {
         loadData()
         buildRecycleView()
     }
+
+
 }
