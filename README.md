@@ -6,4 +6,4 @@ Global server support soon
 Thank for https://www.romexchange.com for the API 
 
 ## Notes
-For security reason, i've deleted google-services.json file
+For security reason, I've deleted google-services.json file
