@@ -111,8 +111,8 @@ class HomeFragment : Fragment() {
                 }
 
             } else {
-
-                Toast.makeText(activity, "Null", Toast.LENGTH_SHORT).show()
+                Toast.makeText(activity, "Search can't be empty, retrieving all data", Toast.LENGTH_SHORT).show()
+                getAllData()
             }
             etSearch.onEditorAction(EditorInfo.IME_ACTION_DONE)
         }
