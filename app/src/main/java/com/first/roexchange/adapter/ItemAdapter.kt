@@ -1,27 +1,20 @@
-package com.example.roexchange.adapter
+package com.first.roexchange.adapter
 
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
-import android.widget.Toast
 
-import com.example.roexchange.DetailActivity
-import com.example.roexchange.R
-import com.example.roexchange.model.Item
+import com.first.roexchange.DetailActivity
+import com.first.roexchange.R
+import com.first.roexchange.model.Item
 
-import java.text.ParseException
-import java.text.SimpleDateFormat
 import java.util.ArrayList
-import java.util.Collections
-import java.util.Date
 import java.util.Locale
 
 class ItemAdapter(internal var context: Context, internal var itemList: ArrayList<Item>) : RecyclerView.Adapter<ItemAdapter.ViewHolder>() {

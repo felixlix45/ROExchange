@@ -1,43 +1,30 @@
-package com.example.roexchange
+package com.first.roexchange
 
-import android.app.Activity
-import android.app.ProgressDialog
-import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.text.Editable
-import android.text.TextWatcher
 import android.util.Log
-import android.view.KeyEvent
 import android.view.LayoutInflater
-import android.view.ScaleGestureDetector
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import android.widget.AdapterView
 import android.widget.Button
 import android.widget.CheckBox
-import android.widget.CompoundButton
 import android.widget.EditText
-import android.widget.ProgressBar
 import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 
 import com.android.volley.Request
-import com.android.volley.RequestQueue
 import com.android.volley.Response
-import com.android.volley.VolleyError
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
-import com.example.roexchange.R
-import com.example.roexchange.adapter.ItemAdapter
-import com.example.roexchange.model.Item
+import com.first.roexchange.R
+import com.first.roexchange.adapter.ItemAdapter
+import com.first.roexchange.model.Item
 import com.facebook.shimmer.ShimmerFrameLayout
-
-import org.json.JSONArray
 
 import java.util.ArrayList
 
@@ -60,7 +47,7 @@ class HomeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         var v = inflater.inflate(R.layout.fragment_home, container, false)
-        itemAdapter = ItemAdapter(requireActivity(),listItem);
+        itemAdapter = ItemAdapter(requireActivity(), listItem);
         shimmerFrameLayout = v.findViewById<ShimmerFrameLayout>(R.id.shimmer_container)
         shimmerFrameLayout.startShimmer()
         var btnSearch = v.findViewById(R.id.btnSearch) as Button
@@ -193,7 +180,7 @@ class HomeFragment : Fragment() {
                 Response.ErrorListener {
                     //                        progressBar.setVisibility(View.GONE);
                     shimmerFrameLayout.visibility = View.GONE
-                    Toast.makeText(activity, "Check your internet connection and try again", Toast.LENGTH_SHORT).show()
+
                 }
         )
 
@@ -222,7 +209,9 @@ class HomeFragment : Fragment() {
 
                     }
                 },
-                Response.ErrorListener { Toast.makeText(activity, "Check your internet connection and try again", Toast.LENGTH_SHORT).show() }
+                Response.ErrorListener {
+
+                }
         )
 
         val requestQueue = Volley.newRequestQueue(activity!!)

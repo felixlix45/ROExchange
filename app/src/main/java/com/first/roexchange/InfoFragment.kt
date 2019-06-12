@@ -1,19 +1,12 @@
-package com.example.roexchange
+package com.first.roexchange
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
-import android.view.MotionEvent
-import android.view.ScaleGestureDetector
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.Toast
-
-import com.github.chrisbanes.photoview.PhotoView
 
 class InfoFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {

@@ -1,24 +1,16 @@
-package com.example.roexchange
+package com.first.roexchange
 
 import android.content.Context
 import android.content.Intent
 import android.net.ConnectivityManager
-import android.net.NetworkInfo
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.Toolbar
-import android.util.Log
 import android.view.Menu
-import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Toast
-
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,6 +31,9 @@ class MainActivity : AppCompatActivity() {
             R.id.nav_et -> {
                 selectedFragment = EtFragment()
                 toolbar.title = "ET Guides"
+                if (!isNetworkAvailable) {
+                    Toast.makeText(applicationContext, "Something is wrong with your internet connection", Toast.LENGTH_SHORT).show()
+                }
             }
             R.id.nav_val -> {
                 selectedFragment = ValFragment()
@@ -82,7 +77,7 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
             R.id.itemInfo -> {
-                Toast.makeText(this, "Thanks ROMExchange.com for the API :)", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Item list is powered by: ROMExchange.com", Toast.LENGTH_SHORT).show()
                 return super.onOptionsItemSelected(item)
             }
             else -> return super.onOptionsItemSelected(item)
@@ -103,6 +98,7 @@ class MainActivity : AppCompatActivity() {
         bottomNav.setOnNavigationItemSelectedListener(navListener)
         supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
         setSupportActionBar(toolbar)
+
         if (!isNetworkAvailable) {
             Toast.makeText(applicationContext, "Something is wrong with your internet connection", Toast.LENGTH_SHORT).show()
         }

@@ -5,11 +5,11 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.roexchange"
-        minSdkVersion 26
+        applicationId "com.first.roexchange"
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
-        versionName "2.0"
+        versionName "2.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

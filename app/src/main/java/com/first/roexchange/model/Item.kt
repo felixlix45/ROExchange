@@ -1,4 +1,4 @@
-package com.example.roexchange.model
+package com.first.roexchange.model
 
 class Item {
     var name: String? = null

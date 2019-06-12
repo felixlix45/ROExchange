@@ -1,16 +1,10 @@
-package com.example.roexchange
+package com.first.roexchange
 
-import android.app.ProgressDialog
-import android.content.SharedPreferences
 import android.graphics.Color
-import android.icu.text.DateTimePatternGenerator
-import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.Toolbar
-import android.util.Log
 import android.view.Menu
-import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
@@ -18,12 +12,10 @@ import android.widget.Toast
 
 
 import com.android.volley.Request
-import com.android.volley.RequestQueue
 import com.android.volley.Response
-import com.android.volley.VolleyError
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
-import com.example.roexchange.model.Item
+import com.first.roexchange.model.Item
 import com.facebook.shimmer.ShimmerFrameLayout
 import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.components.Description
@@ -31,23 +23,12 @@ import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
-import com.github.mikephil.charting.listener.OnChartGestureListener
-import com.github.mikephil.charting.listener.OnChartValueSelectedListener
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
 
-import org.json.JSONArray
-import org.json.JSONObject
-import org.w3c.dom.Text
-
-import java.lang.reflect.Type
 import java.text.DecimalFormat
-import java.text.SimpleDateFormat
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 import java.util.ArrayList
-import java.util.Date
 
 class DetailActivity : AppCompatActivity() {
 

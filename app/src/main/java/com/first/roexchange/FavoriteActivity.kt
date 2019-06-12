@@ -1,8 +1,5 @@
-package com.example.roexchange
+package com.first.roexchange
 
-import android.content.SharedPreferences
-import android.support.design.widget.CoordinatorLayout
-import android.support.design.widget.Snackbar
 import android.support.v4.widget.SwipeRefreshLayout
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -10,20 +7,14 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
 import android.support.v7.widget.helper.ItemTouchHelper
-import android.support.v7.widget.helper.ItemTouchHelper.*
-import android.widget.LinearLayout
-import android.widget.TextView
-import android.widget.Toast
 
-import com.example.roexchange.adapter.ItemAdapter
-import com.example.roexchange.model.Item
+import com.first.roexchange.adapter.ItemAdapter
+import com.first.roexchange.model.Item
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
-import java.lang.reflect.Type
 import java.util.ArrayList
 import java.util.LinkedHashSet
-import java.util.stream.Collectors
 
 class FavoriteActivity : AppCompatActivity() {
 

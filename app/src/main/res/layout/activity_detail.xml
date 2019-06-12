@@ -92,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16dp"
-                android:textColor="@color/colorBlack"
+                android:textColor="?android:attr/textColorPrimary"
                 android:textStyle="bold"/>
 
             <TextView
@@ -101,21 +101,21 @@
                 android:layout_height="wrap_content"
 
                 android:textSize="14dp"
-                android:textColor="@color/colorBlack"/>
+                android:textColor="?android:attr/textColorPrimary"/>
 
             <TextView
                 android:id="@+id/tvDetailBeforeUpdatePrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="14dp"
-                android:textColor="@color/colorBlack"/>
+                android:textColor="?android:attr/textColorPrimary"/>
 
             <TextView
                 android:id="@+id/tvDetailPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="14dp"
-                android:textColor="@color/colorBlack"/>
+                android:textColor="?android:attr/textColorPrimary"/>
 
 
             <TextView
@@ -123,7 +123,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="14dp"
-                android:textColor="@color/colorBlack"/>
+                android:textColor="?android:attr/textColorPrimary"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -132,7 +132,8 @@
         android:id="@+id/LineChart"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_marginTop="20dp"></com.github.mikephil.charting.charts.LineChart>
+        android:layout_marginTop="20dp"
+        ></com.github.mikephil.charting.charts.LineChart>
 
 
 </LinearLayout>

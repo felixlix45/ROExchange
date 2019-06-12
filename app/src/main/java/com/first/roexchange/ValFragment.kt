@@ -1,4 +1,4 @@
-package com.example.roexchange
+package com.first.roexchange
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -10,10 +10,6 @@ import android.widget.Toast
 
 import com.facebook.shimmer.ShimmerFrameLayout
 import com.github.chrisbanes.photoview.PhotoView
-import com.google.android.gms.tasks.OnFailureListener
-import com.google.android.gms.tasks.OnSuccessListener
-import com.google.firebase.firestore.DocumentReference
-import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
