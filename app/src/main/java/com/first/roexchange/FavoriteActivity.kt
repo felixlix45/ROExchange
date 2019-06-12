@@ -32,6 +32,11 @@ class FavoriteActivity : AppCompatActivity() {
         val type = object : TypeToken<ArrayList<Item>>() {
 
         }.type
+        if(gson.fromJson<ArrayList<Item>>(json, type) == null){
+            savedList = ArrayList()
+        }else{
+            savedList = gson.fromJson<ArrayList<Item>>(json, type)
+        }
         savedList = gson.fromJson<ArrayList<Item>>(json, type)
 
         if (savedList == null || savedList!!.size == 0) {

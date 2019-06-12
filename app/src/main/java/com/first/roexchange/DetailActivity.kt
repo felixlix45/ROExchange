@@ -157,6 +157,7 @@ class DetailActivity : AppCompatActivity() {
             val yValue = ArrayList<Entry>()
             val priceArray = IntArray(7)
             val URL = "https://www.romexchange.com/api?item=" + intent.getStringExtra("URL")
+            Toast.makeText(this@DetailActivity, URL, Toast.LENGTH_LONG).show()
             shimmerFrameLayout.visibility = View.VISIBLE
             shimmerFrameLayout.startShimmer()
             disableMenuOption = true;
@@ -175,20 +176,20 @@ class DetailActivity : AppCompatActivity() {
                                 tvName.text = "Name : " + response.getJSONObject(i).get("name").toString()
                                 tvTypes.text = "Types : " + intent.getStringExtra("Types")
                                 tvPrice.text = "Current Price : " + formatter.format(response.getJSONObject(i).getJSONObject("sea").get("latest")) + " zeny"
-
-                                val jsonArray = response.getJSONObject(i).getJSONObject("sea").getJSONObject("week").getJSONArray("data")
-                                for (j in 0 until jsonArray.length()) {
-                                    priceArray[j] = jsonArray.getJSONObject(j).getInt("price")
-                                    yValue.add(Entry(j.toFloat() + 1, priceArray[j].toFloat()))
-                                }
-
-                                tvLastPrice.text = "Previous Price : " + formatter.format(jsonArray.getJSONObject(5).getInt("price").toLong()) + " zeny"
                                 val date = response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString().replace("T".toRegex(), " ").replace("Z".toRegex(), " GMT/UTC Time")
                                 if (date != "") {
                                     tvUpdated.text = "Last Updated : $date"
                                 } else {
                                     tvUpdated.text = "Last Updated : " + response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString()
                                 }
+                                val jsonArray = response.getJSONObject(i).getJSONObject("sea").getJSONObject("week").getJSONArray("data")
+                                for (j in 0 until jsonArray.length()) {
+                                    priceArray[j] = jsonArray.getJSONObject(j).getInt("price")
+                                    yValue.add(Entry(j.toFloat() + 1, priceArray[j].toFloat()))
+                                }
+
+                                tvLastPrice.text = "Previous Price : " + formatter.format(jsonArray.getJSONObject(jsonArray.length()-2).getInt("price").toLong()) + " zeny"
+
                                 val set1 = LineDataSet(yValue, "SEA Server")
 
                                 set1.fillAlpha = 200

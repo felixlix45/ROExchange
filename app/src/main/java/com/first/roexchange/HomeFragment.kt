@@ -223,7 +223,7 @@ class HomeFragment : Fragment() {
             1 -> return "Weapon"
             2 -> return "Off-hand"
             3 -> return "Armors"
-            4 -> return "Garmantes"
+            4 -> return "Garments"
             5 -> return "Footgears"
             6 -> return "Accessory"
             7 -> return "Blueprint"
