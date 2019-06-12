@@ -1,121 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
 
     <LinearLayout
-        android:layout_marginTop="10dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textColor="@color/colorBlack"
-            android:text="Element"
-            android:textSize="25dp"
-            android:textStyle="bold"/>
-
-        <com.github.chrisbanes.photoview.PhotoView
-            android:layout_marginTop="10dp"
-            android:id="@+id/tableElement"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/element_table"
-            android:adjustViewBounds="true"
-            />
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/btn_rounded_gray">
 
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textColor="@color/colorBlack"
-            android:textSize="25sp"
-            android:text="@string/weapon_size_penalty"
-            android:textStyle="bold"/>
+            <ImageButton
+                android:id="@+id/ibGuide"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icons8_user_manual_80"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
 
-        <ImageView
-            android:layout_marginTop="10dp"
-            android:id="@+id/tableWeaponPenalty"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:text="General Guides"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/weapon_penalty"
-            android:adjustViewBounds="true" />
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/btn_rounded_gray">
 
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textColor="@color/colorBlack"
-            android:textSize="25sp"
-            android:text="@string/level_gap_penalty"
-            android:textStyle="bold"/>
+            <ImageButton
+                android:id="@+id/ibMapGinger"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icons8_christmas_tree_64"
+                android:background="?attr/selectableItemBackgroundBorderless" />
 
-        <ImageView
-            android:layout_marginTop="10dp"
-            android:id="@+id/tableLevelGap"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/level_gap"
-            android:adjustViewBounds="true"
-            android:paddingBottom="10dp"/>
 
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textColor="@color/colorBlack"
-            android:textSize="25sp"
-            android:text="@string/pet_100_tips"
-            android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Ginger"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"/>
 
-        <com.github.chrisbanes.photoview.PhotoView
-            android:layout_marginTop="10dp"
-            android:id="@+id/tablePetTips"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/pet_tips"
-            android:adjustViewBounds="true"/>
 
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textColor="@color/colorBlack"
-            android:textSize="25sp"
-            android:text="@string/daily_gingerbread_tips"
-            android:textStyle="bold"/>
+        </LinearLayout>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:src="@drawable/daily_gingerbread"
-            android:layout_marginTop="10dp"/>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:src="@drawable/daily_ginger_toy1"
-            android:layout_marginTop="10dp"/>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:src="@drawable/daily_ginger_toy2"
-            android:layout_marginTop="10dp"
-            android:paddingBottom="10dp"/>
 
     </LinearLayout>
 
-</ScrollView>
+
+</LinearLayout>
