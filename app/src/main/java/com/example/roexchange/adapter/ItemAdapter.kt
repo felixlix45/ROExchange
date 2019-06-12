@@ -94,7 +94,6 @@ class ItemAdapter(internal var context: Context, internal var itemList: ArrayLis
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
         internal var tvTitle: TextView
         internal var tvTypes: TextView
         internal var btnFavorite: ImageButton? = null

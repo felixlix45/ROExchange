@@ -190,9 +190,11 @@ class DetailActivity : AppCompatActivity() {
                         try {
                             val formatter = DecimalFormat("#,###,###")
                             for (i in 0 until response.length()) {
+
                                 tvName.text = "Name : " + response.getJSONObject(i).get("name").toString()
                                 tvTypes.text = "Types : " + intent.getStringExtra("Types")
                                 tvPrice.text = "Current Price : " + formatter.format(response.getJSONObject(i).getJSONObject("sea").get("latest")) + " zeny"
+
                                 val jsonArray = response.getJSONObject(i).getJSONObject("sea").getJSONObject("week").getJSONArray("data")
                                 for (j in 0 until jsonArray.length()) {
                                     priceArray[j] = jsonArray.getJSONObject(j).getInt("price")
@@ -236,8 +238,6 @@ class DetailActivity : AppCompatActivity() {
             )
             val requestQueue = Volley.newRequestQueue(this)
             requestQueue.add(request)
-
-
         }
 
     }
