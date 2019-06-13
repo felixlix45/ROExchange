@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
 
@@ -41,6 +42,7 @@ class DetailActivity : AppCompatActivity() {
     internal var savedList: ArrayList<Item>? = ArrayList()
     private var mChart: LineChart? = null
     private var disableMenuOption = false
+    lateinit var switchServer: Switch
 
     lateinit var shimmerFrameLayout: ShimmerFrameLayout
 
@@ -132,6 +134,7 @@ class DetailActivity : AppCompatActivity() {
         shimmerFrameLayout = findViewById(R.id.shimmer_container_detail)
 
         //        Toast.makeText(this, savedList.size(), Toast.LENGTH_SHORT).show();
+        switchServer = findViewById(R.id.switchServer)
         tvName = findViewById(R.id.tvDetailName)
         tvTypes = findViewById(R.id.tvDetailTypes)
         tvPrice = findViewById(R.id.tvDetailPrice)
@@ -150,7 +153,17 @@ class DetailActivity : AppCompatActivity() {
         mChart!!.setNoDataText("CLICK ME MASTER!")
         mChart!!.description = desc
         mChart!!.setDrawBorders(true)
-
+        switchServer.setText("SEA SERVER")
+        switchServer.setOnCheckedChangeListener{
+            buttonView, isChecked ->
+            if (isChecked){
+                switchServer.setText("Server : SEA SERVER")
+                // TODO: SEA SERVER
+            }else{
+                switchServer.setText("Server : GLOBAL SERVER")
+                // TODO: GLOBAL SERVER
+            }
+        }
 
         if (intent.hasExtra("URL") && intent.hasExtra("Types")) {
             val act = intent.getStringExtra("act").replace("@.+".toRegex(), "")

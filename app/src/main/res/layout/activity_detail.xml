@@ -14,7 +14,8 @@
     <com.facebook.shimmer.ShimmerFrameLayout
         android:id="@+id/shimmer_container_detail"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:visibility="gone">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -134,6 +135,15 @@
         android:layout_height="400dp"
         android:layout_marginTop="20dp"
         ></com.github.mikephil.charting.charts.LineChart>
+
+    <Switch
+        android:id="@+id/switchServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textOn="SEA"
+        android:textOff="Global"
+        android:checked="true"/>
 
 
 </LinearLayout>
