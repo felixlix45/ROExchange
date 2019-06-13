@@ -157,66 +157,65 @@ class DetailActivity : AppCompatActivity() {
             val yValue = ArrayList<Entry>()
             val priceArray = IntArray(7)
             val URL = "https://www.romexchange.com/api?item=" + intent.getStringExtra("URL")
-            Toast.makeText(this@DetailActivity, URL, Toast.LENGTH_LONG).show()
             shimmerFrameLayout.visibility = View.VISIBLE
             shimmerFrameLayout.startShimmer()
             disableMenuOption = true;
             val request = JsonArrayRequest(
-                    Request.Method.GET,
-                    URL, null,
-                    Response.Listener { response ->
-                        shimmerFrameLayout.visibility = View.GONE
-                        shimmerFrameLayout.stopShimmer()
-                        disableMenuOption = false
-                        invalidateOptionsMenu()
-                        try {
-                            val formatter = DecimalFormat("#,###,###")
-                            for (i in 0 until response.length()) {
+                Request.Method.GET,
+                URL, null,
+                Response.Listener { response ->
+                    shimmerFrameLayout.visibility = View.GONE
+                    shimmerFrameLayout.stopShimmer()
+                    disableMenuOption = false
+                    invalidateOptionsMenu()
+                    try {
+                        val formatter = DecimalFormat("#,###,###")
+                        for (i in 0 until response.length()) {
 
-                                tvName.text = "Name : " + response.getJSONObject(i).get("name").toString()
-                                tvTypes.text = "Types : " + intent.getStringExtra("Types")
-                                tvPrice.text = "Current Price : " + formatter.format(response.getJSONObject(i).getJSONObject("sea").get("latest")) + " zeny"
-                                val date = response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString().replace("T".toRegex(), " ").replace("Z".toRegex(), " GMT/UTC Time")
-                                if (date != "") {
-                                    tvUpdated.text = "Last Updated : $date"
-                                } else {
-                                    tvUpdated.text = "Last Updated : " + response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString()
-                                }
-                                val jsonArray = response.getJSONObject(i).getJSONObject("sea").getJSONObject("week").getJSONArray("data")
-                                for (j in 0 until jsonArray.length()) {
-                                    priceArray[j] = jsonArray.getJSONObject(j).getInt("price")
-                                    yValue.add(Entry(j.toFloat() + 1, priceArray[j].toFloat()))
-                                }
-
-                                tvLastPrice.text = "Previous Price : " + formatter.format(jsonArray.getJSONObject(jsonArray.length()-2).getInt("price").toLong()) + " zeny"
-
-                                val set1 = LineDataSet(yValue, "SEA Server")
-
-                                set1.fillAlpha = 200
-                                set1.color = Color.BLUE
-                                set1.lineWidth = 2.5f
-                                set1.setCircleColor(Color.BLUE)
-                                set1.circleHoleColor = Color.BLUE
-                                set1.circleRadius = 5f
-                                set1.notifyDataSetChanged()
-
-                                val dataSets = ArrayList<ILineDataSet>()
-                                dataSets.add(set1)
-
-                                val data = LineData(dataSets)
-                                mChart!!.data = data
-                                supportActionBar!!.setTitle(tvName.text.toString().replace("Name : ".toRegex(), ""))
+                            tvName.text = "Name : " + response.getJSONObject(i).get("name").toString()
+                            tvTypes.text = "Types : " + intent.getStringExtra("Types")
+                            tvPrice.text = "Current Price : " + formatter.format(response.getJSONObject(i).getJSONObject("sea").get("latest")) + " zeny"
+                            val date = response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString().replace("T".toRegex(), " ").replace("Z".toRegex(), " GMT/UTC Time")
+                            if (date != "") {
+                                tvUpdated.text = "Last Updated : $date"
+                            } else {
+                                tvUpdated.text = "Last Updated : " + response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString()
+                            }
+                            val jsonArray = response.getJSONObject(i).getJSONObject("sea").getJSONObject("week").getJSONArray("data")
+                            for (j in 0 until jsonArray.length()) {
+                                priceArray[j] = jsonArray.getJSONObject(j).getInt("price")
+                                yValue.add(Entry(j.toFloat() + 1, priceArray[j].toFloat()))
                             }
 
-                        } catch (e: Exception) {
+                            tvLastPrice.text = "Previous Price : " + formatter.format(jsonArray.getJSONObject(jsonArray.length()-2).getInt("price").toLong()) + " zeny"
 
+                            val set1 = LineDataSet(yValue, "SEA Server")
+
+                            set1.fillAlpha = 200
+                            set1.color = Color.BLUE
+                            set1.lineWidth = 2.5f
+                            set1.setCircleColor(Color.BLUE)
+                            set1.circleHoleColor = Color.BLUE
+                            set1.circleRadius = 5f
+                            set1.notifyDataSetChanged()
+
+                            val dataSets = ArrayList<ILineDataSet>()
+                            dataSets.add(set1)
+
+                            val data = LineData(dataSets)
+                            mChart!!.data = data
+                            supportActionBar!!.setTitle(tvName.text.toString().replace("Name : ".toRegex(), ""))
                         }
-                    },
-                    Response.ErrorListener {
-                        shimmerFrameLayout.visibility = View.GONE
-                        shimmerFrameLayout.stopShimmer()
-                        Toast.makeText(this@DetailActivity, "Error while fetching data", Toast.LENGTH_SHORT).show()
+
+                    } catch (e: Exception) {
+
                     }
+                },
+                Response.ErrorListener {
+                    shimmerFrameLayout.visibility = View.GONE
+                    shimmerFrameLayout.stopShimmer()
+                    Toast.makeText(this@DetailActivity, "Error while fetching data", Toast.LENGTH_SHORT).show()
+                }
             )
             val requestQueue = Volley.newRequestQueue(this)
             requestQueue.add(request)

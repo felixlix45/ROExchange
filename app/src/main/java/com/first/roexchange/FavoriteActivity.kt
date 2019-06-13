@@ -37,7 +37,6 @@ class FavoriteActivity : AppCompatActivity() {
         }else{
             savedList = gson.fromJson<ArrayList<Item>>(json, type)
         }
-        savedList = gson.fromJson<ArrayList<Item>>(json, type)
 
         if (savedList == null || savedList!!.size == 0) {
             //            Toast.makeText(this, "Data is null", Toast.LENGTH_SHORT).show();
