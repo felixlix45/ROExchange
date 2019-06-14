@@ -12,12 +12,12 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-      
-        <activity android:name="com.first.roexchange.DailyGingerActivity" />
-        <activity android:name="com.first.roexchange.GeneralGuidesActivity" />
-        <activity android:name="com.first.roexchange.FavoriteActivity" />
-        <activity android:name="com.first.roexchange.DetailActivity" />
-        <activity android:name="com.first.roexchange.MainActivity">
+        <activity android:name=".MonsterList"></activity>
+        <activity android:name=".DailyGingerActivity" />
+        <activity android:name=".GeneralGuidesActivity" />
+        <activity android:name=".FavoriteActivity" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.first.roexchange.MessagingService">
+        <service android:name=".MessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>

@@ -41,6 +41,14 @@ class EtFragment : Fragment() {
         container_et_mini = v.findViewById(R.id.shimmer_container_et_mini)
 
         val note = HashMap<String, Any>()
+        container_et_floor.visibility = View.VISIBLE
+        container_et_floor.startShimmer()
+        container_et_mini.visibility = View.VISIBLE
+        container_et_mini.startShimmer()
+        if(URLMVP != "" || URLMini != ""){
+            container_et_floor.stopShimmer()
+            container_et_mini.stopShimmer()
+        }
 
         noteRef.get().addOnSuccessListener { documentSnapshot ->
             if (documentSnapshot.exists()) {
@@ -82,10 +90,7 @@ class EtFragment : Fragment() {
         }
 
         //        progressBar.setVisibility(View.VISIBLE);
-        container_et_floor.visibility = View.VISIBLE
-        container_et_floor.startShimmer()
-        container_et_mini.visibility = View.VISIBLE
-        container_et_mini.startShimmer()
+
         return v
     }
 
