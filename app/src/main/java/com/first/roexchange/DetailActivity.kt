@@ -153,14 +153,17 @@ class DetailActivity : AppCompatActivity() {
         mChart!!.setNoDataText("CLICK ME MASTER!")
         mChart!!.description = desc
         mChart!!.setDrawBorders(true)
+        mChart!!.setDrawGridBackground(false)
         switchServer.setText("SEA SERVER")
         switchServer.setOnCheckedChangeListener{
             buttonView, isChecked ->
             if (isChecked){
                 switchServer.setText("Server : SEA SERVER")
+
                 // TODO: SEA SERVER
             }else{
                 switchServer.setText("Server : GLOBAL SERVER")
+                Toast.makeText(applicationContext, "Coming Soon", Toast.LENGTH_SHORT).show()
                 // TODO: GLOBAL SERVER
             }
         }

@@ -7,10 +7,13 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.app.FragmentManager
 import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.google.firebase.firestore.FirebaseFirestore
+import java.util.HashMap
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         when (menuItem.itemId) {
             R.id.nav_home -> {
                 selectedFragment = HomeFragment()
-                toolbar.title = "ROExchange"
+                toolbar.title = "RO M Guides and Exchange"
                 if (!isNetworkAvailable) {
                     Toast.makeText(applicationContext, "Something is wrong with your internet connection", Toast.LENGTH_SHORT).show()
                 }
@@ -50,7 +53,46 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, selectedFragment!!).commit()
+
+
+        val currFragment = supportFragmentManager.findFragmentById(R.id.fragment_container)
+
+//        if(selectedFragment == HomeFragment()){
+//            if (HomeFragment().isHidden){
+//                supportFragmentManager.beginTransaction().show(HomeFragment()).commit()
+//            }else{
+//                supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment).add(R.id.fragment_container, currFragment!!).hide(currFragment).commit()
+//
+//            }
+//        }else if (selectedFragment == EtFragment()){
+//            if (EtFragment().isHidden){
+//                supportFragmentManager.beginTransaction().show(EtFragment()).commit()
+//            }else{
+//                supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment).add(R.id.fragment_container, currFragment!!).hide(currFragment).commit()
+//
+//            }
+//        }else if(selectedFragment == ValFragment()){
+//            if (ValFragment().isHidden){
+//                supportFragmentManager.beginTransaction().show(ValFragment()).commit()
+//            }else{
+//                supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment).add(R.id.fragment_container, currFragment!!).hide(currFragment).commit()
+//
+//            }
+//        }else if(selectedFragment == InfoFragment()){
+//            if (InfoFragment().isHidden){
+//                supportFragmentManager.beginTransaction().show(InfoFragment()).commit()
+//            }else{
+//                supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment!!).hide(currFragment!!).commit()
+//
+//            }
+//        }
+
+        if(selectedFragment!!.isHidden){
+            supportFragmentManager.beginTransaction().show(selectedFragment!!).commit()
+        }else{
+            supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment!!).hide(currFragment!!).commit()
+        }
+//        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, selectedFragment!!).commit()
         true
     }
 
@@ -85,18 +127,18 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    lateinit var bundling: Bundle
+    lateinit var URLMVP: String
+    lateinit var URLMini: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
-
         toolbar = findViewById(R.id.toolbar)
         bottomNav = findViewById(R.id.bottom_nav)
         bottomNav.setOnNavigationItemSelectedListener(navListener)
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
+        supportFragmentManager.beginTransaction().add(R.id.fragment_container, HomeFragment()).commit()
         setSupportActionBar(toolbar)
 
         if (!isNetworkAvailable) {
