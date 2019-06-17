@@ -65,6 +65,15 @@ class EtFragment : Fragment() {
                 URLGlobalMVP = documentSnapshot.getString("GlobalMVP")
                 URLGlobalMini = documentSnapshot.getString("GlobalMini")
                 URLLastUpdated = documentSnapshot.getString("LastUpdated")
+
+                if(URLGlobalMVP.equals("http://asbt.in/images/Events/update-soon_9-19-2017_060559.1463650.jpg")){
+                    Toast.makeText(activity, "Can't find reliable resource for ET MVP Global Server", Toast.LENGTH_SHORT).show()
+                }else if(URLGlobalMini.equals("http://asbt.in/images/Events/update-soon_9-19-2017_060559.1463650.jpg")){
+                    Toast.makeText(activity, "Can't find reliable resource for ET Mini Global Server", Toast.LENGTH_SHORT).show()
+                }
+
+
+
                 tvLastUpdated.text = URLLastUpdated
                 //                    Toast.makeText(getActivity(), URLMVP, Toast.LENGTH_SHORT).show();
 

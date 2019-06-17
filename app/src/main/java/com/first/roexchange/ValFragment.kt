@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 
 import com.facebook.shimmer.ShimmerFrameLayout
@@ -23,6 +24,8 @@ class ValFragment : Fragment() {
     private val db = FirebaseFirestore.getInstance()
     private val noteRef = db.collection("URL").document("VAL")
     internal var ValURL: String? = ""
+    internal var valGlobalURL: String? = ""
+    internal var lastupdated: String? = ""
     //    ProgressBar progressBar;
     lateinit var shimmerFrameLayout: ShimmerFrameLayout
 
@@ -35,6 +38,8 @@ class ValFragment : Fragment() {
         shimmerFrameLayout.startShimmer()
         shimmerFrameLayout.visibility = View.VISIBLE
 
+        var valGlobal = v.findViewById<PhotoView>(R.id.ValGlobal)
+        var tvLastUpdated = v.findViewById<TextView>(R.id.tvLastUpdated)
         valItem = v.findViewById(R.id.ValItem)
         ivValhala40 = v.findViewById(R.id.valhala40)
         ivValhala60 = v.findViewById(R.id.valhala60)
@@ -45,25 +50,23 @@ class ValFragment : Fragment() {
         ivValhala80.visibility = View.GONE
         ivValhala100.visibility = View.GONE
         //        final String val40 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-40-1.jpg";
-        val val60 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-601.jpg"
-        val val80 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-801.jpg"
-        val val100 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-1001.jpg"
+//        val val60 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-601.jpg"
+//        val val80 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-801.jpg"
+//        val val100 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-1001.jpg"
 
         noteRef.get()
                 .addOnSuccessListener { documentSnapshot ->
                     ValURL = documentSnapshot.getString("VALList")
+                    valGlobalURL = documentSnapshot.getString("ValGlobal")
+                    lastupdated = documentSnapshot.getString("LastUpdated")
+                    tvLastUpdated.text = lastupdated
+                    if (valGlobalURL.equals("http://asbt.in/images/Events/update-soon_9-19-2017_060559.1463650.jpg")){
+                        Toast.makeText(activity, "Can't find reliable resource for Valhalla Global Maps", Toast.LENGTH_SHORT).show()
+                    }
+
+                    Picasso.with(activity).load(valGlobalURL).into(valGlobal)
 
 
-                    Picasso.with(activity).load(ValURL).into(ivValhala40, object : Callback {
-                        override fun onSuccess() {
-                            shimmerFrameLayout.stopShimmer()
-                            shimmerFrameLayout.visibility = View.GONE
-                        }
-
-                        override fun onError() {
-                            Toast.makeText(activity, "Sorry, something wrong :(", Toast.LENGTH_SHORT).show()
-                        }
-                    })
                     Picasso.with(activity).load(ValURL).into(valItem, object : Callback {
                         override fun onSuccess() {
                             shimmerFrameLayout.stopShimmer()
@@ -74,37 +77,47 @@ class ValFragment : Fragment() {
                             Toast.makeText(activity, "Sorry, something wrong :(", Toast.LENGTH_SHORT).show()
                         }
                     })
-                    Picasso.with(activity).load(val60).into(ivValhala60, object : Callback {
-                        override fun onSuccess() {
-
-                        }
-
-                        override fun onError() {
-
-                            ivValhala60.visibility = View.GONE
-                        }
-                    })
-                    Picasso.with(activity).load(val80).into(ivValhala80, object : Callback {
-                        override fun onSuccess() {
-
-                        }
-
-                        override fun onError() {
-                            ivValhala80.visibility = View.GONE
-                        }
-                    })
-                    Picasso.with(activity).load(val100).into(ivValhala100, object : Callback {
-                        override fun onSuccess() {
-                            //                progressBar.setVisibility(View.GONE);
-                            shimmerFrameLayout.stopShimmer()
-                            shimmerFrameLayout.visibility = View.GONE
-
-                        }
-
-                        override fun onError() {
-                            ivValhala100.visibility = View.GONE
-                        }
-                    })
+//                    Picasso.with(activity).load(ValURL).into(ivValhala40, object : Callback {
+//                        override fun onSuccess() {
+//                            shimmerFrameLayout.stopShimmer()
+//                            shimmerFrameLayout.visibility = View.GONE
+//                        }
+//
+//                        override fun onError() {
+//                            Toast.makeText(activity, "Sorry, something wrong :(", Toast.LENGTH_SHORT).show()
+//                        }
+//                    })
+//                    Picasso.with(activity).load(val60).into(ivValhala60, object : Callback {
+//                        override fun onSuccess() {
+//
+//                        }
+//
+//                        override fun onError() {
+//
+//                            ivValhala60.visibility = View.GONE
+//                        }
+//                    })
+//                    Picasso.with(activity).load(val80).into(ivValhala80, object : Callback {
+//                        override fun onSuccess() {
+//
+//                        }
+//
+//                        override fun onError() {
+//                            ivValhala80.visibility = View.GONE
+//                        }
+//                    })
+//                    Picasso.with(activity).load(val100).into(ivValhala100, object : Callback {
+//                        override fun onSuccess() {
+//                            //                progressBar.setVisibility(View.GONE);
+//                            shimmerFrameLayout.stopShimmer()
+//                            shimmerFrameLayout.visibility = View.GONE
+//
+//                        }
+//
+//                        override fun onError() {
+//                            ivValhala100.visibility = View.GONE
+//                        }
+//                    })
                 }
                 .addOnFailureListener { Toast.makeText(activity, "Fail to get data!", Toast.LENGTH_SHORT).show() }
         return v

@@ -2,7 +2,7 @@
     <string name="app_name">RO Mobile Guides and Exchange</string>
     <string name="filter_prompt">Choose Filter</string>
     <string name="search">Search :</string>
-    <string name="valhala_guides">Valhala Guides</string>
+    <string name="valhala_guides">Valhala Guides SEA</string>
     <string name="endless_tower_floor">Endless Tower MVP SEA</string>
     <string name="endless_tower_mini_mvp">Endless Tower Mini MVP SEA</string>
     <string name="weapon_size_penalty">Weapon Size Penalty</string>
@@ -10,6 +10,7 @@
     <string name="pet_100_tips">Pet 100% Tips</string>
     <string name="daily_gingerbread_tips">Daily Gingerbread Tips</string>
     <string name="endless_tower_mvp_global">Endless Tower MVP GLOBAL</string>
+    <string name="valhalla_guides_global">Valhalla Guides Global</string>
 
     <string-array name="filter_type">
         <item>Weapons</item>
