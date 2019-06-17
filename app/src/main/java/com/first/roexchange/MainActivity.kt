@@ -11,7 +11,9 @@ import android.support.v4.app.FragmentManager
 import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
+import com.github.chrisbanes.photoview.PhotoView
 import com.google.firebase.firestore.FirebaseFirestore
 import java.util.HashMap
 
@@ -122,6 +124,15 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Outdated image/data will be deleted or changed with 'updated soon' image!", Toast.LENGTH_LONG).show()
                 return super.onOptionsItemSelected(item)
             }
+//            R.id.serverChange ->{
+////                Toast.makeText(this, "TEST", Toast.LENGTH_SHORT).show()
+//                if(item.isChecked){
+//                    item.setChecked(false)
+//                }else{
+//                    item.setChecked(true)
+//                }
+//                return super.onOptionsItemSelected(item)
+//            }
             else -> return super.onOptionsItemSelected(item)
         }
 
@@ -131,6 +142,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var URLMVP: String
     lateinit var URLMini: String
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -138,6 +151,7 @@ class MainActivity : AppCompatActivity() {
         toolbar = findViewById(R.id.toolbar)
         bottomNav = findViewById(R.id.bottom_nav)
         bottomNav.setOnNavigationItemSelectedListener(navListener)
+
         supportFragmentManager.beginTransaction().add(R.id.fragment_container, HomeFragment()).commit()
         setSupportActionBar(toolbar)
 

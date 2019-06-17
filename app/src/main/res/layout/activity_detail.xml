@@ -1,20 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity"
-    android:orientation="vertical">
+    tools:context=".DetailActivity">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
-
-    <com.facebook.shimmer.ShimmerFrameLayout
-        android:id="@+id/shimmer_container_detail"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_container_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:layout_width= "100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/background"/>
+
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="175dp"
+                        android:layout_height="@dimen/placeholderTextHeight"
+                        android:background="@color/background"/>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="120dp"
+                        android:layout_height="@dimen/placeholderTextDetail"
+                        android:background="@color/background"/>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/placeholderTextDetail"
+                        android:background="@color/background"/>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/placeholderTextDetail"
+                        android:background="@color/background"/>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="200dp"
+                        android:layout_height="@dimen/placeholderTextDetail"
+                        android:background="@color/background"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,12 +80,10 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="8dp"
                 android:layout_gravity="center"
-                android:layout_width= "100dp"
-                android:layout_height="100dp"
-                android:background="@color/background"/>
+                android:layout_width= "120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/no_image_available"/>
 
             <LinearLayout
                 android:layout_marginTop="12dp"
@@ -36,121 +92,71 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
-                    android:layout_width="175dp"
-                    android:layout_height="@dimen/placeholderTextHeight"
-                    android:background="@color/background"/>
+                    android:id="@+id/tvDetailName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textStyle="bold"/>
 
                 <TextView
-                    android:layout_marginTop="3dp"
-                    android:layout_width="120dp"
-                    android:layout_height="@dimen/placeholderTextDetail"
-                    android:background="@color/background"/>
+                    android:id="@+id/tvDetailTypes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="14dp"
+                    android:textColor="?android:attr/textColorPrimary"/>
 
                 <TextView
-                    android:layout_marginTop="3dp"
-                    android:layout_width="150dp"
-                    android:layout_height="@dimen/placeholderTextDetail"
-                    android:background="@color/background"/>
+                    android:id="@+id/tvDetailBeforeUpdatePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="?android:attr/textColorPrimary"/>
 
                 <TextView
-                    android:layout_marginTop="3dp"
-                    android:layout_width="150dp"
-                    android:layout_height="@dimen/placeholderTextDetail"
-                    android:background="@color/background"/>
+                    android:id="@+id/tvDetailPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
 
                 <TextView
-                    android:layout_marginTop="3dp"
-                    android:layout_width="200dp"
-                    android:layout_height="@dimen/placeholderTextDetail"
-                    android:background="@color/background"/>
+                    android:id="@+id/tvDetailUpdated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="?android:attr/textColorPrimary"/>
             </LinearLayout>
 
         </LinearLayout>
 
-    </com.facebook.shimmer.ShimmerFrameLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width= "120dp"
-            android:layout_height="120dp"
-            android:src="@mipmap/no_image_available"/>
-
-        <LinearLayout
-            android:layout_marginTop="12dp"
-            android:layout_marginLeft="10dp"
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/LineChart"
             android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            ></com.github.mikephil.charting.charts.LineChart>
+
+        <Switch
+            android:id="@+id/switchServer"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:id="@+id/tvDetailName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16dp"
-                android:textColor="?android:attr/textColorPrimary"
-                android:textStyle="bold"/>
+            android:layout_gravity="center_horizontal"
+            android:textOn="SEA"
+            android:textOff="Global"
+            android:checked="true"/>
 
-            <TextView
-                android:id="@+id/tvDetailTypes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:textSize="14dp"
-                android:textColor="?android:attr/textColorPrimary"/>
-
-            <TextView
-                android:id="@+id/tvDetailBeforeUpdatePrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="14dp"
-                android:textColor="?android:attr/textColorPrimary"/>
-
-            <TextView
-                android:id="@+id/tvDetailPrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="14dp"
-                android:textColor="?android:attr/textColorPrimary"/>
-
-
-            <TextView
-                android:id="@+id/tvDetailUpdated"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="14dp"
-                android:textColor="?android:attr/textColorPrimary"/>
-        </LinearLayout>
-
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered by : ROMExchange.com"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center"/>
     </LinearLayout>
 
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/LineChart"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginTop="20dp"
-        ></com.github.mikephil.charting.charts.LineChart>
-
-    <Switch
-        android:id="@+id/switchServer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textOn="SEA"
-        android:textOff="Global"
-        android:checked="true"/>
-
-    <TextView
-        android:layout_marginTop="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Powered by : ROMExchange.com"
-        android:textColor="@color/colorBlack"
-        android:layout_gravity="center"/>
 
 
-</LinearLayout>
+</ScrollView>

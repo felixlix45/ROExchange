@@ -1,0 +1,7092 @@
+{
+ "monster_list": [
+  {
+   "name": "Poring",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/boli_monster.png",
+   "level": "1",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "7",
+   "job_exp": "4",
+   "drop": [
+    {
+     "name": "Poring Hat Blueprint (0.01%)"
+    },
+    {
+     "name": "Poring Card (0.01%)"
+    },
+    {
+     "name": "Jellopy (21.21%)"
+    },
+    {
+     "name": "Transformation Scroll (Poring) (0.38%)"
+    },
+    {
+     "name": "32 × Zeny (62.34%)"
+    },
+    {
+     "name": "158 × Zeny (62.34%)"
+    },
+    {
+     "name": "Apple Juice (8.95%)"
+    },
+    {
+     "name": "Eden Team Knife [2] (1.67%)"
+    }
+   ]
+  },
+  {
+   "name": "Mandragora Seed",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/mandala_monster.png",
+   "level": "1",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Mandragora Card (?%)"
+    }
+   ]
+  },
+  {
+   "name": "Screaming Mandragora",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/mandala_monster.png",
+   "level": "1",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Mandragora Card (?%)"
+    }
+   ]
+  },
+  {
+   "name": "Rare Mandragora",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/mandala_monster.png",
+   "level": "1",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Mandragora Card (?%)"
+    }
+   ]
+  },
+  {
+   "name": "Lunatic",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/fengtu_monster.png",
+   "level": "2",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "18",
+   "job_exp": "6",
+   "drop": [
+    {
+     "name": "Clown Nose Blueprint (0.01%)"
+    },
+    {
+     "name": "Lunatic Card (0.01%)"
+    },
+    {
+     "name": "Feather (26.63%)"
+    },
+    {
+     "name": "Transformation Scroll (Lunatic) (0.48%)"
+    },
+    {
+     "name": "32 × Zeny (53.25%)"
+    },
+    {
+     "name": "161 × Zeny (53.25%)"
+    },
+    {
+     "name": "Apple Juice (11.24%)"
+    },
+    {
+     "name": "Orange Potion (1.7%)"
+    },
+    {
+     "name": "Eden Team Boots [1] (2.1%)"
+    }
+   ]
+  },
+  {
+   "name": "Lunatic",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/fengtu_monster.png",
+   "level": "2",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "18",
+   "job_exp": "6"
+  },
+  {
+   "name": "Fabre",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/lvmianchong_monster.png",
+   "level": "3",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "19",
+   "job_exp": "13",
+   "drop": [
+    {
+     "name": "Fabre Card (?%)"
+    },
+    {
+     "name": "Jellopy (26.32%)"
+    },
+    {
+     "name": "Transformation Scroll (Fabre) (0.28%)"
+    },
+    {
+     "name": "33 × Zeny (66.74%)"
+    },
+    {
+     "name": "164 × Zeny (66.74%)"
+    },
+    {
+     "name": "Eden Team Training Clothes [1] (0.88%)"
+    }
+   ]
+  },
+  {
+   "name": "Pupa",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/pupa_monster.png",
+   "level": "4",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Pupa Card (0.05%)"
+    },
+    {
+     "name": "33 × Zeny (99.94%)"
+    }
+   ]
+  },
+  {
+   "name": "Savage Babe",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/savage_baby_monster.png",
+   "level": "5",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Earth",
+   "size": "Large",
+   "base_exp": "19",
+   "job_exp": "13"
+  },
+  {
+   "name": "Desert Wolf Baby",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/littlewolf_monster.png",
+   "level": "5",
+   "type": "Monster",
+   "zone": "Field",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "19",
+   "job_exp": "13"
+  },
+  {
+   "name": "Peco Peco Egg",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/pecopeco_egg_monster.png",
+   "level": "6",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Peco Peco Egg Card (0.05%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (1.26%)"
+    },
+    {
+     "name": "33 × Zeny (98.68%)"
+    }
+   ]
+  },
+  {
+   "name": "Smokie",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/smokie_mini.png",
+   "level": "8",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "457",
+   "job_exp": "293",
+   "drop": [
+    {
+     "name": "Kitty Band Blueprint (0.93%)"
+    },
+    {
+     "name": "Smokie Card (?%)"
+    },
+    {
+     "name": "Feather (10.14%)"
+    },
+    {
+     "name": "Raccoon Leaf (2.99%)"
+    },
+    {
+     "name": "Transformation Scroll (Smokie) (0.84%)"
+    },
+    {
+     "name": "Awakening Potion (7.53%)"
+    },
+    {
+     "name": "Rough Elunium (9.89%)"
+    },
+    {
+     "name": "Candy (5.23%)"
+    },
+    {
+     "name": "270 × Zeny (?%)"
+    },
+    {
+     "name": "Leather Jacket [1] (31.2%)"
+    },
+    {
+     "name": "Bow [2] (31.2%)"
+    }
+   ]
+  },
+  {
+   "name": "Picky",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/picky_monster.png",
+   "level": "9",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Fire",
+   "size": "Small",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Picky Card (?%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (?%)"
+    },
+    {
+     "name": "34 × Zeny (?%)"
+    }
+   ]
+  },
+  {
+   "name": "Eclipse",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/eclipse_mini.png",
+   "level": "10",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Neutral",
+   "size": "Medium",
+   "base_exp": "466",
+   "job_exp": "427",
+   "drop": [
+    {
+     "name": "Cute Ribbon Blueprint (1.01%)"
+    },
+    {
+     "name": "Eclipse Card (?%)"
+    },
+    {
+     "name": "Feather (10.53%)"
+    },
+    {
+     "name": "Cobaltblue Dyestuffs (7.11%)"
+    },
+    {
+     "name": "Four Leaf Clover (2.33%)"
+    },
+    {
+     "name": "Transformation Scroll (Eclipse) (0.91%)"
+    },
+    {
+     "name": "Rough Oridecon (10.66%)"
+    },
+    {
+     "name": "275 × Zeny (?%)"
+    },
+    {
+     "name": "Sandals [1] (33.71%)"
+    },
+    {
+     "name": "Rod [2] (33.71%)"
+    }
+   ]
+  },
+  {
+   "name": "Eclipse",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/eclipse_mini.png",
+   "level": "10",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Neutral",
+   "size": "Medium",
+   "base_exp": "466",
+   "job_exp": "427"
+  },
+  {
+   "name": "Tarou",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/tarou_monster.png",
+   "level": "11",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Shadow",
+   "size": "Small",
+   "base_exp": "83",
+   "job_exp": "41",
+   "drop": [
+    {
+     "name": "Tarou Card (?%)"
+    },
+    {
+     "name": "Feather (21.7%)"
+    },
+    {
+     "name": "Transformation Scroll (Tarou) (0.23%)"
+    },
+    {
+     "name": "35 × Zeny (71.29%)"
+    },
+    {
+     "name": "173 × Zeny (71.29%)"
+    },
+    {
+     "name": "Bracelet of Gray [1] (0.57%)"
+    }
+   ]
+  },
+  {
+   "name": "Mastering",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/masterring_mini.png",
+   "level": "12",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "915",
+   "job_exp": "305",
+   "drop": [
+    {
+     "name": "Unicorn Horn Blueprint (0.49%)"
+    },
+    {
+     "name": "Mastering Card (?%)"
+    },
+    {
+     "name": "Jellopy (17.53%)"
+    },
+    {
+     "name": "Light Granule (4.62%)"
+    },
+    {
+     "name": "Transformation Scroll (Mastering) (1.58%)"
+    },
+    {
+     "name": "Mandragora (?%)"
+    },
+    {
+     "name": "Apple Juice (42.35%)"
+    },
+    {
+     "name": "312 × Zeny (0.38%)"
+    },
+    {
+     "name": "Staff [2] (33.02%)"
+    }
+   ]
+  },
+  {
+   "name": "Ant Egg",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/ant_egg_monster.png",
+   "level": "12",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Meta Ant Egg Card (0.02%)"
+    },
+    {
+     "name": "35 × Zeny (99.97%)"
+    }
+   ]
+  },
+  {
+   "name": "Thief Bug",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/thiefbug_monster.png",
+   "level": "13",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "112",
+   "job_exp": "33",
+   "drop": [
+    {
+     "name": "Thief Bug Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Thief Bug) (0.57%)"
+    },
+    {
+     "name": "35 × Zeny (85.54%)"
+    },
+    {
+     "name": "175 × Zeny (85.54%)"
+    },
+    {
+     "name": "Iron (5.56%)"
+    },
+    {
+     "name": "Cutter [2] (0.97%)"
+    }
+   ]
+  },
+  {
+   "name": "Chon Chon",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/chonchon_monster.png",
+   "level": "13",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Wind",
+   "size": "Small",
+   "base_exp": "94",
+   "job_exp": "76",
+   "drop": [
+    {
+     "name": "Gas Mask Blueprint (?%)"
+    },
+    {
+     "name": "Chon Chon Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Chon Chon) (0.76%)"
+    },
+    {
+     "name": "36 × Zeny (82.68%)"
+    },
+    {
+     "name": "181 × Zeny (82.68%)"
+    },
+    {
+     "name": "Fly Wing (2.17%)"
+    },
+    {
+     "name": "Iron (6.23%)"
+    },
+    {
+     "name": "Buckler [1] (1.08%)"
+    }
+   ]
+  },
+  {
+   "name": "Thief Bug Egg",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/thiefbug_egg_monster.png",
+   "level": "13",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Shadow",
+   "size": "Small",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Thief Bug Egg Card (0.05%)"
+    },
+    {
+     "name": "35 × Zeny (99.94%)"
+    }
+   ]
+  },
+  {
+   "name": "Spore",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/spore_monster.png",
+   "level": "15",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "48",
+   "job_exp": "78",
+   "drop": [
+    {
+     "name": "Hat [1] Blueprint (?%)"
+    },
+    {
+     "name": "Spore Card (?%)"
+    },
+    {
+     "name": "Jellopy (43.68%)"
+    },
+    {
+     "name": "Transformation Scroll (Spore) (0.47%)"
+    },
+    {
+     "name": "35 × Zeny (50.72%)"
+    },
+    {
+     "name": "177 × Zeny (50.72%)"
+    },
+    {
+     "name": "Eden Team Manteau [1] (0.79%)"
+    }
+   ]
+  },
+  {
+   "name": "Yoyo",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/yoyo_monster.png",
+   "level": "15",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "149",
+   "job_exp": "60",
+   "drop": [
+    {
+     "name": "Yoyo Card (?%)"
+    },
+    {
+     "name": "Feather (23.96%)"
+    },
+    {
+     "name": "Transformation Scroll (Yoyo) (0.26%)"
+    },
+    {
+     "name": "37 × Zeny (69.28%)"
+    },
+    {
+     "name": "184 × Zeny (69.28%)"
+    },
+    {
+     "name": "Leather Jacket [1] (0.5%)"
+    }
+   ]
+  },
+  {
+   "name": "Familiar",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/farmiliar_monster.png",
+   "level": "17",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Shadow",
+   "size": "Small",
+   "base_exp": "102",
+   "job_exp": "54",
+   "drop": [
+    {
+     "name": "Ribbon [1] Blueprint (?%)"
+    },
+    {
+     "name": "Familiar Card (?%)"
+    },
+    {
+     "name": "Rotten Bandage (35%)"
+    },
+    {
+     "name": "Transformation Scroll (Familiar) (0.39%)"
+    },
+    {
+     "name": "36 × Zeny (56.89%)"
+    },
+    {
+     "name": "178 × Zeny (56.89%)"
+    },
+    {
+     "name": "Fly Wing (2.11%)"
+    },
+    {
+     "name": "Sword [2] (0.65%)"
+    }
+   ]
+  },
+  {
+   "name": "Wormtail",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/wormtail_monster.png",
+   "level": "17",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "220",
+   "job_exp": "148",
+   "drop": [
+    {
+     "name": "Wormtail Card (?%)"
+    },
+    {
+     "name": "Jellopy (43.5%)"
+    },
+    {
+     "name": "Transformation Scroll (Wormtail) (0.02%)"
+    },
+    {
+     "name": "37 × Zeny (50.79%)"
+    },
+    {
+     "name": "183 × Zeny (50.79%)"
+    },
+    {
+     "name": "Great Nature (0.59%)"
+    },
+    {
+     "name": "Leather Jacket [1] (0.68%)"
+    }
+   ]
+  },
+  {
+   "name": "Rocker",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/rocker_monster.png",
+   "level": "19",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "112",
+   "job_exp": "89",
+   "drop": [
+    {
+     "name": "Green Feeler Blueprint (?%)"
+    },
+    {
+     "name": "Rocker Card (?%)"
+    },
+    {
+     "name": "Jellopy (36.89%)"
+    },
+    {
+     "name": "Transformation Scroll (Rocker) (0.4%)"
+    },
+    {
+     "name": "37 × Zeny (57.24%)"
+    },
+    {
+     "name": "186 × Zeny (57.24%)"
+    },
+    {
+     "name": "P. Stick [2] (0.56%)"
+    }
+   ]
+  },
+  {
+   "name": "Thief Bug Female",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/thiefbug_monster.png",
+   "level": "20",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "112",
+   "job_exp": "57",
+   "drop": [
+    {
+     "name": "Female Thief Bug Card (?%)"
+    },
+    {
+     "name": "Rotten Bandage (33.26%)"
+    },
+    {
+     "name": "Transformation Scroll (Thief Bug Female) (0.01%)"
+    },
+    {
+     "name": "36 × Zeny (61.07%)"
+    },
+    {
+     "name": "180 × Zeny (61.07%)"
+    },
+    {
+     "name": "Club [2] (0.4%)"
+    }
+   ]
+  },
+  {
+   "name": "Thief Bug Male",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/gthiefbug_monster.png",
+   "level": "20",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "139",
+   "job_exp": "58",
+   "drop": [
+    {
+     "name": "Oxygen Mask Blueprint (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Thief Bug Male) (0.02%)"
+    },
+    {
+     "name": "37 × Zeny (87.63%)"
+    },
+    {
+     "name": "183 × Zeny (87.63%)"
+    },
+    {
+     "name": "Iron (4.03%)"
+    },
+    {
+     "name": "Wide Dagger [2] (0.7%)"
+    }
+   ]
+  },
+  {
+   "name": "Creamy",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/creamy_monster.png",
+   "level": "20",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Wind",
+   "size": "Small",
+   "base_exp": "130",
+   "job_exp": "87",
+   "drop": [
+    {
+     "name": "Fancy Flower Blueprint (?%)"
+    },
+    {
+     "name": "Feather (36.91%)"
+    },
+    {
+     "name": "Transformation Scroll (Creamy) (0.01%)"
+    },
+    {
+     "name": "38 × Zeny (56.75%)"
+    },
+    {
+     "name": "188 × Zeny (56.75%)"
+    },
+    {
+     "name": "Honey (0.46%)"
+    },
+    {
+     "name": "Butterfly Wing (0.93%)"
+    }
+   ]
+  },
+  {
+   "name": "Vocal",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/rocker_mini.png",
+   "level": "20",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "1,010",
+   "job_exp": "808"
+  },
+  {
+   "name": "Thief Bug Male ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/gthiefbug_monster.png",
+   "level": "20",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "695",
+   "job_exp": "290"
+  },
+  {
+   "name": "Creamy ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/creamy_monster.png",
+   "level": "20",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Wind",
+   "size": "Small",
+   "base_exp": "650",
+   "job_exp": "435",
+   "drop": [
+    {
+     "name": "Fancy Flower Blueprint (0.19%)"
+    },
+    {
+     "name": "Creamy Card (0.01%)"
+    },
+    {
+     "name": "Feather (22.78%)"
+    },
+    {
+     "name": "Transformation Scroll (Creamy) (0.01%)"
+    },
+    {
+     "name": "38 × Zeny (70.06%)"
+    },
+    {
+     "name": "188 × Zeny (70.06%)"
+    },
+    {
+     "name": "Honey (0.28%)"
+    },
+    {
+     "name": "Butterfly Wing (0.57%)"
+    },
+    {
+     "name": "Iron (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Willow",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/wilow_monster.png",
+   "level": "21",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "123",
+   "job_exp": "99",
+   "drop": [
+    {
+     "name": "Sakkat Blueprint (?%)"
+    },
+    {
+     "name": "Willow Card (?%)"
+    },
+    {
+     "name": "Jellopy (38.46%)"
+    },
+    {
+     "name": "Transformation Scroll (Willow) (0.4%)"
+    },
+    {
+     "name": "38 × Zeny (56.26%)"
+    },
+    {
+     "name": "189 × Zeny (56.26%)"
+    }
+   ]
+  },
+  {
+   "name": "Mandragora",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/mandragora_monster.png",
+   "level": "22",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "139",
+   "job_exp": "99",
+   "drop": [
+    {
+     "name": "Mandragora Flower Card (?%)"
+    },
+    {
+     "name": "Jellopy (31.88%)"
+    },
+    {
+     "name": "Green Dyestuffs (0.33%)"
+    },
+    {
+     "name": "Transformation Scroll (Mandragora) (0.01%)"
+    },
+    {
+     "name": "38 × Zeny (61.58%)"
+    },
+    {
+     "name": "191 × Zeny (61.58%)"
+    },
+    {
+     "name": "Great Nature (0.43%)"
+    },
+    {
+     "name": "Sandals [1] (0.48%)"
+    }
+   ]
+  },
+  {
+   "name": "Hydra",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/hydra_monster.png",
+   "level": "23",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Water",
+   "size": "Small",
+   "base_exp": "149",
+   "job_exp": "101",
+   "drop": [
+    {
+     "name": "Flu Mask Blueprint (?%)"
+    },
+    {
+     "name": "Jellopy (40.73%)"
+    },
+    {
+     "name": "Transformation Scroll (Hydra) (0.47%)"
+    },
+    {
+     "name": "38 × Zeny (53.51%)"
+    },
+    {
+     "name": "192 × Zeny (53.51%)"
+    },
+    {
+     "name": "Panacea (0.73%)"
+    }
+   ]
+  },
+  {
+   "name": "Hydra ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/hydra_monster.png",
+   "level": "23",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Water",
+   "size": "Small",
+   "base_exp": "745",
+   "job_exp": "505",
+   "drop": [
+    {
+     "name": "Flu Mask Blueprint (0.21%)"
+    },
+    {
+     "name": "Hydra Card (0.01%)"
+    },
+    {
+     "name": "Jellopy (23.95%)"
+    },
+    {
+     "name": "Transformation Scroll (Hydra) (0.28%)"
+    },
+    {
+     "name": "38 × Zeny (69.23%)"
+    },
+    {
+     "name": "192 × Zeny (69.23%)"
+    },
+    {
+     "name": "Panacea (0.43%)"
+    },
+    {
+     "name": "Aquamarine (65%)"
+    },
+    {
+     "name": "2 × Aquamarine (65%)"
+    }
+   ]
+  },
+  {
+   "name": "Wolf",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/wolf_monster.png",
+   "level": "24",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "164",
+   "job_exp": "100",
+   "drop": [
+    {
+     "name": "Cap [1] Blueprint (?%)"
+    },
+    {
+     "name": "Wolf Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Wolf) (0.01%)"
+    },
+    {
+     "name": "39 × Zeny (89.44%)"
+    },
+    {
+     "name": "194 × Zeny (89.44%)"
+    },
+    {
+     "name": "Iron (2.41%)"
+    },
+    {
+     "name": "Weihna Gloves [1] (0.42%)"
+    }
+   ]
+  },
+  {
+   "name": "Roda Frog",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/rodafrog_monster.png",
+   "level": "25",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Fish",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "144",
+   "job_exp": "120",
+   "drop": [
+    {
+     "name": "Roda Frog Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Roda Frog) (0.43%)"
+    },
+    {
+     "name": "39 × Zeny (88.08%)"
+    },
+    {
+     "name": "195 × Zeny (88.08%)"
+    },
+    {
+     "name": "Steel (3.33%)"
+    },
+    {
+     "name": "P. Staff [2] (0.58%)"
+    }
+   ]
+  },
+  {
+   "name": "Angeling",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/angeling_mvp.png",
+   "level": "25",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Angel",
+   "Element": "Holy",
+   "size": "Medium",
+   "base_exp": "5,953",
+   "job_exp": "5,260",
+   "drop": [
+    {
+     "name": "Angel Wing Blueprint (?%)"
+    },
+    {
+     "name": "Angeling Card (?%)"
+    },
+    {
+     "name": "5 × Jellopy (4.07%)"
+    },
+    {
+     "name": "Light Granule (5.39%)"
+    },
+    {
+     "name": "Transformation Scroll (Angeling) (0.2%)"
+    },
+    {
+     "name": "Emperium (7.41%)"
+    },
+    {
+     "name": "Rough Elunium (21.61%)"
+    },
+    {
+     "name": "Apple Juice (1.74%)"
+    },
+    {
+     "name": "Guard the Eternal Love (8.23%)"
+    },
+    {
+     "name": "Leaf of Yggdrasil (17.29%)"
+    },
+    {
+     "name": "1563 × Zeny (34.02%)"
+    },
+    {
+     "name": "Mace [2] (?%)"
+    },
+    {
+     "name": "Angelic Protection (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Whisper",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/whisper_monster.png",
+   "level": "26",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "133",
+   "job_exp": "134",
+   "drop": [
+    {
+     "name": "Whisper Mask Blueprint (?%)"
+    },
+    {
+     "name": "Whisper Card (?%)"
+    },
+    {
+     "name": "Rotten Bandage (34.16%)"
+    },
+    {
+     "name": "Transformation Scroll (Whisper) (0.01%)"
+    },
+    {
+     "name": "40 × Zeny (59.56%)"
+    },
+    {
+     "name": "200 × Zeny (59.56%)"
+    },
+    {
+     "name": "Candy (0.71%)"
+    },
+    {
+     "name": "Adventurer Shield [1] (0.42%)"
+    }
+   ]
+  },
+  {
+   "name": "Pirate Skeleton",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/skeleton_pirate_monster.png",
+   "level": "27",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "185",
+   "job_exp": "112",
+   "drop": [
+    {
+     "name": "Pirate Bandana [1] Blueprint (?%)"
+    },
+    {
+     "name": "Pirate Skeleton Card (?%)"
+    },
+    {
+     "name": "Memento (28.05%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (0.36%)"
+    },
+    {
+     "name": "Transformation Scroll (Pirate Skeleton) (0.49%)"
+    },
+    {
+     "name": "40 × Zeny (64.93%)"
+    },
+    {
+     "name": "198 × Zeny (64.93%)"
+    },
+    {
+     "name": "Gladius [2] (0.51%)"
+    }
+   ]
+  },
+  {
+   "name": "Poison Spore",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/poisenspore_monster.png",
+   "level": "28",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Poison",
+   "size": "Medium",
+   "base_exp": "210",
+   "job_exp": "106",
+   "drop": [
+    {
+     "name": "Hat [1] Blueprint (?%)"
+    },
+    {
+     "name": "Poison Spore Card (?%)"
+    },
+    {
+     "name": "Rotten Bandage (43.29%)"
+    },
+    {
+     "name": "Transformation Scroll (Poison Spore) (0.47%)"
+    },
+    {
+     "name": "39 × Zeny (51.35%)"
+    },
+    {
+     "name": "197 × Zeny (51.35%)"
+    },
+    {
+     "name": "Formal Suit [1] (0.5%)"
+    }
+   ]
+  },
+  {
+   "name": "Vadon",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/vadon_monster.png",
+   "level": "29",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Fish",
+   "Element": "Water",
+   "size": "Small",
+   "base_exp": "195",
+   "job_exp": "123",
+   "drop": [
+    {
+     "name": "Vadon Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Vadon) (0.65%)"
+    },
+    {
+     "name": "40 × Zeny (85.44%)"
+    },
+    {
+     "name": "202 × Zeny (85.44%)"
+    },
+    {
+     "name": "Mystic Frozen (0.48%)"
+    },
+    {
+     "name": "Blue Gemstone (1.61%)"
+    },
+    {
+     "name": "Steel (3.86%)"
+    },
+    {
+     "name": "Mace [2] (0.67%)"
+    }
+   ]
+  },
+  {
+   "name": "Skeleton",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/skeleton_monster.png",
+   "level": "30",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "179",
+   "job_exp": "140",
+   "drop": [
+    {
+     "name": "Bandana Blueprint (?%)"
+    },
+    {
+     "name": "Skeleton Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Skeleton) (0.02%)"
+    },
+    {
+     "name": "41 × Zeny (86.96%)"
+    },
+    {
+     "name": "203 × Zeny (86.96%)"
+    },
+    {
+     "name": "Awakening Potion (0.77%)"
+    },
+    {
+     "name": "Steel (3.99%)"
+    },
+    {
+     "name": "Blade [2] (0.69%)"
+    }
+   ]
+  },
+  {
+   "name": "Golden Thief Bug",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/golden_bug_mvp.png",
+   "level": "30",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Fire",
+   "size": "Large",
+   "base_exp": "9,677",
+   "job_exp": "4,839",
+   "drop": [
+    {
+     "name": "Golden Gear Blueprint (0.13%)"
+    },
+    {
+     "name": "Golden Thief Bug Card (?%)"
+    },
+    {
+     "name": "5 × Garlet (9.46%)"
+    },
+    {
+     "name": "Lemon Dyestuffs (22.66%)"
+    },
+    {
+     "name": "Antenna (8.79%)"
+    },
+    {
+     "name": "Transformation Scroll (Golden Thief Bug) (0.32%)"
+    },
+    {
+     "name": "Emperium (11.65%)"
+    },
+    {
+     "name": "Rough Oridecon (34%)"
+    },
+    {
+     "name": "Alberta (12.95%)"
+    },
+    {
+     "name": "1625 × Zeny (?%)"
+    },
+    {
+     "name": "Blade [2] (?%)"
+    },
+    {
+     "name": "Panties (100%)"
+    },
+    {
+     "name": "Meteorite Armor (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Thara Frog",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/thara_monster.png",
+   "level": "31",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Fish",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "208",
+   "job_exp": "131",
+   "drop": [
+    {
+     "name": "Thara Frog Card (?%)"
+    },
+    {
+     "name": "Sticky Mucus (27.86%)"
+    },
+    {
+     "name": "Transformation Scroll (Thara Frog) (0.38%)"
+    },
+    {
+     "name": "41 × Zeny (65.67%)"
+    },
+    {
+     "name": "205 × Zeny (65.67%)"
+    },
+    {
+     "name": "Moccasin [1] (0.43%)"
+    }
+   ]
+  },
+  {
+   "name": "Marina",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/marina_monster.png",
+   "level": "32",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Water",
+   "size": "Small",
+   "base_exp": "213",
+   "job_exp": "137",
+   "drop": [
+    {
+     "name": "Jellyfish head [1] Blueprint (?%)"
+    },
+    {
+     "name": "Marina Card (?%)"
+    },
+    {
+     "name": "Garlet (27.22%)"
+    },
+    {
+     "name": "Transformation Scroll (Marina) (0.5%)"
+    },
+    {
+     "name": "41 × Zeny (64.27%)"
+    },
+    {
+     "name": "206 × Zeny (64.27%)"
+    },
+    {
+     "name": "Mystic Frozen (0.46%)"
+    },
+    {
+     "name": "Blue Gemstone (1.53%)"
+    },
+    {
+     "name": "Silversmith Bracelet [1] (0.5%)"
+    }
+   ]
+  },
+  {
+   "name": "Marine Sphere",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/marinesphere_monster.png",
+   "level": "32",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Water",
+   "size": "Small",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Marine Sphere Card (?%)"
+    },
+    {
+     "name": "Memento (30.56%)"
+    },
+    {
+     "name": "41 × Zeny (67.4%)"
+    },
+    {
+     "name": "Blue Gemstone (2.01%)"
+    }
+   ]
+  },
+  {
+   "name": "Obeaune",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/obeaune_monster.png",
+   "level": "33",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Fish",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "221",
+   "job_exp": "140",
+   "drop": [
+    {
+     "name": "Fin Helm Blueprint (?%)"
+    },
+    {
+     "name": "Sticky Mucus (17.52%)"
+    },
+    {
+     "name": "Cobaltblue Dyestuffs (0.23%)"
+    },
+    {
+     "name": "Rough Oridecon (0.34%)"
+    },
+    {
+     "name": "Transformation Scroll (Obeaune) (0.02%)"
+    },
+    {
+     "name": "42 × Zeny (70.3%)"
+    },
+    {
+     "name": "208 × Zeny (70.3%)"
+    },
+    {
+     "name": "Mystic Frozen (0.29%)"
+    },
+    {
+     "name": "Apple Juice (4.62%)"
+    },
+    {
+     "name": "Mantle [1] (0.56%)"
+    }
+   ]
+  },
+  {
+   "name": "Obeaune ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/obeaune_monster.png",
+   "level": "33",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Fish",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "1,105",
+   "job_exp": "700",
+   "drop": [
+    {
+     "name": "Fin Helm Blueprint (0.22%)"
+    },
+    {
+     "name": "Obeaune Card (0.03%)"
+    },
+    {
+     "name": "Sticky Mucus (10.18%)"
+    },
+    {
+     "name": "Cobaltblue Dyestuffs (0.13%)"
+    },
+    {
+     "name": "Rough Oridecon (0.2%)"
+    },
+    {
+     "name": "Transformation Scroll (Obeaune) (0.01%)"
+    },
+    {
+     "name": "42 × Zeny (79.35%)"
+    },
+    {
+     "name": "208 × Zeny (79.35%)"
+    },
+    {
+     "name": "Mystic Frozen (0.17%)"
+    },
+    {
+     "name": "Apple Juice (2.68%)"
+    },
+    {
+     "name": "Mantle [1] (0.12%)"
+    },
+    {
+     "name": "Aquamarine (65%)"
+    },
+    {
+     "name": "2 × Aquamarine (65%)"
+    }
+   ]
+  },
+  {
+   "name": "Phen",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/swordfish_monster.png",
+   "level": "34",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Fish",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "227",
+   "job_exp": "145",
+   "drop": [
+    {
+     "name": "Fish In Mouth Blueprint (?%)"
+    },
+    {
+     "name": "Phen Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Phen) (0.03%)"
+    },
+    {
+     "name": "42 × Zeny (87.7%)"
+    },
+    {
+     "name": "209 × Zeny (87.7%)"
+    },
+    {
+     "name": "Steel (4%)"
+    },
+    {
+     "name": "Steel Sword [2] (0.69%)"
+    }
+   ]
+  },
+  {
+   "name": "Ghostring",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/ghostring_mini.png",
+   "level": "35",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Ghost",
+   "size": "Medium",
+   "base_exp": "1,480",
+   "job_exp": "1,582",
+   "drop": [
+    {
+     "name": "Ghost Bandana Blueprint (1.2%)"
+    },
+    {
+     "name": "Ghostring Card (?%)"
+    },
+    {
+     "name": "Memento (15.8%)"
+    },
+    {
+     "name": "Fabric (4.59%)"
+    },
+    {
+     "name": "Transformation Scroll (Ghostring) (1.37%)"
+    },
+    {
+     "name": "Emperium (3.67%)"
+    },
+    {
+     "name": "Elunium (1.6%)"
+    },
+    {
+     "name": "Dead Branch (22.95%)"
+    },
+    {
+     "name": "Candy (8.5%)"
+    },
+    {
+     "name": "337 × Zeny (0.21%)"
+    },
+    {
+     "name": "Silversmith Bracelet [1] (40.06%)"
+    },
+    {
+     "name": "Tidal Shoes (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Goblin(Knife)",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin_monster.png",
+   "level": "35",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "240",
+   "job_exp": "145",
+   "drop": [
+    {
+     "name": "Strange Goblin Mask Blueprint (?%)"
+    },
+    {
+     "name": "Sticky Mucus (34.38%)"
+    },
+    {
+     "name": "Transformation Scroll (Goblin(Knife)) (0.47%)"
+    },
+    {
+     "name": "42 × Zeny (59.57%)"
+    },
+    {
+     "name": "211 × Zeny (59.57%)"
+    },
+    {
+     "name": "Jur [2] (0.47%)"
+    }
+   ]
+  },
+  {
+   "name": "Goblin(Buckler)",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin3_monster.png",
+   "level": "35",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "237",
+   "job_exp": "147",
+   "drop": [
+    {
+     "name": "Poker Face Blueprint (?%)"
+    },
+    {
+     "name": "Sticky Mucus (29.85%)"
+    },
+    {
+     "name": "Transformation Scroll (Goblin(Buckler)) (0.5%)"
+    },
+    {
+     "name": "42 × Zeny (63.23%)"
+    },
+    {
+     "name": "211 × Zeny (63.23%)"
+    },
+    {
+     "name": "Great Nature (0.5%)"
+    },
+    {
+     "name": "Scutum [1] (0.49%)"
+    }
+   ]
+  },
+  {
+   "name": "Goblin(Hammer)",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin5_monster.png",
+   "level": "35",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "235",
+   "job_exp": "149",
+   "drop": [
+    {
+     "name": "Annoyed Mask Blueprint (?%)"
+    },
+    {
+     "name": "Sticky Mucus (34.38%)"
+    },
+    {
+     "name": "Transformation Scroll (Goblin(Hammer)) (0.47%)"
+    },
+    {
+     "name": "42 × Zeny (59.57%)"
+    },
+    {
+     "name": "211 × Zeny (59.57%)"
+    },
+    {
+     "name": "Chain [2] (0.47%)"
+    }
+   ]
+  },
+  {
+   "name": "Goblin(Spear)",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin4_monster.png",
+   "level": "35",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "239",
+   "job_exp": "146",
+   "drop": [
+    {
+     "name": "Goblin Mask Blueprint (?%)"
+    },
+    {
+     "name": "Feather (39.58%)"
+    },
+    {
+     "name": "Transformation Scroll (Goblin(Spear)) (0.44%)"
+    },
+    {
+     "name": "42 × Zeny (54.86%)"
+    },
+    {
+     "name": "211 × Zeny (54.86%)"
+    },
+    {
+     "name": "Spear [2] (0.43%)"
+    }
+   ]
+  },
+  {
+   "name": "Goblin(Axe)",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin2_monster.png",
+   "level": "35",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "265",
+   "job_exp": "131",
+   "drop": [
+    {
+     "name": "Surprised Mask Blueprint (?%)"
+    },
+    {
+     "name": "Feather (40.86%)"
+    },
+    {
+     "name": "Transformation Scroll (Goblin(Axe)) (0.43%)"
+    },
+    {
+     "name": "42 × Zeny (54.08%)"
+    },
+    {
+     "name": "211 × Zeny (54.08%)"
+    }
+   ]
+  },
+  {
+   "name": "Deviling",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/deviling_mvp.png",
+   "level": "35",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "4,818",
+   "job_exp": "9,408",
+   "drop": [
+    {
+     "name": "Evil Wing Ears Blueprint (0.12%)"
+    },
+    {
+     "name": "Deviling Card (?%)"
+    },
+    {
+     "name": "5 × Rotten Bandage (6.8%)"
+    },
+    {
+     "name": "Soft Feather (11.17%)"
+    },
+    {
+     "name": "Transformation Scroll (Deviling) (0.49%)"
+    },
+    {
+     "name": "Apple Juice (5.45%)"
+    },
+    {
+     "name": "Oridecon (5.16%)"
+    },
+    {
+     "name": "Life in Spring (19.66%)"
+    },
+    {
+     "name": "1688 × Zeny (51.12%)"
+    },
+    {
+     "name": "Long Bow [2] (?%)"
+    },
+    {
+     "name": "Deathcat Cape (100%)"
+    },
+    {
+     "name": "Giant Axe [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Goblin(Knife) ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin_monster.png",
+   "level": "35",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "1,200",
+   "job_exp": "725"
+  },
+  {
+   "name": "Goblin(Buckler) ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin3_monster.png",
+   "level": "35",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "1,185",
+   "job_exp": "735"
+  },
+  {
+   "name": "Goblin(Hammer) ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin5_monster.png",
+   "level": "35",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "1,175",
+   "job_exp": "745"
+  },
+  {
+   "name": "Goblin(Spear) ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin4_monster.png",
+   "level": "35",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "1,195",
+   "job_exp": "730"
+  },
+  {
+   "name": "Goblin(Axe) ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin2_monster.png",
+   "level": "35",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "1,325",
+   "job_exp": "655"
+  },
+  {
+   "name": "Marc",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/marc_monster.png",
+   "level": "36",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Fish",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "242",
+   "job_exp": "153",
+   "drop": [
+    {
+     "name": "Grampa Beard Blueprint (?%)"
+    },
+    {
+     "name": "Garlet (26.29%)"
+    },
+    {
+     "name": "Rough Oridecon (0.52%)"
+    },
+    {
+     "name": "Transformation Scroll (Marc) (0.02%)"
+    },
+    {
+     "name": "43 × Zeny (65.07%)"
+    },
+    {
+     "name": "213 × Zeny (65.07%)"
+    },
+    {
+     "name": "Mystic Frozen (0.44%)"
+    },
+    {
+     "name": "Blue Gemstone (1.48%)"
+    },
+    {
+     "name": "Thick Dagger [2] (0.52%)"
+    }
+   ]
+  },
+  {
+   "name": "Marc ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/marc_monster.png",
+   "level": "36",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Fish",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "1,210",
+   "job_exp": "765",
+   "drop": [
+    {
+     "name": "Grampa Beard Blueprint (0.21%)"
+    },
+    {
+     "name": "Marc Card (0.01%)"
+    },
+    {
+     "name": "Garlet (15.75%)"
+    },
+    {
+     "name": "Rough Oridecon (0.31%)"
+    },
+    {
+     "name": "Transformation Scroll (Marc) (0.01%)"
+    },
+    {
+     "name": "43 × Zeny (75.84%)"
+    },
+    {
+     "name": "213 × Zeny (75.84%)"
+    },
+    {
+     "name": "Mystic Frozen (0.26%)"
+    },
+    {
+     "name": "Blue Gemstone (0.89%)"
+    },
+    {
+     "name": "Thick Dagger [2] (0.12%)"
+    },
+    {
+     "name": "Aquamarine (65%)"
+    },
+    {
+     "name": "2 × Aquamarine (65%)"
+    }
+   ]
+  },
+  {
+   "name": "Goblin Archer",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin_archer_monster.png",
+   "level": "37",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Water",
+   "size": "Small",
+   "base_exp": "252",
+   "job_exp": "155",
+   "drop": [
+    {
+     "name": "Evil Goblin Mask Blueprint (?%)"
+    },
+    {
+     "name": "Goblin Archer Card (?%)"
+    },
+    {
+     "name": "Sticky Mucus (34.64%)"
+    },
+    {
+     "name": "Transformation Scroll (Goblin Archer) (0.48%)"
+    },
+    {
+     "name": "43 × Zeny (59.28%)"
+    },
+    {
+     "name": "214 × Zeny (59.28%)"
+    },
+    {
+     "name": "Composite Bow [2] (0.47%)"
+    }
+   ]
+  },
+  {
+   "name": "Hornet",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/bee_monster.png",
+   "level": "38",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Wind",
+   "size": "Small",
+   "base_exp": "225",
+   "job_exp": "178",
+   "drop": [
+    {
+     "name": "Green Feeler Blueprint (?%)"
+    },
+    {
+     "name": "Hornet Card (?%)"
+    },
+    {
+     "name": "Garlet (21.38%)"
+    },
+    {
+     "name": "Green Dyestuffs (0.28%)"
+    },
+    {
+     "name": "Transformation Scroll (Hornet) (0.01%)"
+    },
+    {
+     "name": "43 × Zeny (70.02%)"
+    },
+    {
+     "name": "216 × Zeny (70.02%)"
+    },
+    {
+     "name": "Honey (0.33%)"
+    },
+    {
+     "name": "Rough Wind (0.36%)"
+    },
+    {
+     "name": "Fly Wing (1.61%)"
+    }
+   ]
+  },
+  {
+   "name": "Steam Goblin",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin_panzer_monster.png",
+   "level": "39",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "275",
+   "job_exp": "158",
+   "drop": [
+    {
+     "name": "Smile Goblin Mask Blueprint (?%)"
+    },
+    {
+     "name": "Steam Goblin Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Steam Goblin) (0.71%)"
+    },
+    {
+     "name": "43 × Zeny (87.24%)"
+    },
+    {
+     "name": "217 × Zeny (87.24%)"
+    },
+    {
+     "name": "Coal (3.93%)"
+    },
+    {
+     "name": "Wand [2] (0.68%)"
+    }
+   ]
+  },
+  {
+   "name": "Toad",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/rodafrog_mini.png",
+   "level": "40",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Fish",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "2,581",
+   "job_exp": "1,290",
+   "drop": [
+    {
+     "name": "Big Ribbon [1] Blueprint (0.96%)"
+    },
+    {
+     "name": "Toad Card (?%)"
+    },
+    {
+     "name": "Sticky Mucus (11.69%)"
+    },
+    {
+     "name": "Light Granule (3.52%)"
+    },
+    {
+     "name": "Transformation Scroll (Toad) (1.2%)"
+    },
+    {
+     "name": "Honey (4.47%)"
+    },
+    {
+     "name": "Rough Elunium (14.1%)"
+    },
+    {
+     "name": "350 × Zeny (?%)"
+    },
+    {
+     "name": "Light Shoes [1] (32.01%)"
+    },
+    {
+     "name": "Morpheus's Bracelet [1] (32.01%)"
+    },
+    {
+     "name": "Silk Robe (100%)"
+    },
+    {
+     "name": "Saphien's Armor of Ocean (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Drake",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/drake_mvp.png",
+   "level": "40",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "10,101",
+   "job_exp": "8,081",
+   "drop": [
+    {
+     "name": "Corsair [1] Blueprint (0.13%)"
+    },
+    {
+     "name": "Drake Card (?%)"
+    },
+    {
+     "name": "5 × Memento (8.6%)"
+    },
+    {
+     "name": "Fabric (16.44%)"
+    },
+    {
+     "name": "Transformation Scroll (Drake) (0.54%)"
+    },
+    {
+     "name": "Dreamer's Dream (21.92%)"
+    },
+    {
+     "name": "Elunium (5.75%)"
+    },
+    {
+     "name": "White Potion (46.59%)"
+    },
+    {
+     "name": "1750 × Zeny (?%)"
+    },
+    {
+     "name": "Stiletto [2] (?%)"
+    },
+    {
+     "name": "Flamberge [1] (100%)"
+    },
+    {
+     "name": "Deathcat Armor (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Deniro",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/ant2_monster.png",
+   "level": "40",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "269",
+   "job_exp": "169",
+   "drop": [
+    {
+     "name": "Safety Helmet Blueprint (?%)"
+    },
+    {
+     "name": "Garlet (32%)"
+    },
+    {
+     "name": "Transformation Scroll (Deniro) (0.51%)"
+    },
+    {
+     "name": "44 × Zeny (61.62%)"
+    },
+    {
+     "name": "219 × Zeny (61.62%)"
+    },
+    {
+     "name": "Flame Heart (0.54%)"
+    }
+   ]
+  },
+  {
+   "name": "Deniro ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/ant2_monster.png",
+   "level": "40",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "1,345",
+   "job_exp": "845",
+   "drop": [
+    {
+     "name": "Safety Helmet Blueprint (0.2%)"
+    },
+    {
+     "name": "Andre Card (0.02%)"
+    },
+    {
+     "name": "Garlet (19.12%)"
+    },
+    {
+     "name": "Transformation Scroll (Deniro) (0.31%)"
+    },
+    {
+     "name": "44 × Zeny (73.66%)"
+    },
+    {
+     "name": "219 × Zeny (73.66%)"
+    },
+    {
+     "name": "Flame Heart (0.32%)"
+    },
+    {
+     "name": "Topaz (65%)"
+    },
+    {
+     "name": "2 × Topaz (65%)"
+    }
+   ]
+  },
+  {
+   "name": "Flora",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/flora_monster.png",
+   "level": "41",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Earth",
+   "size": "Large",
+   "base_exp": "274",
+   "job_exp": "174",
+   "drop": [
+    {
+     "name": "Hibiscus Blueprint (?%)"
+    },
+    {
+     "name": "Flora Card (?%)"
+    },
+    {
+     "name": "Memento (42.78%)"
+    },
+    {
+     "name": "Transformation Scroll (Flora) (0.01%)"
+    },
+    {
+     "name": "44 × Zeny (52.67%)"
+    },
+    {
+     "name": "220 × Zeny (52.67%)"
+    }
+   ]
+  },
+  {
+   "name": "Piere",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/ant3_monster.png",
+   "level": "42",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "280",
+   "job_exp": "179",
+   "drop": [
+    {
+     "name": "Andre Card (?%)"
+    },
+    {
+     "name": "Garlet (30.64%)"
+    },
+    {
+     "name": "Transformation Scroll (Piere) (0.52%)"
+    },
+    {
+     "name": "44 × Zeny (62.5%)"
+    },
+    {
+     "name": "222 × Zeny (62.5%)"
+    },
+    {
+     "name": "Rough Wind (0.51%)"
+    },
+    {
+     "name": "Cross Shield [1] (0.49%)"
+    }
+   ]
+  },
+  {
+   "name": "Argiope",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/argiope_monster.png",
+   "level": "43",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Poison",
+   "size": "Large",
+   "base_exp": "332",
+   "job_exp": "157",
+   "drop": [
+    {
+     "name": "Gas Mask Blueprint (?%)"
+    },
+    {
+     "name": "Argiope Card (?%)"
+    },
+    {
+     "name": "Rough Elunium (1%)"
+    },
+    {
+     "name": "Transformation Scroll (Argiope) (0.03%)"
+    },
+    {
+     "name": "45 × Zeny (86.77%)"
+    },
+    {
+     "name": "223 × Zeny (86.77%)"
+    },
+    {
+     "name": "Coal (3.97%)"
+    },
+    {
+     "name": "Dex Bracelet [1] (0.69%)"
+    }
+   ]
+  },
+  {
+   "name": "Andre",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/ant_monster.png",
+   "level": "44",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "290",
+   "job_exp": "189",
+   "drop": [
+    {
+     "name": "Andre Card (?%)"
+    },
+    {
+     "name": "Scell (27.01%)"
+    },
+    {
+     "name": "Transformation Scroll (Andre) (0.57%)"
+    },
+    {
+     "name": "45 × Zeny (66.14%)"
+    },
+    {
+     "name": "225 × Zeny (66.14%)"
+    },
+    {
+     "name": "Great Nature (0.59%)"
+    }
+   ]
+  },
+  {
+   "name": "Rotar Zairo",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin_helicopter_mini.png",
+   "level": "45",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Wind",
+   "size": "Large",
+   "base_exp": "2,630",
+   "job_exp": "1,611",
+   "drop": [
+    {
+     "name": "Mini Propeller Blueprint (0.55%)"
+    },
+    {
+     "name": "Rotar Zairo Card (?%)"
+    },
+    {
+     "name": "Garlet (15.07%)"
+    },
+    {
+     "name": "Parts (4.17%)"
+    },
+    {
+     "name": "Transformation Scroll (Rotar Zairo) (1.28%)"
+    },
+    {
+     "name": "Oridecon (1.49%)"
+    },
+    {
+     "name": "Zircon (39.94%)"
+    },
+    {
+     "name": "362 × Zeny (0.18%)"
+    },
+    {
+     "name": "Steel Staff [2] (37.27%)"
+    },
+    {
+     "name": "Luna Brooch (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Strouf",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/strouf_mvp.png",
+   "level": "45",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Fish",
+   "Element": "Water",
+   "size": "Large",
+   "base_exp": "12,433",
+   "job_exp": "8,469",
+   "drop": [
+    {
+     "name": "Thunderstorm Cloud Blueprint (0.1%)"
+    },
+    {
+     "name": "Strouf Card (?%)"
+    },
+    {
+     "name": "5 × Sticky Mucus (1.1%)"
+    },
+    {
+     "name": "Cobaltblue Dyestuffs (26.99%)"
+    },
+    {
+     "name": "Pearl (8.63%)"
+    },
+    {
+     "name": "Transformation Scroll (Strouf) (0.38%)"
+    },
+    {
+     "name": "Dream of Whale (15.42%)"
+    },
+    {
+     "name": "Oridecon (4.04%)"
+    },
+    {
+     "name": "1813 × Zeny (43.29%)"
+    },
+    {
+     "name": "Equestrian's Spear [2] (?%)"
+    },
+    {
+     "name": "Lich Staff [1] (100%)"
+    },
+    {
+     "name": "Staunch Clothes (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Menblatt",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/menblatt_monster.png",
+   "level": "45",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Wind",
+   "size": "Large",
+   "base_exp": "260",
+   "job_exp": "215",
+   "drop": [
+    {
+     "name": "Butterfly Wing Ears Blueprint (?%)"
+    },
+    {
+     "name": "Menblatt Card (?%)"
+    },
+    {
+     "name": "Garlet (37.45%)"
+    },
+    {
+     "name": "Transformation Scroll (Menblatt) (0.03%)"
+    },
+    {
+     "name": "45 × Zeny (46.73%)"
+    },
+    {
+     "name": "227 × Zeny (46.73%)"
+    },
+    {
+     "name": "Apple Juice (9.87%)"
+    },
+    {
+     "name": "Butterfly Wing (1.18%)"
+    },
+    {
+     "name": "Arc Wand [2] (0.73%)"
+    }
+   ]
+  },
+  {
+   "name": "Drainliar",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/drainliar_monster.png",
+   "level": "46",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Shadow",
+   "size": "Small",
+   "base_exp": "378",
+   "job_exp": "155",
+   "drop": [
+    {
+     "name": "Ribbon [1] Blueprint (?%)"
+    },
+    {
+     "name": "Drainliar Card (?%)"
+    },
+    {
+     "name": "Sticky Mucus (28.81%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (0.38%)"
+    },
+    {
+     "name": "Rough Oridecon (0.56%)"
+    },
+    {
+     "name": "Transformation Scroll (Drainliar) (0.02%)"
+    },
+    {
+     "name": "46 × Zeny (62.61%)"
+    },
+    {
+     "name": "228 × Zeny (62.61%)"
+    },
+    {
+     "name": "Fly Wing (2.17%)"
+    }
+   ]
+  },
+  {
+   "name": "Vitata",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/black_ant_monster.png",
+   "level": "47",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "318",
+   "job_exp": "198",
+   "drop": [
+    {
+     "name": "Vitata Card (?%)"
+    },
+    {
+     "name": "Scell (10.18%)"
+    },
+    {
+     "name": "Rough Oridecon (0.26%)"
+    },
+    {
+     "name": "Transformation Scroll (Vitata) (0.01%)"
+    },
+    {
+     "name": "46 × Zeny (81.93%)"
+    },
+    {
+     "name": "230 × Zeny (81.93%)"
+    },
+    {
+     "name": "Honey (0.2%)"
+    },
+    {
+     "name": "Royal Jelly (0.04%)"
+    },
+    {
+     "name": "Glass Boots [1] (0.32%)"
+    }
+   ]
+  },
+  {
+   "name": "Giearth",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/giearth_monster.png",
+   "level": "48",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "329",
+   "job_exp": "200",
+   "drop": [
+    {
+     "name": "Elven Ears Blueprint (?%)"
+    },
+    {
+     "name": "Giearth Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Giearth) (0.06%)"
+    },
+    {
+     "name": "46 × Zeny (81.93%)"
+    },
+    {
+     "name": "231 × Zeny (81.93%)"
+    },
+    {
+     "name": "Great Nature (2.27%)"
+    },
+    {
+     "name": "Gold Sand (7.42%)"
+    },
+    {
+     "name": "Dex Bracelet [1] (1.29%)"
+    }
+   ]
+  },
+  {
+   "name": "Muka",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/muka_monster.png",
+   "level": "49",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Earth",
+   "size": "Large",
+   "base_exp": "391",
+   "job_exp": "171",
+   "drop": [
+    {
+     "name": "Muka Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Muka) (0.59%)"
+    },
+    {
+     "name": "47 × Zeny (87.39%)"
+    },
+    {
+     "name": "233 × Zeny (87.39%)"
+    },
+    {
+     "name": "Great Nature (0.52%)"
+    },
+    {
+     "name": "Gold Sand (3.34%)"
+    },
+    {
+     "name": "Katar [2] (0.58%)"
+    }
+   ]
+  },
+  {
+   "name": "Dragon Fly",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/dragonfly_mini.png",
+   "level": "50",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Wind",
+   "size": "Small",
+   "base_exp": "3,226",
+   "job_exp": "1,613",
+   "drop": [
+    {
+     "name": "Sweet Gent Blueprint (0.63%)"
+    },
+    {
+     "name": "Dragon Fly Card (?%)"
+    },
+    {
+     "name": "Garlet (5.28%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (13.15%)"
+    },
+    {
+     "name": "Star Crumb (4.77%)"
+    },
+    {
+     "name": "Transformation Scroll (Dragon Fly) (1.69%)"
+    },
+    {
+     "name": "Fly Wing (30.07%)"
+    },
+    {
+     "name": "Elunium (1.97%)"
+    },
+    {
+     "name": "375 × Zeny (?%)"
+    },
+    {
+     "name": "Metal Armor [1] (42.39%)"
+    },
+    {
+     "name": "Luna Bow [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Goblin Leader",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/goblin_king_mvp.png",
+   "level": "50",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "18,492",
+   "job_exp": "6,691",
+   "drop": [
+    {
+     "name": "Angry Snarl Blueprint (0.14%)"
+    },
+    {
+     "name": "Goblin Leader Mask Blueprint (0.58%)"
+    },
+    {
+     "name": "Goblin Leader Card (?%)"
+    },
+    {
+     "name": "5 × Hard Skin (8.99%)"
+    },
+    {
+     "name": "Lemon Dyestuffs (40.99%)"
+    },
+    {
+     "name": "Soft Feather (13.3%)"
+    },
+    {
+     "name": "Transformation Scroll (Goblin Leader) (0.58%)"
+    },
+    {
+     "name": "Awakening Potion (11.71%)"
+    },
+    {
+     "name": "Oridecon (6.14%)"
+    },
+    {
+     "name": "Zircon (17.52%)"
+    },
+    {
+     "name": "1875 × Zeny (?%)"
+    },
+    {
+     "name": "Rapier [2] (?%)"
+    },
+    {
+     "name": "Goibne's Armor (100%)"
+    },
+    {
+     "name": "Cat's Blessing (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Peco Peco",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/pecopeco_monster.png",
+   "level": "50",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Fire",
+   "size": "Large",
+   "base_exp": "394",
+   "job_exp": "178",
+   "drop": [
+    {
+     "name": "Peco Peco Hairband Blueprint (?%)"
+    },
+    {
+     "name": "Peco Peco Card (?%)"
+    },
+    {
+     "name": "Hard Skin (25.06%)"
+    },
+    {
+     "name": "Rough Oridecon (0.64%)"
+    },
+    {
+     "name": "Transformation Scroll (Peco Peco) (0.6%)"
+    },
+    {
+     "name": "47 × Zeny (67.35%)"
+    },
+    {
+     "name": "234 × Zeny (67.35%)"
+    },
+    {
+     "name": "Chloe Bow [2] (0.53%)"
+    }
+   ]
+  },
+  {
+   "name": "Magnolia",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/magnolia_monster.png",
+   "level": "51",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Water",
+   "size": "Small",
+   "base_exp": "343",
+   "job_exp": "216",
+   "drop": [
+    {
+     "name": "Magnolia Hat [1] Blueprint (?%)"
+    },
+    {
+     "name": "Magnolia Card (?%)"
+    },
+    {
+     "name": "Immortal Heart (38.08%)"
+    },
+    {
+     "name": "Transformation Scroll (Magnolia) (0.69%)"
+    },
+    {
+     "name": "47 × Zeny (55.89%)"
+    },
+    {
+     "name": "236 × Zeny (55.89%)"
+    },
+    {
+     "name": "Leather Armor[1] (0.55%)"
+    }
+   ]
+  },
+  {
+   "name": "Soldier Skeleton",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/skeleton_solider_monster.png",
+   "level": "52",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "356",
+   "job_exp": "216",
+   "drop": [
+    {
+     "name": "Bandana Blueprint (?%)"
+    },
+    {
+     "name": "Soldier Skeleton Card (?%)"
+    },
+    {
+     "name": "Immortal Heart (28.27%)"
+    },
+    {
+     "name": "Rough Oridecon (0.72%)"
+    },
+    {
+     "name": "Transformation Scroll (Soldier Skeleton) (0.02%)"
+    },
+    {
+     "name": "47 × Zeny (64.96%)"
+    },
+    {
+     "name": "238 × Zeny (64.96%)"
+    },
+    {
+     "name": "Alloy Shield [1] (0.51%)"
+    }
+   ]
+  },
+  {
+   "name": "Desert Wolf",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/desertwolf_monster.png",
+   "level": "53",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "358",
+   "job_exp": "223",
+   "drop": [
+    {
+     "name": "Eye Bandage Blueprint (?%)"
+    },
+    {
+     "name": "Desert Wolf Card (?%)"
+    },
+    {
+     "name": "Hard Skin (27.86%)"
+    },
+    {
+     "name": "Lemon Dyestuffs (0.47%)"
+    },
+    {
+     "name": "Transformation Scroll (Desert Wolf) (0.02%)"
+    },
+    {
+     "name": "48 × Zeny (65.15%)"
+    },
+    {
+     "name": "239 × Zeny (65.15%)"
+    },
+    {
+     "name": "Awakening Potion (0.34%)"
+    },
+    {
+     "name": "Alloy Bracelet [1] (0.51%)"
+    }
+   ]
+  },
+  {
+   "name": "Matyr",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/matyr_monster.png",
+   "level": "54",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "438",
+   "job_exp": "185",
+   "drop": [
+    {
+     "name": "Matyr Card (?%)"
+    },
+    {
+     "name": "Hard Skin (22.14%)"
+    },
+    {
+     "name": "Rough Elunium (0.56%)"
+    },
+    {
+     "name": "Transformation Scroll (Matyr) (0.02%)"
+    },
+    {
+     "name": "48 × Zeny (69.47%)"
+    },
+    {
+     "name": "241 × Zeny (69.47%)"
+    },
+    {
+     "name": "Awakening Potion (0.27%)"
+    },
+    {
+     "name": "Poison (1.08%)"
+    },
+    {
+     "name": "Chloe Bow [2] (0.5%)"
+    }
+   ]
+  },
+  {
+   "name": "Vagabond Wolf",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/vagabondwolf_mini.png",
+   "level": "55",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "2,966",
+   "job_exp": "2,113",
+   "drop": [
+    {
+     "name": "Western Grace Blueprint (0.68%)"
+    },
+    {
+     "name": "Vagabond Wolf Card (?%)"
+    },
+    {
+     "name": "Hard Skin (22.9%)"
+    },
+    {
+     "name": "Orc Claw (7.44%)"
+    },
+    {
+     "name": "Transformation Scroll (Vagabond Wolf) (2.08%)"
+    },
+    {
+     "name": "Awakening Potion (18.55%)"
+    },
+    {
+     "name": "Oridecon (2.43%)"
+    },
+    {
+     "name": "395 × Zeny (?%)"
+    },
+    {
+     "name": "Metal Bow [2] (45.87%)"
+    },
+    {
+     "name": "Claytos Cracking Earth Armor (100%)"
+    },
+    {
+     "name": "Staunch Shoes (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Mistress",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/bee_queen_mvp.png",
+   "level": "55",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Wind",
+   "size": "Small",
+   "base_exp": "15,080",
+   "job_exp": "10,419",
+   "drop": [
+    {
+     "name": "Coronet Blueprint (0.09%)"
+    },
+    {
+     "name": "Mistress Card (?%)"
+    },
+    {
+     "name": "5 × Scell (3.83%)"
+    },
+    {
+     "name": "Pearl (9.91%)"
+    },
+    {
+     "name": "Transformation Scroll (Mistress) (0.44%)"
+    },
+    {
+     "name": "Honey (14.75%)"
+    },
+    {
+     "name": "Elunium (4.64%)"
+    },
+    {
+     "name": "Royal Jelly (2.95%)"
+    },
+    {
+     "name": "Rough Wind (26.56%)"
+    },
+    {
+     "name": "1938 × Zeny (36.8%)"
+    },
+    {
+     "name": "Metal Dagger [2] (?%)"
+    },
+    {
+     "name": "Staunch Armor (100%)"
+    },
+    {
+     "name": "Nile's Bracelet (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Mummy",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/mummy_monster.png",
+   "level": "55",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "335",
+   "job_exp": "253",
+   "drop": [
+    {
+     "name": "Hot-blooded Headband Blueprint (?%)"
+    },
+    {
+     "name": "Mummy Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Mummy) (0.03%)"
+    },
+    {
+     "name": "48 × Zeny (92.12%)"
+    },
+    {
+     "name": "242 × Zeny (92.12%)"
+    }
+   ]
+  },
+  {
+   "name": "Golem",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/golem_monster.png",
+   "level": "55",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Large",
+   "base_exp": "572",
+   "job_exp": "115",
+   "drop": [
+    {
+     "name": "Stone Heart [1] Blueprint (?%)"
+    },
+    {
+     "name": "Golem Card (?%)"
+    },
+    {
+     "name": "Rough Elunium (1.14%)"
+    },
+    {
+     "name": "Transformation Scroll (Golem) (0.03%)"
+    },
+    {
+     "name": "48 × Zeny (86.82%)"
+    },
+    {
+     "name": "242 × Zeny (86.82%)"
+    },
+    {
+     "name": "Gold Sand (3.91%)"
+    },
+    {
+     "name": "Adventure Armor [1] (0.68%)"
+    }
+   ]
+  },
+  {
+   "name": "Metaller",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/metaller_monster.png",
+   "level": "55",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "738",
+   "job_exp": "466",
+   "drop": [
+    {
+     "name": "Metaller Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Metaller) (0.03%)"
+    },
+    {
+     "name": "48 × Zeny (87.15%)"
+    },
+    {
+     "name": "242 × Zeny (87.15%)"
+    },
+    {
+     "name": "Flame Heart (1.46%)"
+    },
+    {
+     "name": "Gold Sand (3.93%)"
+    }
+   ]
+  },
+  {
+   "name": "Elder Willow",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/wilow2_monster.png",
+   "level": "56",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "379",
+   "job_exp": "235",
+   "drop": [
+    {
+     "name": "Laurel Wreath [1] Blueprint (?%)"
+    },
+    {
+     "name": "Elder Willow Card (?%)"
+    },
+    {
+     "name": "Scell (25.59%)"
+    },
+    {
+     "name": "Transformation Scroll (Elder Willow) (0.62%)"
+    },
+    {
+     "name": "49 × Zeny (66.2%)"
+    },
+    {
+     "name": "244 × Zeny (66.2%)"
+    },
+    {
+     "name": "Flame Heart (0.56%)"
+    },
+    {
+     "name": "Dead Branch (0.78%)"
+    },
+    {
+     "name": "Metal Staff [2] (0.52%)"
+    }
+   ]
+  },
+  {
+   "name": "Isis",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/isis_monster.png",
+   "level": "57",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Large",
+   "base_exp": "465",
+   "job_exp": "194",
+   "drop": [
+    {
+     "name": "Crown of Ancient Queen Blueprint (?%)"
+    },
+    {
+     "name": "Isis Card (?%)"
+    },
+    {
+     "name": "Immortal Heart (19.07%)"
+    },
+    {
+     "name": "Rough Oridecon (0.49%)"
+    },
+    {
+     "name": "Transformation Scroll (Isis) (0.02%)"
+    },
+    {
+     "name": "49 × Zeny (67.53%)"
+    },
+    {
+     "name": "245 × Zeny (67.53%)"
+    },
+    {
+     "name": "Apple Juice (6.54%)"
+    },
+    {
+     "name": "Metal Armor [1] (0.53%)"
+    }
+   ]
+  },
+  {
+   "name": "Bigfoot",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/bigfoot_monster.png",
+   "level": "58",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Earth",
+   "size": "Large",
+   "base_exp": "397",
+   "job_exp": "241",
+   "drop": [
+    {
+     "name": "Poo Poo Hat Blueprint (?%)"
+    },
+    {
+     "name": "Bigfoot Card (?%)"
+    },
+    {
+     "name": "Hard Skin (27.61%)"
+    },
+    {
+     "name": "Transformation Scroll (Bigfoot) (0.61%)"
+    },
+    {
+     "name": "49 × Zeny (65.14%)"
+    },
+    {
+     "name": "247 × Zeny (65.14%)"
+    },
+    {
+     "name": "Honey (0.56%)"
+    },
+    {
+     "name": "Adventurer Shoes[1] (0.51%)"
+    }
+   ]
+  },
+  {
+   "name": "Savage",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/savage_monster.png",
+   "level": "59",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Earth",
+   "size": "Large",
+   "base_exp": "455",
+   "job_exp": "216",
+   "drop": [
+    {
+     "name": "Angled Glasses Blueprint (?%)"
+    },
+    {
+     "name": "Savage Card (?%)"
+    },
+    {
+     "name": "Hard Skin (24.75%)"
+    },
+    {
+     "name": "Transformation Scroll (Savage) (0.01%)"
+    },
+    {
+     "name": "50 × Zeny (68.75%)"
+    },
+    {
+     "name": "248 × Zeny (68.75%)"
+    },
+    {
+     "name": "Royal Jelly (0.1%)"
+    },
+    {
+     "name": "Army Shield [1] (0.42%)"
+    }
+   ]
+  },
+  {
+   "name": "Maya",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/maya_mvp.png",
+   "level": "60",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Earth",
+   "size": "Large",
+   "base_exp": "20,971",
+   "job_exp": "8,738",
+   "drop": [
+    {
+     "name": "Tiara [1] Blueprint (0.12%)"
+    },
+    {
+     "name": "Queen's Hair Ornament Blueprint (0.48%)"
+    },
+    {
+     "name": "Maya Card (?%)"
+    },
+    {
+     "name": "5 × Scell (4.28%)"
+    },
+    {
+     "name": "Parts (15.27%)"
+    },
+    {
+     "name": "Transformation Scroll (Maya) (0.52%)"
+    },
+    {
+     "name": "Leave me Alone (20.87%)"
+    },
+    {
+     "name": "Oridecon (5.48%)"
+    },
+    {
+     "name": "Topaz (4.59%)"
+    },
+    {
+     "name": "2063 × Zeny (48.36%)"
+    },
+    {
+     "name": "Army Boots [1] (?%)"
+    },
+    {
+     "name": "Orleans's Gown (100%)"
+    },
+    {
+     "name": "Loki's Nail [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Greatest General",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/greatest_general_monster.png",
+   "level": "60",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "411",
+   "job_exp": "249",
+   "drop": [
+    {
+     "name": "Stop Post Blueprint (?%)"
+    },
+    {
+     "name": "Greatest General Card (?%)"
+    },
+    {
+     "name": "Rough Elunium (0.35%)"
+    },
+    {
+     "name": "Transformation Scroll (Greatest General) (0.45%)"
+    },
+    {
+     "name": "50 × Zeny (88.45%)"
+    },
+    {
+     "name": "250 × Zeny (88.45%)"
+    },
+    {
+     "name": "Mercury (2.68%)"
+    },
+    {
+     "name": "Alloy Mace [2] (0.46%)"
+    }
+   ]
+  },
+  {
+   "name": "Eggyra",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/eggyra_monster.png",
+   "level": "61",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Ghost",
+   "size": "Medium",
+   "base_exp": "309",
+   "job_exp": "317",
+   "drop": [
+    {
+     "name": "Eggshell Blueprint (?%)"
+    },
+    {
+     "name": "Eggyra Card (?%)"
+    },
+    {
+     "name": "Evil Horn (23.59%)"
+    },
+    {
+     "name": "Transformation Scroll (Eggyra) (0.5%)"
+    },
+    {
+     "name": "50 × Zeny (69.94%)"
+    },
+    {
+     "name": "252 × Zeny (69.94%)"
+    }
+   ]
+  },
+  {
+   "name": "Horong",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/horong_monster.png",
+   "level": "62",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Fire",
+   "size": "Small",
+   "base_exp": "423",
+   "job_exp": "258",
+   "drop": [
+    {
+     "name": "Bomb Wick Blueprint (?%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (0.14%)"
+    },
+    {
+     "name": "Rough Elunium (0.21%)"
+    },
+    {
+     "name": "Transformation Scroll (Horong) (0.01%)"
+    },
+    {
+     "name": "51 × Zeny (83.24%)"
+    },
+    {
+     "name": "253 × Zeny (83.24%)"
+    },
+    {
+     "name": "Flame Heart (0.18%)"
+    },
+    {
+     "name": "10 × Fire Arrow (6.02%)"
+    },
+    {
+     "name": "Mercury (2.54%)"
+    },
+    {
+     "name": "Army Katar [2] (0.44%)"
+    }
+   ]
+  },
+  {
+   "name": "Dustiness",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/dustiness_monster.png",
+   "level": "62",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Wind",
+   "size": "Small",
+   "base_exp": "826",
+   "job_exp": "530",
+   "drop": [
+    {
+     "name": "Dustiness Card (?%)"
+    },
+    {
+     "name": "Scell (29.49%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (0.5%)"
+    },
+    {
+     "name": "Transformation Scroll (Dustiness) (0.02%)"
+    },
+    {
+     "name": "51 × Zeny (62.82%)"
+    },
+    {
+     "name": "253 × Zeny (62.82%)"
+    },
+    {
+     "name": "Butterfly Wing (1.21%)"
+    },
+    {
+     "name": "Adventurer Shoes[1] (0.5%)"
+    }
+   ]
+  },
+  {
+   "name": "Horong ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/horong_monster.png",
+   "level": "62",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Fire",
+   "size": "Small",
+   "base_exp": "2,115",
+   "job_exp": "1,290",
+   "drop": [
+    {
+     "name": "Bomb Wick Blueprint (0.22%)"
+    },
+    {
+     "name": "Horong Card (0.03%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (0.2%)"
+    },
+    {
+     "name": "Rough Elunium (0.31%)"
+    },
+    {
+     "name": "Transformation Scroll (Horong) (0.01%)"
+    },
+    {
+     "name": "51 × Zeny (82.1%)"
+    },
+    {
+     "name": "253 × Zeny (82.1%)"
+    },
+    {
+     "name": "Flame Heart (0.26%)"
+    },
+    {
+     "name": "Fire Arrow (8.85%)"
+    },
+    {
+     "name": "Mercury (0.75%)"
+    },
+    {
+     "name": "Army Katar [2] (0.13%)"
+    },
+    {
+     "name": "Amethyst (50%)"
+    },
+    {
+     "name": "Amethyst (50%)"
+    }
+   ]
+  },
+  {
+   "name": "Munak",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/munak_monster.png",
+   "level": "63",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "462",
+   "job_exp": "244",
+   "drop": [
+    {
+     "name": "Munak Hat [1] Blueprint (?%)"
+    },
+    {
+     "name": "Munak Card (?%)"
+    },
+    {
+     "name": "Immortal Heart (30.6%)"
+    },
+    {
+     "name": "Transformation Scroll (Munak) (0.58%)"
+    },
+    {
+     "name": "51 × Zeny (59.99%)"
+    },
+    {
+     "name": "255 × Zeny (59.99%)"
+    },
+    {
+     "name": "Orange Potion (3.18%)"
+    },
+    {
+     "name": "Army Sword [2] (0.47%)"
+    }
+   ]
+  },
+  {
+   "name": "Minorous",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/minorous_monster.png",
+   "level": "64",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Fire",
+   "size": "Large",
+   "base_exp": "507",
+   "job_exp": "226",
+   "drop": [
+    {
+     "name": "Minorous Horn Blueprint (?%)"
+    },
+    {
+     "name": "Minorous Card (?%)"
+    },
+    {
+     "name": "Rough Oridecon (1.26%)"
+    },
+    {
+     "name": "Transformation Scroll (Minorous) (0.03%)"
+    },
+    {
+     "name": "51 × Zeny (86.68%)"
+    },
+    {
+     "name": "256 × Zeny (86.68%)"
+    },
+    {
+     "name": "Gold Sand (3.92%)"
+    },
+    {
+     "name": "Army Armor [1] (0.68%)"
+    }
+   ]
+  },
+  {
+   "name": "Wood Goblin",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/wilow_huge1_mini.png",
+   "level": "65",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "3,524",
+   "job_exp": "2,486",
+   "drop": [
+    {
+     "name": "Singing Bird Blueprint (0.65%)"
+    },
+    {
+     "name": "Wood Goblin Card (?%)"
+    },
+    {
+     "name": "Scell (10.57%)"
+    },
+    {
+     "name": "Pearl (5.23%)"
+    },
+    {
+     "name": "Transformation Scroll (Wood Goblin) (2.1%)"
+    },
+    {
+     "name": "Dead Branch (35.07%)"
+    },
+    {
+     "name": "Elunium (2.45%)"
+    },
+    {
+     "name": "407 × Zeny (0.19%)"
+    },
+    {
+     "name": "Alloy Sword [2] (43.7%)"
+    },
+    {
+     "name": "Blueeve Cape (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Phreeoni",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/phreeoni_mvp.png",
+   "level": "65",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Neutral",
+   "size": "Large",
+   "base_exp": "20,755",
+   "job_exp": "10,608",
+   "drop": [
+    {
+     "name": "Mr. Scream Blueprint (0.16%)"
+    },
+    {
+     "name": "Phreeoni Card (?%)"
+    },
+    {
+     "name": "5 × Hard Skin (3.91%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (44.19%)"
+    },
+    {
+     "name": "Star Crumb (16.05%)"
+    },
+    {
+     "name": "Transformation Scroll (Phreeoni) (0.63%)"
+    },
+    {
+     "name": "You are Falling (25.25%)"
+    },
+    {
+     "name": "Oridecon (6.62%)"
+    },
+    {
+     "name": "Yggdrasil Berry (3.15%)"
+    },
+    {
+     "name": "2000 × Zeny (?%)"
+    },
+    {
+     "name": "Alloy Spear [2] (?%)"
+    },
+    {
+     "name": "Orleans's Gloves (100%)"
+    },
+    {
+     "name": "Rudra Bow [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Bongun",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/bon_cun_monster.png",
+   "level": "65",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "459",
+   "job_exp": "262",
+   "drop": [
+    {
+     "name": "Bongun Hat [1] Blueprint (?%)"
+    },
+    {
+     "name": "Bongun Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Bongun) (0.81%)"
+    },
+    {
+     "name": "52 × Zeny (81.71%)"
+    },
+    {
+     "name": "258 × Zeny (81.71%)"
+    },
+    {
+     "name": "Orange Potion (5.99%)"
+    },
+    {
+     "name": "Mercury (3.75%)"
+    },
+    {
+     "name": "Army Hammer [2] (0.65%)"
+    }
+   ]
+  },
+  {
+   "name": "Mantis",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/mantis_monster.png",
+   "level": "65",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "872",
+   "job_exp": "550",
+   "drop": [
+    {
+     "name": "Mantis Card (?%)"
+    },
+    {
+     "name": "Zargon (28.34%)"
+    },
+    {
+     "name": "Transformation Scroll (Mantis) (0.02%)"
+    },
+    {
+     "name": "52 × Zeny (64.74%)"
+    },
+    {
+     "name": "258 × Zeny (64.74%)"
+    },
+    {
+     "name": "Great Nature (0.76%)"
+    },
+    {
+     "name": "Army Katar [2] (0.51%)"
+    }
+   ]
+  },
+  {
+   "name": "Archer Skeleton",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/skeleton_monster.png",
+   "level": "66",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "461",
+   "job_exp": "269",
+   "drop": [
+    {
+     "name": "Apple of Archer Blueprint (?%)"
+    },
+    {
+     "name": "Archer Skeleton Card (?%)"
+    },
+    {
+     "name": "Zargon (18.6%)"
+    },
+    {
+     "name": "Rough Oridecon (0.58%)"
+    },
+    {
+     "name": "Transformation Scroll (Archer Skeleton) (0.02%)"
+    },
+    {
+     "name": "52 × Zeny (58.2%)"
+    },
+    {
+     "name": "259 × Zeny (58.2%)"
+    },
+    {
+     "name": "Awakening Potion (0.28%)"
+    },
+    {
+     "name": "10 × Fire Arrow (16.82%)"
+    },
+    {
+     "name": "Army Bow [2] (0.46%)"
+    }
+   ]
+  },
+  {
+   "name": "Sohee ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/sohee_monster.png",
+   "level": "67",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "2,280",
+   "job_exp": "1,400",
+   "drop": [
+    {
+     "name": "Decorative Golden Bell Blueprint (0.02%)"
+    },
+    {
+     "name": "Sohee Card (0.01%)"
+    },
+    {
+     "name": "Zargon (10.54%)"
+    },
+    {
+     "name": "Transformation Scroll (Sohee) (0.01%)"
+    },
+    {
+     "name": "52 × Zeny (77.89%)"
+    },
+    {
+     "name": "261 × Zeny (77.89%)"
+    },
+    {
+     "name": "Apple Juice (4.44%)"
+    },
+    {
+     "name": "Mystic Frozen (0.28%)"
+    },
+    {
+     "name": "Immortal Orb [1] (0.12%)"
+    },
+    {
+     "name": "Amethyst (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Sohee",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/sohee_monster.png",
+   "level": "67",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "456",
+   "job_exp": "280",
+   "drop": [
+    {
+     "name": "Decorative Golden Bell Blueprint (?%)"
+    },
+    {
+     "name": "Zargon (17.66%)"
+    },
+    {
+     "name": "Transformation Scroll (Sohee) (0.02%)"
+    },
+    {
+     "name": "52 × Zeny (68.02%)"
+    },
+    {
+     "name": "261 × Zeny (68.02%)"
+    },
+    {
+     "name": "Apple Juice (7.45%)"
+    },
+    {
+     "name": "Mystic Frozen (0.47%)"
+    },
+    {
+     "name": "Immortal Orb [1] (0.53%)"
+    }
+   ]
+  },
+  {
+   "name": "Marduk",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/marduk_monster.png",
+   "level": "68",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Fire",
+   "size": "Large",
+   "base_exp": "465",
+   "job_exp": "283",
+   "drop": [
+    {
+     "name": "Cultish Masque Blueprint (?%)"
+    },
+    {
+     "name": "Marduk Card (?%)"
+    },
+    {
+     "name": "Evil Horn (23.82%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (0.5%)"
+    },
+    {
+     "name": "Transformation Scroll (Marduk) (0.02%)"
+    },
+    {
+     "name": "53 × Zeny (68.52%)"
+    },
+    {
+     "name": "263 × Zeny (68.52%)"
+    },
+    {
+     "name": "Flame Heart (0.64%)"
+    },
+    {
+     "name": "Army Staff [2] (0.54%)"
+    }
+   ]
+  },
+  {
+   "name": "Dokebi",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/dokebi_monster.png",
+   "level": "69",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Small",
+   "base_exp": "514",
+   "job_exp": "263",
+   "drop": [
+    {
+     "name": "Dokebi Horn [1] Blueprint (?%)"
+    },
+    {
+     "name": "Dokebi Card (?%)"
+    },
+    {
+     "name": "Rough Elunium (0.33%)"
+    },
+    {
+     "name": "Transformation Scroll (Dokebi) (0.01%)"
+    },
+    {
+     "name": "53 × Zeny (88.89%)"
+    },
+    {
+     "name": "264 × Zeny (88.89%)"
+    },
+    {
+     "name": "Candy (0.44%)"
+    },
+    {
+     "name": "Mercury (2.25%)"
+    },
+    {
+     "name": "Army Boots [1] (0.39%)"
+    }
+   ]
+  },
+  {
+   "name": "Gryphon",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/grypjon_mini.png",
+   "level": "70",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Wind",
+   "size": "Large",
+   "base_exp": "3,678",
+   "job_exp": "2,745",
+   "drop": [
+    {
+     "name": "Feather Beret [1] Blueprint (0.83%)"
+    },
+    {
+     "name": "Gryphon Card (?%)"
+    },
+    {
+     "name": "Glass Bead (13.18%)"
+    },
+    {
+     "name": "Soft Feather (6.7%)"
+    },
+    {
+     "name": "Transformation Scroll (Gryphon) (2.65%)"
+    },
+    {
+     "name": "Rough Wind (17.71%)"
+    },
+    {
+     "name": "Oridecon (3.09%)"
+    },
+    {
+     "name": "412 × Zeny (0.24%)"
+    },
+    {
+     "name": "Army Armor [1] (55.55%)"
+    },
+    {
+     "name": "Doflamingo Cape (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Anubis",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/anubis_mini.png",
+   "level": "70",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Undead",
+   "size": "Large",
+   "base_exp": "3,572",
+   "job_exp": "2,807",
+   "drop": [
+    {
+     "name": "Pagdayaw [1] Blueprint (0.55%)"
+    },
+    {
+     "name": "Anubis Card (?%)"
+    },
+    {
+     "name": "Glass Bead (6.75%)"
+    },
+    {
+     "name": "Bloody Rune (4.15%)"
+    },
+    {
+     "name": "Transformation Scroll (Anubis) (1.54%)"
+    },
+    {
+     "name": "Oridecon (1.8%)"
+    },
+    {
+     "name": "Topaz (48.05%)"
+    },
+    {
+     "name": "425 × Zeny (?%)"
+    },
+    {
+     "name": "Army Spear [2] (37.12%)"
+    },
+    {
+     "name": "Exorcist Robe (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Eddga",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/eddga_mvp.png",
+   "level": "70",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Fire",
+   "size": "Large",
+   "base_exp": "22,286",
+   "job_exp": "11,461",
+   "drop": [
+    {
+     "name": "Pipe Blueprint (0.1%)"
+    },
+    {
+     "name": "Eddga Card (?%)"
+    },
+    {
+     "name": "5 × Glass Bead (4.39%)"
+    },
+    {
+     "name": "Lemon Dyestuffs (27.07%)"
+    },
+    {
+     "name": "Orc Claw (12.41%)"
+    },
+    {
+     "name": "Transformation Scroll (Eddga) (0.38%)"
+    },
+    {
+     "name": "Honey (12.89%)"
+    },
+    {
+     "name": "Elunium (4.06%)"
+    },
+    {
+     "name": "Flame Heart (23.2%)"
+    },
+    {
+     "name": "Payon's Memory (15.47%)"
+    },
+    {
+     "name": "2125 × Zeny (?%)"
+    },
+    {
+     "name": "Army Coat [1] (?%)"
+    },
+    {
+     "name": "Orleans's Server (100%)"
+    },
+    {
+     "name": "Imperial Guard (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Orc Warrior",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/orc_monster.png",
+   "level": "70",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "585",
+   "job_exp": "229",
+   "drop": [
+    {
+     "name": "Cigarette Blueprint (?%)"
+    },
+    {
+     "name": "Orc Warrior Card (?%)"
+    },
+    {
+     "name": "Rough Oridecon (0.92%)"
+    },
+    {
+     "name": "Transformation Scroll (Orc Warrior) (0.87%)"
+    },
+    {
+     "name": "53 × Zeny (86.22%)"
+    },
+    {
+     "name": "266 × Zeny (86.22%)"
+    },
+    {
+     "name": "Skel-Bone (3.91%)"
+    },
+    {
+     "name": "Mercenary Sword [2] (0.68%)"
+    }
+   ]
+  },
+  {
+   "name": "Orc Archer",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/orc_archer_monster.png",
+   "level": "71",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "358",
+   "job_exp": "370",
+   "drop": [
+    {
+     "name": "Orc Helm Blueprint (?%)"
+    },
+    {
+     "name": "Orc Archer Card (?%)"
+    },
+    {
+     "name": "Glass Bead (21.3%)"
+    },
+    {
+     "name": "Transformation Scroll (Orc Archer) (0.54%)"
+    },
+    {
+     "name": "53 × Zeny (71.29%)"
+    },
+    {
+     "name": "267 × Zeny (71.29%)"
+    },
+    {
+     "name": "Awakening Potion (0.32%)"
+    },
+    {
+     "name": "Mercenary Bow [2] (0.46%)"
+    }
+   ]
+  },
+  {
+   "name": "Nine Tail",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/ninetail_monster.png",
+   "level": "72",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "669",
+   "job_exp": "197",
+   "drop": [
+    {
+     "name": "Nine Tails Blueprint (?%)"
+    },
+    {
+     "name": "Nine Tail Card (?%)"
+    },
+    {
+     "name": "Zargon (22.49%)"
+    },
+    {
+     "name": "Rough Elunium (0.71%)"
+    },
+    {
+     "name": "Transformation Scroll (Nine Tail) (0.03%)"
+    },
+    {
+     "name": "54 × Zeny (68.48%)"
+    },
+    {
+     "name": "269 × Zeny (68.48%)"
+    },
+    {
+     "name": "Royal Jelly (0.11%)"
+    },
+    {
+     "name": "Dead Branch (0.84%)"
+    },
+    {
+     "name": "Panacea (0.81%)"
+    },
+    {
+     "name": "Mercenary Coat [1] (0.6%)"
+    }
+   ]
+  },
+  {
+   "name": "Wild Rose",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/wild_rose_monster.png",
+   "level": "72",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Wind",
+   "size": "Small",
+   "base_exp": "489",
+   "job_exp": "302",
+   "drop": [
+    {
+     "name": "Nut Shell Blueprint (?%)"
+    },
+    {
+     "name": "Wild Rose Card (?%)"
+    },
+    {
+     "name": "Abyss Flower (14.37%)"
+    },
+    {
+     "name": "Transformation Scroll (Wild Rose) (0.03%)"
+    },
+    {
+     "name": "54 × Zeny (69.91%)"
+    },
+    {
+     "name": "269 × Zeny (69.91%)"
+    },
+    {
+     "name": "Apple Juice (9.1%)"
+    },
+    {
+     "name": "Mercenary Sword [2] (0.55%)"
+    }
+   ]
+  },
+  {
+   "name": "Kobold (Axe)",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/kobold_monster.png",
+   "level": "72",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "482",
+   "job_exp": "306",
+   "drop": [
+    {
+     "name": "Bone in Mouth Blueprint (?%)"
+    },
+    {
+     "name": "Kobold Card (?%)"
+    },
+    {
+     "name": "Necklace of Wisdom (23.95%)"
+    },
+    {
+     "name": "Rough Elunium (0.94%)"
+    },
+    {
+     "name": "Transformation Scroll (Kobold (Axe)) (0.03%)"
+    },
+    {
+     "name": "54 × Zeny (69.13%)"
+    },
+    {
+     "name": "270 × Zeny (69.13%)"
+    }
+   ]
+  },
+  {
+   "name": "Osiris",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/osiris_mvp.png",
+   "level": "73",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "25,948",
+   "job_exp": "10,379",
+   "drop": [
+    {
+     "name": "Crown [1] Blueprint (0.11%)"
+    },
+    {
+     "name": "Osiris Card (?%)"
+    },
+    {
+     "name": "5 × Evil Horn (7.41%)"
+    },
+    {
+     "name": "Bloody Rune (13.85%)"
+    },
+    {
+     "name": "Transformation Scroll (Osiris) (0.57%)"
+    },
+    {
+     "name": "After Christmas (22.9%)"
+    },
+    {
+     "name": "Oridecon (6.01%)"
+    },
+    {
+     "name": "Yggdrasil Berry (2.86%)"
+    },
+    {
+     "name": "2163 × Zeny (46.25%)"
+    },
+    {
+     "name": "Army Knife [2] (?%)"
+    },
+    {
+     "name": "Matyr's Leash (100%)"
+    },
+    {
+     "name": "Blood Tears [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "High Orc",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/orc_captain_monster.png",
+   "level": "73",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Fire",
+   "size": "Large",
+   "base_exp": "574",
+   "job_exp": "260",
+   "drop": [
+    {
+     "name": "Orc Helm Blueprint (?%)"
+    },
+    {
+     "name": "High Orc Card (?%)"
+    },
+    {
+     "name": "Glass Bead (23.99%)"
+    },
+    {
+     "name": "Green Dyestuffs (0.5%)"
+    },
+    {
+     "name": "Transformation Scroll (High Orc) (0.7%)"
+    },
+    {
+     "name": "54 × Zeny (68.38%)"
+    },
+    {
+     "name": "270 × Zeny (68.38%)"
+    },
+    {
+     "name": "Mercenary Shield [1] (0.54%)"
+    }
+   ]
+  },
+  {
+   "name": "Kobold (Buckler)",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/kobold_monster.png",
+   "level": "73",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Poison",
+   "size": "Medium",
+   "base_exp": "547",
+   "job_exp": "276",
+   "drop": [
+    {
+     "name": "Bone in Mouth Blueprint (?%)"
+    },
+    {
+     "name": "Kobold Card (?%)"
+    },
+    {
+     "name": "Lemon Dyestuffs (1.19%)"
+    },
+    {
+     "name": "Transformation Scroll (Kobold (Buckler)) (0.03%)"
+    },
+    {
+     "name": "54 × Zeny (87.37%)"
+    },
+    {
+     "name": "272 × Zeny (87.37%)"
+    },
+    {
+     "name": "Skel-Bone (3.95%)"
+    }
+   ]
+  },
+  {
+   "name": "Hyegun",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/hyegun_mini.png",
+   "level": "74",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "4,935",
+   "job_exp": "2,294",
+   "drop": [
+    {
+     "name": "Hyegun Hat [1] Blueprint (0.39%)"
+    },
+    {
+     "name": "Hyegun Card (?%)"
+    },
+    {
+     "name": "Brigan (14.72%)"
+    },
+    {
+     "name": "Bell (2.6%)"
+    },
+    {
+     "name": "Transformation Scroll (Hyegun) (1.12%)"
+    },
+    {
+     "name": "Elunium (1.31%)"
+    },
+    {
+     "name": "Orange Potion (21.22%)"
+    },
+    {
+     "name": "Amethyst (31.97%)"
+    },
+    {
+     "name": "435 × Zeny (?%)"
+    },
+    {
+     "name": "Mercenary Staff [2] (26.64%)"
+    },
+    {
+     "name": "Lucius's Fierce Armor of Volcano (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Nightmare",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/nightmare_monster.png",
+   "level": "74",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Ghost",
+   "size": "Large",
+   "base_exp": "381",
+   "job_exp": "381",
+   "drop": [
+    {
+     "name": "Grief for Greed Blueprint (?%)"
+    },
+    {
+     "name": "Nightmare Card (?%)"
+    },
+    {
+     "name": "Cobaltblue Dyestuffs (0.64%)"
+    },
+    {
+     "name": "Rough Elunium (0.96%)"
+    },
+    {
+     "name": "Transformation Scroll (Nightmare) (0.03%)"
+    },
+    {
+     "name": "54 × Zeny (85.86%)"
+    },
+    {
+     "name": "272 × Zeny (85.86%)"
+    },
+    {
+     "name": "Blue Potion (1.28%)"
+    },
+    {
+     "name": "Skel-Bone (3.88%)"
+    }
+   ]
+  },
+  {
+   "name": "Kobold (Hammer)",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/kobold_monster.png",
+   "level": "74",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "497",
+   "job_exp": "314",
+   "drop": [
+    {
+     "name": "Bone in Mouth Blueprint (?%)"
+    },
+    {
+     "name": "Kobold Card (?%)"
+    },
+    {
+     "name": "Necklace of Wisdom (24.64%)"
+    },
+    {
+     "name": "Transformation Scroll (Kobold (Hammer)) (0.02%)"
+    },
+    {
+     "name": "54 × Zeny (68.14%)"
+    },
+    {
+     "name": "272 × Zeny (68.14%)"
+    },
+    {
+     "name": "Flame Heart (0.83%)"
+    },
+    {
+     "name": "Mercenary Hammer [2] (0.53%)"
+    }
+   ]
+  },
+  {
+   "name": "Orc Zombie",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/orc_zombie_monster.png",
+   "level": "75",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "511",
+   "job_exp": "313",
+   "drop": [
+    {
+     "name": "Orc Helm Blueprint (?%)"
+    },
+    {
+     "name": "Orc Zombie Card (?%)"
+    },
+    {
+     "name": "Evil Horn (35.03%)"
+    },
+    {
+     "name": "Transformation Scroll (Orc Zombie) (0.02%)"
+    },
+    {
+     "name": "55 × Zeny (59.33%)"
+    },
+    {
+     "name": "273 × Zeny (59.33%)"
+    },
+    {
+     "name": "Mercenary Knife [2] (0.47%)"
+    }
+   ]
+  },
+  {
+   "name": "Kobold Archer",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/kobold_archer_monster.png",
+   "level": "75",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Fire",
+   "size": "Small",
+   "base_exp": "510",
+   "job_exp": "314",
+   "drop": [
+    {
+     "name": "Puppy Headband Blueprint (?%)"
+    },
+    {
+     "name": "Kobold Archer Card (?%)"
+    },
+    {
+     "name": "Abyss Flower (18.71%)"
+    },
+    {
+     "name": "Rough Oridecon (0.88%)"
+    },
+    {
+     "name": "Transformation Scroll (Kobold Archer) (0.03%)"
+    },
+    {
+     "name": "56 × Zeny (73.11%)"
+    },
+    {
+     "name": "281 × Zeny (73.11%)"
+    },
+    {
+     "name": "Awakening Potion (0.42%)"
+    },
+    {
+     "name": "Mercenary Bow [2] (0.57%)"
+    }
+   ]
+  },
+  {
+   "name": "Moonlight Flower",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/moonlight_mvp.png",
+   "level": "76",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "24,071",
+   "job_exp": "12,517",
+   "drop": [
+    {
+     "name": "Corolla Blueprint (0.09%)"
+    },
+    {
+     "name": "Moonlight Flower Card (?%)"
+    },
+    {
+     "name": "5 × Hand of God (2.83%)"
+    },
+    {
+     "name": "Lemon Dyestuffs (29.03%)"
+    },
+    {
+     "name": "Bell (8.64%)"
+    },
+    {
+     "name": "Transformation Scroll (Moonlight Flower) (0.41%)"
+    },
+    {
+     "name": "Awakening Potion (8.29%)"
+    },
+    {
+     "name": "Elunium (4.35%)"
+    },
+    {
+     "name": "White Potion (35.25%)"
+    },
+    {
+     "name": "Amethyst (11.08%)"
+    },
+    {
+     "name": "2200 × Zeny (?%)"
+    },
+    {
+     "name": "Runner Bracer[1] (?%)"
+    },
+    {
+     "name": "Sprint Shoes (100%)"
+    },
+    {
+     "name": "Sabbath [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Sky Petite",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/petit_f_monster.png",
+   "level": "76",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Dragon",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "518",
+   "job_exp": "317",
+   "drop": [
+    {
+     "name": "Petite's Tail Blueprint (?%)"
+    },
+    {
+     "name": "Sky Petite Card (?%)"
+    },
+    {
+     "name": "Hand of God (21.93%)"
+    },
+    {
+     "name": "Rough Elunium (0.86%)"
+    },
+    {
+     "name": "Transformation Scroll (Sky Petite) (0.03%)"
+    },
+    {
+     "name": "56 × Zeny (67.52%)"
+    },
+    {
+     "name": "280 × Zeny (67.52%)"
+    },
+    {
+     "name": "Fly Wing (3.3%)"
+    },
+    {
+     "name": "Runner Bracer[1] (0.53%)"
+    }
+   ]
+  },
+  {
+   "name": "Marionette Doll",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/marionette_monster.png",
+   "level": "77",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Ghost",
+   "size": "Small",
+   "base_exp": "355",
+   "job_exp": "420",
+   "drop": [
+    {
+     "name": "Stellar Blueprint (?%)"
+    },
+    {
+     "name": "Marionette Card (?%)"
+    },
+    {
+     "name": "Zargon (20.4%)"
+    },
+    {
+     "name": "Transformation Scroll (Marionette) (0.02%)"
+    },
+    {
+     "name": "55 × Zeny (64.91%)"
+    },
+    {
+     "name": "277 × Zeny (64.91%)"
+    },
+    {
+     "name": "Apple Juice (8.6%)"
+    },
+    {
+     "name": "Mercenary Shoes [1] (0.51%)"
+    }
+   ]
+  },
+  {
+   "name": "Orc Baby",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/orc_baby_mini.png",
+   "level": "78",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "3,441",
+   "job_exp": "3,441",
+   "drop": [
+    {
+     "name": "Baby Pacifier Blueprint (0.79%)"
+    },
+    {
+     "name": "Orc Baby Card (?%)"
+    },
+    {
+     "name": "Glass Bead (13.36%)"
+    },
+    {
+     "name": "Heroic Emblem (8.84%)"
+    },
+    {
+     "name": "Transformation Scroll (Orc Baby) (2.85%)"
+    },
+    {
+     "name": "Candy (17.61%)"
+    },
+    {
+     "name": "Oridecon (3.32%)"
+    },
+    {
+     "name": "445 × Zeny (?%)"
+    },
+    {
+     "name": "Mercenary Hammer [2] (53.18%)"
+    },
+    {
+     "name": "Aebecee's Raging Typhoon Armor (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Orc Skeleton",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/orc_skeleton_monster.png",
+   "level": "78",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "530",
+   "job_exp": "326",
+   "drop": [
+    {
+     "name": "Orc Helm Blueprint (?%)"
+    },
+    {
+     "name": "Orc Skeleton Card (?%)"
+    },
+    {
+     "name": "Rough Elunium (0.93%)"
+    },
+    {
+     "name": "Transformation Scroll (Orc Skeleton) (0.02%)"
+    },
+    {
+     "name": "56 × Zeny (87.81%)"
+    },
+    {
+     "name": "278 × Zeny (87.81%)"
+    },
+    {
+     "name": "Skel-Bone (3.09%)"
+    },
+    {
+     "name": "Mercenary Katar [2] (0.53%)"
+    }
+   ]
+  },
+  {
+   "name": "Green Petite",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/petit_monster.png",
+   "level": "79",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Dragon",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "537",
+   "job_exp": "331",
+   "drop": [
+    {
+     "name": "Petite's Tail Blueprint (?%)"
+    },
+    {
+     "name": "Green Petite Card (?%)"
+    },
+    {
+     "name": "Rough Oridecon (1.62%)"
+    },
+    {
+     "name": "Transformation Scroll (Green Petite) (0.03%)"
+    },
+    {
+     "name": "55 × Zeny (86.92%)"
+    },
+    {
+     "name": "275 × Zeny (86.92%)"
+    },
+    {
+     "name": "Armor Shard (3.95%)"
+    }
+   ]
+  },
+  {
+   "name": "Jakk",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/nanguaxiansheng_mini.png",
+   "level": "80",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "4,627",
+   "job_exp": "2,891",
+   "drop": [
+    {
+     "name": "Necktie [1] Blueprint (0.74%)"
+    },
+    {
+     "name": "Jakk Card (?%)"
+    },
+    {
+     "name": "Brigan (20.3%)"
+    },
+    {
+     "name": "Cursed Ruby (6.81%)"
+    },
+    {
+     "name": "Transformation Scroll (Jakk) (2.71%)"
+    },
+    {
+     "name": "Candy (16.72%)"
+    },
+    {
+     "name": "Elunium (3.16%)"
+    },
+    {
+     "name": "455 × Zeny (?%)"
+    },
+    {
+     "name": "Enchanted Staff [2] (49.53%)"
+    },
+    {
+     "name": "Rider Insignia (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Orc Hero",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/orc_hero_mvp.png",
+   "level": "80",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Earth",
+   "size": "Large",
+   "base_exp": "24,429",
+   "job_exp": "13,704",
+   "drop": [
+    {
+     "name": "Helmet of Orc Hero [1] Blueprint (0.21%)"
+    },
+    {
+     "name": "Orc Hero Card (?%)"
+    },
+    {
+     "name": "5 × Necklace of Wisdom (7.96%)"
+    },
+    {
+     "name": "Heroic Emblem (27%)"
+    },
+    {
+     "name": "Transformation Scroll (Orc Hero) (0.96%)"
+    },
+    {
+     "name": "Emperium (34.84%)"
+    },
+    {
+     "name": "Oridecon (10.16%)"
+    },
+    {
+     "name": "Yggdrasil Berry (4.83%)"
+    },
+    {
+     "name": "Orcish Voucher (14%)"
+    },
+    {
+     "name": "2250 × Zeny (?%)"
+    },
+    {
+     "name": "Mercenary Armor [1] (?%)"
+    },
+    {
+     "name": "Slash [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Kobold Leader",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/kobold_leader_mvp.png",
+   "level": "80",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "29,487",
+   "job_exp": "10,764",
+   "drop": [
+    {
+     "name": "Ramen Hat [1] Blueprint (0.11%)"
+    },
+    {
+     "name": "Kobold Leader Card (?%)"
+    },
+    {
+     "name": "5 × Abyss Flower (1.4%)"
+    },
+    {
+     "name": "Lemon Dyestuffs (40.37%)"
+    },
+    {
+     "name": "Wrapping Lace (13.01%)"
+    },
+    {
+     "name": "Transformation Scroll (Kobold Leader) (0.57%)"
+    },
+    {
+     "name": "Royal Jelly (3.84%)"
+    },
+    {
+     "name": "Elunium (6.05%)"
+    },
+    {
+     "name": "Panacea (34.61%)"
+    },
+    {
+     "name": "2250 × Zeny (?%)"
+    },
+    {
+     "name": "Mercenary Katar [2] (?%)"
+    },
+    {
+     "name": "Goibne's Greaves (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Mimic",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/mimic_monster.png",
+   "level": "80",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Mimic Card (?%)"
+    },
+    {
+     "name": "49 × Zeny (?%)"
+    },
+    {
+     "name": "Evil Chest (?%)"
+    },
+    {
+     "name": "Creste's Royal Medal (?%)"
+    }
+   ]
+  },
+  {
+   "name": "Deviruchi",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/deviruchi_monster.png",
+   "level": "80",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Small",
+   "base_exp": "614",
+   "job_exp": "294",
+   "drop": [
+    {
+     "name": "Deviruchi Hat Blueprint (?%)"
+    },
+    {
+     "name": "Deviruchi Card (?%)"
+    },
+    {
+     "name": "Hand of God (20.2%)"
+    },
+    {
+     "name": "Rough Oridecon (0.79%)"
+    },
+    {
+     "name": "Transformation Scroll (Deviruchi) (0.03%)"
+    },
+    {
+     "name": "56 × Zeny (71.25%)"
+    },
+    {
+     "name": "281 × Zeny (71.25%)"
+    },
+    {
+     "name": "Candy (1.05%)"
+    },
+    {
+     "name": "Mercenary Spear [2] (0.56%)"
+    }
+   ]
+  },
+  {
+   "name": "Succubus",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/succubus_monster.png",
+   "level": "80",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "469",
+   "job_exp": "378",
+   "drop": [
+    {
+     "name": "Succubus Horn Blueprint (?%)"
+    },
+    {
+     "name": "Succubus Card (?%)"
+    },
+    {
+     "name": "Brigan (20.05%)"
+    },
+    {
+     "name": "Transformation Scroll (Succubus) (0.02%)"
+    },
+    {
+     "name": "56 × Zeny (52.16%)"
+    },
+    {
+     "name": "281 × Zeny (52.16%)"
+    },
+    {
+     "name": "Blue Potion (1.24%)"
+    },
+    {
+     "name": "Creste's Royal Medal (21.63%)"
+    },
+    {
+     "name": "Enchanted Staff [2] (0.41%)"
+    }
+   ]
+  },
+  {
+   "name": "Dragon Egg",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/no_icon.png",
+   "level": "81",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Dragon",
+   "Element": "Neutral",
+   "size": "Medium",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Dragon Egg Card (?%)"
+    },
+    {
+     "name": "57 × Zeny (?%)"
+    }
+   ]
+  },
+  {
+   "name": "Hunter Fly",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/hunterfly_monster.png",
+   "level": "81",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Wind",
+   "size": "Small",
+   "base_exp": "546",
+   "job_exp": "342",
+   "drop": [
+    {
+     "name": "Gemmed Sallet [1] Blueprint (?%)"
+    },
+    {
+     "name": "Hunter Fly Card (?%)"
+    },
+    {
+     "name": "Brigan (17.71%)"
+    },
+    {
+     "name": "Green Dyestuffs (0.46%)"
+    },
+    {
+     "name": "Rough Oridecon (0.7%)"
+    },
+    {
+     "name": "Transformation Scroll (Hunter Fly) (0.03%)"
+    },
+    {
+     "name": "57 × Zeny (71.62%)"
+    },
+    {
+     "name": "283 × Zeny (71.62%)"
+    },
+    {
+     "name": "Rough Wind (0.6%)"
+    },
+    {
+     "name": "Fly Wing (2.67%)"
+    }
+   ]
+  },
+  {
+   "name": "Incubus",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/incubus_monster.png",
+   "level": "81",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "476",
+   "job_exp": "382",
+   "drop": [
+    {
+     "name": "Incubus Horn Blueprint (?%)"
+    },
+    {
+     "name": "Incubus Card (?%)"
+    },
+    {
+     "name": "Brigan (20.23%)"
+    },
+    {
+     "name": "Transformation Scroll (Incubus) (0.02%)"
+    },
+    {
+     "name": "57 × Zeny (52.15%)"
+    },
+    {
+     "name": "283 × Zeny (52.15%)"
+    },
+    {
+     "name": "White Potion (0.76%)"
+    },
+    {
+     "name": "Creste's Royal Medal (21.9%)"
+    },
+    {
+     "name": "Enchanted Robe [1] (0.41%)"
+    }
+   ]
+  },
+  {
+   "name": "Ferus",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/ferus_monster.png",
+   "level": "82",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Dragon",
+   "Element": "Earth",
+   "size": "Large",
+   "base_exp": "732",
+   "job_exp": "242",
+   "drop": [
+    {
+     "name": "Skeleton Helm [1] Blueprint (?%)"
+    },
+    {
+     "name": "Ferus Card (?%)"
+    },
+    {
+     "name": "Hand of God (20.98%)"
+    },
+    {
+     "name": "Green Dyestuffs (0.55%)"
+    },
+    {
+     "name": "Transformation Scroll (Ferus) (0.03%)"
+    },
+    {
+     "name": "57 × Zeny (71.03%)"
+    },
+    {
+     "name": "284 × Zeny (71.03%)"
+    },
+    {
+     "name": "Great Nature (0.71%)"
+    },
+    {
+     "name": "Dagger [2] (0.56%)"
+    }
+   ]
+  },
+  {
+   "name": "Abysmal Knight",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/abyssknight_monster.png",
+   "level": "82",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Shadow",
+   "size": "Large",
+   "base_exp": "505",
+   "job_exp": "374",
+   "drop": [
+    {
+     "name": "Abysmal Knight Shield Blueprint (?%)"
+    },
+    {
+     "name": "Abysmal Knight Card (?%)"
+    },
+    {
+     "name": "Rough Elunium (1.07%)"
+    },
+    {
+     "name": "Transformation Scroll (Abysmal Knight) (0.02%)"
+    },
+    {
+     "name": "57 × Zeny (63.5%)"
+    },
+    {
+     "name": "284 × Zeny (63.5%)"
+    },
+    {
+     "name": "Creste's Royal Medal (26.52%)"
+    },
+    {
+     "name": "Armor Shard (2.89%)"
+    },
+    {
+     "name": "Prontera Lance [2] (0.5%)"
+    }
+   ]
+  },
+  {
+   "name": "Doppelganger",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/doppelganger_mvp.png",
+   "level": "83",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "36,663",
+   "job_exp": "7,638",
+   "drop": [
+    {
+     "name": "Fricca's Circlet Blueprint (0.1%)"
+    },
+    {
+     "name": "Spiky Band Blueprint (0.42%)"
+    },
+    {
+     "name": "Doppelganger Card (?%)"
+    },
+    {
+     "name": "5 × Necklace of Oblivion (5.5%)"
+    },
+    {
+     "name": "Cursed Ruby (13.54%)"
+    },
+    {
+     "name": "Transformation Scroll (Doppelganger) (0.59%)"
+    },
+    {
+     "name": "Under the Tower (23.92%)"
+    },
+    {
+     "name": "Oridecon (6.28%)"
+    },
+    {
+     "name": "Blue Potion (6.94%)"
+    },
+    {
+     "name": "2313 × Zeny (42.65%)"
+    },
+    {
+     "name": "Dagger [2] (?%)"
+    },
+    {
+     "name": "Holy Avenger [1] (100%)"
+    },
+    {
+     "name": "Heart Breaker [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Wraith",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/wraith_monster.png",
+   "level": "83",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Large",
+   "base_exp": "625",
+   "job_exp": "312",
+   "drop": [
+    {
+     "name": "Wedding Veil Blueprint (?%)"
+    },
+    {
+     "name": "Wraith Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Wraith) (0.02%)"
+    },
+    {
+     "name": "57 × Zeny (62.03%)"
+    },
+    {
+     "name": "286 × Zeny (62.03%)"
+    },
+    {
+     "name": "Butterfly Wing (3.55%)"
+    },
+    {
+     "name": "Creste's Royal Medal (25.76%)"
+    },
+    {
+     "name": "Armor Shard (2.81%)"
+    },
+    {
+     "name": "Bastard Sword [2] (0.49%)"
+    }
+   ]
+  },
+  {
+   "name": "Cramp",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/cramp_monster.png",
+   "level": "83",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Poison",
+   "size": "Small",
+   "base_exp": "545",
+   "job_exp": "359",
+   "drop": [
+    {
+     "name": "Cramp Card (?%)"
+    },
+    {
+     "name": "Cyfar (2.63%)"
+    },
+    {
+     "name": "Cobaltblue Dyestuffs (0.07%)"
+    },
+    {
+     "name": "Rough Oridecon (0.17%)"
+    },
+    {
+     "name": "Transformation Scroll (Cramp) (0.02%)"
+    },
+    {
+     "name": "57 × Zeny (62.61%)"
+    },
+    {
+     "name": "286 × Zeny (62.61%)"
+    },
+    {
+     "name": "Creste's Royal Medal (28.58%)"
+    },
+    {
+     "name": "Morning Star [2] (0.54%)"
+    }
+   ]
+  },
+  {
+   "name": "Atroce",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/atroce_mvp.png",
+   "level": "84",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Shadow",
+   "size": "Large",
+   "base_exp": "29,788",
+   "job_exp": "11,984",
+   "drop": [
+    {
+     "name": "Ulle's Cap [1] Blueprint (0.37%)"
+    },
+    {
+     "name": "Atroce Card (?%)"
+    },
+    {
+     "name": "5 × Zargon (?%)"
+    },
+    {
+     "name": "Bloody Rune (59.23%)"
+    },
+    {
+     "name": "Transformation Scroll (Atroce) (2.44%)"
+    },
+    {
+     "name": "Yggdrasil Berry (12.23%)"
+    },
+    {
+     "name": "Elunium (25.7%)"
+    },
+    {
+     "name": "2100 × Zeny (?%)"
+    },
+    {
+     "name": "Metal Katar [2] (?%)"
+    },
+    {
+     "name": "Orleans Necklace (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Mutant Dragon",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/mutant_dragon_mini.png",
+   "level": "85",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Dragon",
+   "Element": "Fire",
+   "size": "Large",
+   "base_exp": "4,463",
+   "job_exp": "3,336",
+   "drop": [
+    {
+     "name": "Dragon Scale Stripe Blueprint (?%)"
+    },
+    {
+     "name": "Mutant Dragonoid Card (?%)"
+    },
+    {
+     "name": "Necklace of Wisdom (3.18%)"
+    },
+    {
+     "name": "Dragon Scale (3.19%)"
+    },
+    {
+     "name": "Transformation Scroll (Mutant Dragon) (1.33%)"
+    },
+    {
+     "name": "Oridecon (1.55%)"
+    },
+    {
+     "name": "463 × Zeny (68.03%)"
+    },
+    {
+     "name": "Bastard Sword [2] (22.69%)"
+    },
+    {
+     "name": "Ivory Lance [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Injustice",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/injustice_monster.png",
+   "level": "85",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "539",
+   "job_exp": "379",
+   "drop": [
+    {
+     "name": "Nut on Head Blueprint (?%)"
+    },
+    {
+     "name": "Injustice Card (?%)"
+    },
+    {
+     "name": "Brigan (3.61%)"
+    },
+    {
+     "name": "Transformation Scroll (Injustice) (0.03%)"
+    },
+    {
+     "name": "58 × Zeny (59.52%)"
+    },
+    {
+     "name": "289 × Zeny (59.52%)"
+    },
+    {
+     "name": "Creste's Royal Medal (31.1%)"
+    },
+    {
+     "name": "Enchanted Shoes [1] (0.59%)"
+    }
+   ]
+  },
+  {
+   "name": "Rafflesia",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/raffliesia_mini.png",
+   "level": "86",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "3,794",
+   "job_exp": "3,794",
+   "drop": [
+    {
+     "name": "Blow Gun Blueprint (0.52%)"
+    },
+    {
+     "name": "Rafflesia Card (?%)"
+    },
+    {
+     "name": "Brigan (18.45%)"
+    },
+    {
+     "name": "Four Leaf Clover (4.36%)"
+    },
+    {
+     "name": "Transformation Scroll (Rafflesia) (1.7%)"
+    },
+    {
+     "name": "Leaf of Yggdrasil (15.95%)"
+    },
+    {
+     "name": "Rough Elunium (19.93%)"
+    },
+    {
+     "name": "Tattered Time Pointer (4.18%)"
+    },
+    {
+     "name": "465 × Zeny (?%)"
+    },
+    {
+     "name": "Prontera Lance [2] (34.87%)"
+    },
+    {
+     "name": "Giant Gloves [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Orc Lord",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/orc_lord_mvp.png",
+   "level": "86",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Earth",
+   "size": "Large",
+   "base_exp": "41,705",
+   "job_exp": "5,753",
+   "drop": [
+    {
+     "name": "Orc Lord Helm [1] Blueprint (0.8%)"
+    },
+    {
+     "name": "Grand Circlet Blueprint (0.2%)"
+    },
+    {
+     "name": "Orc Lord Helm Card (?%)"
+    },
+    {
+     "name": "5 × Necklace of Wisdom (15.95%)"
+    },
+    {
+     "name": "Heroic Emblem (35.31%)"
+    },
+    {
+     "name": "Transformation Scroll (Orc Lord) (1.26%)"
+    },
+    {
+     "name": "Awakening Potion (25.31%)"
+    },
+    {
+     "name": "Elunium (13.28%)"
+    },
+    {
+     "name": "Orcish Voucher (7.86%)"
+    },
+    {
+     "name": "2350 × Zeny (?%)"
+    },
+    {
+     "name": "Guardian Shield [1] (?%)"
+    },
+    {
+     "name": "Eye of Dullahan (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Gargoyle",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/gargoyle_monster.png",
+   "level": "86",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "443",
+   "job_exp": "443",
+   "drop": [
+    {
+     "name": "Indifferent Solo Hat [1] Blueprint (?%)"
+    },
+    {
+     "name": "Gargoyle Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Gargoyle) (?%)"
+    },
+    {
+     "name": "58 × Zeny (65.94%)"
+    },
+    {
+     "name": "291 × Zeny (65.94%)"
+    },
+    {
+     "name": "Fly Wing (0.98%)"
+    },
+    {
+     "name": "Creste's Royal Medal (27.42%)"
+    }
+   ]
+  },
+  {
+   "name": "Raydric Archer",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/raydric_archer_monster.png",
+   "level": "86",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "545",
+   "job_exp": "383",
+   "drop": [
+    {
+     "name": "Horong Blueprint (?%)"
+    },
+    {
+     "name": "Raydric Archer Card (?%)"
+    },
+    {
+     "name": "Hand of God (22.14%)"
+    },
+    {
+     "name": "Transformation Scroll (Raydric Archer) (0.02%)"
+    },
+    {
+     "name": "58 × Zeny (51.29%)"
+    },
+    {
+     "name": "291 × Zeny (51.29%)"
+    },
+    {
+     "name": "Awakening Potion (0.41%)"
+    },
+    {
+     "name": "Creste's Royal Medal (21.32%)"
+    },
+    {
+     "name": "Battle Bow [2] (0.4%)"
+    }
+   ]
+  },
+  {
+   "name": "Sting",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/sting_monster.png",
+   "level": "87",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "541",
+   "job_exp": "394",
+   "drop": [
+    {
+     "name": "Sting hat Blueprint (?%)"
+    },
+    {
+     "name": "Sting Card (?%)"
+    },
+    {
+     "name": "Necklace of Oblivion (2.59%)"
+    },
+    {
+     "name": "Transformation Scroll (Sting) (0.03%)"
+    },
+    {
+     "name": "58 × Zeny (60.44%)"
+    },
+    {
+     "name": "292 × Zeny (60.44%)"
+    },
+    {
+     "name": "Great Nature (0.52%)"
+    },
+    {
+     "name": "Creste's Royal Medal (31.24%)"
+    }
+   ]
+  },
+  {
+   "name": "Rideword ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/rideword_monster.png",
+   "level": "88",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "1,685",
+   "job_exp": "2,600"
+  },
+  {
+   "name": "Rideword",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/rideword_monster.png",
+   "level": "88",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "337",
+   "job_exp": "520",
+   "drop": [
+    {
+     "name": "Observer Blueprint (?%)"
+    },
+    {
+     "name": "Brigan (18.63%)"
+    },
+    {
+     "name": "Transformation Scroll (Rideword) (0.02%)"
+    },
+    {
+     "name": "59 × Zeny (53.77%)"
+    },
+    {
+     "name": "294 × Zeny (53.77%)"
+    },
+    {
+     "name": "Creste's Royal Medal (22.5%)"
+    },
+    {
+     "name": "Enchanted Robe [1] (0.42%)"
+    }
+   ]
+  },
+  {
+   "name": "Evil Druid",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/evil_druid_monster.png",
+   "level": "88",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Large",
+   "base_exp": "466",
+   "job_exp": "445",
+   "drop": [
+    {
+     "name": "Evil Marcher Hat [1] Blueprint (?%)"
+    },
+    {
+     "name": "Evil Druid Card (?%)"
+    },
+    {
+     "name": "Necklace of Oblivion (16.03%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (0.5%)"
+    },
+    {
+     "name": "Transformation Scroll (Evil Druid) (0.02%)"
+    },
+    {
+     "name": "59 × Zeny (55.02%)"
+    },
+    {
+     "name": "294 × Zeny (55.02%)"
+    },
+    {
+     "name": "Leaf of Yggdrasil (0.2%)"
+    },
+    {
+     "name": "Creste's Royal Medal (23.02%)"
+    },
+    {
+     "name": "Enchanted Armor [1] (0.43%)"
+    }
+   ]
+  },
+  {
+   "name": "Anolian",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/anolian_monster.png",
+   "level": "89",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Fish",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "600",
+   "job_exp": "376",
+   "drop": [
+    {
+     "name": "Sunday Hat Blueprint (?%)"
+    },
+    {
+     "name": "Anolian Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Anolian) (0.03%)"
+    },
+    {
+     "name": "59 × Zeny (60.95%)"
+    },
+    {
+     "name": "295 × Zeny (60.95%)"
+    },
+    {
+     "name": "Royal Jelly (0.09%)"
+    },
+    {
+     "name": "Creste's Royal Medal (31.71%)"
+    },
+    {
+     "name": "Mystic Frozen (1.01%)"
+    },
+    {
+     "name": "Armor Shard (0.34%)"
+    },
+    {
+     "name": "Battle Bow [2] (0.6%)"
+    }
+   ]
+  },
+  {
+   "name": "Owl Duke",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/owl_duke_mini.png",
+   "level": "90",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Neutral",
+   "size": "Large",
+   "base_exp": "6,156",
+   "job_exp": "2,700",
+   "drop": [
+    {
+     "name": "Mage Hat Blueprint (0.5%)"
+    },
+    {
+     "name": "Owl Duke Card (?%)"
+    },
+    {
+     "name": "Necklace of Oblivion (9.16%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (15.01%)"
+    },
+    {
+     "name": "Crystal Mirror (4.91%)"
+    },
+    {
+     "name": "Transformation Scroll (Owl Duke) (1.93%)"
+    },
+    {
+     "name": "Rough Elunium (22.52%)"
+    },
+    {
+     "name": "Creste's Royal Medal (3.79%)"
+    },
+    {
+     "name": "470 × Zeny (?%)"
+    },
+    {
+     "name": "Morning Star [2] (42.14%)"
+    },
+    {
+     "name": "Gentleman's Staff [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Detarderous",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/detale_mvp.png",
+   "level": "90",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Dragon",
+   "Element": "Shadow",
+   "size": "Large",
+   "base_exp": "31,274",
+   "job_exp": "13,213",
+   "drop": [
+    {
+     "name": "Jewel Crown Blueprint (0.14%)"
+    },
+    {
+     "name": "Detarderous Card (?%)"
+    },
+    {
+     "name": "5 × Hand of God (11.46%)"
+    },
+    {
+     "name": "Scarlet Dyestuffs (57.24%)"
+    },
+    {
+     "name": "Dragon Scale (17.65%)"
+    },
+    {
+     "name": "Transformation Scroll (Detarderous) (0.81%)"
+    },
+    {
+     "name": "Yggdrasil Berry (4.08%)"
+    },
+    {
+     "name": "Elunium (8.58%)"
+    },
+    {
+     "name": "2375 × Zeny (?%)"
+    },
+    {
+     "name": "Guardian Shield [1] (?%)"
+    },
+    {
+     "name": "Stone Buckler (100%)"
+    },
+    {
+     "name": "Shield of Naga (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Dark Priest",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/dark_priest_monster.png",
+   "level": "90",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "578",
+   "job_exp": "397",
+   "drop": [
+    {
+     "name": "Hockey Mask Blueprint (?%)"
+    },
+    {
+     "name": "Dark Priest Card (?%)"
+    },
+    {
+     "name": "Cyfar (18.69%)"
+    },
+    {
+     "name": "Transformation Scroll (Dark Priest) (0.02%)"
+    },
+    {
+     "name": "59 × Zeny (52.24%)"
+    },
+    {
+     "name": "297 × Zeny (52.24%)"
+    },
+    {
+     "name": "Blue Gemstone (2.53%)"
+    },
+    {
+     "name": "Creste's Royal Medal (21.63%)"
+    },
+    {
+     "name": "Mithril Orb [1] (0.41%)"
+    }
+   ]
+  },
+  {
+   "name": "Alice",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/alice_mini.png",
+   "level": "92",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Neutral",
+   "size": "Medium",
+   "base_exp": "5,129",
+   "job_exp": "3,436",
+   "drop": [
+    {
+     "name": "Small Ribbons [1] Blueprint (0.6%)"
+    },
+    {
+     "name": "Alice Card (?%)"
+    },
+    {
+     "name": "Abyss Flower (8.89%)"
+    },
+    {
+     "name": "Wrapping Lace (5.48%)"
+    },
+    {
+     "name": "Transformation Scroll (Alice) (2.18%)"
+    },
+    {
+     "name": "Candy (13.5%)"
+    },
+    {
+     "name": "Rough Elunium (25.51%)"
+    },
+    {
+     "name": "Creste's Royal Medal (3.61%)"
+    },
+    {
+     "name": "500 × Zeny (?%)"
+    },
+    {
+     "name": "Mithril Orb [1] (40.19%)"
+    },
+    {
+     "name": "Ancient Cape (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Raydric",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/raydric_monster.png",
+   "level": "92",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Shadow",
+   "size": "Large",
+   "base_exp": "676",
+   "job_exp": "356",
+   "drop": [
+    {
+     "name": "Iron Cain Blueprint (?%)"
+    },
+    {
+     "name": "Raydric Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Raydric) (0.03%)"
+    },
+    {
+     "name": "60 × Zeny (64.24%)"
+    },
+    {
+     "name": "300 × Zeny (64.24%)"
+    },
+    {
+     "name": "Creste's Royal Medal (26.77%)"
+    },
+    {
+     "name": "Armor Shard (2.92%)"
+    },
+    {
+     "name": "Bastard Sword [2] (0.5%)"
+    }
+   ]
+  },
+  {
+   "name": "Baphomet Jr.★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/baphomet_s_monster.png",
+   "level": "93",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Small",
+   "base_exp": "3,355",
+   "job_exp": "1,835"
+  },
+  {
+   "name": "Owl Baron",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/owl_baron_mvp.png",
+   "level": "93",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Neutral",
+   "size": "Large",
+   "base_exp": "30,526",
+   "job_exp": "14,694",
+   "drop": [
+    {
+     "name": "Monocle Blueprint (0.31%)"
+    },
+    {
+     "name": "Owl Baron Card (?%)"
+    },
+    {
+     "name": "5 × Cyfar (18.37%)"
+    },
+    {
+     "name": "Crystal Mirror (47.61%)"
+    },
+    {
+     "name": "Transformation Scroll (Owl Baron) (2.59%)"
+    },
+    {
+     "name": "Elunium (27.29%)"
+    },
+    {
+     "name": "Creste's Royal Medal (3.79%)"
+    },
+    {
+     "name": "2375 × Zeny (?%)"
+    },
+    {
+     "name": "Enchanted Armor [1] (?%)"
+    },
+    {
+     "name": "Static Shield (100%)"
+    },
+    {
+     "name": "Spearfish Pike [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Baphomet Jr.",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/baphomet_s_monster.png",
+   "level": "93",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Small",
+   "base_exp": "671",
+   "job_exp": "367",
+   "drop": [
+    {
+     "name": "Drooping Baphomet Jr. Blueprint (?%)"
+    },
+    {
+     "name": "Necklace of Oblivion (15.65%)"
+    },
+    {
+     "name": "Rough Oridecon (0.74%)"
+    },
+    {
+     "name": "Transformation Scroll (Baphomet Jr.) (0.02%)"
+    },
+    {
+     "name": "60 × Zeny (55.3%)"
+    },
+    {
+     "name": "302 × Zeny (55.3%)"
+    },
+    {
+     "name": "Leaf of Yggdrasil (0.19%)"
+    },
+    {
+     "name": "Creste's Royal Medal (22.92%)"
+    },
+    {
+     "name": "Specialty Jur [2] (0.43%)"
+    }
+   ]
+  },
+  {
+   "name": "Zherlthsh",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/zherlthsh_mini.png",
+   "level": "94",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Neutral",
+   "size": "Medium",
+   "base_exp": "5,376",
+   "job_exp": "3,433",
+   "drop": [
+    {
+     "name": "Masquerade Blueprint (0.27%)"
+    },
+    {
+     "name": "Zherlthsh Card (?%)"
+    },
+    {
+     "name": "Abyss Flower (9.25%)"
+    },
+    {
+     "name": "Wrapping Lace (2.66%)"
+    },
+    {
+     "name": "Transformation Scroll (Zherlthsh) (1.06%)"
+    },
+    {
+     "name": "Rough Elunium (12.41%)"
+    },
+    {
+     "name": "Creste's Royal Medal (1.63%)"
+    },
+    {
+     "name": "513 × Zeny (54.5%)"
+    },
+    {
+     "name": "Mithril Orb [1] (18.18%)"
+    },
+    {
+     "name": "Bill Guisarme [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Mysteltainn",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/mysteltainn_mini_mini.png",
+   "level": "95",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Shadow",
+   "size": "Large",
+   "base_exp": "4,802",
+   "job_exp": "3,836",
+   "drop": [
+    {
+     "name": "Loki's Whispers Blueprint (0.47%)"
+    },
+    {
+     "name": "Mysteltainn Card (?%)"
+    },
+    {
+     "name": "Brigan (2.19%)"
+    },
+    {
+     "name": "Biotite (2.94%)"
+    },
+    {
+     "name": "Transformation Scroll (Mysteltainn) (1.37%)"
+    },
+    {
+     "name": "Rough Oridecon (16%)"
+    },
+    {
+     "name": "Creste's Royal Medal (2.83%)"
+    },
+    {
+     "name": "Broken Blade (42.67%)"
+    },
+    {
+     "name": "485 × Zeny (?%)"
+    },
+    {
+     "name": "Specialty Jur [2] (31.49%)"
+    },
+    {
+     "name": "Fortune Sword [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Chimera",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/chimera_mvp.png",
+   "level": "95",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Fire",
+   "size": "Large",
+   "base_exp": "27,908",
+   "job_exp": "16,914",
+   "drop": [
+    {
+     "name": "Hydra Blueprint (?%)"
+    },
+    {
+     "name": "Chimera Card (?%)"
+    },
+    {
+     "name": "5 × Abyss Flower (?%)"
+    },
+    {
+     "name": "Rose Quartz (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Chimera) (?%)"
+    },
+    {
+     "name": "Yggdrasil Berry (?%)"
+    },
+    {
+     "name": "Creste's Royal Medal (?%)"
+    },
+    {
+     "name": "2438 × Zeny (?%)"
+    },
+    {
+     "name": "Enchanted Armor [1] (?%)"
+    }
+   ]
+  },
+  {
+   "name": "Wind Ghost",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/wind_ghost_monster.png",
+   "level": "95",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "647",
+   "job_exp": "397",
+   "drop": [
+    {
+     "name": "Magic Eyes Blueprint (?%)"
+    },
+    {
+     "name": "Wind Ghost Card (?%)"
+    },
+    {
+     "name": "Necklace of Oblivion (14.62%)"
+    },
+    {
+     "name": "Lemon Dyestuffs (0.46%)"
+    },
+    {
+     "name": "Transformation Scroll (Wind Ghost) (0.02%)"
+    },
+    {
+     "name": "61 × Zeny (55.79%)"
+    },
+    {
+     "name": "305 × Zeny (55.79%)"
+    },
+    {
+     "name": "Rough Wind (0.59%)"
+    },
+    {
+     "name": "Creste's Royal Medal (23.27%)"
+    },
+    {
+     "name": "Enchanted Staff [2] (0.44%)"
+    }
+   ]
+  },
+  {
+   "name": "Joker",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/joker_monster.png",
+   "level": "96",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Wind",
+   "size": "Large",
+   "base_exp": "641",
+   "job_exp": "409",
+   "drop": [
+    {
+     "name": "Joker Jester Blueprint (?%)"
+    },
+    {
+     "name": "Joker Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Joker) (0.03%)"
+    },
+    {
+     "name": "61 × Zeny (64.33%)"
+    },
+    {
+     "name": "306 × Zeny (64.33%)"
+    },
+    {
+     "name": "Creste's Royal Medal (26.7%)"
+    },
+    {
+     "name": "Armor Shard (2.91%)"
+    },
+    {
+     "name": "Enchanted Staff [2] (0.5%)"
+    }
+   ]
+  },
+  {
+   "name": "Dark Illusion",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/dark_illusion_mini.png",
+   "level": "98",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Undead",
+   "size": "Large",
+   "base_exp": "4,318",
+   "job_exp": "4,327",
+   "drop": [
+    {
+     "name": "Cap Of Blindness [1] Blueprint (0.38%)"
+    },
+    {
+     "name": "Dark Illusion Card (?%)"
+    },
+    {
+     "name": "Cyfar (15.88%)"
+    },
+    {
+     "name": "Rose Quartz (5.54%)"
+    },
+    {
+     "name": "Transformation Scroll (Dark Illusion) (2.44%)"
+    },
+    {
+     "name": "Rough Oridecon (28.53%)"
+    },
+    {
+     "name": "Creste's Royal Medal (3.89%)"
+    },
+    {
+     "name": "495 × Zeny (?%)"
+    },
+    {
+     "name": "Enchanted Staff [2] (43.29%)"
+    },
+    {
+     "name": "Exorcism Bible (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Bloody Knight",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/bloody_knight_mvp.png",
+   "level": "98",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Shadow",
+   "size": "Large",
+   "base_exp": "27,233",
+   "job_exp": "18,353",
+   "drop": [
+    {
+     "name": "Dark Knight Mask Blueprint (0.13%)"
+    },
+    {
+     "name": "Bloody Knight Card (?%)"
+    },
+    {
+     "name": "5 × Cyfar (?%)"
+    },
+    {
+     "name": "Rose Quartz (10.66%)"
+    },
+    {
+     "name": "Transformation Scroll (Bloody Knight) (1.11%)"
+    },
+    {
+     "name": "Awakening Potion (22.23%)"
+    },
+    {
+     "name": "Oridecon (11.67%)"
+    },
+    {
+     "name": "Creste's Royal Medal (1.57%)"
+    },
+    {
+     "name": "2563 × Zeny (52.59%)"
+    },
+    {
+     "name": "Enchanted Armor [1] (?%)"
+    },
+    {
+     "name": "Long Horn [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Khalitzburg",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/khalitzburg_monster.png",
+   "level": "98",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Large",
+   "base_exp": "660",
+   "job_exp": "414",
+   "drop": [
+    {
+     "name": "Bone Helm Blueprint (?%)"
+    },
+    {
+     "name": "Khalitzburg Card (?%)"
+    },
+    {
+     "name": "Necklace of Oblivion (14.73%)"
+    },
+    {
+     "name": "Transformation Scroll (Khalitzburg) (0.02%)"
+    },
+    {
+     "name": "62 × Zeny (56.38%)"
+    },
+    {
+     "name": "309 × Zeny (56.38%)"
+    },
+    {
+     "name": "Creste's Royal Medal (23.54%)"
+    },
+    {
+     "name": "Enchanted Shoes [1] (0.44%)"
+    }
+   ]
+  },
+  {
+   "name": "Punk",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/punk_monster.png",
+   "level": "98",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Wind",
+   "size": "Small",
+   "base_exp": "1,340",
+   "job_exp": "816",
+   "drop": [
+    {
+     "name": "Punk Card (?%)"
+    },
+    {
+     "name": "Temporal Crystal (11.59%)"
+    },
+    {
+     "name": "Transformation Scroll (Punk) (0.02%)"
+    },
+    {
+     "name": "62 × Zeny (53.53%)"
+    },
+    {
+     "name": "309 × Zeny (53.53%)"
+    },
+    {
+     "name": "Tattered Time Pointer (29.8%)"
+    },
+    {
+     "name": "Enchanted Robe [1] (0.42%)"
+    }
+   ]
+  },
+  {
+   "name": "Wanderer",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/wander_man_monster.png",
+   "level": "99",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "576",
+   "job_exp": "471",
+   "drop": [
+    {
+     "name": "Katana Blueprint (?%)"
+    },
+    {
+     "name": "Wanderer Card (?%)"
+    },
+    {
+     "name": "Cyfar (16.11%)"
+    },
+    {
+     "name": "Rough Oridecon (0.76%)"
+    },
+    {
+     "name": "Transformation Scroll (Wanderer) (0.02%)"
+    },
+    {
+     "name": "62 × Zeny (54.93%)"
+    },
+    {
+     "name": "311 × Zeny (54.93%)"
+    },
+    {
+     "name": "Leaf of Yggdrasil (0.2%)"
+    },
+    {
+     "name": "Creste's Royal Medal (22.82%)"
+    },
+    {
+     "name": "Specialty Jur [2] (0.43%)"
+    }
+   ]
+  },
+  {
+   "name": "Baphomet",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/baphomet_mvp.png",
+   "level": "100",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Large",
+   "base_exp": "37,320",
+   "job_exp": "13,186",
+   "drop": [
+    {
+     "name": "Majestic Goat Blueprint (0.18%)"
+    },
+    {
+     "name": "Baphomet Card (?%)"
+    },
+    {
+     "name": "5 × Cyfar (0.66%)"
+    },
+    {
+     "name": "Rose Quartz (19.53%)"
+    },
+    {
+     "name": "Transformation Scroll (Baphomet) (0.95%)"
+    },
+    {
+     "name": "Emperium (34.46%)"
+    },
+    {
+     "name": "Oridecon (10.05%)"
+    },
+    {
+     "name": "Royal Jelly (6.38%)"
+    },
+    {
+     "name": "Yggdrasil Berry (4.78%)"
+    },
+    {
+     "name": "Broken Blade (22.97%)"
+    },
+    {
+     "name": "2625 × Zeny (?%)"
+    },
+    {
+     "name": "Enchanted Shoes [1] (?%)"
+    },
+    {
+     "name": "Doom Slayer [1] (100%)"
+    },
+    {
+     "name": "Crescent Scythe [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Dark Lord",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/dark_lord_mvp.png",
+   "level": "100",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Undead",
+   "size": "Large",
+   "base_exp": "25,600",
+   "job_exp": "20,000",
+   "drop": [
+    {
+     "name": "Coif [1] Blueprint (0.38%)"
+    },
+    {
+     "name": "Dark Lord Card (?%)"
+    },
+    {
+     "name": "5 × Necklace of Oblivion (4.57%)"
+    },
+    {
+     "name": "Biotite (51.86%)"
+    },
+    {
+     "name": "Transformation Scroll (Dark Lord) (3.34%)"
+    },
+    {
+     "name": "Elunium (35.17%)"
+    },
+    {
+     "name": "Creste's Royal Medal (4.64%)"
+    },
+    {
+     "name": "2500 × Zeny (?%)"
+    },
+    {
+     "name": "Enchanted Shoes [1] (?%)"
+    },
+    {
+     "name": "Kronos [1] (100%)"
+    },
+    {
+     "name": "Staunch Ring (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Huge Deviling",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/deviling_mvp.png",
+   "level": "100",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "4,818",
+   "job_exp": "9,408"
+  },
+  {
+   "name": "Dracula",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/dracula_mvp.png",
+   "level": "100",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Large",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Blood Sucker Blueprint (?%)"
+    },
+    {
+     "name": "Dracula Card (?%)"
+    },
+    {
+     "name": "5 × Necklace of Oblivion (?%)"
+    },
+    {
+     "name": "Wrapping Lace (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Dracula) (?%)"
+    },
+    {
+     "name": "Creste's Royal Medal (?%)"
+    },
+    {
+     "name": "2375 × Zeny (?%)"
+    },
+    {
+     "name": "Enchanted Robe [1] (?%)"
+    }
+   ]
+  },
+  {
+   "name": "Randgris",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/valkyrie_mvp.png",
+   "level": "100",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Angel",
+   "Element": "Holy",
+   "size": "Large",
+   "base_exp": "1",
+   "job_exp": "1",
+   "drop": [
+    {
+     "name": "Valkyrie Helm [1] Blueprint (?%)"
+    },
+    {
+     "name": "Randgris Card (?%)"
+    },
+    {
+     "name": "5 × Cyfar (?%)"
+    },
+    {
+     "name": "Biotite (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Randgris) (?%)"
+    },
+    {
+     "name": "Yggdrasil Berry (?%)"
+    },
+    {
+     "name": "Leaf of Yggdrasil (?%)"
+    },
+    {
+     "name": "Creste's Royal Medal (?%)"
+    },
+    {
+     "name": "2488 × Zeny (?%)"
+    },
+    {
+     "name": "Mithril Orb [1] (?%)"
+    }
+   ]
+  },
+  {
+   "name": "Black Witch",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/blackwitch_monster.png",
+   "level": "100",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Medium",
+   "base_exp": "1,400",
+   "job_exp": "814",
+   "drop": [
+    {
+     "name": "Black Witch Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Black Witch) (0.03%)"
+    },
+    {
+     "name": "63 × Zeny (59.07%)"
+    },
+    {
+     "name": "313 × Zeny (59.07%)"
+    },
+    {
+     "name": "Tattered Time Pointer (33.08%)"
+    },
+    {
+     "name": "Glitter Shell (2.71%)"
+    }
+   ]
+  },
+  {
+   "name": "Weak Puppet",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/baphomet_mini.png",
+   "level": "100",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Large",
+   "base_exp": "3,732",
+   "job_exp": "1,318",
+   "drop": [
+    {
+     "name": "Weak Puppet Card (?%)"
+    },
+    {
+     "name": "Cyfar (?%)"
+    },
+    {
+     "name": "Black Wing (?%)"
+    },
+    {
+     "name": "2 × Creste's Royal Medal (?%)"
+    }
+   ]
+  },
+  {
+   "name": "Alarm ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/alarm_monster.png",
+   "level": "101",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Medium",
+   "base_exp": "3,905",
+   "job_exp": "2,245"
+  },
+  {
+   "name": "Alarm",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/alarm_monster.png"
+  }
+ ]
+}

@@ -100,6 +100,12 @@
             android:layout_marginTop="20dp"
             android:textStyle="bold"/>
 
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_container_et_global_mvp"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@color/background"/>
+
 
         <com.github.chrisbanes.photoview.PhotoView
             android:layout_marginTop="15dp"
@@ -120,6 +126,14 @@
             android:textSize="25sp"
             android:textStyle="bold"
             android:layout_marginTop="10dp"/>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_container_et_global_mini"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@color/background">
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
 
 
         <com.github.chrisbanes.photoview.PhotoView

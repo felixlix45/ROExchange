@@ -3,9 +3,7 @@ package com.first.roexchange
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.TextView
 import android.widget.Toast
 
@@ -26,6 +24,8 @@ class EtFragment : Fragment() {
     //    ProgressBar progressBar;
     lateinit var container_et_floor: ShimmerFrameLayout
     lateinit var container_et_mini: ShimmerFrameLayout
+    lateinit var container_et_global_mvp: ShimmerFrameLayout
+    lateinit var container_et_global_mini: ShimmerFrameLayout
     private val db = FirebaseFirestore.getInstance()
     private val noteRef = db.collection("URL").document("ET")
     internal var URLMVP: String? = ""
@@ -37,16 +37,17 @@ class EtFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val v = inflater.inflate(R.layout.fragment_et, container, false)
-
+        setHasOptionsMenu(true)
 
         ivBoss = v.findViewById(R.id.ivBossTower)
         ivMini = v.findViewById(R.id.ivMini)
         var ivGlobalBoss = v.findViewById<PhotoView>(R.id.ivGlobalBossTower)
         var ivGlobalMini = v.findViewById<PhotoView>(R.id.ivGlobalMini)
         var lastUpdated = v.findViewById<TextView>(R.id.tvLastUpdated)
-        //        progressBar = v.findViewById(R.id.progressBar);
         container_et_floor = v.findViewById(R.id.shimmer_container_et_floor)
         container_et_mini = v.findViewById(R.id.shimmer_container_et_mini)
+        container_et_global_mvp = v.findViewById(R.id.shimmer_container_et_global_mvp)
+        container_et_global_mini = v.findViewById(R.id.shimmer_container_et_global_mini)
 
         val note = HashMap<String, Any>()
         container_et_floor.visibility = View.VISIBLE
@@ -100,8 +101,24 @@ class EtFragment : Fragment() {
                     }
                 })
 
-                Picasso.with(activity).load(URLGlobalMVP).into(ivGlobalBoss)
-                Picasso.with(activity).load(URLGlobalMini).into(ivGlobalMini)
+                Picasso.with(activity).load(URLGlobalMVP).into(ivGlobalBoss, object: Callback{
+                    override fun onSuccess() {
+                        container_et_global_mvp.visibility = View.GONE
+                        container_et_global_mvp.stopShimmer()
+                    }
+                    override fun onError() {
+
+                    }
+                })
+                Picasso.with(activity).load(URLGlobalMini).into(ivGlobalMini, object: Callback {
+                    override fun onSuccess() {
+                        container_et_global_mini.visibility = View.GONE
+                        container_et_global_mini.stopShimmer()
+                    }
+                    override fun onError() {
+
+                    }
+                })
 
             } else {
                 Toast.makeText(activity, "Document does not exist", Toast.LENGTH_SHORT).show()

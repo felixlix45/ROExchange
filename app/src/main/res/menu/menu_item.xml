@@ -13,4 +13,11 @@
         android:title="Info"
         app:showAsAction="never"/>
 
+    <!--<item-->
+        <!--android:id="@+id/serverChange"-->
+        <!--android:checkable="true"-->
+        <!--android:checked="true"-->
+        <!--android:title="Server Global"-->
+        <!--app:showAsAction="never"/>-->
+
 </menu>
