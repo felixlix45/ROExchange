@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 
 import com.facebook.shimmer.ShimmerFrameLayout
@@ -13,6 +14,7 @@ import com.github.chrisbanes.photoview.PhotoView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.fragment_et.*
 
 import java.util.HashMap
 
@@ -28,6 +30,9 @@ class EtFragment : Fragment() {
     private val noteRef = db.collection("URL").document("ET")
     internal var URLMVP: String? = ""
     internal var URLMini: String? = ""
+    internal var URLGlobalMVP: String? = ""
+    internal var URLGlobalMini: String? = ""
+    internal var URLLastUpdated: String? = ""
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -36,6 +41,9 @@ class EtFragment : Fragment() {
 
         ivBoss = v.findViewById(R.id.ivBossTower)
         ivMini = v.findViewById(R.id.ivMini)
+        var ivGlobalBoss = v.findViewById<PhotoView>(R.id.ivGlobalBossTower)
+        var ivGlobalMini = v.findViewById<PhotoView>(R.id.ivGlobalMini)
+        var lastUpdated = v.findViewById<TextView>(R.id.tvLastUpdated)
         //        progressBar = v.findViewById(R.id.progressBar);
         container_et_floor = v.findViewById(R.id.shimmer_container_et_floor)
         container_et_mini = v.findViewById(R.id.shimmer_container_et_mini)
@@ -54,6 +62,10 @@ class EtFragment : Fragment() {
             if (documentSnapshot.exists()) {
                 URLMVP = documentSnapshot.getString("MVP")
                 URLMini = documentSnapshot.getString("Mini")
+                URLGlobalMVP = documentSnapshot.getString("GlobalMVP")
+                URLGlobalMini = documentSnapshot.getString("GlobalMini")
+                URLLastUpdated = documentSnapshot.getString("LastUpdated")
+                tvLastUpdated.text = URLLastUpdated
                 //                    Toast.makeText(getActivity(), URLMVP, Toast.LENGTH_SHORT).show();
 
                 Picasso.with(activity).load(URLMVP).into(ivBoss, object : Callback {
@@ -78,6 +90,9 @@ class EtFragment : Fragment() {
 
                     }
                 })
+
+                Picasso.with(activity).load(URLGlobalMVP).into(ivGlobalBoss)
+                Picasso.with(activity).load(URLGlobalMini).into(ivGlobalMini)
 
             } else {
                 Toast.makeText(activity, "Document does not exist", Toast.LENGTH_SHORT).show()

@@ -21,8 +21,7 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
-import com.first.roexchange.R
-import com.first.roexchange.adapter.ItemAdapter
+import com.first.roexchange.adapter.ItemsAdapter
 import com.first.roexchange.model.Item
 import com.facebook.shimmer.ShimmerFrameLayout
 
@@ -30,24 +29,17 @@ import java.util.ArrayList
 
 class HomeFragment : Fragment() {
 
-//    internal var btnSearch: Button?;
-//    internal var btnReset: Button? = null
-//    internal var etSearch: EditText? = null
-//    internal var rvItem: RecyclerView = RecyclerView();
     internal var listItem = ArrayList<Item>()
 
-//    internal var cbFilter: CheckBox? = null
-//    internal var spinnerFilter: Spinner? = null
     internal var URL = "https://www.romexchange.com/api/items.json"
 
-//    private var itemAdapter = ItemAdapter(requireActivity(), listItem);
-    lateinit var itemAdapter: ItemAdapter;
+    lateinit var itemsAdapter: ItemsAdapter
     lateinit var spinnerFilter : Spinner
     lateinit var shimmerFrameLayout: ShimmerFrameLayout
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         var v = inflater.inflate(R.layout.fragment_home, container, false)
-        itemAdapter = ItemAdapter(requireActivity(), listItem);
+        itemsAdapter = ItemsAdapter(requireActivity(), listItem);
         shimmerFrameLayout = v.findViewById<ShimmerFrameLayout>(R.id.shimmer_container)
         shimmerFrameLayout.startShimmer()
         var btnSearch = v.findViewById(R.id.btnSearch) as Button
@@ -56,7 +48,7 @@ class HomeFragment : Fragment() {
 
         var rvItem = v.findViewById(R.id.rvItem) as RecyclerView
         rvItem.layoutManager = LinearLayoutManager(activity)
-        rvItem.adapter = itemAdapter
+        rvItem.adapter = itemsAdapter
 
         var cbFilter = v.findViewById(R.id.cbFilter) as CheckBox
         spinnerFilter = v.findViewById(R.id.spinnerFilter) as Spinner
@@ -66,7 +58,7 @@ class HomeFragment : Fragment() {
             shimmerFrameLayout.startShimmer()
             val name = etSearch.text.toString().replace("\\s+".toRegex(), "%20")
             if (etSearch.text.toString() != "") {
-                itemAdapter.clear()
+                itemsAdapter.clear()
                 if (!cbFilter.isChecked) {
                     val request = JsonArrayRequest(
                             Request.Method.GET,
@@ -81,7 +73,7 @@ class HomeFragment : Fragment() {
                                         item.types = typeConvert(response.getJSONObject(i).getInt("type"))
                                         listItem.add(item)
                                     }
-                                    itemAdapter.notifyDataSetChanged()
+                                    itemsAdapter.notifyDataSetChanged()
                                 } catch (e: Exception) {
                                     Log.d(TAG, e.toString())
                                 }
@@ -134,21 +126,21 @@ class HomeFragment : Fragment() {
         })
 
         btnReset.setOnClickListener {
-            itemAdapter.clear()
+            itemsAdapter.clear()
             cbFilter.isChecked = false
             etSearch.setText("")
             etSearch.onEditorAction(EditorInfo.IME_ACTION_DONE)
             getAllData()
         }
 
-        if (itemAdapter.size() == 0) {
+        if (itemsAdapter.size() == 0) {
             getAllData()
         }
         return v
     }
 
     fun getFilteredData() {
-        itemAdapter.clear()
+        itemsAdapter.clear()
         val pos = spinnerFilter.selectedItemPosition + 1
         val URLFiltered = "https://www.romexchange.com/api/items.json"//exact=false&item=" + etSearch.getText().toString().replaceAll("\\s+","%20") + "&type=" + pos;
         //        progressBar.setVisibility(View.VISIBLE);
@@ -171,7 +163,7 @@ class HomeFragment : Fragment() {
                             }
 
                         }
-                        itemAdapter.notifyDataSetChanged()
+                        itemsAdapter.notifyDataSetChanged()
                     } catch (e: Exception) {
 
 
@@ -191,7 +183,7 @@ class HomeFragment : Fragment() {
     fun getAllData() {
         shimmerFrameLayout.visibility = View.VISIBLE
         shimmerFrameLayout.startShimmer()
-        itemAdapter.clear()
+        itemsAdapter.clear()
         val request = JsonArrayRequest(
                 Request.Method.GET,
                 URL, null,
@@ -204,7 +196,7 @@ class HomeFragment : Fragment() {
                             item.types = typeConvert(response.getJSONObject(i).getInt("type"))
                             listItem.add(item)
                         }
-                        itemAdapter.notifyDataSetChanged()
+                        itemsAdapter.notifyDataSetChanged()
                     } catch (e: Exception) {
 
                     }

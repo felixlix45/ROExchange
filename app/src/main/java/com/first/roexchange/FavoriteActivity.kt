@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
 import android.support.v7.widget.helper.ItemTouchHelper
 
-import com.first.roexchange.adapter.ItemAdapter
+import com.first.roexchange.adapter.ItemsAdapter
 import com.first.roexchange.model.Item
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -22,7 +22,7 @@ class FavoriteActivity : AppCompatActivity() {
     internal var hashSet: LinkedHashSet<Item>? = null
     lateinit var rvItem: RecyclerView
     lateinit var swipeRefreshLayout: SwipeRefreshLayout
-    lateinit var itemAdapter: ItemAdapter
+    lateinit var itemsAdapter: ItemsAdapter
     lateinit var toolbar: Toolbar
 
     fun loadData() {
@@ -48,9 +48,9 @@ class FavoriteActivity : AppCompatActivity() {
     fun buildRecycleView() {
         rvItem = findViewById(R.id.rvItem)
         rvItem.layoutManager = LinearLayoutManager(this)
-        itemAdapter = ItemAdapter(this, savedList)
-        rvItem.adapter = itemAdapter
-        itemAdapter.notifyDataSetChanged()
+        itemsAdapter = ItemsAdapter(this, savedList)
+        rvItem.adapter = itemsAdapter
+        itemsAdapter.notifyDataSetChanged()
     }
 
     fun saveData() {

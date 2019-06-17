@@ -119,7 +119,7 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
             R.id.itemInfo -> {
-                Toast.makeText(this, "Item list is powered by: ROMExchange.com", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Outdated image/data will be deleted or changed with 'updated soon' image!", Toast.LENGTH_LONG).show()
                 return super.onOptionsItemSelected(item)
             }
             else -> return super.onOptionsItemSelected(item)

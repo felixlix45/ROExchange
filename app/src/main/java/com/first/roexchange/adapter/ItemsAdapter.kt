@@ -17,7 +17,7 @@ import com.first.roexchange.model.Item
 import java.util.ArrayList
 import java.util.Locale
 
-class ItemAdapter(internal var context: Context, internal var itemList: ArrayList<Item>) : RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
+class ItemsAdapter(internal var context: Context, internal var itemList: ArrayList<Item>) : RecyclerView.Adapter<ItemsAdapter.ViewHolder>() {
     internal var copyList: ArrayList<Item>
 
 
