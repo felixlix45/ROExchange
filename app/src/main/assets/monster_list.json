@@ -7083,6 +7083,1428 @@
    "size": "Medium",
    "base_exp": "3,905",
    "job_exp": "2,245"
+  },
+  {
+   "name": "Alarm",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/alarm_monster.png",
+   "level": "101",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Medium",
+   "base_exp": "1,420",
+   "job_exp": "818",
+   "drop": [
+    {
+     "name": "Temporal Crystal (5.86%)"
+    },
+    {
+     "name": "Rough Oridecon (0.55%)"
+    },
+    {
+     "name": "Transformation Scroll (Alarm) (0.01%)"
+    },
+    {
+     "name": "63 × Zeny (63.96%)"
+    },
+    {
+     "name": "314 × Zeny (63.96%)"
+    },
+    {
+     "name": "Tattered Time Pointer (23.76%)"
+    },
+    {
+     "name": "Enchanted Shoes [1] (0.33%)"
+    }
+   ]
+  },
+  {
+   "name": "Ancient Clock",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/clock_monster.png",
+   "level": "102",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "1,158",
+   "job_exp": "988",
+   "drop": [
+    {
+     "name": "Ancient Clock Card (?%)"
+    },
+    {
+     "name": "Temporal Crystal (5.38%)"
+    },
+    {
+     "name": "Rough Elunium (0.51%)"
+    },
+    {
+     "name": "Transformation Scroll (Ancient Clock) (0.01%)"
+    },
+    {
+     "name": "63 × Zeny (64%)"
+    },
+    {
+     "name": "316 × Zeny (64%)"
+    },
+    {
+     "name": "Dead Branch (0.6%)"
+    },
+    {
+     "name": "Tattered Time Pointer (23.66%)"
+    },
+    {
+     "name": "Enchanted Shoes [1] (0.33%)"
+    }
+   ]
+  },
+  {
+   "name": "Bathory ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/bathory_monster.png",
+   "level": "103",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "4,630",
+   "job_exp": "1,915"
+  },
+  {
+   "name": "Bathory",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/bathory_monster.png",
+   "level": "103",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "1,684",
+   "job_exp": "698",
+   "drop": [
+    {
+     "name": "Witch Star Dust (11.48%)"
+    },
+    {
+     "name": "Transformation Scroll (Bathory) (0.02%)"
+    },
+    {
+     "name": "63 × Zeny (54.68%)"
+    },
+    {
+     "name": "317 × Zeny (54.68%)"
+    },
+    {
+     "name": "Tattered Time Pointer (28.73%)"
+    },
+    {
+     "name": "Mithril Orb [1] (0.41%)"
+    }
+   ]
+  },
+  {
+   "name": "Elder",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/elder_monster.png",
+   "level": "104",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Neutral",
+   "size": "Large",
+   "base_exp": "1,428",
+   "job_exp": "862",
+   "drop": [
+    {
+     "name": "Elder Card (?%)"
+    },
+    {
+     "name": "Witch Star Dust (7.69%)"
+    },
+    {
+     "name": "Cobaltblue Dyestuffs (0.48%)"
+    },
+    {
+     "name": "Transformation Scroll (Elder) (0.02%)"
+    },
+    {
+     "name": "64 × Zeny (57.36%)"
+    },
+    {
+     "name": "319 × Zeny (57.36%)"
+    },
+    {
+     "name": "Tattered Time Pointer (29.08%)"
+    },
+    {
+     "name": "Battle Bow [2] (0.41%)"
+    }
+   ]
+  },
+  {
+   "name": "Clock",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/bigben_mini.png",
+   "level": "105",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "6,300",
+   "job_exp": "3,663",
+   "drop": [
+    {
+     "name": "Spring Blueprint (0.19%)"
+    },
+    {
+     "name": "Clock Card (?%)"
+    },
+    {
+     "name": "Temporal Crystal (24.86%)"
+    },
+    {
+     "name": "Time Twister (0.72%)"
+    },
+    {
+     "name": "Transformation Scroll (Clock) (0.7%)"
+    },
+    {
+     "name": "Dead Branch (11.8%)"
+    },
+    {
+     "name": "Rough Elunium (8.26%)"
+    },
+    {
+     "name": "Tattered Time Pointer (1.55%)"
+    },
+    {
+     "name": "513 × Zeny (38.9%)"
+    },
+    {
+     "name": "Enchanted Armor [1] (12.97%)"
+    },
+    {
+     "name": "Fist [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Penomena",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/penomena_monster.png",
+   "level": "105",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Fish",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "1,268",
+   "job_exp": "972",
+   "drop": [
+    {
+     "name": "Penomena Card (?%)"
+    },
+    {
+     "name": "Crystal Bone (7.41%)"
+    },
+    {
+     "name": "Transformation Scroll (Penomena) (0.02%)"
+    },
+    {
+     "name": "64 × Zeny (57.05%)"
+    },
+    {
+     "name": "320 × Zeny (57.05%)"
+    },
+    {
+     "name": "Panacea (0.8%)"
+    },
+    {
+     "name": "Tattered Time Pointer (28.79%)"
+    },
+    {
+     "name": "Mystic Frozen (0.6%)"
+    },
+    {
+     "name": "Enchanted Robe [1] (0.41%)"
+    }
+   ]
+  },
+  {
+   "name": "Brilight",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/brilight_monster.png",
+   "level": "106",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Insect",
+   "Element": "Fire",
+   "size": "Small",
+   "base_exp": "1,316",
+   "job_exp": "960",
+   "drop": [
+    {
+     "name": "Brilight Card (?%)"
+    },
+    {
+     "name": "Rough Elunium (0.66%)"
+    },
+    {
+     "name": "Transformation Scroll (Brilight) (0.03%)"
+    },
+    {
+     "name": "64 × Zeny (58.56%)"
+    },
+    {
+     "name": "322 × Zeny (58.56%)"
+    },
+    {
+     "name": "Leaf of Yggdrasil (0.17%)"
+    },
+    {
+     "name": "Rough Wind (0.57%)"
+    },
+    {
+     "name": "Tattered Time Pointer (32.34%)"
+    },
+    {
+     "name": "Glitter Shell (2.65%)"
+    }
+   ]
+  },
+  {
+   "name": "Stem Worm",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/stemworm_monster.png",
+   "level": "107",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "1,418",
+   "job_exp": "916",
+   "drop": [
+    {
+     "name": "Stem Worm Card (?%)"
+    },
+    {
+     "name": "Temporal Crystal (7.4%)"
+    },
+    {
+     "name": "Rough Oridecon (0.7%)"
+    },
+    {
+     "name": "Transformation Scroll (Stem Worm) (0.02%)"
+    },
+    {
+     "name": "65 × Zeny (55.22%)"
+    },
+    {
+     "name": "323 × Zeny (55.22%)"
+    },
+    {
+     "name": "Great Nature (0.6%)"
+    },
+    {
+     "name": "Tattered Time Pointer (30.83%)"
+    },
+    {
+     "name": "Specialty Jur [2] (0.44%)"
+    }
+   ]
+  },
+  {
+   "name": "Clock Tower Manager",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/tower_manager_mini.png",
+   "level": "108",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Large",
+   "base_exp": "6,114",
+   "job_exp": "3,980",
+   "drop": [
+    {
+     "name": "Evil Eye Blueprint (0.17%)"
+    },
+    {
+     "name": "Clock Tower Manager Card (?%)"
+    },
+    {
+     "name": "Crystal Bone (55.43%)"
+    },
+    {
+     "name": "Key of Clock Tower (1.91%)"
+    },
+    {
+     "name": "Transformation Scroll (Clock Tower Manager) (1.57%)"
+    },
+    {
+     "name": "Leaf of Yggdrasil (14.73%)"
+    },
+    {
+     "name": "Tattered Time Pointer (2.8%)"
+    },
+    {
+     "name": "520 × Zeny (?%)"
+    },
+    {
+     "name": "Enchanted Armor [1] (23.35%)"
+    },
+    {
+     "name": "Windrunner Cape (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Cookie",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/cookie_gift_lv_monster.png",
+   "level": "108",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "1,966",
+   "job_exp": "1,142",
+   "drop": [
+    {
+     "name": "Gingerbread Man clip Blueprint (?%)"
+    },
+    {
+     "name": "Gingerbread Man Card (?%)"
+    },
+    {
+     "name": "Ice Cube (12.1%)"
+    },
+    {
+     "name": "Transformation Scroll (Gingerbread Man) (0.02%)"
+    },
+    {
+     "name": "65 × Zeny (53.27%)"
+    },
+    {
+     "name": "325 × Zeny (53.27%)"
+    },
+    {
+     "name": "Edelweiss (29.59%)"
+    },
+    {
+     "name": "Baptized Robe [1] (0.42%)"
+    }
+   ]
+  },
+  {
+   "name": "Orc Lady",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/orc_lady_monster.png",
+   "level": "109",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "1,462",
+   "job_exp": "924",
+   "drop": [
+    {
+     "name": "Orc Lady Card (?%)"
+    },
+    {
+     "name": "Witch Star Dust (10.69%)"
+    },
+    {
+     "name": "Transformation Scroll (Orc Lady) (0.02%)"
+    },
+    {
+     "name": "65 × Zeny (55.13%)"
+    },
+    {
+     "name": "327 × Zeny (55.13%)"
+    },
+    {
+     "name": "Tattered Time Pointer (29.03%)"
+    },
+    {
+     "name": "Morning Star [2] (0.41%)"
+    }
+   ]
+  },
+  {
+   "name": "Time Holder",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/timeholder_mvp.png",
+   "level": "110",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Neutral",
+   "size": "Large",
+   "base_exp": "26,880",
+   "job_exp": "22,744",
+   "drop": [
+    {
+     "name": "Flutter Butterfly [1] Blueprint (0.16%)"
+    },
+    {
+     "name": "Time Holder Card (?%)"
+    },
+    {
+     "name": "5 × Crystal Bone (63.04%)"
+    },
+    {
+     "name": "Time Twister (12.27%)"
+    },
+    {
+     "name": "Transformation Scroll (Time Holder) (1.33%)"
+    },
+    {
+     "name": "Yggdrasil Berry (6.65%)"
+    },
+    {
+     "name": "Oridecon (13.96%)"
+    },
+    {
+     "name": "Tattered Time Pointer (2.57%)"
+    },
+    {
+     "name": "2625 × Zeny (?%)"
+    },
+    {
+     "name": "Enchanted Shoes [1] (?%)"
+    },
+    {
+     "name": "Sacred Mission (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Myst Case",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/mystcase_monster.png",
+   "level": "110",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Medium",
+   "base_exp": "1,942",
+   "job_exp": "1,200",
+   "drop": [
+    {
+     "name": "Gift Box Helm Blueprint (?%)"
+    },
+    {
+     "name": "Myst Case Card (?%)"
+    },
+    {
+     "name": "Frozen Heart (9.9%)"
+    },
+    {
+     "name": "Transformation Scroll (Myst Case) (0.02%)"
+    },
+    {
+     "name": "66 × Zeny (53.73%)"
+    },
+    {
+     "name": "328 × Zeny (53.73%)"
+    },
+    {
+     "name": "Edelweiss (30.02%)"
+    },
+    {
+     "name": "Candy (1.24%)"
+    },
+    {
+     "name": "White Flower Katar [2] (0.42%)"
+    }
+   ]
+  },
+  {
+   "name": "Cruiser ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/cruiser_monster.png",
+   "level": "111",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Medium",
+   "base_exp": "2,372",
+   "job_exp": "970"
+  },
+  {
+   "name": "Cruiser",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/cruiser_monster.png",
+   "level": "111",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Medium",
+   "base_exp": "2,372",
+   "job_exp": "970",
+   "drop": [
+    {
+     "name": "Legionnaire Hat [1] Blueprint (?%)"
+    },
+    {
+     "name": "Cruiser Card (?%)"
+    },
+    {
+     "name": "Box Wrapper (7.48%)"
+    },
+    {
+     "name": "Rough Oridecon (0.71%)"
+    },
+    {
+     "name": "Transformation Scroll (Cruiser) (0.02%)"
+    },
+    {
+     "name": "66 × Zeny (55.25%)"
+    },
+    {
+     "name": "330 × Zeny (55.25%)"
+    },
+    {
+     "name": "Rough Wind (0.6%)"
+    },
+    {
+     "name": "Edelweiss (30.72%)"
+    },
+    {
+     "name": "Baptized Shoes [1] (0.43%)"
+    }
+   ]
+  },
+  {
+   "name": "Christmas Cookie",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/cookie_gift_hong_monster.png",
+   "level": "112",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Holy",
+   "size": "Small",
+   "base_exp": "1,978",
+   "job_exp": "1,220",
+   "drop": [
+    {
+     "name": "Pinocchio's Nose Blueprint (?%)"
+    },
+    {
+     "name": "Cookie Card (?%)"
+    },
+    {
+     "name": "Ice Cube (12.13%)"
+    },
+    {
+     "name": "Transformation Scroll (Christmas Cookie) (0.02%)"
+    },
+    {
+     "name": "65 × Zeny (53.36%)"
+    },
+    {
+     "name": "327 × Zeny (53.36%)"
+    },
+    {
+     "name": "Edelweiss (29.5%)"
+    },
+    {
+     "name": "Baptized Armor [1] (0.42%)"
+    }
+   ]
+  },
+  {
+   "name": "Spashire",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/specialre_mvp.png",
+   "level": "113",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Water",
+   "size": "Medium",
+   "base_exp": "33,901",
+   "job_exp": "19,709",
+   "drop": [
+    {
+     "name": "Spashire's Whisper Blueprint (0.07%)"
+    },
+    {
+     "name": "Spashire Card (?%)"
+    },
+    {
+     "name": "5 × Witch Star Dust (27.29%)"
+    },
+    {
+     "name": "Key of Clock Tower (6.28%)"
+    },
+    {
+     "name": "Transformation Scroll (Spashire) (0.57%)"
+    },
+    {
+     "name": "Elunium (6.04%)"
+    },
+    {
+     "name": "Tattered Time Pointer (1.23%)"
+    },
+    {
+     "name": "Memory Gem (27.64%)"
+    },
+    {
+     "name": "2663 × Zeny (30.83%)"
+    },
+    {
+     "name": "Bastard Sword [2] (?%)"
+    },
+    {
+     "name": "Finger [1] (100%)"
+    },
+    {
+     "name": "Crystal Pumps (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Zipper Bear",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/no_icon.png",
+   "level": "113",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Shadow",
+   "size": "Medium",
+   "base_exp": "2,056",
+   "job_exp": "1,196",
+   "drop": [
+    {
+     "name": "Honey Jar Blueprint (?%)"
+    },
+    {
+     "name": "Zipper Bear Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Zipper Bear) (0.02%)"
+    },
+    {
+     "name": "67 × Zeny (65.99%)"
+    },
+    {
+     "name": "333 × Zeny (65.99%)"
+    },
+    {
+     "name": "Edelweiss (25.8%)"
+    },
+    {
+     "name": "Christmas Garland (2.11%)"
+    },
+    {
+     "name": "Berserk Fist [2] (0.36%)"
+    }
+   ]
+  },
+  {
+   "name": "Teddy Bear",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/teddy_bear_monster.png",
+   "level": "114",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "1",
+   "job_exp": "1"
+  },
+  {
+   "name": "Teddy Bear ★",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/teddy_bear_monster.png",
+   "level": "114",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "2,066",
+   "job_exp": "1,212"
+  },
+  {
+   "name": "Teddy Bear",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/teddy_bear_monster.png",
+   "level": "114",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Neutral",
+   "size": "Small",
+   "base_exp": "2,066",
+   "job_exp": "1,212",
+   "drop": [
+    {
+     "name": "Toy Nail [1] Blueprint (?%)"
+    },
+    {
+     "name": "Teddy Bear Card (?%)"
+    },
+    {
+     "name": "Box Wrapper (8.88%)"
+    },
+    {
+     "name": "Transformation Scroll (Teddy Bear) (0.02%)"
+    },
+    {
+     "name": "66 × Zeny (61.62%)"
+    },
+    {
+     "name": "331 × Zeny (61.62%)"
+    },
+    {
+     "name": "Edelweiss (23.85%)"
+    },
+    {
+     "name": "Nassi's Sword [2] (0.34%)"
+    }
+   ]
+  },
+  {
+   "name": "Stormy Knight",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/knight_of_windstorm_mvp.png",
+   "level": "115",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Wind",
+   "size": "Large",
+   "base_exp": "43,856",
+   "job_exp": "14,619",
+   "drop": [
+    {
+     "name": "Rudolph's Horn [1] Blueprint (0.17%)"
+    },
+    {
+     "name": "Stormy Knight Card (?%)"
+    },
+    {
+     "name": "5 × Ice Cube (12.26%)"
+    },
+    {
+     "name": "Ice Powder (21.43%)"
+    },
+    {
+     "name": "Transformation Scroll (Stormy Knight) (2.32%)"
+    },
+    {
+     "name": "Elunium (24.38%)"
+    },
+    {
+     "name": "Edelweiss (2.79%)"
+    },
+    {
+     "name": "Mystic Frozen (13.59%)"
+    },
+    {
+     "name": "Christmas Socks (9.06%)"
+    },
+    {
+     "name": "2688 × Zeny (13.95%)"
+    },
+    {
+     "name": "Royal Pike [2] (?%)"
+    },
+    {
+     "name": "Storm Pike [1] (100%)"
+    },
+    {
+     "name": "Elder's Hammer [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Chepet",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/chepet_mini.png",
+   "level": "116",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "6,719",
+   "job_exp": "4,187",
+   "drop": [
+    {
+     "name": "Magic Firewood Blueprint (0.5%)"
+    },
+    {
+     "name": "Chepet Card (?%)"
+    },
+    {
+     "name": "Frozen Heart (6.69%)"
+    },
+    {
+     "name": "Ice Powder (4.95%)"
+    },
+    {
+     "name": "Transformation Scroll (Chepet) (4.82%)"
+    },
+    {
+     "name": "Leaf of Yggdrasil (45.04%)"
+    },
+    {
+     "name": "Edelweiss (4.06%)"
+    },
+    {
+     "name": "540 × Zeny (?%)"
+    },
+    {
+     "name": "Ancient Tree Staff [2] (33.9%)"
+    },
+    {
+     "name": "Ice Pick [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Carat",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/carat_monster.png",
+   "level": "116",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "1,912",
+   "job_exp": "1,344",
+   "drop": [
+    {
+     "name": "Carat Card (?%)"
+    },
+    {
+     "name": "Frozen Heart (17.99%)"
+    },
+    {
+     "name": "Transformation Scroll (Carat) (0.04%)"
+    },
+    {
+     "name": "67 × Zeny (74.9%)"
+    },
+    {
+     "name": "333 × Zeny (74.9%)"
+    },
+    {
+     "name": "Battle Fist [2] (0.59%)"
+    }
+   ]
+  },
+  {
+   "name": "Marmot",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/martin_monster.png",
+   "level": "116",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Earth",
+   "size": "Small",
+   "base_exp": "2,006",
+   "job_exp": "1,288",
+   "drop": [
+    {
+     "name": "Martin Hat[1] Blueprint (?%)"
+    },
+    {
+     "name": "Martin Card (?%)"
+    },
+    {
+     "name": "Burning Hair (16.74%)"
+    },
+    {
+     "name": "Transformation Scroll (Martin) (0.04%)"
+    },
+    {
+     "name": "68 × Zeny (73.25%)"
+    },
+    {
+     "name": "338 × Zeny (73.25%)"
+    },
+    {
+     "name": "New Poison (3.02%)"
+    },
+    {
+     "name": "Garrison Spear [2] (0.6%)"
+    }
+   ]
+  },
+  {
+   "name": "Garm",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/garm_mvp.png",
+   "level": "118",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Water",
+   "size": "Large",
+   "base_exp": "41,943",
+   "job_exp": "16,778",
+   "drop": [
+    {
+     "name": "Icy Brand Blueprint (?%)"
+    },
+    {
+     "name": "Garm Card (?%)"
+    },
+    {
+     "name": "5 × Ice Cube (?%)"
+    },
+    {
+     "name": "Fang of Garm (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Garm) (?%)"
+    },
+    {
+     "name": "Yggdrasil Berry (?%)"
+    },
+    {
+     "name": "Oridecon (?%)"
+    },
+    {
+     "name": "Edelweiss (?%)"
+    },
+    {
+     "name": "Mystic Frozen (?%)"
+    },
+    {
+     "name": "2725 × Zeny (?%)"
+    },
+    {
+     "name": "Dwarf King's Axe [2] (?%)"
+    },
+    {
+     "name": "Fang of Garm [1] (?%)"
+    },
+    {
+     "name": "Fairy in Bottle (?%)"
+    }
+   ]
+  },
+  {
+   "name": "Geographer",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/geographer_monster.png",
+   "level": "118",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Earth",
+   "size": "Medium",
+   "base_exp": "1,894",
+   "job_exp": "1,396",
+   "drop": [
+    {
+     "name": "Sunflower Lollipop Blueprint (?%)"
+    },
+    {
+     "name": "Geographer Card (?%)"
+    },
+    {
+     "name": "Fire Crystal (15.97%)"
+    },
+    {
+     "name": "Transformation Scroll (Geographer) (0.04%)"
+    },
+    {
+     "name": "68 × Zeny (72.81%)"
+    },
+    {
+     "name": "341 × Zeny (72.81%)"
+    },
+    {
+     "name": "Thorn Seed (4.33%)"
+    },
+    {
+     "name": "Garrison Sword [2] (0.6%)"
+    }
+   ]
+  },
+  {
+   "name": "Harpy",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/hapy_monster.png",
+   "level": "119",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "2,166",
+   "job_exp": "1,260",
+   "drop": [
+    {
+     "name": "Wagtail Crest[1] Blueprint (?%)"
+    },
+    {
+     "name": "Harpy Card (?%)"
+    },
+    {
+     "name": "Transformation Scroll (Harpy) (0.03%)"
+    },
+    {
+     "name": "68 × Zeny (87.14%)"
+    },
+    {
+     "name": "342 × Zeny (87.14%)"
+    },
+    {
+     "name": "Wall Paint (1.37%)"
+    },
+    {
+     "name": "Candy (0.63%)"
+    },
+    {
+     "name": "Harpy’s Feather (2.87%)"
+    },
+    {
+     "name": "Garrison Staff [2] (0.5%)"
+    }
+   ]
+  },
+  {
+   "name": "Fiery Deviruchi",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/diabolic_monster.png",
+   "level": "119",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Shadow",
+   "size": "Small",
+   "base_exp": "2,166",
+   "job_exp": "1,260",
+   "drop": [
+    {
+     "name": "Portable Deviruchi Blueprint (?%)"
+    },
+    {
+     "name": "Fiery Deviruchi Card (?%)"
+    },
+    {
+     "name": "Burning Heart (15.86%)"
+    },
+    {
+     "name": "Transformation Scroll (Fiery Deviruchi) (0.04%)"
+    },
+    {
+     "name": "68 × Zeny (72.97%)"
+    },
+    {
+     "name": "342 × Zeny (72.97%)"
+    },
+    {
+     "name": "Shell (4.3%)"
+    },
+    {
+     "name": "Garrison Katar [2] (0.59%)"
+    }
+   ]
+  },
+  {
+   "name": "Fiery Mane",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/flamehorse_monster.png",
+   "level": "120",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Undead",
+   "Element": "Undead",
+   "size": "Large",
+   "base_exp": "2,184",
+   "job_exp": "1,270",
+   "drop": [
+    {
+     "name": "Zealous Rhino Blueprint (?%)"
+    },
+    {
+     "name": "Fiery Mane Card (?%)"
+    },
+    {
+     "name": "Burning Heart (15.92%)"
+    },
+    {
+     "name": "Fiery Mane Transformation scroll (0.04%)"
+    },
+    {
+     "name": "69 × Zeny (72.85%)"
+    },
+    {
+     "name": "344 × Zeny (72.85%)"
+    },
+    {
+     "name": "Madogear Fuel (4.31%)"
+    },
+    {
+     "name": "Garrison Axe [2] (0.59%)"
+    }
+   ]
+  },
+  {
+   "name": "Highland Parasite",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/perese_g_monster.png",
+   "level": "121",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Plant",
+   "Element": "Wind",
+   "size": "Medium",
+   "base_exp": "2,202",
+   "job_exp": "1,280",
+   "drop": [
+    {
+     "name": "Highland Flower Hairpin[1] Blueprint (?%)"
+    },
+    {
+     "name": "Highland Parasite Card (?%)"
+    },
+    {
+     "name": "Fire Crystal (12.53%)"
+    },
+    {
+     "name": "Rough Elunium (1.19%)"
+    },
+    {
+     "name": "Transformation Scroll (Highland Parasite) (0.04%)"
+    },
+    {
+     "name": "69 × Zeny (77.25%)"
+    },
+    {
+     "name": "345 × Zeny (77.25%)"
+    },
+    {
+     "name": "Holy Water (1.7%)"
+    },
+    {
+     "name": "Garrison Dagger [2] (0.64%)"
+    }
+   ]
+  },
+  {
+   "name": "Fire Elf",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/lavameco_monster.png",
+   "level": "122",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Formless",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "2,220",
+   "job_exp": "1,292",
+   "drop": [
+    {
+     "name": "Burning Eyes Blueprint (?%)"
+    },
+    {
+     "name": "Fire Elf Card (?%)"
+    },
+    {
+     "name": "Fire Crystal (16.17%)"
+    },
+    {
+     "name": "Transformation Scroll (Fire Elf) (0.04%)"
+    },
+    {
+     "name": "69 × Zeny (72.6%)"
+    },
+    {
+     "name": "347 × Zeny (72.6%)"
+    },
+    {
+     "name": "Shell (4.38%)"
+    },
+    {
+     "name": "Garrison Bow [2] (0.59%)"
+    }
+   ]
+  },
+  {
+   "name": "Fire Fledgling",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/kasakid_monster.png",
+   "level": "124",
+   "type": "Monster",
+   "zone": "Field",
+   "race": "Brute",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "2,258",
+   "job_exp": "1,312",
+   "drop": [
+    {
+     "name": "Whimpering Fire Bird Blueprint (?%)"
+    },
+    {
+     "name": "Fire Fledgling Card (?%)"
+    },
+    {
+     "name": "Burning Hair (11.14%)"
+    },
+    {
+     "name": "Transformation Scroll (Fire Fledgling) (0.02%)"
+    },
+    {
+     "name": "70 × Zeny (78.6%)"
+    },
+    {
+     "name": "350 × Zeny (78.6%)"
+    },
+    {
+     "name": "Madogear Fuel (3.02%)"
+    },
+    {
+     "name": "Garrison Hammer [2] (0.45%)"
+    }
+   ]
+  },
+  {
+   "name": "Firelord Kaho",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/lordkaho_mvp.png",
+   "level": "126",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Demon",
+   "Element": "Fire",
+   "size": "Large",
+   "base_exp": "37,800",
+   "job_exp": "21,977",
+   "drop": [
+    {
+     "name": "Kaho’s Protection Blueprint (?%)"
+    },
+    {
+     "name": "Firelord Kaho Card (?%)"
+    },
+    {
+     "name": "5 × Burning Heart (62.79%)"
+    },
+    {
+     "name": "Fiery Ember (11.35%)"
+    },
+    {
+     "name": "Transformation Scroll (Firelord Kaho) (1.32%)"
+    },
+    {
+     "name": "Oridecon (13.91%)"
+    },
+    {
+     "name": "Lava Gem (10.59%)"
+    },
+    {
+     "name": "2825 × Zeny (?%)"
+    },
+    {
+     "name": "Garrison Sword [2] (?%)"
+    },
+    {
+     "name": "Lance of Dragon Tamer [1] (100%)"
+    },
+    {
+     "name": "Staff of Mana Storm [1] (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Fire Witch",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/redexplosion_mini.png",
+   "level": "128",
+   "type": "Mini Boss",
+   "zone": "Field",
+   "race": "Demi-Human",
+   "Element": "Fire",
+   "size": "Medium",
+   "base_exp": "7,680",
+   "job_exp": "4,465",
+   "drop": [
+    {
+     "name": "Fire Hat[1] Blueprint (0.38%)"
+    },
+    {
+     "name": "Fire Witch Card (?%)"
+    },
+    {
+     "name": "Burning Hair (69.11%)"
+    },
+    {
+     "name": "Fiery Ember (1.87%)"
+    },
+    {
+     "name": "Transformation Scroll (Fire Witch) (1.96%)"
+    },
+    {
+     "name": "Yggdrasil Berry (1.09%)"
+    },
+    {
+     "name": "570 × Zeny (?%)"
+    },
+    {
+     "name": "Garrison Knuckles [2] (25.56%)"
+    },
+    {
+     "name": "Forest Hunter [1] (100%)"
+    },
+    {
+     "name": "Red Square Bag (100%)"
+    }
+   ]
+  },
+  {
+   "name": "Arc Angeling",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/archangeling_mvp.png",
+   "level": "130",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Angel",
+   "Element": "Holy",
+   "size": "Medium",
+   "base_exp": "41,049",
+   "job_exp": "21,483"
+  },
+  {
+   "name": "Arc Angeling",
+   "image": "https://s01.cdn.roguard.net/content/img/icons/monsters/archangeling_mvp.png",
+   "level": "130",
+   "type": "MVP",
+   "zone": "Field",
+   "race": "Angel",
+   "Element": "Holy",
+   "size": "Medium",
+   "base_exp": "41,049",
+   "job_exp": "21,483",
+   "drop": [
+    {
+     "name": "Lazy Poring[1] Blueprint (0.17%)"
+    },
+    {
+     "name": "Arc Angeling Card (?%)"
+    },
+    {
+     "name": "5 × Fire Crystal (58.98%)"
+    },
+    {
+     "name": "Shining Holy Water (9.95%)"
+    },
+    {
+     "name": "Transformation Scroll (Arc Angeling) (1.24%)"
+    },
+    {
+     "name": "Leaf of Yggdrasil (6.61%)"
+    },
+    {
+     "name": "Oridecon (13.06%)"
+    },
+    {
+     "name": "Lava Gem (9.95%)"
+    },
+    {
+     "name": "2875 × Zeny (?%)"
+    },
+    {
+     "name": "Garrison Spear [2] (?%)"
+    },
+    {
+     "name": "Sura Rampage [1] (100%)"
+    },
+    {
+     "name": "Mace of Judgment [1] (100%)"
+    }
+   ]
   }
  ]
 }

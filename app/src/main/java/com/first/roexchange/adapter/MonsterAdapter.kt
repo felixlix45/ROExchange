@@ -5,23 +5,62 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.*
 import com.first.roexchange.R
 import com.first.roexchange.model.Monster
 import com.squareup.picasso.Picasso
 import org.w3c.dom.Text
 
-class MonsterAdapter(internal var context:Context, internal var monsterList: ArrayList<Monster>) : RecyclerView.Adapter<MonsterAdapter.ViewHolder>() {
+class MonsterAdapter(internal var context:Context, internal var monsterList: ArrayList<Monster>) : RecyclerView.Adapter<MonsterAdapter.ViewHolder>(), Filterable {
+    internal lateinit var copyList: ArrayList<Monster>
+
+    init{
+        this.copyList = monsterList
+    }
+
+    override fun getFilter(): Filter {
+        return object :Filter(){
+            override fun performFiltering(constraint: CharSequence?): FilterResults {
+
+
+                if(constraint == null || constraint.length == 0){
+                    copyList = monsterList
+                }else{
+                    val filteredList = ArrayList<Monster>()
+                    val filterPattern: String = constraint.toString().toLowerCase().trim()
+                    for (monster:Monster in monsterList){
+                        if(monster.name!!.toLowerCase().contains(filterPattern)){
+                            filteredList.add(monster)
+                        }
+                    }
+
+                    copyList = filteredList
+                }
+
+                var results = FilterResults()
+                results.values = copyList
+
+                return results
+            }
+
+            override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
+//                copyList.clear()
+                copyList = results!!.values as ArrayList<Monster>
+//                copyList.addAll(results!!.values as ArrayList<Monster>)
+                notifyDataSetChanged()
+            }
+        }
+    }
+
+
 
     fun clear(){
-        monsterList.clear()
+        copyList.clear()
         notifyDataSetChanged()
     }
 
     fun size(): Int{
-        return monsterList.size
+        return copyList.size
     }
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {
@@ -32,12 +71,12 @@ class MonsterAdapter(internal var context:Context, internal var monsterList: Arr
     }
 
     override fun getItemCount(): Int {
-        return monsterList.size
+        return copyList.size
 
     }
 
     override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
-        p0.bind(monsterList[p1])
+        p0.bind(copyList[p1])
 
     }
 
@@ -61,8 +100,9 @@ class MonsterAdapter(internal var context:Context, internal var monsterList: Arr
             monsterImage = monsterView.findViewById(R.id.ivMonster)
         }
         fun bind(monster : Monster){
-
-            monsterName.text = monster.name
+            var level: String = monster.lvl.toString()
+            level = level.replace("Level : ", "")
+            monsterName.text = monster.name + " Lv. " + level
             monsterElement.text = monster.element
             monsterSize.text = monster.size
             monsterRace.text =monster.race
@@ -70,4 +110,6 @@ class MonsterAdapter(internal var context:Context, internal var monsterList: Arr
 
         }
     }
+
+
 }
