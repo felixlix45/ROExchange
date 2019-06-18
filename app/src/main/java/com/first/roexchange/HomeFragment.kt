@@ -39,9 +39,12 @@ class HomeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         var v = inflater.inflate(R.layout.fragment_home, container, false)
-        itemsAdapter = ItemsAdapter(requireActivity(), listItem);
+
+        itemsAdapter = ItemsAdapter(requireActivity(), listItem)
+
         shimmerFrameLayout = v.findViewById<ShimmerFrameLayout>(R.id.shimmer_container)
         shimmerFrameLayout.startShimmer()
+
         var btnSearch = v.findViewById(R.id.btnSearch) as Button
         var btnReset = v.findViewById(R.id.reset)as Button
         var etSearch = v.findViewById(R.id.etSearchItem)as EditText

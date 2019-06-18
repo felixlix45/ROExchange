@@ -81,7 +81,9 @@ class FavoriteActivity : AppCompatActivity() {
 
             override fun onSwiped(p0: RecyclerView.ViewHolder, p1: Int) {
                 savedList!!.removeAt(p0.adapterPosition)
-                saveData();
+                saveData()
+                loadData()
+                buildRecycleView()
             }
         }
         val itemTouchHelper = ItemTouchHelper(simpleCallback)

@@ -22,13 +22,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="800dp"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="8dp"
-                    android:layout_gravity="center"
                     android:layout_width= "100dp"
                     android:layout_height="100dp"
                     android:background="@color/background"/>
@@ -75,6 +74,7 @@
 
 
         <LinearLayout
+            android:id="@+id/detailLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -103,7 +103,6 @@
                     android:id="@+id/tvDetailTypes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:textSize="14dp"
                     android:textColor="?android:attr/textColorPrimary"/>
 

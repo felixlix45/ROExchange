@@ -5,9 +5,12 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.first.roexchange.R
 import com.first.roexchange.model.Monster
+import com.squareup.picasso.Picasso
 import org.w3c.dom.Text
 
 class MonsterAdapter(internal var context:Context, internal var monsterList: ArrayList<Monster>) : RecyclerView.Adapter<MonsterAdapter.ViewHolder>() {
@@ -22,20 +25,20 @@ class MonsterAdapter(internal var context:Context, internal var monsterList: Arr
     }
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.list_view_monster, p0, false)
+        val view = LayoutInflater.from(p0.context).inflate(R.layout.list_view_monster, p0, false)
 
         return ViewHolder(view)
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun getItemCount(): Int {
         return monsterList.size
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
         p0.bind(monsterList[p1])
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
 
@@ -45,6 +48,8 @@ class MonsterAdapter(internal var context:Context, internal var monsterList: Arr
         internal lateinit var monsterRace : TextView
         internal lateinit var monsterElement: TextView
         internal lateinit var monsterSize : TextView
+        internal lateinit var layoutMonster: LinearLayout
+        internal lateinit var monsterImage: ImageView
 
         init {
 
@@ -52,6 +57,8 @@ class MonsterAdapter(internal var context:Context, internal var monsterList: Arr
             monsterName = monsterView.findViewById(R.id.tvMonsterName)
             monsterRace = monsterView.findViewById(R.id.tvMonsterRace)
             monsterSize = monsterView.findViewById(R.id.tvMonsterSize)
+            layoutMonster = monsterView.findViewById(R.id.layoutParentMonster)
+            monsterImage = monsterView.findViewById(R.id.ivMonster)
         }
         fun bind(monster : Monster){
 
@@ -59,6 +66,7 @@ class MonsterAdapter(internal var context:Context, internal var monsterList: Arr
             monsterElement.text = monster.element
             monsterSize.text = monster.size
             monsterRace.text =monster.race
+            Picasso.with(context).load(monster.image).into(monsterImage)
 
         }
     }

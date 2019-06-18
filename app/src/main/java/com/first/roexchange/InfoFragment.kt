@@ -19,9 +19,9 @@ class InfoFragment : Fragment(), View.OnClickListener {
             val intent = Intent(activity, DailyGingerActivity::class.java)
             startActivity(intent)
         }else if(v!!.id == R.id.ibMonsterList){
-            Toast.makeText(activity, "Coming Soon", Toast.LENGTH_SHORT).show()
-//            val intent = Intent(activity, MonsterList::class.java)
-//            startActivity(intent)
+//            Toast.makeText(activity, "Coming Soon", Toast.LENGTH_SHORT).show()
+            val intent = Intent(activity, MonsterList::class.java)
+            startActivity(intent)
         }
     }
 

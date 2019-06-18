@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.LinearLayout
 import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
@@ -141,6 +142,9 @@ class DetailActivity : AppCompatActivity() {
         tvUpdated = findViewById(R.id.tvDetailUpdated)
         tvLastPrice = findViewById(R.id.tvDetailBeforeUpdatePrice)
         toolbar = findViewById(R.id.toolbar)
+        val detailLayout = findViewById(R.id.detailLayout) as LinearLayout
+        detailLayout.visibility = View.GONE
+
         setSupportActionBar(toolbar)
 
         mChart = findViewById(R.id.LineChart)
@@ -183,6 +187,7 @@ class DetailActivity : AppCompatActivity() {
                     shimmerFrameLayout.visibility = View.GONE
                     shimmerFrameLayout.stopShimmer()
                     disableMenuOption = false
+                    detailLayout.visibility = View.VISIBLE
                     invalidateOptionsMenu()
                     try {
                         val formatter = DecimalFormat("#,###,###")
