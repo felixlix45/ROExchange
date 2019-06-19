@@ -1,21 +1,21 @@
 package com.first.roexchange.adapter
 
 import android.content.Context
+import android.content.Intent
+import android.support.v7.widget.CardView
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Filter
-import android.widget.Filterable
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
+import com.first.roexchange.DetailRecipeActivity
 import com.first.roexchange.R
 import com.first.roexchange.model.Recipe
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.list_view_recipe.view.*
 import java.util.zip.Inflater
 
-class RecipeAdapter(internal var context:Context, internal var recipeList: ArrayList<Recipe>) :RecyclerView.Adapter<RecipeAdapter.ViewHolder>(), Filterable {
+class RecipeAdapter(internal var context: Context, internal var recipeList: ArrayList<Recipe>) :RecyclerView.Adapter<RecipeAdapter.ViewHolder>(), Filterable {
     internal lateinit var copyList: ArrayList<Recipe>
 
     override fun getFilter(): Filter {
@@ -57,6 +57,8 @@ class RecipeAdapter(internal var context:Context, internal var recipeList: Array
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.list_view_recipe, p0, false)
+
+
         return ViewHolder(view)
     }
 
@@ -66,6 +68,14 @@ class RecipeAdapter(internal var context:Context, internal var recipeList: Array
 
     override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
         p0.bind(copyList[p1])
+
+        p0.layoutParent.setOnClickListener { v ->
+            val intent = Intent(v.context, DetailRecipeActivity::class.java)
+            intent.putExtra("id", p1)
+            intent.putExtra("name", recipeList[p1].name.toString())
+            v.context.startActivity(intent)
+        }
+
     }
 
 
@@ -80,6 +90,7 @@ class RecipeAdapter(internal var context:Context, internal var recipeList: Array
         internal lateinit var ingre5: ImageView
         internal lateinit var recipeImage: ImageView
         internal lateinit var recipeStation: ImageView
+        internal lateinit var layoutParent: CardView
 
         init {
             recipeName = recipeView.findViewById<TextView>(R.id.tvRecipeName)
@@ -91,6 +102,7 @@ class RecipeAdapter(internal var context:Context, internal var recipeList: Array
             ingre5 = recipeView.findViewById<ImageView>(R.id.ivIngre5)
             recipeImage = recipeView.findViewById(R.id.ivRecipeImage)
             recipeStation = recipeView.findViewById(R.id.ivRecipeStation)
+            layoutParent = recipeView.findViewById(R.id.layoutParentRecipe)
         }
 
 

@@ -73,12 +73,6 @@ class ItemsAdapter(internal var context: Context, internal var itemList: ArrayLi
             intent.putExtra("pos", i)
             v.context.startActivity(intent)
         }
-        //        viewHolder.btnFavorite.setOnClickListener(new View.OnClickListener() {
-        //            @Override
-        //            public void onClick(View v) {
-        //                Toast.makeText(v.getContext(), "Item " + itemList.get(i).getName() + " has been added to favorite" , Toast.LENGTH_SHORT).show();
-        //            }
-        //        });
     }
 
 

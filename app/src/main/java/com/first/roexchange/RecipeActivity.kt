@@ -1,5 +1,6 @@
 package com.first.roexchange
 
+import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -14,6 +15,7 @@ import android.widget.Toast
 import com.first.roexchange.adapter.RecipeAdapter
 import com.first.roexchange.model.Monster
 import com.first.roexchange.model.Recipe
+import com.squareup.okhttp.internal.Internal.instance
 import org.json.JSONObject
 import java.io.InputStream
 import java.lang.Exception
@@ -22,6 +24,7 @@ class RecipeActivity : AppCompatActivity() {
 
     lateinit var recipeAdapter: RecipeAdapter
     var recipeList = ArrayList<Recipe>()
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater: MenuInflater = menuInflater
@@ -50,7 +53,7 @@ class RecipeActivity : AppCompatActivity() {
         val toolbar = findViewById(R.id.toolbar) as Toolbar
         val rvRecipe = findViewById<RecyclerView>(R.id.rvRecipe)
 
-        recipeAdapter = RecipeAdapter(applicationContext, recipeList)
+        recipeAdapter = RecipeAdapter(baseContext, recipeList)
 
         rvRecipe.layoutManager = LinearLayoutManager(applicationContext)
         rvRecipe.adapter = recipeAdapter
@@ -124,5 +127,7 @@ class RecipeActivity : AppCompatActivity() {
 
     companion object{
         private val TAG= "RecipeActivity"
+
+
     }
 }

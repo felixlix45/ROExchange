@@ -24,6 +24,7 @@ import com.android.volley.toolbox.Volley
 import com.first.roexchange.adapter.ItemsAdapter
 import com.first.roexchange.model.Item
 import com.facebook.shimmer.ShimmerFrameLayout
+import kotlinx.android.synthetic.main.fragment_home.*
 
 import java.util.ArrayList
 
@@ -89,7 +90,7 @@ class HomeFragment : Fragment() {
                     val requestQueue = Volley.newRequestQueue(activity!!)
                     requestQueue.add(request)
                 } else {
-                    getFilteredData()
+                    getFilteredData2()
                 }
 
             } else {
@@ -163,6 +164,50 @@ class HomeFragment : Fragment() {
                                 item.name = response.getJSONObject(i).get("name").toString()
                                 item.types = typeConvert(response.getJSONObject(i).getInt("type"))
                                 listItem.add(item)
+                            }
+
+                        }
+                        itemsAdapter.notifyDataSetChanged()
+                    } catch (e: Exception) {
+
+
+                    }
+                },
+                Response.ErrorListener {
+                    //                        progressBar.setVisibility(View.GONE);
+                    shimmerFrameLayout.visibility = View.GONE
+
+                }
+        )
+
+        val requestQueue = Volley.newRequestQueue(activity!!)
+        requestQueue.add(request)
+    }
+
+    fun getFilteredData2() {
+        itemsAdapter.clear()
+        val pos = spinnerFilter.selectedItemPosition + 1
+        val URLFiltered = "https://www.romexchange.com/api/items.json"//exact=false&item=" + etSearch.getText().toString().replaceAll("\\s+","%20") + "&type=" + pos;
+        //        progressBar.setVisibility(View.VISIBLE);
+        shimmerFrameLayout.visibility = View.VISIBLE
+        shimmerFrameLayout.startShimmer()
+        val request = JsonArrayRequest(
+                Request.Method.GET,
+                URLFiltered, null,
+                Response.Listener { response ->
+                    //                        progressBar.setVisibility(View.GONE);
+                    shimmerFrameLayout.visibility = View.GONE
+                    try {
+
+                        for (i in 0 until response.length()) {
+                            if (response.getJSONObject(i).getInt("type") == pos) {
+                                val item = Item()
+                                val name = response.getJSONObject(i).get("name").toString().toLowerCase().trim()
+                                if(name.contains(etSearchItem.text.toString().toLowerCase().trim(), false)){
+                                    item.name = response.getJSONObject(i).get("name").toString()
+                                    item.types = typeConvert(response.getJSONObject(i).getInt("type"))
+                                    listItem.add(item)
+                                }
                             }
 
                         }
