@@ -22,22 +22,28 @@ class InfoFragment : Fragment(), View.OnClickListener {
 //            Toast.makeText(activity, "Coming Soon", Toast.LENGTH_SHORT).show()
             val intent = Intent(activity, MonsterList::class.java)
             startActivity(intent)
+        }else if(v.id == R.id.ibRecipe){
+            val intent = Intent(activity, RecipeActivity::class.java)
+            startActivity(intent)
         }
     }
 
     lateinit var ibGuide: ImageButton
     lateinit var ibGinger: ImageButton
     lateinit var ibMonsterList: ImageButton
+    lateinit var ibFoodRecipe: ImageButton
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val v = inflater.inflate(R.layout.fragment_info, container, false)
         ibGuide = v.findViewById(R.id.ibGuide)
         ibGinger = v.findViewById(R.id.ibMapGinger)
         ibMonsterList = v.findViewById(R.id.ibMonsterList)
+        ibFoodRecipe = v.findViewById(R.id.ibRecipe)
 
         ibGuide.setOnClickListener(this)
         ibGinger.setOnClickListener(this)
         ibMonsterList.setOnClickListener(this)
+        ibFoodRecipe.setOnClickListener(this)
 
         return v
     }

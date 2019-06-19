@@ -25,7 +25,6 @@
 
         <com.github.chrisbanes.photoview.PhotoView
             android:layout_marginTop="10dp"
-            android:id="@+id/tableElement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/element_table"
@@ -44,7 +43,6 @@
 
         <ImageView
             android:layout_marginTop="10dp"
-            android:id="@+id/tableWeaponPenalty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/weapon_penalty"
@@ -62,7 +60,6 @@
 
         <ImageView
             android:layout_marginTop="10dp"
-            android:id="@+id/tableLevelGap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/level_gap"
@@ -81,7 +78,6 @@
 
         <com.github.chrisbanes.photoview.PhotoView
             android:layout_marginTop="10dp"
-            android:id="@+id/tablePetTips"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/pet_tips"

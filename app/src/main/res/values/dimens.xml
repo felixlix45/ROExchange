@@ -2,6 +2,5 @@
 <resources>
     <dimen name="placeholderTextHeight">18dp</dimen>
     <dimen name="placeholderTextDetail">16dp</dimen>
-    <dimen name="placeholderImage">120dp</dimen>
 
 </resources>

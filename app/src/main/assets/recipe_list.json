@@ -1,0 +1,2301 @@
+{
+ "recipe": [
+  {
+   "name": "Recipe",
+   "stars": "Stars",
+   "effects": "Effects",
+   "indgredients_text": "Ingredients"
+  },
+  {
+   "name": "Rookie Meat Steak",
+   "images": "https://ragnamobileguide.com/img/rookie_meat_steak.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, Def +8",
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg",
+   "indgredients_text": "1 Any Meat"
+  },
+  {
+   "name": "Rookie Fried Dish",
+   "images": "https://ragnamobileguide.com/img/rookie_fried_dish.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, Def +8",
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg",
+   "indgredients_text": "1 Any Vegetables"
+  },
+  {
+   "name": "Rookie Fish Steak",
+   "images": "https://ragnamobileguide.com/img/rookie_fish_steak.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, PAtk +8",
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg",
+   "indgredients_text": "1 Any Fish"
+  },
+  {
+   "name": "Rookie Jam",
+   "images": "https://ragnamobileguide.com/img/rookie_jam.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, MAtk +8",
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg",
+   "indgredients_text": "1 Any Fruit"
+  },
+  {
+   "name": "Traveler Bacon",
+   "images": "https://ragnamobileguide.com/img/traveler_bacon.jpeg",
+   "stars": "★",
+   "effects": "Max HP +90, Max SP +9, Def +12",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/lunatic_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Seafood Bowl",
+   "images": "https://ragnamobileguide.com/img/seafood_bowl.jpeg",
+   "stars": "★",
+   "effects": "Max HP +90, Max SP +9, PAtk + 12",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vadon_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/flour.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Healthy Salad",
+   "images": "https://ragnamobileguide.com/img/healthy_salad.jpeg",
+   "stars": "★",
+   "effects": "Max HP +90, Max SP +9, MAtk +12",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/west_gate_tomato.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Seafood Rice",
+   "images": "https://ragnamobileguide.com/img/seafood_rice.jpeg",
+   "stars": "★",
+   "effects": "Max HP + 120, Max SP + 12, PAtk+16, Move Speed +1%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/inkfish_tentacle.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Delicious Steak",
+   "images": "https://ragnamobileguide.com/img/delicious_steak.jpeg",
+   "stars": "★☆",
+   "effects": "Max HP + 120, Max SP + 12, Def +16, MDef +16, Immune to abnormal status. 15 secs CD. Up to 2 status attacks.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mountain_celery.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/desert_wolf_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/eggshell_chick.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Vegetable Meal",
+   "images": "https://ragnamobileguide.com/img/vegetable_meal.jpeg",
+   "stars": "★☆",
+   "effects": "Max HP +120, Max SP +12, MAtk +16, Cast Delay – 0.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mountain_celery.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Flame God History",
+   "images": "https://ragnamobileguide.com/img/flame_god_history.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +180, Max SP +18, Def + 20, Immune to abnormal status. 15 secs CD. Up to 3 abnormal status attacks.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/savage_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/desert_wolf_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/chili.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "East Seafood Kebab",
+   "images": "https://ragnamobileguide.com/img/east_seafood_kebab.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +180, Max SP +18, PAtk +20, Move Speed +1.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marc_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/inkfish_tentacle.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/chili.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Spicy Branch Vegetable",
+   "images": "https://ragnamobileguide.com/img/spicy_branch_vegetable.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +180, Max SP +18, MAtk +20, Cast Delay -1%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/south_gate_carrot.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/chili.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Yummy Steak",
+   "images": "https://ragnamobileguide.com/img/yummy_steak.jpeg",
+   "stars": "★★☆",
+   "effects": "Max HP +216, Max SP +21, Def + 24, Immune to abnormal status. 15 secs CD. Up to 3 abnormal status attacks.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/lunatic_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Yummy Fish Steak",
+   "images": "https://ragnamobileguide.com/img/yummy_fish_steak.jpeg",
+   "stars": "★★☆",
+   "effects": "Max HP + 216, Max SP + 21, PAtk + 24, Move Speed +1.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marc_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Yummy Salad",
+   "images": "https://ragnamobileguide.com/img/yummy_salad.jpeg",
+   "stars": "★★☆",
+   "effects": "Max HP +216, Max SP +21, MAtk +24, Cast Delay -1.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/west_gate_tomato.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Fantasy Steak",
+   "images": "https://ragnamobileguide.com/img/fantasy_steak.jpeg",
+   "stars": "★★★",
+   "effects": "Max HP +300, Max SP +30, Def +30, Immune to abnormal status. 15 secs CD. Up to 4 abnormal status attacks.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/eggshell_chick.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/rocker_leg_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sugar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Fantasy Seafood Kebab",
+   "images": "https://ragnamobileguide.com/img/fantasy_seafood_kebab.jpeg",
+   "stars": "★★★",
+   "effects": "Max HP +300, Max SP +30, PAtk +30, Move Speed +2%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vadon_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sugar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Fantasy Salad",
+   "images": "https://ragnamobileguide.com/img/fantasy_salad.jpeg",
+   "stars": "★★★",
+   "effects": "Max HP +300, Max SP +30, MAtk +30, Cast Delay -1.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mountain_celery.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/south_gate_carrot.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Geffen Steak",
+   "images": "https://ragnamobileguide.com/img/geffen_steak.jpeg",
+   "stars": "★★★☆",
+   "effects": "Max HP +360, Max SP +36, Def +32, Immune to abnormal status. 15 secs CD. Up to 4 abnormal status attacks.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/desert_wolf_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/eggshell_chick.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/chili.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/flour.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Hydra",
+   "images": "https://ragnamobileguide.com/img/hydra.jpeg",
+   "stars": "★★★☆",
+   "effects": "Max HP +360, Max SP +36, PAtk +32, Move Speed +2.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/hydra_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/chili.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Forest Treasure",
+   "images": "https://ragnamobileguide.com/img/forest_treasure.jpeg",
+   "stars": "★★★☆",
+   "effects": "Max HP +360, Max SP +36, MAtk + 32, Cast Delay -1.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mountain_celery.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/south_gate_carrot.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sugar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/chili.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Desert Steak",
+   "images": "https://ragnamobileguide.com/img/desert_steak.jpeg",
+   "stars": "★★★★",
+   "effects": "Max HP +420, Max SP +42, Def +36, Immune to abnormal status. 15 secs CD. Up to 4 abnormal status attacks.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/savage_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/desert_wolf_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Fishman’s Soul",
+   "images": "https://ragnamobileguide.com/img/fishmans_soul.jpeg",
+   "stars": "★★★★",
+   "effects": "Max HP +420, Max SP + 42, PAtk +36, Move Speed +3%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marc_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sauce.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Sweet Coriander",
+   "images": "https://ragnamobileguide.com/img/sweet_coriander.jpeg",
+   "stars": "★★★★",
+   "effects": "Max HP +420, Max SP +42, MAtk +36, Cast Delay -2%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mountain_celery.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sauce.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Prontera Royal Steak",
+   "images": "https://ragnamobileguide.com/img/prontera_royal_steak.jpeg",
+   "stars": "★★★★☆",
+   "effects": "Max HP +500, Max SP +50, Def +38, Immune to abnormal status. 15 secs CD. Up to 4 abnormal status attacks.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/savage_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/desert_wolf_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/lunatic_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sauce.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Prontera Royal Fish Steak",
+   "images": "https://ragnamobileguide.com/img/prontera_royal_fish_steak.jpeg",
+   "stars": "★★★★☆",
+   "effects": "Max HP +500, Max SP +50, PAtk +38, Move Speed +3.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marc_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/inkfish_tentacle.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/hydra_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Prontera Royal Salad",
+   "images": "https://ragnamobileguide.com/img/prontera_royal_salad.jpeg",
+   "stars": "★★★★☆",
+   "effects": "Max HP +500, Max SP +50, MDef +38, Cast Delay -2.25%, Won’t die when receiving a death blow. 1 HP will be kept. Be invincible in the next 2 seconds. 15 secs CD. Can be triggered up to twice.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/south_gate_carrot.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sauce.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Original Will-Steak",
+   "images": "https://ragnamobileguide.com/img/original_will_steak.jpeg",
+   "stars": "★★★★★",
+   "effects": "Max HP +600, Max SP +60, Def +40, Immune to abnormal status. 15 secs CD. Up to 4 abnormal status attacks.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/savage_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/muka_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/desert_wolf_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/eggshell_chick.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/miso_powder.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Original Will-Fish Steak",
+   "images": "https://ragnamobileguide.com/img/original_will_fish_steak.jpeg",
+   "stars": "★★★★★",
+   "effects": "Max HP +600, Max SP +60, PAtk +40, Move Speed +3.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marc_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mutated_fish.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/inkfish_tentacle.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/miso_powder.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Original Will-Salad",
+   "images": "https://ragnamobileguide.com/img/original_will_salad.jpeg",
+   "stars": "★★★★★",
+   "effects": "Max HP +600, Max SP +60, MDef +40, Cast Delay -2.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/gold_pumpkin.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mountain_celery.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/miso_powder.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/frying_station.jpeg"
+  },
+  {
+   "name": "Rookie Meat Kebab",
+   "images": "https://ragnamobileguide.com/img/rookie_meat_kebab.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, Def +8",
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg",
+   "indgredients_text": "1 Any Meat"
+  },
+  {
+   "name": "Rookie Vegetable Kebab",
+   "images": "https://ragnamobileguide.com/img/rookie_vegetable_kebab.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, MDef +8",
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg",
+   "indgredients_text": "1 Any Vegetables"
+  },
+  {
+   "name": "Rookie Seafood Kebab",
+   "images": "https://ragnamobileguide.com/img/rookie_seafood_kebab.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, PAtk +8",
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg",
+   "indgredients_text": "1 Any Fish"
+  },
+  {
+   "name": "Rookie Fruit Slices",
+   "images": "https://ragnamobileguide.com/img/rookie_fruit_slices.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, MAtk +8",
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg",
+   "indgredients_text": "1 Any Fruit"
+  },
+  {
+   "name": "Popular Kebab",
+   "images": "https://ragnamobileguide.com/img/popular_kebab.jpeg",
+   "stars": "★",
+   "effects": "Max HP +90, Max SP +9, Def +12",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/rocker_leg_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Island Kebab",
+   "images": "https://ragnamobileguide.com/img/island_kebab.jpeg",
+   "stars": "★",
+   "effects": "Max HP +90, Max SP +9, PAtk +12",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/hydra_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/flour.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "MSG",
+   "images": "https://ragnamobileguide.com/img/msg.jpeg",
+   "stars": "★",
+   "effects": "Max HP +90, Max SP +9, MDef +12",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/south_gate_carrot.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Starving Kebabs",
+   "images": "https://ragnamobileguide.com/img/starving_kebabs.jpeg",
+   "stars": "★☆",
+   "effects": "Max HP +200, Max SP +12, Def +16, MDef +16",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/desert_wolf_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/rocker_leg_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Izlude Pride",
+   "images": "https://ragnamobileguide.com/img/izlude_pride.jpeg",
+   "stars": "★☆",
+   "effects": "Max HP +120, Max SP +12, PAtk +16, Def +16, Physical Defense +16, Damage vs. Players +0.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/inkfish_tentacle.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vadon_meat.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Farmer’s Smile",
+   "images": "https://ragnamobileguide.com/img/farmers_smile.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +120, Max SP +12, MDef +16",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/poring_apple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sugar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Gold Kebab",
+   "images": "https://ragnamobileguide.com/img/gold_kebab.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +300, Max SP +18, Def +20, MDef +20",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/muka_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/eggshell_chick.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Superb Seafood Kebab",
+   "images": "https://ragnamobileguide.com/img/superb_seafood_kebab.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +180, Max SP +18, PAtk +20, Physical Defense +20, Damage vs. Players +1%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mutated_fish.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/chili.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Flame Vegetable Kebab",
+   "images": "https://ragnamobileguide.com/img/flame_vegetable_kebab.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +180, Max SP +18, MDef +20",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/gold_pumpkin.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/chili.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Yummy Kebab",
+   "images": "https://ragnamobileguide.com/img/yummy_kebab.jpeg",
+   "stars": "★★☆",
+   "effects": "Max HP +360, Max SP +21, Def +24, MDef +24",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/muka_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/desert_wolf_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Yummy Seafood Kebab",
+   "images": "https://ragnamobileguide.com/img/yummy_seafood_kebab.jpeg",
+   "stars": "★★☆",
+   "effects": "Max HP +216, Max SP +21, PAtk + 24, Def +24, Damage vs. Players +1.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mutated_fish.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vadon_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Yummy Vegetables",
+   "images": "https://ragnamobileguide.com/img/yummy_vegetables.jpeg",
+   "stars": "★★☆",
+   "effects": "Max HP + 216, Max SP +21, MAtk +24, MDef +24",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/gold_pumpkin.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/south_gate_carrot.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Magic Meat Kebab",
+   "images": "https://ragnamobileguide.com/img/magic_meat_kebab.jpeg",
+   "stars": "★",
+   "effects": "Max HP +500, Max SP +30, MAtk +30, Def +30",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/lunatic_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/desert_wolf_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/poring_apple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Magic Seafood Kebab",
+   "images": "https://ragnamobileguide.com/img/magic_seafood_kebab.jpeg",
+   "stars": "★★★",
+   "effects": "Max HP +300, Max SP +30, PAtk +30, MDef +30, Damage vs. Players +1.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/inkfish_tentacle.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/hydra_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/west_gate_tomato.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Magic Green BBQ",
+   "images": "https://ragnamobileguide.com/img/magic_green_bbq.jpeg",
+   "stars": "★★★",
+   "effects": "Max HP +300, Max SP +30, MAtk +30, MDef +30, Won’t die when receiving a death blow. 1 HP will be kept. Be invincible in the next 2 seconds. 15 secs CD. Can be triggered up to once.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/west_gate_tomato.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/flour.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Gold Cross Kebab",
+   "images": "https://ragnamobileguide.com/img/gold_cross_kebab.jpeg",
+   "stars": "★★★☆",
+   "effects": "Max HP +600, Max SP +36, Def +32",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/eggshell_chick.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/rocker_leg_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/chili.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Call From Ocean",
+   "images": "https://ragnamobileguide.com/img/call_from_ocean.jpeg",
+   "stars": "★★★☆",
+   "effects": "Max HP +360, Max SP +36, PAtk +32, Def +32, Damage vs. Players +1.75%, Won’t die when receiving a death blow. 1 HP will be kept. Be invincible in the next 2 seconds. 15 secs CD. Can be triggered up to once.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/inkfish_tentacle.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vadon_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/chili.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Payon’s Vegetable Kebab",
+   "images": "https://ragnamobileguide.com/img/payons_vegetable_kebab.jpeg",
+   "stars": "★★★☆",
+   "effects": "Max HP +360, Max SP +36, MAtk +32, MDef +32",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/west_gate_tomato.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Giant Pagoda",
+   "images": "https://ragnamobileguide.com/img/giant_pagoda.jpeg",
+   "stars": "★★★★",
+   "effects": "Max HP +700, Max SP +42, Def +36",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/muka_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/eggshell_chick.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sauce.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Trubius Seafood Kebab",
+   "images": "https://ragnamobileguide.com/img/trubius_seafood_kebab.jpeg",
+   "stars": "★★★★",
+   "effects": "Max HP +420, Max SP +42, PAtk +36, Def +36, Damage vs. Players +2%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mutated_fish.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/inkfish_tentacle.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Sky Blade",
+   "images": "https://ragnamobileguide.com/img/sky_blade.jpeg",
+   "stars": "★★★★",
+   "effects": "Max HP +420, Max SP +42, MAtk +36, MDef +36, Won’t die when receiving a death blow. 1 HP will be kept. Be invincible in the next 2 seconds. 15 secs CD. Can be triggered up to once.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/gold_pumpkin.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sauce.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Prontera Royal Kebab",
+   "images": "https://ragnamobileguide.com/img/prontera_royal_kebab.jpeg",
+   "stars": "★★★★☆",
+   "effects": "Max HP +830, Max SP +50, Def +38",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/muka_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/eggshell_chick.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/rocker_leg_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sauce.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Prontera Royal Fish Kebab",
+   "images": "https://ragnamobileguide.com/img/prontera_royal_fish_kebab.jpeg",
+   "stars": "★★★★☆",
+   "effects": "Max HP +500, Max SP +50, PAtk +38, Physical Defense +38, Damage vs. players +2.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mutated_fish.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vadon_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sauce.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Prontera Royal Green BBQ",
+   "images": "https://ragnamobileguide.com/img/prontera_royal_green_bbq.jpeg",
+   "stars": "★★★★☆",
+   "effects": "Max HP +500, Max SP +50, MDef +38, Cast Delay -2.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/gold_pumpkin.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mountain_celery.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/west_gate_tomato.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Original Will-Kebab",
+   "images": "https://ragnamobileguide.com/img/original_will_kebab.jpeg",
+   "stars": "★★★★★",
+   "effects": "Max HP +1000, Max SP +60, Def +40",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/savage_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/muka_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/desert_wolf_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/eggshell_chick.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/miso_powder.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Original Will-Fish Kebab",
+   "images": "https://ragnamobileguide.com/img/original_will_fish_kebab.jpeg",
+   "stars": "★★★★★",
+   "effects": "Max HP +600, Max SP +60, PAtk +40, Def +40, Damage vs. Players +2.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marc_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mutated_fish.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/inkfish_tentacle.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/miso_powder.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Original Will-Green Kebab",
+   "images": "https://ragnamobileguide.com/img/original_will_green_kebab.jpeg",
+   "stars": "★★★★★",
+   "effects": "Max HP +600, Max SP +60, MAtk +40, MDef +40, Won’t die when receiving a death blow. 1 HP will be kept. Be invincible in the next 2 seconds. 15 secs CD. Can be triggered up to twice.",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/gold_pumpkin.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mountain_celery.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/miso_powder.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/grilling_station.jpeg"
+  },
+  {
+   "name": "Rookie Broth",
+   "images": "https://ragnamobileguide.com/img/rookie_broth.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, Def +8",
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg",
+   "indgredients_text": "1 Any Meat"
+  },
+  {
+   "name": "Rookie Vegetable Soup",
+   "images": "https://ragnamobileguide.com/img/rookie_vegetable_soup.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, MDef +8",
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg",
+   "indgredients_text": "1 Any Vegetables"
+  },
+  {
+   "name": "Rookie Fish Soup",
+   "images": "https://ragnamobileguide.com/img/rookie_fish_soup.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, PAtk +8",
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg",
+   "indgredients_text": "1 Any Fish"
+  },
+  {
+   "name": "Rookie Black Tea",
+   "images": "https://ragnamobileguide.com/img/rookie_black_tea.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, MAtk +8",
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg",
+   "indgredients_text": "1 Any Fruit"
+  },
+  {
+   "name": "Fragrant Broth",
+   "images": "https://ragnamobileguide.com/img/fragrant_broth.jpeg",
+   "stars": "★",
+   "effects": "Max HP +90, Max SP +9, Def +21",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/lunatic_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/flour.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Fish Head Soup",
+   "images": "https://ragnamobileguide.com/img/fish_head_soup.jpeg",
+   "stars": "★",
+   "effects": "Max HP +90, Max SP +9, PAtk +12",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/hydra_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Mum’s Soup",
+   "images": "https://ragnamobileguide.com/img/mums_soup.jpeg",
+   "stars": "★",
+   "effects": "Max HP +90, Max SP +9, MAtk +12, MDef +12",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/south_gate_carrot.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/west_gate_tomato.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Music Box Broth",
+   "images": "https://ragnamobileguide.com/img/music_box_broth.jpeg",
+   "stars": "★☆",
+   "effects": "Max HP +12, Max SP +12, Def +16, Equipment ASPD +1%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/eggshell_chick.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/rocker_leg_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sugar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Warm Current",
+   "images": "https://ragnamobileguide.com/img/warm_current.jpeg",
+   "stars": "★☆",
+   "effects": "Max HP +120, Max SP +12, PAtk +16, MDef +16, Ignore Def +0.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/inkfish_tentacle.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/hydra_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/flour.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Delicious Vegetable Soup",
+   "images": "https://ragnamobileguide.com/img/delicious_vegetable_soup.jpeg",
+   "stars": "★☆",
+   "effects": "Max HP +120, Max SP +12, MAtk +16, MDef +16",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mountain_celery.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Satisfied",
+   "images": "https://ragnamobileguide.com/img/satisfied.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +180, Max SP +18, Def +20, Equipment ASPD +1.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/savage_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/muka_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sugar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Singing Soul",
+   "images": "https://ragnamobileguide.com/img/singing_soul.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +180, Max SP +18, PAtk +20, MDef +20, Ignore Def +1%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mutated_fish.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marc_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Warm Oasis",
+   "images": "https://ragnamobileguide.com/img/warm_oasis.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +180, Max SP +18, MAtk +20, MDef +20",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/gold_pumpkin.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Yummy Broth",
+   "images": "https://ragnamobileguide.com/img/yummy_broth.jpeg",
+   "stars": "★★☆",
+   "effects": "Max HP +216, Max SP +21, Def +24, Equipment ASPD +1.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/rocker_leg_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Yummy Seafood Soup",
+   "images": "https://ragnamobileguide.com/img/yummy_seafood_soup.jpeg",
+   "stars": "★★☆",
+   "effects": "Max HP +216, Max SP +21, PAtk +24, MDef +24, Ignore Def +1.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marc_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mutated_fish.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Yummy Vegetable Soup",
+   "images": "https://ragnamobileguide.com/img/yummy_vegetable_soup.jpeg",
+   "stars": "★★☆",
+   "effects": "Max HP +216, Max SP +21, MAtk +24, MDef +24",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/gold_pumpkin.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Fantasy Broth",
+   "images": "https://ragnamobileguide.com/img/fantasy_broth.jpeg",
+   "stars": "★★★",
+   "effects": "Max HP +300, Max SP +30, Def +30, MDef +30, Equipment ASPD +2%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/rocker_leg_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/eggshell_chick.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/south_gate_carrot.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Fantasy Fish Soup",
+   "images": "https://ragnamobileguide.com/img/fantasy_fish_soup.jpeg",
+   "stars": "★★★",
+   "effects": "Max HP +300, Max SP +30, PAtk +30, Def +30, Ignore Def +1.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/hydra_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Fantasy Vegetable Soup",
+   "images": "https://ragnamobileguide.com/img/fantasy_vegetable_soup.jpeg",
+   "stars": "★★★",
+   "effects": "Max HP +300, Max SP +30, MAtk +30, MDef +30",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/west_gate_tomato.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/south_gate_carrot.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mountain_celery.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/flour.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Mother’s Hug",
+   "images": "https://ragnamobileguide.com/img/mothers_hug.jpeg",
+   "stars": "★★★☆",
+   "effects": "Max HP +360, Max SP +36, Def +32, MDef +32, Equipment ASPD +2.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/desert_wolf_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/lunatic_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/chili.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Al De Baran Fish Soup",
+   "images": "https://ragnamobileguide.com/img/al_de_baran_fish_soup.jpeg",
+   "stars": "★★★☆",
+   "effects": "Max HP +360, Max SP +36, PAtk +32, MDef +32, Ignore Def +1.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/inkfish_tentacle.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sugar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Princess’ Black Tea",
+   "images": "https://ragnamobileguide.com/img/princess_black_tea.jpeg",
+   "stars": "★★★☆",
+   "effects": "Max HP +360, Max SP +36, MAtk +32, MDef +32",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mountain_celery.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Brandy March",
+   "images": "https://ragnamobileguide.com/img/brandy_march.jpeg",
+   "stars": "★★★★",
+   "effects": "Max HP +420, Max SP +42, Def +36, MDef +36, Equipment ASPD +3%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/muka_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/savage_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sauce.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Song for You",
+   "images": "https://ragnamobileguide.com/img/song_for_you.jpeg",
+   "stars": "★★★★",
+   "effects": "Max HP +420, Max SP +42, PAtk +36, MDef +36, Ignore Def +2%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mutated_fish.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marc_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Sage in Dark",
+   "images": "https://ragnamobileguide.com/img/sage_in_dark.jpeg",
+   "stars": "★★★★",
+   "effects": "Max HP +420, Max SP +42, MAtk +36, MDef +36",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/gold_pumpkin.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Prontera Royal Broth",
+   "images": "https://ragnamobileguide.com/img/prontera_royal_broth.jpeg",
+   "stars": "★★★★☆",
+   "effects": "Max HP +500, Max SP +50, Def +38, MDef +38, Equipment ASPD +3.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/savage_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/muka_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/lunatic_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/apple_vinegar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Prontera Royal Seafood Soup",
+   "images": "https://ragnamobileguide.com/img/prontera_royal_seafood_soup.jpeg",
+   "stars": "★★★★☆",
+   "effects": "Max HP +500, Max SP +50, PAtk +38, MDef +38, Ignore Def +2.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marc_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mutated_fish.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/hydra_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sauce.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Prontera Royal Vegetable Soup",
+   "images": "https://ragnamobileguide.com/img/prontera_royal_vegetable_soup.jpeg",
+   "stars": "★★★★☆",
+   "effects": "Max HP +500, Max SP +50, MAtk +38, MDef +38",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/gold_pumpkin.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/south_gate_carrot.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sauce.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Original Will-Broth",
+   "images": "https://ragnamobileguide.com/img/original_will_broth.jpeg",
+   "stars": "★★★★★",
+   "effects": "Max HP +600, Max SP +60, Def +40, MDef +40, Equipment ASPD +3.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/savage_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/muka_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/desert_wolf_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/eggshell_chick.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/rainbow_powder.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Original Will-Seafood Soup",
+   "images": "https://ragnamobileguide.com/img/original_will_seafood_soup.jpeg",
+   "stars": "★★★★★",
+   "effects": "Max HP +600, Max SP +60, PAtk +40, MDef +40, Ignore Def +2.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marc_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mutated_fish.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/marina_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/inkfish_tentacle.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/rainbow_powder.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Original Will-Vegetable Soup",
+   "images": "https://ragnamobileguide.com/img/original_will_vegetable_soup.jpeg",
+   "stars": "★★★★★",
+   "effects": "Max HP +600, Max SP +60, MAtk +40, MDef +40",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bamboo_eggplant.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/gold_pumpkin.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/magic_spore.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/mountain_celery.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/miso_powder.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/boiling_station.jpeg"
+  },
+  {
+   "name": "Rookie Sashimi",
+   "images": "https://ragnamobileguide.com/img/rookie_sashimi.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, Def +8",
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg",
+   "indgredients_text": "1 Any Meat"
+  },
+  {
+   "name": "Rookie Salad",
+   "images": "https://ragnamobileguide.com/img/rookie_salad.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, MDef +8",
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg",
+   "indgredients_text": "1 Any Vegetables"
+  },
+  {
+   "name": "Rookie Sushi",
+   "images": "https://ragnamobileguide.com/img/rookie_sushi.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, PAtk +8",
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg",
+   "indgredients_text": "1 Any Fish"
+  },
+  {
+   "name": "Rookie Fruit Plate",
+   "images": "https://ragnamobileguide.com/img/rookie_fruit_plate.jpeg",
+   "stars": "☆",
+   "effects": "Max HP +60, Max SP +6, MAtk +8",
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg",
+   "indgredients_text": "1 Any Fruit"
+  },
+  {
+   "name": "Ray Dessert",
+   "images": "https://ragnamobileguide.com/img/ray_dessert.jpeg",
+   "stars": "★",
+   "effects": "Max HP +90, Max SP +9, MDef +12",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/south_gate_carrot.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/flour.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Ice Cream",
+   "images": "https://ragnamobileguide.com/img/ice_cream.jpeg",
+   "stars": "★",
+   "effects": "Max HP +90, Max SP +9, MAtk +12, Def +12",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/poring_apple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/smokie_grape.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Smokie Cookie",
+   "images": "https://ragnamobileguide.com/img/smokie_cookie.jpeg",
+   "stars": "★",
+   "effects": "Max HP +90, Max SP +9, MAtk +12",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/smokie_grape.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/flour.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Seaside Black Tea",
+   "images": "https://ragnamobileguide.com/img/seaside_black_tea.jpeg",
+   "stars": "★☆",
+   "effects": "Max HP +120, Max SP +12, MAtk +16, Def +16, Pen +0.75%, MPen +0.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/yoyo_banana.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sugar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Cheese Cake",
+   "images": "https://ragnamobileguide.com/img/cheese_cake.jpeg",
+   "stars": "★☆",
+   "effects": "Max HP +120, Max SP +12, MAtk +16, Damage vs. Non-Boss +0.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/flour.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Poring Parfait",
+   "images": "https://ragnamobileguide.com/img/poring_parfait.jpeg",
+   "stars": "★☆",
+   "effects": "Max HP +120, Max SP +12, PAtk +16, MAtk +16, Damage vs. MVP +0.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/smokie_grape.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/poring_apple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Duke Juice",
+   "images": "https://ragnamobileguide.com/img/duke_juice.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +180, Max SP +18, MAtk +20, Def +20, Pen +1%, MPen +1%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/moai_melon.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Vantican Bread",
+   "images": "https://ragnamobileguide.com/img/vantican_bread.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +180, Max SP +18, Def +20, MDef +20, Damage vs. Non-Boss +1%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/savage_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/gold_pumpkin.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Ancient Ice Honey",
+   "images": "https://ragnamobileguide.com/img/ancient_ice_honey.jpeg",
+   "stars": "★★",
+   "effects": "Max HP +180, Max SP +18, PAtk +20, MAtk +20, Damage vs. MVP +1%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/moai_melon.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bigfoot_pineapple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Yummy Cake",
+   "images": "https://ragnamobileguide.com/img/yummy_cake.jpeg",
+   "stars": "★★☆",
+   "effects": "Max HP +216, Max SP +21, MAtk +24, Def +24, Pen +1.25%, MPen +1.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bigfoot_pineapple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/smokie_grape.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Yummy Tea",
+   "images": "https://ragnamobileguide.com/img/yummy_tea.jpeg",
+   "stars": "★★☆",
+   "effects": "Max HP +216, Max SP +21, Def +24, MDef +24, Damage vs. Non-Boss +1.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/moai_melon.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bigfoot_pineapple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Yummy Cookie",
+   "images": "https://ragnamobileguide.com/img/yummy_cookie.jpeg",
+   "stars": "★★☆",
+   "effects": "Max HP +216, Max SP +21, PAtk +24, MAtk +24, Damage vs. MVP +1.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/moai_melon.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/poring_apple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Magic Bread",
+   "images": "https://ragnamobileguide.com/img/magic_bread.jpeg",
+   "stars": "★★★",
+   "effects": "Max HP +300, Max SP +30, MAtk +30, Def +30, Pen +1.5%, MPen +1.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/lunatic_meat.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/salt.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/flour.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Magic Ice Cream",
+   "images": "https://ragnamobileguide.com/img/magic_ice_cream.jpeg",
+   "stars": "★★★",
+   "effects": "Max HP +300, Max SP +30, Def +30, MDef +30, Damage vs. Non-Boss +1.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/poring_apple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sugar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Magic Cookie",
+   "images": "https://ragnamobileguide.com/img/magic_cookie.jpeg",
+   "stars": "★★★",
+   "effects": "Max HP +300, Max SP +30, PAtk +30, MAtk +30, Damage vs. MVP +1.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/yoyo_banana.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/smokie_grape.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sugar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Noble Black Tea",
+   "images": "https://ragnamobileguide.com/img/noble_black_tea.jpeg",
+   "stars": "★★★☆",
+   "effects": "Max HP +360, Max SP +36, MAtk +32, Def +32, Pen +1.75%, MPen +1.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/poring_apple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sugar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Merchant City’s Cake",
+   "images": "https://ragnamobileguide.com/img/merchant_citys_cake.jpeg",
+   "stars": "★★★☆",
+   "effects": "Max HP +360, Max SP +36, Def +32, MDef +32, Damage vs. Non-Boss +1.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/yoyo_banana.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/smokie_grape.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/milk.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Bigfoot Forest Cookie",
+   "images": "https://ragnamobileguide.com/img/bigfoot_forest_cookie.jpeg",
+   "stars": "★★★☆",
+   "effects": "Max HP +360, Max SP +36, PAtk +32, MAtk +32, Damage vs. MVP +1.75%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/yoyo_banana.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/vanilla.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/flour.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Summer Star",
+   "images": "https://ragnamobileguide.com/img/summer_star.jpeg",
+   "stars": "★★★★",
+   "effects": "Max HP +420, Max SP +42, MAtk +36, Def +36, Pen +2%, MPen +2%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/moai_melon.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Princess’ Afternoon Tea",
+   "images": "https://ragnamobileguide.com/img/princess_afternoon_tea.jpeg",
+   "stars": "★★★★",
+   "effects": "Max HP +420, Max SP +42, Def +36, MDef +36, Damage vs. Non-Boss +2%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/moai_melon.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bigfoot_pineapple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/sugar.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Gatler’s Palace",
+   "images": "https://ragnamobileguide.com/img/gatlers_palace.jpeg",
+   "stars": "★★★★",
+   "effects": "Max HP +420, Max SP +42, PAtk +36, MAtk +36, Damage vs. MVP +2%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bigfoot_pineapple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/yoyo_banana.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Prontera Royal Juice",
+   "images": "https://ragnamobileguide.com/img/prontera_royal_juice.jpeg",
+   "stars": "★★★★☆",
+   "effects": "Max HP +500, Max SP +50, MAtk +38, Def +38, Pen +2.25%, MPen +2.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/moai_melon.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/yoyo_banana.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/smokie_grape.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Prontera Royal Cookie",
+   "images": "https://ragnamobileguide.com/img/prontera_royal_cookie.jpeg",
+   "stars": "★★★★☆",
+   "effects": "Max HP +500, Max SP +50, Def +38, MDef +38, Damage vs. Non-Boss +2.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/moai_melon.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bigfoot_pineapple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/poring_apple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Prontera Royal Ice Cream",
+   "images": "https://ragnamobileguide.com/img/prontera_royal_ice_cream.jpeg",
+   "stars": "★★★★☆",
+   "effects": "Max HP +500, Max SP +50, PAtk +38, MAtk +38, Damage vs. MVP +2.25%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bigfoot_pineapple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/poring_apple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cheese.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/cream.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Original Will-Juice",
+   "images": "https://ragnamobileguide.com/img/original_will_juice.jpeg",
+   "stars": "★★★★★",
+   "effects": "Max HP +600, Max SP +60, MAtk +40, Def +40, Pen +2.5%, MPen +2.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/moai_melon.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bigfoot_pineapple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/yoyo_banana.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/rainbow_powder.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Original Will-Cookies",
+   "images": "https://ragnamobileguide.com/img/original_will_cookies.jpeg",
+   "stars": "★★★★★",
+   "effects": "Max HP +600, Max SP +60, Def +40, MDef +40, Damage vs. Non-Boss +2.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/moai_melon.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bigfoot_pineapple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/yoyo_banana.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/miso_powder.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  },
+  {
+   "name": "Original Will-Ice Cream",
+   "images": "https://ragnamobileguide.com/img/original_will_ice_cream.jpeg",
+   "stars": "★★★★★",
+   "effects": "Max HP +600, Max SP +60, PAtk +40, MAtk +40, Damage vs. MVP +2.5%",
+   "ingredients": [
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/moai_melon.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/bigfoot_pineapple.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/goblin_strawberry.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/miso_powder.jpeg"
+    },
+    {
+     "ingredients_image": "https://ragnamobileguide.com/img/rainbow_powder.jpeg"
+    }
+   ],
+   "station": "https://ragnamobileguide.com/img/beverage_station.jpeg"
+  }
+ ]
+}

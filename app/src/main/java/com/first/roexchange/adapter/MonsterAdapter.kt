@@ -21,8 +21,6 @@ class MonsterAdapter(internal var context:Context, internal var monsterList: Arr
     override fun getFilter(): Filter {
         return object :Filter(){
             override fun performFiltering(constraint: CharSequence?): FilterResults {
-
-
                 if(constraint == null || constraint.length == 0){
                     copyList = monsterList
                 }else{

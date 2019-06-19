@@ -7,6 +7,7 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.support.v4.app.FragmentManager
 import android.support.v7.widget.Toolbar
 import android.view.Menu
@@ -90,9 +91,9 @@ class MainActivity : AppCompatActivity() {
 //        }
 
         if(selectedFragment!!.isHidden){
-            supportFragmentManager.beginTransaction().show(selectedFragment!!).commit()
+            supportFragmentManager.beginTransaction().show(selectedFragment).commit()
         }else{
-            supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment!!).hide(currFragment!!).commit()
+            supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment).hide(currFragment!!).commit()
         }
 //        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, selectedFragment!!).commit()
         true
@@ -138,11 +139,18 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    lateinit var bundling: Bundle
-    lateinit var URLMVP: String
-    lateinit var URLMini: String
+    private var doubleBackToExitPressedOnce = false
+    override fun onBackPressed() {
+        if(doubleBackToExitPressedOnce){
+            super.onBackPressed()
+            return
+        }
 
+        this.doubleBackToExitPressedOnce = true
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show()
 
+        Handler().postDelayed(Runnable { doubleBackToExitPressedOnce = false }, 2000)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

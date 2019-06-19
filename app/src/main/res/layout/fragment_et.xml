@@ -90,7 +90,6 @@
 
 
         <TextView
-            android:id="@+id/tvGlobalET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
@@ -117,7 +116,6 @@
 
 
         <TextView
-            android:id="@+id/tvGlobalMini"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
