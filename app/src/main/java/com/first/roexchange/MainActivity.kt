@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(applicationContext, "Something is wrong with your internet connection", Toast.LENGTH_SHORT).show()
                 }
             }
-
             R.id.nav_et -> {
                 selectedFragment = EtFragment()
                 toolbar.title = "ET Guides"
@@ -57,45 +56,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, selectedFragment!!).commit()
 
-        val currFragment = supportFragmentManager.findFragmentById(R.id.fragment_container)
-
-//        if(selectedFragment == HomeFragment()){
-//            if (HomeFragment().isHidden){
-//                supportFragmentManager.beginTransaction().show(HomeFragment()).commit()
-//            }else{
-//                supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment).add(R.id.fragment_container, currFragment!!).hide(currFragment).commit()
-//
-//            }
-//        }else if (selectedFragment == EtFragment()){
-//            if (EtFragment().isHidden){
-//                supportFragmentManager.beginTransaction().show(EtFragment()).commit()
-//            }else{
-//                supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment).add(R.id.fragment_container, currFragment!!).hide(currFragment).commit()
-//
-//            }
-//        }else if(selectedFragment == ValFragment()){
-//            if (ValFragment().isHidden){
-//                supportFragmentManager.beginTransaction().show(ValFragment()).commit()
-//            }else{
-//                supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment).add(R.id.fragment_container, currFragment!!).hide(currFragment).commit()
-//
-//            }
-//        }else if(selectedFragment == InfoFragment()){
-//            if (InfoFragment().isHidden){
-//                supportFragmentManager.beginTransaction().show(InfoFragment()).commit()
-//            }else{
-//                supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment!!).hide(currFragment!!).commit()
-//
-//            }
+//        if(selectedFragment!!.isHidden){
+//            supportFragmentManager.beginTransaction().show(selectedFragment).commit()
+//        }else{
+//            supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment).hide(currFragment!!).commit()
 //        }
 
-        if(selectedFragment!!.isHidden){
-            supportFragmentManager.beginTransaction().show(selectedFragment).commit()
-        }else{
-            supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment).hide(currFragment!!).commit()
-        }
-//        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, selectedFragment!!).commit()
         true
     }
 
@@ -125,21 +93,13 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Outdated image/data will be deleted or changed with 'updated soon' image!", Toast.LENGTH_LONG).show()
                 return super.onOptionsItemSelected(item)
             }
-//            R.id.serverChange ->{
-////                Toast.makeText(this, "TEST", Toast.LENGTH_SHORT).show()
-//                if(item.isChecked){
-//                    item.setChecked(false)
-//                }else{
-//                    item.setChecked(true)
-//                }
-//                return super.onOptionsItemSelected(item)
-//            }
             else -> return super.onOptionsItemSelected(item)
         }
 
     }
 
     private var doubleBackToExitPressedOnce = false
+
     override fun onBackPressed() {
         if(doubleBackToExitPressedOnce){
             super.onBackPressed()
@@ -160,7 +120,7 @@ class MainActivity : AppCompatActivity() {
         bottomNav = findViewById(R.id.bottom_nav)
         bottomNav.setOnNavigationItemSelectedListener(navListener)
 
-        supportFragmentManager.beginTransaction().add(R.id.fragment_container, HomeFragment()).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
         setSupportActionBar(toolbar)
 
         if (!isNetworkAvailable) {

@@ -17,4 +17,6 @@ class Item {
         this.lastPrice = lastPrice
         this.lastDate = lastDate
     }
+
+
 }

@@ -234,7 +234,8 @@ class HomeFragment : Fragment() {
         itemsAdapter.clear()
         val request = JsonArrayRequest(
                 Request.Method.GET,
-                URL, null,
+                URL,
+                null,
                 Response.Listener { response ->
                     shimmerFrameLayout.visibility = View.GONE
                     try {
