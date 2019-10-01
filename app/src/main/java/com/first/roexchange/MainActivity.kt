@@ -3,25 +3,20 @@ package com.first.roexchange
 import android.content.Context
 import android.content.Intent
 import android.net.ConnectivityManager
-import android.support.design.widget.BottomNavigationView
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.support.v4.app.FragmentManager
-import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.Toast
-import com.github.chrisbanes.photoview.PhotoView
-import com.google.firebase.firestore.FirebaseFirestore
-import java.util.HashMap
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var toolbar: Toolbar
-    lateinit var bottomNav: BottomNavigationView
+    private lateinit var bottomNav: BottomNavigationView
 
     private val navListener = BottomNavigationView.OnNavigationItemSelectedListener { menuItem ->
         var selectedFragment: Fragment? = null
@@ -58,12 +53,6 @@ class MainActivity : AppCompatActivity() {
 
         supportFragmentManager.beginTransaction().replace(R.id.fragment_container, selectedFragment!!).commit()
 
-//        if(selectedFragment!!.isHidden){
-//            supportFragmentManager.beginTransaction().show(selectedFragment).commit()
-//        }else{
-//            supportFragmentManager.beginTransaction().add(R.id.fragment_container, selectedFragment).hide(currFragment!!).commit()
-//        }
-
         true
     }
 
@@ -82,18 +71,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
+        return when (item.itemId) {
             R.id.itemFav -> {
                 val intent = Intent(applicationContext, FavoriteActivity::class.java)
                 startActivity(intent)
-                //                Toast.makeText(this, "Favorite Coming Soon", Toast.LENGTH_SHORT).show();
-                return true
+                true
             }
             R.id.itemInfo -> {
                 Toast.makeText(this, "Outdated image/data will be deleted or changed with 'updated soon' image!", Toast.LENGTH_LONG).show()
-                return super.onOptionsItemSelected(item)
+                super.onOptionsItemSelected(item)
             }
-            else -> return super.onOptionsItemSelected(item)
+            else -> super.onOptionsItemSelected(item)
         }
 
     }
@@ -109,7 +97,7 @@ class MainActivity : AppCompatActivity() {
         this.doubleBackToExitPressedOnce = true
         Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show()
 
-        Handler().postDelayed(Runnable { doubleBackToExitPressedOnce = false }, 2000)
+        Handler().postDelayed({ doubleBackToExitPressedOnce = false }, 2000)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -129,6 +117,5 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        private val TAG = "MainActivity"
     }
 }

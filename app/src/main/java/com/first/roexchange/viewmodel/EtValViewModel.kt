@@ -1,10 +1,9 @@
 package com.first.roexchange.viewmodel
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.google.firebase.firestore.FirebaseFirestore
-import java.util.HashMap
 
 class EtValViewModel : ViewModel() {
 
@@ -18,29 +17,29 @@ class EtValViewModel : ViewModel() {
     private val noteRef = db.collection("URL").document("ET")
     private val noteRefVal = db.collection("URL").document("VAL")
 
-    var urlET =""
-    var urlETMini =""
+    private var urlET = ""
+    private var urlETMini = ""
 
-    var urlGlobalET = ""
-    var urlGlobalETMini = ""
-    var urlLastUpdated = ""
+    private var urlGlobalET = ""
+    private var urlGlobalETMini = ""
+    private var urlLastUpdated = ""
 
-    var urlVal = ""
-    var urlGlobalVal = ""
-    var urlValLastUpdated = ""
+    private var urlVal = ""
+    private var urlGlobalVal = ""
+    private var urlValLastUpdated = ""
 
-    fun setET(){
+    fun setET() {
         noteRef.get().addOnSuccessListener { doc ->
-            if(doc.exists()){
+            if (doc.exists()) {
                 urlET = doc.getString("MVP") ?: ""
                 listItemET.add(urlET)
-                urlETMini = doc.getString("Mini") ?:""
+                urlETMini = doc.getString("Mini") ?: ""
                 listItemET.add(urlETMini)
-                urlGlobalET = doc.getString("GlobalMVP") ?:""
+                urlGlobalET = doc.getString("GlobalMVP") ?: ""
                 listItemET.add(urlGlobalET)
                 urlGlobalETMini = doc.getString("GlobalMini") ?: ""
                 listItemET.add(urlGlobalETMini)
-                urlLastUpdated = doc.getString("LastUpdated") ?:""
+                urlLastUpdated = doc.getString("LastUpdated") ?: ""
                 listItemET.add(urlLastUpdated)
 
                 listET.postValue(listItemET)
@@ -49,13 +48,13 @@ class EtValViewModel : ViewModel() {
         }
     }
 
-    fun getET(): LiveData<ArrayList<String>>{
-       return listET
+    fun getET(): LiveData<ArrayList<String>> {
+        return listET
     }
 
-    fun setVal(){
+    fun setVal() {
         noteRefVal.get().addOnSuccessListener { doc ->
-            if(doc.exists()){
+            if (doc.exists()) {
                 urlVal = doc.getString("VALList") ?: ""
                 listItemVal.add(urlVal)
                 urlGlobalVal = doc.getString("ValGlobal") ?: ""
@@ -69,7 +68,7 @@ class EtValViewModel : ViewModel() {
         }
     }
 
-    fun getVal(): LiveData<ArrayList<String>>{
+    fun getVal(): LiveData<ArrayList<String>> {
         return listVal
     }
 

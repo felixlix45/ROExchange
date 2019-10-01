@@ -5,35 +5,30 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.os.Build
-import android.support.v4.app.NotificationCompat
+import androidx.core.app.NotificationCompat
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import java.util.*
 
-class MessagingService: FirebaseMessagingService(){
-    override fun onMessageReceived(p0: RemoteMessage?) {
+class MessagingService : FirebaseMessagingService() {
+    override fun onMessageReceived(p0: RemoteMessage) {
         super.onMessageReceived(p0)
-        showNotification(p0!!.notification!!.title!!, p0!!.notification!!.body!!)
+        showNotification(p0.notification!!.title!!, p0.notification!!.body!!)
     }
 
-    override fun onNewToken(p0: String?) {
-        super.onNewToken(p0)
+    private fun showNotification(Title: String, Body: String) {
+        val notificationManager: NotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        val NOTIFICATION_CHANNEL_ID = "com.example.ROExchange"
 
-    }
-
-    fun showNotification(Title: String, Body: String){
-        var notificationManager:NotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        var NOTIFICATION_CHANNEL_ID = "com.example.ROExchange"
-
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            var notificationChannel = NotificationChannel(NOTIFICATION_CHANNEL_ID, "Notification", NotificationManager.IMPORTANCE_HIGH)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val notificationChannel = NotificationChannel(NOTIFICATION_CHANNEL_ID, "Notification", NotificationManager.IMPORTANCE_HIGH)
 
             notificationChannel.enableLights(true)
             notificationManager.createNotificationChannel(notificationChannel)
 
         }
 
-        var notificationBuilder = NotificationCompat.Builder(this,NOTIFICATION_CHANNEL_ID)
+        val notificationBuilder = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID)
         notificationBuilder.setAutoCancel(true)
                 .setDefaults(Notification.DEFAULT_ALL)
                 .setWhen(System.currentTimeMillis())

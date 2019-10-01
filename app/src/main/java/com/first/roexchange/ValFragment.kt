@@ -1,9 +1,8 @@
 package com.first.roexchange
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,22 +13,20 @@ import android.widget.Toast
 import com.facebook.shimmer.ShimmerFrameLayout
 import com.first.roexchange.viewmodel.EtValViewModel
 import com.github.chrisbanes.photoview.PhotoView
-import com.google.firebase.firestore.FirebaseFirestore
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 
-class ValFragment : Fragment() {
-    lateinit var ivValhala40: ImageView
-    lateinit var ivValhala60: ImageView
-    lateinit var ivValhala80: ImageView
-    lateinit var ivValhala100: ImageView
-    lateinit var valItem: PhotoView
-    private val db = FirebaseFirestore.getInstance()
-    private val noteRef = db.collection("URL").document("VAL")
-    internal var ValURL: String? = ""
-    internal var valGlobalURL: String? = ""
-    internal var lastupdated: String? = ""
-    //    ProgressBar progressBar;
+class ValFragment : androidx.fragment.app.Fragment() {
+    private lateinit var ivValhala40: ImageView
+    private lateinit var ivValhala60: ImageView
+    private lateinit var ivValhala80: ImageView
+    private lateinit var ivValhala100: ImageView
+    private lateinit var valItem: PhotoView
+
+    private var ValURL: String? = ""
+    private var valGlobalURL: String? = ""
+    private var lastupdated: String? = ""
+
     lateinit var shimmerFrameLayout: ShimmerFrameLayout
 
     private lateinit var etValViewModel: EtValViewModel
@@ -38,8 +35,6 @@ class ValFragment : Fragment() {
         val v = inflater.inflate(R.layout.fragment_val, container, false)
 
         shimmerFrameLayout = v.findViewById(R.id.shimmer_container_valhalla)
-        //        progressBar = v.findViewById(R.id.progressBar);
-        //        progressBar.setVisibility(View.VISIBLE);
         shimmerFrameLayout.startShimmer()
         shimmerFrameLayout.visibility = View.VISIBLE
 
@@ -54,14 +49,10 @@ class ValFragment : Fragment() {
         ivValhala60.visibility = View.GONE
         ivValhala80.visibility = View.GONE
         ivValhala100.visibility = View.GONE
-        //        final String val40 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-40-1.jpg";
-//        val val60 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-601.jpg"
-//        val val80 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-801.jpg"
-//        val val100 = "https://ragnamobileguide.com/wp-content/uploads/2019/01/Valhalla-1001.jpg"
 
         etValViewModel = ViewModelProviders.of(requireActivity()).get(EtValViewModel::class.java)
         etValViewModel.getVal().observe(this, Observer { listVal ->
-            if(listVal!!.isNotEmpty()){
+            if (listVal!!.isNotEmpty()) {
                 ValURL = listVal[0]
                 valGlobalURL = listVal[1]
                 lastupdated = listVal[2]

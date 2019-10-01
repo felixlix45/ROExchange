@@ -1,9 +1,9 @@
 package com.first.roexchange
 
 import android.graphics.Color
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.Toolbar
+import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -34,20 +34,20 @@ import java.util.ArrayList
 
 class DetailActivity : AppCompatActivity() {
 
-    lateinit var tvName: TextView
-    lateinit var tvTypes: TextView
-    lateinit var tvPrice: TextView
-    lateinit var tvUpdated: TextView
-    lateinit var tvLastPrice: TextView
+    private lateinit var tvName: TextView
+    private lateinit var tvTypes: TextView
+    private lateinit var tvPrice: TextView
+    private lateinit var tvUpdated: TextView
+    private lateinit var tvLastPrice: TextView
     lateinit var toolbar: Toolbar
-    internal var savedList: ArrayList<Item>? = ArrayList()
+    private var savedList: ArrayList<Item>? = ArrayList()
     private var mChart: LineChart? = null
     private var disableMenuOption = false
-    lateinit var switchServer: Switch
+    private lateinit var switchServer: Switch
 
-    lateinit var shimmerFrameLayout: ShimmerFrameLayout
+    private lateinit var shimmerFrameLayout: ShimmerFrameLayout
 
-    fun saveData() {
+    private fun saveData() {
         val sharedPreferences = getSharedPreferences("FavoriteItem", MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         val gson = Gson()
@@ -61,17 +61,17 @@ class DetailActivity : AppCompatActivity() {
         val inflater = menuInflater
         if (intent.getStringExtra("act").contains("MainActivity")) {
             inflater.inflate(R.menu.detail_menu_item, menu)
-            if(disableMenuOption){
-                menu.findItem(R.id.itemAddToFav).setEnabled(false)
-            }else{
-                menu.findItem(R.id.itemAddToFav).setEnabled(true)
+            if (disableMenuOption) {
+                menu.findItem(R.id.itemAddToFav).isEnabled = false
+            } else {
+                menu.findItem(R.id.itemAddToFav).isEnabled = true
             }
         } else if (intent.getStringExtra("act").contains("FavoriteActivity")) {
             inflater.inflate(R.menu.detail_menu_item_delete, menu)
-            if(disableMenuOption){
-                menu.findItem(R.id.item_delete).setEnabled(false)
-            }else{
-                menu.findItem(R.id.item_delete).setEnabled(true)
+            if (disableMenuOption) {
+                menu.findItem(R.id.item_delete).isEnabled = false
+            } else {
+                menu.findItem(R.id.item_delete).isEnabled = true
             }
         }
         return true
@@ -133,8 +133,6 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
 
         shimmerFrameLayout = findViewById(R.id.shimmer_container_detail)
-
-        //        Toast.makeText(this, savedList.size(), Toast.LENGTH_SHORT).show();
         switchServer = findViewById(R.id.switchServer)
         tvName = findViewById(R.id.tvDetailName)
         tvTypes = findViewById(R.id.tvDetailTypes)
@@ -142,7 +140,7 @@ class DetailActivity : AppCompatActivity() {
         tvUpdated = findViewById(R.id.tvDetailUpdated)
         tvLastPrice = findViewById(R.id.tvDetailBeforeUpdatePrice)
         toolbar = findViewById(R.id.toolbar)
-        val detailLayout = findViewById(R.id.detailLayout) as LinearLayout
+        val detailLayout = findViewById<LinearLayout>(R.id.detailLayout)
         detailLayout.visibility = View.GONE
 
         setSupportActionBar(toolbar)
@@ -158,85 +156,80 @@ class DetailActivity : AppCompatActivity() {
         mChart!!.description = desc
         mChart!!.setDrawBorders(true)
         mChart!!.setDrawGridBackground(false)
-        switchServer.setText("SEA SERVER")
-        switchServer.setOnCheckedChangeListener{
-            buttonView, isChecked ->
-            if (isChecked){
-                switchServer.setText("Server : SEA SERVER")
-
-                // TODO: SEA SERVER
-            }else{
-                switchServer.setText("Server : GLOBAL SERVER")
+        switchServer.text = "SEA SERVER"
+        switchServer.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                switchServer.text = "Server : SEA SERVER"
+            } else {
+                switchServer.text = "Server : GLOBAL SERVER"
                 Toast.makeText(applicationContext, "Coming Soon", Toast.LENGTH_SHORT).show()
-                // TODO: GLOBAL SERVER
             }
         }
 
         if (intent.hasExtra("URL") && intent.hasExtra("Types")) {
-            val act = intent.getStringExtra("act").replace("@.+".toRegex(), "")
             val yValue = ArrayList<Entry>()
             val priceArray = IntArray(7)
             val URL = "https://www.romexchange.com/api?item=" + intent.getStringExtra("URL")
             shimmerFrameLayout.visibility = View.VISIBLE
             shimmerFrameLayout.startShimmer()
-            disableMenuOption = true;
+            disableMenuOption = true
             val request = JsonArrayRequest(
-                Request.Method.GET,
-                URL, null,
-                Response.Listener { response ->
-                    shimmerFrameLayout.visibility = View.GONE
-                    shimmerFrameLayout.stopShimmer()
-                    disableMenuOption = false
-                    detailLayout.visibility = View.VISIBLE
-                    invalidateOptionsMenu()
-                    try {
-                        val formatter = DecimalFormat("#,###,###")
-                        for (i in 0 until response.length()) {
+                    Request.Method.GET,
+                    URL, null,
+                    Response.Listener { response ->
+                        shimmerFrameLayout.visibility = View.GONE
+                        shimmerFrameLayout.stopShimmer()
+                        disableMenuOption = false
+                        detailLayout.visibility = View.VISIBLE
+                        invalidateOptionsMenu()
+                        try {
+                            val formatter = DecimalFormat("#,###,###")
+                            for (i in 0 until response.length()) {
 
-                            tvName.text = "Name : " + response.getJSONObject(i).get("name").toString()
-                            tvTypes.text = "Types : " + intent.getStringExtra("Types")
-                            tvPrice.text = "Current Price : " + formatter.format(response.getJSONObject(i).getJSONObject("sea").get("latest")) + " zeny"
-                            val date = response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString().replace("T".toRegex(), " ").replace("Z".toRegex(), " GMT/UTC Time")
-                            if (date != "") {
-                                tvUpdated.text = "Last Updated : $date"
-                            } else {
-                                tvUpdated.text = "Last Updated : " + response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString()
+                                tvName.text = "Name : " + response.getJSONObject(i).get("name").toString()
+                                tvTypes.text = "Types : " + intent.getStringExtra("Types")
+                                tvPrice.text = "Current Price : " + formatter.format(response.getJSONObject(i).getJSONObject("sea").get("latest")) + " zeny"
+                                val date = response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString().replace("T".toRegex(), " ").replace("Z".toRegex(), " GMT/UTC Time")
+                                if (date != "") {
+                                    tvUpdated.text = "Last Updated : $date"
+                                } else {
+                                    tvUpdated.text = "Last Updated : " + response.getJSONObject(i).getJSONObject("sea").get("latest_time").toString()
+                                }
+                                val jsonArray = response.getJSONObject(i).getJSONObject("sea").getJSONObject("week").getJSONArray("data")
+                                for (j in 0 until jsonArray.length()) {
+                                    priceArray[j] = jsonArray.getJSONObject(j).getInt("price")
+                                    yValue.add(Entry(j.toFloat() + 1, priceArray[j].toFloat()))
+                                }
+
+                                tvLastPrice.text = "Previous Price : " + formatter.format(jsonArray.getJSONObject(jsonArray.length() - 2).getInt("price").toLong()) + " zeny"
+
+                                val set1 = LineDataSet(yValue, "SEA Server")
+
+                                set1.fillAlpha = 200
+                                set1.color = Color.BLUE
+                                set1.lineWidth = 2.5f
+                                set1.setCircleColor(Color.BLUE)
+                                set1.circleHoleColor = Color.BLUE
+                                set1.circleRadius = 5f
+                                set1.notifyDataSetChanged()
+
+                                val dataSets = ArrayList<ILineDataSet>()
+                                dataSets.add(set1)
+
+                                val data = LineData(dataSets)
+                                mChart!!.data = data
+                                supportActionBar!!.title = tvName.text.toString().replace("Name : ".toRegex(), "")
                             }
-                            val jsonArray = response.getJSONObject(i).getJSONObject("sea").getJSONObject("week").getJSONArray("data")
-                            for (j in 0 until jsonArray.length()) {
-                                priceArray[j] = jsonArray.getJSONObject(j).getInt("price")
-                                yValue.add(Entry(j.toFloat() + 1, priceArray[j].toFloat()))
-                            }
 
-                            tvLastPrice.text = "Previous Price : " + formatter.format(jsonArray.getJSONObject(jsonArray.length()-2).getInt("price").toLong()) + " zeny"
+                        } catch (e: Exception) {
 
-                            val set1 = LineDataSet(yValue, "SEA Server")
-
-                            set1.fillAlpha = 200
-                            set1.color = Color.BLUE
-                            set1.lineWidth = 2.5f
-                            set1.setCircleColor(Color.BLUE)
-                            set1.circleHoleColor = Color.BLUE
-                            set1.circleRadius = 5f
-                            set1.notifyDataSetChanged()
-
-                            val dataSets = ArrayList<ILineDataSet>()
-                            dataSets.add(set1)
-
-                            val data = LineData(dataSets)
-                            mChart!!.data = data
-                            supportActionBar!!.setTitle(tvName.text.toString().replace("Name : ".toRegex(), ""))
                         }
-
-                    } catch (e: Exception) {
-
+                    },
+                    Response.ErrorListener {
+                        shimmerFrameLayout.visibility = View.GONE
+                        shimmerFrameLayout.stopShimmer()
+                        Toast.makeText(this@DetailActivity, "Error while fetching data", Toast.LENGTH_SHORT).show()
                     }
-                },
-                Response.ErrorListener {
-                    shimmerFrameLayout.visibility = View.GONE
-                    shimmerFrameLayout.stopShimmer()
-                    Toast.makeText(this@DetailActivity, "Error while fetching data", Toast.LENGTH_SHORT).show()
-                }
             )
             val requestQueue = Volley.newRequestQueue(this)
             requestQueue.add(request)

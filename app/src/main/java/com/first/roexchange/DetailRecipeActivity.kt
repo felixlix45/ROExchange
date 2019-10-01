@@ -1,37 +1,32 @@
 package com.first.roexchange
 
-import android.media.Image
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.Toolbar
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_detail_recipe.*
 import org.json.JSONObject
-import org.w3c.dom.Text
 import java.io.InputStream
-import java.lang.Exception
 
 class DetailRecipeActivity : AppCompatActivity() {
 
-    lateinit var tvName: TextView
-    lateinit var tvEffect: TextView
-    lateinit var ivFoodImage: ImageView
-    lateinit var ivFoodStation: ImageView
-    lateinit var ivIngre1: ImageView
-    lateinit var ivIngre2: ImageView
-    lateinit var ivIngre3: ImageView
-    lateinit var ivIngre4: ImageView
-    lateinit var ivIngre5: ImageView
-    lateinit var tvIngreText: TextView
-    lateinit var layoutImage: LinearLayout
-    lateinit var layoutExtended: LinearLayout
-
+    private lateinit var tvName: TextView
+    private lateinit var tvEffect: TextView
+    private lateinit var ivFoodImage: ImageView
+    private lateinit var ivFoodStation: ImageView
+    private lateinit var ivIngre1: ImageView
+    private lateinit var ivIngre2: ImageView
+    private lateinit var ivIngre3: ImageView
+    private lateinit var ivIngre4: ImageView
+    private lateinit var ivIngre5: ImageView
+    private lateinit var tvIngreText: TextView
+    private lateinit var layoutImage: LinearLayout
+    private lateinit var layoutExtended: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,19 +49,18 @@ class DetailRecipeActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         if(intent.hasExtra("name")){
-            supportActionBar!!.setTitle(intent.getStringExtra("name"))
+            supportActionBar!!.title = intent.getStringExtra("name")
 
             var index = intent.getIntExtra("id", 0)
-            index = index + 1
+            index += 1
             Log.e(TAG, index.toString())
 
 
             try{
-                var jsonObj = JSONObject(loadJson())
-                var jArray = jsonObj.getJSONArray("recipe").getJSONObject(index)
+                val jsonObj = JSONObject(loadJson())
+                val jArray = jsonObj.getJSONArray("recipe").getJSONObject(index)
                 Log.e(TAG, jArray.toString())
 
-//                Log.e(TAG, jArray2.toString())
                 tvName.text = jArray.get("name").toString()
                 Picasso.with(baseContext).load(jArray.get("images").toString()).into(ivFoodImage)
                 Picasso.with(baseContext).load(jArray.get("station").toString()).into(ivFoodStation)
@@ -74,7 +68,7 @@ class DetailRecipeActivity : AppCompatActivity() {
                     tvIngreText.text = jArray.get("indgredients_text").toString()
                     layoutImage.visibility = View.GONE
                 }else{
-                    var jArray2 = jArray.getJSONArray("ingredients")
+                    val jArray2 = jArray.getJSONArray("ingredients")
 
                     tvIngreText.visibility = View.GONE
                     layoutExtended.visibility = View.GONE
@@ -116,12 +110,12 @@ class DetailRecipeActivity : AppCompatActivity() {
 
     }
 
-    fun loadJson():String{
+    private fun loadJson():String{
         lateinit var json:String
         try {
-            var istream: InputStream = applicationContext.assets.open("recipe_list.json")
-            var size: Int = istream.available()
-            var buffer = ByteArray(size)
+            val istream: InputStream = applicationContext.assets.open("recipe_list.json")
+            val size: Int = istream.available()
+            val buffer = ByteArray(size)
             istream.read(buffer)
             istream.close()
             val charset = Charsets.UTF_8
@@ -133,7 +127,7 @@ class DetailRecipeActivity : AppCompatActivity() {
     }
 
     companion object{
-        private val TAG= "RecipeActivity"
+        private const val TAG= "RecipeActivity"
 
 
     }

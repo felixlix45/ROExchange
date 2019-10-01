@@ -1,9 +1,8 @@
 package com.first.roexchange
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -25,36 +24,35 @@ import com.first.roexchange.adapter.ItemsAdapter
 import com.first.roexchange.model.Item
 import com.facebook.shimmer.ShimmerFrameLayout
 import kotlinx.android.synthetic.main.fragment_home.*
+import java.util.*
 
-import java.util.ArrayList
+class HomeFragment : androidx.fragment.app.Fragment() {
 
-class HomeFragment : Fragment() {
+    private var listItem = ArrayList<Item>()
 
-    internal var listItem = ArrayList<Item>()
+    private var URL = "https://www.romexchange.com/api/items.json"
 
-    internal var URL = "https://www.romexchange.com/api/items.json"
-
-    lateinit var itemsAdapter: ItemsAdapter
-    lateinit var spinnerFilter : Spinner
-    lateinit var shimmerFrameLayout: ShimmerFrameLayout
+    private lateinit var itemsAdapter: ItemsAdapter
+    private lateinit var spinnerFilter: Spinner
+    private lateinit var shimmerFrameLayout: ShimmerFrameLayout
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        var v = inflater.inflate(R.layout.fragment_home, container, false)
+        val v = inflater.inflate(R.layout.fragment_home, container, false)
 
         itemsAdapter = ItemsAdapter(requireActivity(), listItem)
 
-        shimmerFrameLayout = v.findViewById<ShimmerFrameLayout>(R.id.shimmer_container)
+        shimmerFrameLayout = v.findViewById(R.id.shimmer_container)
         shimmerFrameLayout.startShimmer()
 
-        var btnSearch = v.findViewById(R.id.btnSearch) as Button
-        var btnReset = v.findViewById(R.id.reset)as Button
-        var etSearch = v.findViewById(R.id.etSearchItem)as EditText
+        val btnSearch = v.findViewById(R.id.btnSearch) as Button
+        val btnReset = v.findViewById(R.id.reset) as Button
+        val etSearch = v.findViewById(R.id.etSearchItem) as EditText
 
-        var rvItem = v.findViewById(R.id.rvItem) as RecyclerView
+        val rvItem = v.findViewById(R.id.rvItem) as RecyclerView
         rvItem.layoutManager = LinearLayoutManager(activity)
         rvItem.adapter = itemsAdapter
 
-        var cbFilter = v.findViewById(R.id.cbFilter) as CheckBox
+        val cbFilter = v.findViewById(R.id.cbFilter) as CheckBox
         spinnerFilter = v.findViewById(R.id.spinnerFilter) as Spinner
 
         btnSearch.setOnClickListener {
@@ -100,7 +98,7 @@ class HomeFragment : Fragment() {
             etSearch.onEditorAction(EditorInfo.IME_ACTION_DONE)
         }
 
-        cbFilter.setOnCheckedChangeListener { buttonView, isChecked ->
+        cbFilter.setOnCheckedChangeListener { _, _ ->
             if (cbFilter.isChecked) {
                 spinnerFilter.visibility = View.VISIBLE
                 getFilteredData()
@@ -121,7 +119,7 @@ class HomeFragment : Fragment() {
         }
 
         // Keyboard Search Click
-        etSearch.setOnEditorActionListener(TextView.OnEditorActionListener { v, actionId, event ->
+        etSearch.setOnEditorActionListener(TextView.OnEditorActionListener { v, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                 btnSearch.performClick()
                 return@OnEditorActionListener true
@@ -184,11 +182,10 @@ class HomeFragment : Fragment() {
         requestQueue.add(request)
     }
 
-    fun getFilteredData2() {
+    private fun getFilteredData2() {
         itemsAdapter.clear()
         val pos = spinnerFilter.selectedItemPosition + 1
         val URLFiltered = "https://www.romexchange.com/api/items.json"//exact=false&item=" + etSearch.getText().toString().replaceAll("\\s+","%20") + "&type=" + pos;
-        //        progressBar.setVisibility(View.VISIBLE);
         shimmerFrameLayout.visibility = View.VISIBLE
         shimmerFrameLayout.startShimmer()
         val request = JsonArrayRequest(
@@ -202,8 +199,8 @@ class HomeFragment : Fragment() {
                         for (i in 0 until response.length()) {
                             if (response.getJSONObject(i).getInt("type") == pos) {
                                 val item = Item()
-                                val name = response.getJSONObject(i).get("name").toString().toLowerCase().trim()
-                                if(name.contains(etSearchItem.text.toString().toLowerCase().trim(), false)){
+                                val name = response.getJSONObject(i).get("name").toString().toLowerCase(Locale.ROOT).trim()
+                                if (name.contains(etSearchItem.text.toString().toLowerCase(Locale.ROOT).trim(), false)) {
                                     item.name = response.getJSONObject(i).get("name").toString()
                                     item.types = typeConvert(response.getJSONObject(i).getInt("type"))
                                     listItem.add(item)
@@ -218,7 +215,6 @@ class HomeFragment : Fragment() {
                     }
                 },
                 Response.ErrorListener {
-                    //                        progressBar.setVisibility(View.GONE);
                     shimmerFrameLayout.visibility = View.GONE
 
                 }
@@ -228,7 +224,7 @@ class HomeFragment : Fragment() {
         requestQueue.add(request)
     }
 
-    fun getAllData() {
+    private fun getAllData() {
         shimmerFrameLayout.visibility = View.VISIBLE
         shimmerFrameLayout.startShimmer()
         itemsAdapter.clear()
@@ -259,7 +255,7 @@ class HomeFragment : Fragment() {
         requestQueue.add(request)
     }
 
-    fun typeConvert(type: Int): String {
+    private fun typeConvert(type: Int): String {
         when (type) {
             1 -> return "Weapon"
             2 -> return "Off-hand"
@@ -293,7 +289,6 @@ class HomeFragment : Fragment() {
     }
 
     companion object {
-
-        private val TAG = "HomeFragment"
+        private const val TAG = "HomeFragment"
     }
 }

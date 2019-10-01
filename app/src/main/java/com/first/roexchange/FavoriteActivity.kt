@@ -1,12 +1,12 @@
 package com.first.roexchange
 
-import android.support.v4.widget.SwipeRefreshLayout
-import android.support.v7.app.AppCompatActivity
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.Toolbar
-import android.support.v7.widget.helper.ItemTouchHelper
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.appcompat.widget.Toolbar
+import androidx.recyclerview.widget.ItemTouchHelper
 
 import com.first.roexchange.adapter.ItemsAdapter
 import com.first.roexchange.model.Item
@@ -14,15 +14,13 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
 import java.util.ArrayList
-import java.util.LinkedHashSet
 
 class FavoriteActivity : AppCompatActivity() {
 
     lateinit var savedList: ArrayList<Item>
-    internal var hashSet: LinkedHashSet<Item>? = null
-    lateinit var rvItem: RecyclerView
-    lateinit var swipeRefreshLayout: SwipeRefreshLayout
-    lateinit var itemsAdapter: ItemsAdapter
+    private lateinit var rvItem: RecyclerView
+    private lateinit var swipeRefreshLayout: SwipeRefreshLayout
+    private lateinit var itemsAdapter: ItemsAdapter
     lateinit var toolbar: Toolbar
 
     fun loadData() {
@@ -32,14 +30,13 @@ class FavoriteActivity : AppCompatActivity() {
         val type = object : TypeToken<ArrayList<Item>>() {
 
         }.type
-        if(gson.fromJson<ArrayList<Item>>(json, type) == null){
-            savedList = ArrayList()
-        }else{
-            savedList = gson.fromJson<ArrayList<Item>>(json, type)
+        savedList = if (gson.fromJson<ArrayList<Item>>(json, type) == null) {
+            ArrayList()
+        } else {
+            gson.fromJson<ArrayList<Item>>(json, type)
         }
 
-        if (savedList == null || savedList!!.size == 0) {
-            //            Toast.makeText(this, "Data is null", Toast.LENGTH_SHORT).show();
+        if (savedList.size == 0) {
             savedList = ArrayList()
         }
 
@@ -74,13 +71,13 @@ class FavoriteActivity : AppCompatActivity() {
         loadData()
         buildRecycleView()
 
-        val simpleCallback = object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT){
+        val simpleCallback = object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT) {
             override fun onMove(p0: RecyclerView, p1: RecyclerView.ViewHolder, p2: RecyclerView.ViewHolder): Boolean {
                 return false
             }
 
             override fun onSwiped(p0: RecyclerView.ViewHolder, p1: Int) {
-                savedList!!.removeAt(p0.adapterPosition)
+                savedList.removeAt(p0.adapterPosition)
                 saveData()
                 loadData()
                 buildRecycleView()
@@ -95,7 +92,6 @@ class FavoriteActivity : AppCompatActivity() {
             buildRecycleView()
             swipeRefreshLayout.isRefreshing = false
         }
-
 
 
     }
