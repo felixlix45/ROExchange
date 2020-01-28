@@ -10,6 +10,7 @@
     <string name="daily_gingerbread_tips">Daily Gingerbread Tips</string>
     <string name="endless_tower_mvp_global">Endless Tower MVP GLOBAL</string>
     <string name="valhalla_guides_global">Valhalla Guides Global</string>
+    <string name="pet_ep_5">Pet EP 5</string>
 
     <string-array name="filter_type">
         <item>Weapons</item>
