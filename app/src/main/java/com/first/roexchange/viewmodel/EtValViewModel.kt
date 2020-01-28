@@ -16,6 +16,7 @@ class EtValViewModel : ViewModel() {
     private val db = FirebaseFirestore.getInstance()
     private val noteRef = db.collection("URL").document("ET")
     private val noteRefVal = db.collection("URL").document("VAL")
+    private val informationRef = db.collection("URL").document("Information")
 
     private var urlET = ""
     private var urlETMini = ""
@@ -27,6 +28,7 @@ class EtValViewModel : ViewModel() {
     private var urlVal = ""
     private var urlGlobalVal = ""
     private var urlValLastUpdated = ""
+
 
     fun setET() {
         noteRef.get().addOnSuccessListener { doc ->

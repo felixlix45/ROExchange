@@ -60,7 +60,9 @@ class EtFragment : androidx.fragment.app.Fragment() {
 
 
         etValViewModel = ViewModelProviders.of(requireActivity()).get(EtValViewModel::class.java)
-        etValViewModel.getET().observe(this, Observer { etList ->
+
+
+        etValViewModel.getET().observe(viewLifecycleOwner, Observer { etList ->
             if(etList!!.isNotEmpty()){
                 URLMVP = etList[0]
                 URLMini = etList[1]

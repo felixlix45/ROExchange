@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import androidx.fragment.app.Fragment
 
-class InfoFragment : androidx.fragment.app.Fragment(), View.OnClickListener {
+class InfoFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View) {
         when {
             v.id == R.id.ibGuide -> {

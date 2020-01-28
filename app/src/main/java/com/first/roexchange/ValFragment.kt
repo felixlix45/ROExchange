@@ -1,7 +1,5 @@
 package com.first.roexchange
 
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import com.facebook.shimmer.ShimmerFrameLayout
 import com.first.roexchange.viewmodel.EtValViewModel
 import com.github.chrisbanes.photoview.PhotoView
@@ -51,7 +50,7 @@ class ValFragment : androidx.fragment.app.Fragment() {
         ivValhala100.visibility = View.GONE
 
         etValViewModel = ViewModelProviders.of(requireActivity()).get(EtValViewModel::class.java)
-        etValViewModel.getVal().observe(this, Observer { listVal ->
+        etValViewModel.getVal().observe(viewLifecycleOwner, Observer { listVal ->
             if (listVal!!.isNotEmpty()) {
                 ValURL = listVal[0]
                 valGlobalURL = listVal[1]

@@ -1,132 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:focusableInTouchMode="true">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.first.roexchange.HomeFragment" />
+    </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:elevation="5dp"
-        android:background="@color/colorWhite"
-        android:paddingBottom="10dp">
+        android:focusableInTouchMode="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            >
+            android:background="@color/colorWhite"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
 
-            <EditText
-                android:id="@+id/etSearchItem"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etSearchItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="9"
+                    android:hint="Search Item"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/reset"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:textColor="@color/colorPrimary" />
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/btn_rounded"
+                    android:text="Search"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Filter" />
+
+                <Spinner
+                    android:id="@+id/spinnerFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:entries="@array/filter_type"
+                    android:prompt="@string/filter_prompt"
+                    android:visibility="invisible">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/information_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="9"
-                android:hint="Search Item"
-                android:imeOptions="actionSearch"
-                android:inputType="text"
-                android:singleLine="true" />
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:visibility="gone" />
 
-            <Button
-                android:id="@+id/reset"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reset"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:textColor="@color/colorPrimary"
-                />
-            <Button
-                android:id="@+id/btnSearch"
-                android:layout_width="wrap_content"
-                android:layout_height="37dp"
-                android:layout_marginStart="10dp"
-                android:text="Search"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:background="@drawable/btn_rounded"
-                android:textColor="@color/colorWhite"
-                />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/cbFilter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:text="Filter" />
-
-            <Spinner
-                android:id="@+id/spinnerFilter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:entries="@array/filter_type"
-                android:prompt="@string/filter_prompt"
-                android:visibility="invisible">
-
-            </Spinner>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-    <com.facebook.shimmer.ShimmerFrameLayout
-        android:id="@+id/shimmer_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:shimmer_auto_start="false"
-        app:shimmer_duration="800">
-
-        <LinearLayout
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-            <include
-                layout="@layout/list_view_item_shimmer"/>
-            <include
-                layout="@layout/list_view_item_shimmer"/>
-            <include
-                layout="@layout/list_view_item_shimmer"/>
-            <include
-                layout="@layout/list_view_item_shimmer"/>
-            <include
-                layout="@layout/list_view_item_shimmer"/>
-            <include
-                layout="@layout/list_view_item_shimmer"/>
-            <include
-                layout="@layout/list_view_item_shimmer"/>
-            <include
-                layout="@layout/list_view_item_shimmer"/>
-            <include
-                layout="@layout/list_view_item_shimmer"/>
-            <include
-                layout="@layout/list_view_item_shimmer"/>
-        </LinearLayout>
+            app:shimmer_auto_start="false"
+            app:shimmer_duration="800">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/list_view_item_shimmer" />
+
+                <include layout="@layout/list_view_item_shimmer" />
+
+                <include layout="@layout/list_view_item_shimmer" />
+
+                <include layout="@layout/list_view_item_shimmer" />
+
+                <include layout="@layout/list_view_item_shimmer" />
+
+                <include layout="@layout/list_view_item_shimmer" />
+
+                <include layout="@layout/list_view_item_shimmer" />
+
+                <include layout="@layout/list_view_item_shimmer" />
+
+                <include layout="@layout/list_view_item_shimmer" />
+
+                <include layout="@layout/list_view_item_shimmer" />
+            </LinearLayout>
 
 
-    </com.facebook.shimmer.ShimmerFrameLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvItem"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottom_nav"
-        android:clickable="true"
-        android:focusable="true">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_nav"
+            android:clickable="true"
+            android:focusable="true">
 
 
-    </androidx.recyclerview.widget.RecyclerView>
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
 
-</LinearLayout>
+</layout>
